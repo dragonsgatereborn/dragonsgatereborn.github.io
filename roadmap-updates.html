@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dragon's Gate Reborn | RoadMap and Updates</title>
+  <meta name="description" content="Project roadmap and update history for Dragon's Gate Reborn.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=20260104">
+</head>
+<body>
+  <div class="page">
+    <header class="hero hero--inner">
+      <div class="hero-inner">
+        <a class="brand brand-link" href="/index.html">
+          <div class="sigil"></div>
+          <div>
+            <p class="eyebrow">Updates</p>
+            <h1>RoadMap and Updates</h1>
+            <p class="tagline">Official community updates and systems roadmap, newest first.</p>
+          </div>
+        </a>
+        <nav class="site-nav">
+          <a href="/index.html">Home</a>
+          <a href="/manual.html">Manual</a>
+          <a href="/library.html">Library</a>
+          <a href="/community.html">Community</a>
+          <a href="/events.html">Events</a>
+          <a href="/support.html">Support</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/site-map.html">Site Map</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="layout single">
+      <section class="content">
+        <article class="card">
+          <h2>Project Timeline</h2>
+          <p>This page tracks official roadmap and update posts in reverse chronological order.</p>
+          <p class="small">Timestamps from Discord-style posts are normalized here to absolute dates and times.</p>
+        </article>
+
+        <article class="card">
+          <h2>Jump to Month</h2>
+          <p class="small">Use these links to jump to major update blocks.</p>
+          <p><a class="text-link" href="#month-2026-03">March 2026</a> | <a class="text-link" href="#month-2026-02">February 2026</a> | <a class="text-link" href="#month-2026-01">January 2026</a></p>
+        </article>
+
+        <article class="card" id="month-2026-03">
+          <h2>March 2026</h2>
+          <p class="small">Magick rollout, combat and architecture follow-up, and iterative balancing updates.</p>
+        </article>
+
+        <article class="card">
+          <h3>March 28, 2026 at 10:10 - dayrinni</h3>
+          <h2>Focus Force Released for Initial Testing</h2>
+          <p>Here is a small update: Focus Force has been released for initial testing.</p>
+          <p>You can learn it at the trainer and type <code>focus</code> to toggle it on and off.</p>
+        </article>
+
+        <article class="card">
+          <h3>March 28, 2026 at 09:39 - Wizzydizzy [MUD]</h3>
+          <h2>Website Update and Content Sync Progress</h2>
+          <p>Quick update on where things stand:</p>
+          <ul>
+            <li>Current updates are being pushed directly to the website first.</li>
+            <li>Those changes are then being synced to the Updates page so tracking stays centralized.</li>
+            <li>Afterward, light consistency updates are being applied across the rest of the site.</li>
+          </ul>
+          <p><strong>Official Game URL:</strong><br><code>game.dragonsgatereborn.com</code></p>
+          <p>This is now the correct active URL and has been updated in-game and on Discord.</p>
+          <p>The website has been refreshed with data from current design docs, replacing older placeholder content with more accurate live references.</p>
+          <p>Additional updates will continue as alignment and cleanup passes proceed.</p>
+          <p>Thank you!<br>DGR Team</p>
+        </article>
+
+        <article class="card">
+          <h3>March 28, 2026 at 08:28 - dayrinni</h3>
+          <h2>Upcoming Spell Adjustment Pass</h2>
+          <p>Gooooood day! Starting in a day or two, I'll be working on the spell updates.</p>
+          <p>Thank you to Dace and the rest of the community for putting together all of the information regarding the spells. This information will be used to adjust spell data and balance in the next pass.</p>
+        </article>
+
+        <article class="card">
+          <h3>March 25, 2026 at 08:52 - dayrinni</h3>
+          <h2>Code Update: Uses, Fizzle Rate, Currency, and Runtime Fixes</h2>
+          <p>Good day! Here is the update to the update.</p>
+          <ul>
+            <li>Fixed issues with extra uses in spell casting.</li>
+            <li>Added a global gate to prevent use-gain on affect triggering; this should resolve most extra-use cases while edge cases are still tracked.</li>
+            <li>Fixed off-by-one spell power scaling (<code>SC level - spell level</code> now resolves correctly).</li>
+            <li>FTG restoration no longer displays numeric values.</li>
+            <li>Nature's Renewal FTG cost changed from <code>8</code> to <code>3</code>.</li>
+            <li>Added finer granularity for currency display and improved currency formatting.</li>
+            <li>Converted currency color tags to true color for gold and silver.</li>
+            <li>Fixed an issue where merc deaths could save and lock out a character name.</li>
+            <li>Removed critical stamina heals.</li>
+            <li>Added improvements to summoning lights.</li>
+            <li>Improved ability-upkeep sync with affects and runtime durations.</li>
+            <li>Removed the rune Recharge command; use Shop for rune renewals.</li>
+            <li>Removed ATS attribute code that was slightly reducing magick damage.</li>
+            <li>Added Shield Inspect Service and removed ATS shield-inspection data path.</li>
+            <li>Added gating so only spells are processed for resist checks.</li>
+            <li>Removed the message: "Your victim looks to be helpless from your attack."</li>
+            <li>Added a first hidden-delay pass for delayed actions; additional tuning expected.</li>
+            <li>Reduced fizzle rates by <code>50%</code> until final equations are locked.</li>
+          </ul>
+          <p>Thank you!<br>DGR Team</p>
+        </article>
+
+        <article class="card">
+          <h3>March 24, 2026 at 17:52 - dayrinni</h3>
+          <h2>Pre-Update Note</h2>
+          <p>Important update! More code updates are being prepared for the next game update, including hidden-delay work and fizzle-rate tuning for further testing.</p>
+        </article>
+
+        <article class="card">
+          <h3>March 22, 2026 at 08:15 - dayrinni</h3>
+          <h2>Scope Clarification for Next Code Patch</h2>
+          <p>The next update is a code-fix update targeting reported issues and findings.</p>
+          <p>It will not include the full spell list order/level editor-data pass yet; those content-level changes are still being compiled and will follow shortly.</p>
+        </article>
+
+        <article class="card">
+          <h3>March 20, 2026 at 21:39 - dayrinni</h3>
+          <h2>Update Timing Shift</h2>
+          <p>The planned update was moved to early next week while the team continues investigating fizzle-rate issues and odd spell-damage behavior.</p>
+        </article>
+
+        <article class="card">
+          <h3>March 19, 2026 at 17:28 - dayrinni</h3>
+          <h2>Next Patch Timing</h2>
+          <p>Another code update is expected Friday or Saturday pending final testing on a few remaining items.</p>
+        </article>
+
+        <article class="card">
+          <h3>March 19, 2026 at 08:38 - dayrinni</h3>
+          <h2>Thief Spell Behavior Fixes</h2>
+          <p>Chi of Blending and Mental Blending no longer remove you from hide when their duration ends.</p>
+          <p>Mental Blending no longer has upkeep cost.</p>
+        </article>
+
+        <article class="card">
+          <h3>March 18, 2026 at 16:37 - dayrinni</h3>
+          <h2>Cleric Restriction Note</h2>
+          <p>Some Cleric spells historically had deity restrictions. That restriction pass is not in yet.</p>
+        </article>
+
+        <article class="card">
+          <h3>March 18, 2026 at 09:34 - dayrinni</h3>
+          <h2>New Magick Feedback Channel</h2>
+          <p>A dedicated channel was opened for discussion: <code>initial-magick-system-feedback</code>.</p>
+          <p>Magick feedback should go there instead of fast-moving general chat.</p>
+        </article>
+
+        <article class="card">
+          <h3>March 18, 2026 at 09:24 - dayrinni</h3>
+          <h2>Iteration 1: Magick System Rollout</h2>
+          <p>Good day! This update delivered the first major magick-system iteration and broad ability expansion.</p>
+          <p><strong>Update list:</strong></p>
+          <ul>
+            <li>Implemented initial spell foundation with back-loaded actions and resist integration.</li>
+            <li>Implemented a 30-day novice prefix by race (no PK protection; future wanted-system pass planned).</li>
+            <li>Martial Arts no longer breaks shadows when MA validation fails.</li>
+            <li>MA command help keywords expanded (including <code>martial arts</code> aliases).</li>
+            <li>Implemented initial spell rounds (up to level 5) for Runemage Fire, Air, Earth, Water, and Generalist lists.</li>
+            <li>Implemented initial spell rounds (up to level 5) for Fighter, Barbarian, Dragon, Thief, Hand Cleric, Heart Cleric, Sword Cleric, Bard, Psion, and Forester lists.</li>
+            <li>Updated several spell names/values with newer data (for example, Touch of Cold -> Air Touch).</li>
+            <li>Added ability alias support so abilities can be invoked by configured aliases.</li>
+            <li>Added currency-display theming updates.</li>
+            <li>Extended shop support for runes: <code>shop list runes</code> and <code>shop renew &lt;rune|all&gt;</code>.</li>
+            <li>Added <code>info runespells</code> and <code>info magick</code>.</li>
+            <li>Removed <code>spells</code> command.</li>
+            <li>Added rune costs for spells.</li>
+            <li>Added <code>mem</code> command.</li>
+            <li>Added <code>alias</code> command for player ability aliases.</li>
+            <li><code>invoke</code> now understands aliases and corridor numbers (for example, <code>invoke 1 at ork</code>).</li>
+            <li>Ability power scaling now uses level difference between ability level and caster skill level.</li>
+            <li>Rune recharge shops can renew all or specific runes; initial add is free via <code>shop renew all</code>.</li>
+            <li>Arachnian and Hithual natural resistance values were added.</li>
+            <li>Frontacian and other race magick-affinity values were added.</li>
+            <li>Inventory and related views now show damaged-item state more clearly.</li>
+          </ul>
+          <p><strong>Update notes:</strong></p>
+          <ul>
+            <li>This update contained 25,000+ code additions.</li>
+            <li>Codebase total noted at 782,994 lines and 8,000+ tests (roughly 1,000 added in this update).</li>
+            <li>This is iteration one of magick; additional issue-fix iterations are expected.</li>
+            <li>Spells were temporarily flagged as "starts with" for immediate testing access.</li>
+            <li>Temporary invoke-style spell messaging is in use where legacy messages are missing.</li>
+          </ul>
+          <p><strong>Next major update:</strong> PSI-system work begins in parallel with magick issue cleanup (ETA approximately 1-2 weeks at the time of posting).</p>
+        </article>
+
+        <article class="card">
+          <h3>March 18, 2026 at 08:27 - dayrinni</h3>
+          <h2>Update Window Start</h2>
+          <p>The game update process was started, including temporary game lock and shutdown while deployment completed.</p>
+        </article>
+
+        <article class="card">
+          <h3>March 15, 2026 at 09:19 - dayrinni</h3>
+          <h2>Planned Restart and Brief Lock During Ability Insert</h2>
+          <p>When the update lands, the game will be restarted and briefly locked so all new abilities can be inserted consistently and rune shops initialized without copyover mismatch issues.</p>
+        </article>
+
+        <article class="card">
+          <h3>March 13, 2026 at 17:51 - dayrinni</h3>
+          <h2>Magick Testing Window and ETA</h2>
+          <p>Magick-system testing was scheduled over the following days with a projected deployment target of Tuesday 3/17 or Wednesday 3/18, adjusted as needed.</p>
+          <p>The update was noted as 20,000+ additions and emphasized iterative tuning through player testing, logs, and feedback.</p>
+        </article>
+
+        <article class="card">
+          <h3>March 4, 2026 at 17:53 - dayrinni</h3>
+          <h2>Theme Request Routing</h2>
+          <p>A dedicated theme channel was introduced (<code>dgr-theme-requests</code>) for ATS-vs-DGate theming differences.</p>
+          <p>Theme mismatches should be posted there rather than bug forums unless they are true mechanical defects.</p>
+        </article>
+
+        <article class="card">
+          <h3>March 4, 2026 at 08:58 - dayrinni</h3>
+          <h2>MA Validation and Shield Parry Exploit Fixes</h2>
+          <p>Today's and yesterday's update:</p>
+          <ul>
+            <li>MA no longer grants uses on missed attacks.</li>
+            <li>All MA abilities now require an open primary hand; shields remain compatible with MA use.</li>
+            <li>Some MA abilities (kick, knee strike) now require standing position.</li>
+            <li>Fixed a shield-parry exploit.</li>
+          </ul>
+          <p>Next major update noted at that time: initial magick system rollout in 1-2 weeks.</p>
+        </article>
+
+        <article class="card">
+          <h3>March 3, 2026 at 17:07 - dayrinni</h3>
+          <h2>MA Follow-Up Patch Planning</h2>
+          <p>A follow-up update was scheduled for the next morning to correct MA hand requirements and related issues.</p>
+          <p>Clarification: all MA moves require a free primary hand.</p>
+        </article>
+
+        <article class="card">
+          <h3>March 3, 2026 at 09:07 - dayrinni</h3>
+          <h2>Major Systems and Architecture Update</h2>
+          <ul>
+            <li>Networking updated for improved special-character handling; client UTF-8 input/output is now required.</li>
+            <li>NPC look output updated for grammar and readability improvements.</li>
+            <li>Shield Parry added, using target-based blocking and new service-architecture plumbing.</li>
+            <li>Large architecture shift: ability unlocks now gate on skill level (not player level).</li>
+            <li>Train/Learn command paths updated for skill-level gating changes.</li>
+            <li>Martial Arts added with initial ability availability through level 3.</li>
+            <li>Theming updates applied to death flow and other ATS-text replacements.</li>
+            <li>Inventory display themed and improved (including list element numbering updates).</li>
+            <li>Skills ready to train now display a <code>*</code> indicator.</li>
+            <li>First Aid moved off normal ATS healPlayer path (no ATS-style critical-heal number output).</li>
+            <li>Room visibility updates for darkness handling and enter/exit visibility behavior.</li>
+            <li>Quick Draw added for first-iteration testing.</li>
+            <li>Removed body-armor blocking messages in selected paths.</li>
+            <li><code>Analyze</code> renamed to <code>Diagnose</code> (theming pass ongoing).</li>
+            <li>Removed <code>affects</code> and <code>cooldown</code> commands.</li>
+            <li>Removed HINT and TUTORIAL systems.</li>
+            <li>Hide now fails if a light source is held or equipped in light slot.</li>
+            <li>Diagnose output now uses look-style condition display.</li>
+            <li>Additional Combat Service architecture refactor landed.</li>
+            <li>Fixed post-roll stat-finalization bug where a hidden +3 was incorrectly added to most characters.</li>
+          </ul>
+          <p><strong>Stat bug clarification:</strong> The +3 bonus was unintended ATS carryover. Migration removed the extra static increase and restored values to what players actually accepted on stat-roll screens. Character backups run nightly and on each copyover for safety.</p>
+          <p>This update was noted at roughly 25,000 additions. Bug reports requested in the bugs-and-defects forum; critical issues and exploits requested via direct message.</p>
+        </article>
+
+
+        <article class="card" id="month-2026-02">
+          <h2>February 2026</h2>
+          <p class="small">Roadmap definition, launch-window updates, and initial testing/beta communications.</p>
+        </article>
+
+        <article class="card">
+          <h3>February 18, 2026 at 16:57 - DGRWizzyDizzy - DG Dace</h3>
+          <h2>Dragon's Gate Reborn - Systems Roadmap</h2>
+          <p><strong>The Road Ahead</strong></p>
+          <p>We want to be transparent about where DGR is heading and how we're building it.</p>
+          <p>This roadmap outlines the phased rollout of systems, balance, and world expansion. Our goal is stability, legacy authenticity, and staged progression - not rushing to endgame.</p>
+
+          <h4>Phase 1 - Foundation and Early Game (Levels 1-5)</h4>
+          <p>This phase locks in the core experience.</p>
+          <p><strong>Focus:</strong></p>
+          <ul>
+            <li>Convert legacy mechanics into stable baseline formulas.</li>
+            <li>Normalize stat language and shared math terms.</li>
+            <li>Lock early-level onboarding (1-5).</li>
+            <li>Implement all Open and Class skills.</li>
+            <li>Full balance pass (damage, protection, PvE, PvP).</li>
+            <li>Replace ATS language with DGR theming.</li>
+            <li>Baseline and tune Training Grounds (TG).</li>
+            <li>Add Tower to TG validation.</li>
+          </ul>
+          <p><strong>Exit Goal:</strong> Levels 1-5 fully playable, skills implemented, balanced TG experience, DGR theming in place.</p>
+
+          <h4>Phase 2 - Bracket Expansion (Levels 6-10)</h4>
+          <p>We expand deliberately.</p>
+          <p><strong>Focus:</strong></p>
+          <ul>
+            <li>Extend progression in 5-level brackets.</li>
+            <li>Unified tuning pass (combat + skills + spells).</li>
+            <li>Backfill missing class spells (1-10).</li>
+            <li>Expand Spur to all 6 districts.</li>
+            <li>Bring shops online first.</li>
+            <li>Implement House of the Dead.</li>
+            <li>Implement Healer's Cottage.</li>
+            <li>Proper Rune system integration.</li>
+            <li>Dedicated balance passes for magic, psionics, and physical combat.</li>
+          </ul>
+          <p><strong>Exit Goal:</strong> Levels 1-10 complete, class spell baselines finalized, Spur core content live.</p>
+
+          <h4>Phase 3 - Mid and High-Level Expansion (11-41)</h4>
+          <p>Controlled rollout. No chaos unlocks.</p>
+          <p><strong>Focus:</strong></p>
+          <ul>
+            <li>Release 11-30 in 5-10 level chunks.</li>
+            <li>Balance after each release before opening the next.</li>
+            <li>Implement and tune 31-41.</li>
+            <li>Expand beyond Spur: Treheaven and Rathan.</li>
+          </ul>
+          <p><strong>Exit Goal:</strong> Full 11-41 bands implemented, controlled release gates, staged progression.</p>
+
+          <h4>Phase 4 - Integration and Playtest Readiness</h4>
+          <p><strong>Focus:</strong></p>
+          <ul>
+            <li>Cross-system validation.</li>
+            <li>Resolve legacy conflicts.</li>
+            <li>Documentation cleanup.</li>
+            <li>Focused playtests.</li>
+            <li>Fast rebalance loops.</li>
+            <li>Freeze candidate ruleset.</li>
+          </ul>
+          <p><strong>Exit Goal:</strong> Systems coherent, clean documentation, ready for broader player testing.</p>
+
+          <h4>Phase 5 (Optional) - Modernization and Wishlist</h4>
+          <p>Only after core parity is stable.</p>
+          <p><strong>Focus:</strong></p>
+          <ul>
+            <li>Evaluate high-value community ideas.</li>
+            <li>Modern QoL improvements (without breaking legacy feel).</li>
+            <li>Larger redesigns handled as separate tracks.</li>
+          </ul>
+          <p><strong>Exit Goal:</strong> Prioritized modernization backlog.</p>
+
+          <h4>Our Philosophy</h4>
+          <ul>
+            <li>We build in brackets.</li>
+            <li>We balance before expanding.</li>
+            <li>We protect legacy feel.</li>
+            <li>We release in controlled stages.</li>
+          </ul>
+          <p>This is not a sprint to level cap. It is a deliberate reconstruction of Dragon's Gate, done right.</p>
+          <figure>
+            <img src="/images/updates/roadmap-2026-02-18.png" alt="Dragon's Gate Reborn systems roadmap image from the February 18, 2026 update." loading="lazy" style="width: 100%; height: auto; border-radius: 8px;">
+            <figcaption class="small">Roadmap image shared with the February 18, 2026 roadmap post.</figcaption>
+          </figure>
+          <p class="small">Original post included an image attachment.</p>
+        </article>
+
+        <article class="card">
+          <h3>February 16, 2026 at 16:03 - dayrinni</h3>
+          <h2>Launch Weekend Results and Engine Direction</h2>
+          <p>Good day!</p>
+          <p>Here is another update from your DGR Team regarding how launch weekend went. Overall, it was highly successful. The game demonstrated very high stability with no direct crashes (face-rolling notwithstanding). There was also no data corruption or loss.</p>
+          <p>Aside from a few initial connection issues with certain clients, there have been no major performance problems. Command execution is averaging under 1 ms. Core systems such as inventory, communication, saving and loading, and interaction commands are functioning as expected.</p>
+          <p>This has been a highly successful launch. We should all feel proud of what has been accomplished. We are set up for a bright future.</p>
+          <p>Of course, nothing is perfect, and there have been reported issues. These generally fall into three categories:</p>
+          <ul>
+            <li>Mislabeled or misassigned data.</li>
+            <li>Overlap with ATS systems causing unexpected behavior.</li>
+            <li>New code paths exercised in DGR that were not previously encountered in ATS.</li>
+          </ul>
+          <p>All of these were anticipated. Categories 1 and 2 directly relate to the team's earlier comments about temporarily borrowing ATS systems while rebuilding DGR-specific functionality. In some cases, there is limited documentation available for DGR systems, so we are pulling from a variety of data sources and player interviews to reconstruct behavior as accurately as possible.</p>
+          <p>The DGR conversion has added roughly 75,000 to 100,000 lines of code to the engine so far. The engine has roughly 710,000 lines of code now. There will be more, and at our current pace we expect to approach one million lines of code this year.</p>
+          <p>The engine is actively being refactored into a service-based architecture. In practice, this means that where ATS and DGR diverge, a specific service is requested and executed. A good example is base attack and defense calculations. Another example is NPC and player presentation logic, which is also being separated into services.</p>
+          <figure>
+            <img src="/images/updates/service-flowchart-2026-02-16.png" alt="Service flow chart referenced in the February 16, 2026 engine architecture update." loading="lazy" style="width: 100%; height: auto; border-radius: 8px;">
+            <figcaption class="small">Service flow chart shared with the February 16, 2026 architecture update.</figcaption>
+          </figure>
+          <p>Shared account statistics:</p>
+          <ul>
+            <li>57 Accounts made.</li>
+            <li>238 characters rolled.</li>
+          </ul>
+          <p>Thank you for your time and feedback. Please keep both coming, and we will see you in game.</p>
+          <p>- DGR Team</p>
+          <p class="small">Original post included an image attachment.</p>
+        </article>
+
+        <article class="card">
+          <h3>February 15, 2026 at 23:51 - atsdaddy</h3>
+          <h2>Training Grounds Access Update</h2>
+          <p>UPDATE: The Busty Wench is now accessible in TG. I will be adding food and drinks tomorrow. For now, you can go in... well... some of you can.</p>
+        </article>
+
+        <article class="card">
+          <h3>February 15, 2026 at 15:09 - atsdaddy</h3>
+          <h2>Weapon Balance and Item Additions</h2>
+          <p>Apologies for my absence, myself and the whole family are sick, of course. I have a small update: The standard-issue training dagger in TG is now updated to damage 1d6 from 2d12, but its delay is now 2 instead of 4.</p>
+          <p>Wizzy has made some wonderful items for us to update. I am going to add them in tonight. He has created some standard issue short weapons and two-handers.</p>
+        </article>
+
+        <article class="card">
+          <h3>February 13, 2026 at 17:50 - atsdaddy</h3>
+          <h2>Known Socials Issue</h2>
+          <p>There are a few game-breaking socials. Please avoid using ACTbadger, yowl, meow, ACTstalker, or any of the fart commands.</p>
+        </article>
+
+        <article class="card">
+          <h3>February 13, 2026 at 14:38 - dayrinni</h3>
+          <h2>Initial Testing and Beta Open</h2>
+          <p>Good day!</p>
+          <p>Today, we are officially opening the initial testing and beta of Dragon's Gate Reborn. As mentioned previously, the game is not yet fully complete.</p>
+          <p>You can connect using the information below:</p>
+          <p><strong>URL:</strong> game.dragonsgatereborn.com<br><strong>IP:</strong> 107.161.22.78<br><strong>Port:</strong> 8555</p>
+          <p>There is still much to do. As a reminder, the engine has not yet been fully converted from ATS to DGR. If the game does not look or behave exactly as you remember, please do not be alarmed. We are actively working on the transition.</p>
+          <p>When you encounter an issue, please follow these steps:</p>
+          <ul>
+            <li>For code-related issues, contact dayrinni by posting a bug report in the bug report Discord forum. If you discover an exploit, please DM him immediately.</li>
+            <li>For area-related issues, contact atsdaddy (Actinate) or Dace. You may also post in the area-issues Discord forum.</li>
+          </ul>
+          <p>We are excited to begin this new chapter with all of you and look forward to building and improving it together.</p>
+          <p>Thank you!</p>
+          <p>DGR Team</p>
+          <p class="small">Original post included an image attachment.</p>
+        </article>
+
+        <article class="card">
+          <h3>February 12, 2026 at 12:55 - dayrinni</h3>
+          <h2>Initial Testing Scope</h2>
+          <p>Good day!</p>
+          <p>Soon, we will open the game for initial testing and feedback. This marks the beginning of a long journey, and there is still much to build. Over the past two weeks, the team has focused on laying the foundations that you will soon experience. We are not finished yet, and new content and features will continue to be added consistently. We estimate reaching near full completion within a 6 to 12 month timeframe.</p>
+          <p>As mentioned previously, the primary engineering effort has been converting the engine to be themed and structured for DGR while introducing its mechanics. Please keep this in mind while you play, as we are still in that transition period. There are currently a limited number of DGR-themed systems in place, and we are temporarily filling gaps with ATS systems as we continue the conversion process.</p>
+          <p>We have chosen to move forward with the original release timeline, even knowing there is more to do. This is partially to gather early feedback, but more importantly, to demonstrate to the community that this project exists and can be done. The team believes this is the right move.</p>
+          <p>What to expect in the initial testing phase:</p>
+          <ul>
+            <li>Access to the Training Grounds to explore and fight monsters. No Spur access yet.</li>
+            <li>Character creation, including stat rolling.</li>
+            <li>Race shells. Basics are implemented, but not all features are present. Racial magic resistances are not yet included. DR modifiers, starting health, and FTG are in place.</li>
+            <li>Class shells. Core structure is implemented, including OR and DR progression, but not all abilities are complete.</li>
+            <li>Basic weapon skills such as edged and blunt.</li>
+            <li>Basic combat using the kill command to attack with your weapon.</li>
+            <li>Rudimentary spell casting using invoke to cast a basic spell at your enemy. This is a placeholder front-loaded system and will be replaced with a back-loaded system soon. The channeling skill is implemented and can be trained.</li>
+            <li>Training skills up to level 3.</li>
+          </ul>
+          <p>You will see elements of ATS throughout the current build. If the game does not yet behave or appear exactly as you remember, please do not be concerned. We are fully aware of this and are actively aligning systems and presentation with DGR over time. Our priority was getting everyone back into the world.</p>
+          <p>It has been a long 20 years.</p>
+          <p>Thank you,</p>
+          <p>DGR Team</p>
+        </article>
+
+        <article class="card">
+          <h3>February 8, 2026 at 10:08 - DGR Team</h3>
+          <h2>Community Update</h2>
+          <p>We want to share an important update with everyone.</p>
+          <p>This project started in November with Jason. He brought Richard (Wizzy) in during December, and in January Day and Act joined the development team. Since then, we have all been actively working to move the game toward release.</p>
+          <p>On January 12th, Jason told us he was sick and would be offline for the day. Unfortunately, that is the last time we have heard from him. Since then, all three of us have attempted to reach him multiple times via Discord and Facebook with no response. As of February 8th, we have been unable to make contact. We truly hope he is okay, and our thoughts are with him. If and when he returns, he is absolutely welcome back into the team.</p>
+          <p>Development has continued, and we are currently still tracking close to our planned release window of February 13th, assuming no major blockers appear.</p>
+          <p>Jason currently owns the Discord server. After the 30-day inactivity mark, we will attempt to request ownership transfer. If that is not possible, we may create a new official Discord to ensure we can properly manage and support the community long term.</p>
+          <p>We appreciate everyone's patience and support, and we remain committed to finishing what was started and delivering the best possible game experience.</p>
+          <p>- The DGR Team</p>
+        </article>
+
+        <article class="card" id="month-2026-01">
+          <h2>January 2026</h2>
+          <p class="small">Early development process updates and pre-beta project communications.</p>
+        </article>
+
+        <article class="card">
+          <h3>January 7, 2026 at 15:13 - DGRWizzyDizzy - DG Dace</h3>
+          <h2>Development Process Update</h2>
+          <p>Hey everyone,</p>
+          <p>Just a quick update and a sincere thank you.</p>
+          <p>We've received an overwhelming number of offers to help with coding and development, and we truly appreciate the enthusiasm and support. Right now, though, having too many hands and competing ideas would slow progress. To move forward effectively, we need to keep development focused and streamlined.</p>
+          <p>Feedback is incredibly important to us. Our current goal is to get the game back to as close to the original experience as possible. Once we're there, we'll absolutely look at making thoughtful, small improvements where it makes sense.</p>
+          <p>At its heart, this game has always been about the people and the community. Our priority is to get it up and running cleanly and reliably as soon as we can, while recognizing that this still takes time. Thank you for your patience as we work through it.</p>
+          <p>We're aiming to release Beta later this month. Initially, this will focus mainly on the Training Academy while we continue refining skills, spells, combat, leveling, and core mechanics. In parallel, we'll be building out areas like Spur and, hopefully, Treehaven and Rathan, with hunting grounds that support progression to at least level 41, and potentially beyond.</p>
+          <p>To help ensure this is done right, we've brought in Dayrinni and ATSDaddy (Actinate), both expert software engineers who built A Tempest Season from the ground up. Their experience helps us avoid many of the growing pains that come with rebuilding a game like this.</p>
+          <p>They're also genuinely excited to be involved, as their love for MUDs originally grew from Dragons Gate itself.</p>
+          <p>Thanks again for all the support. We're excited to share what's coming next.</p>
+        </article>
+
+        <article class="card">
+          <h3>January 4, 2026 at 16:17 - DGRWizzyDizzy - DG Dace</h3>
+          <h2>Project Update and Thank You</h2>
+          <p>First off - thank you to everyone who has joined so early. Your excitement, ideas, and feedback are already helping shape the rebirth of Dragons Gate Reborn, and we truly appreciate it.</p>
+          <h4>Beta Direction</h4>
+          <p>We are currently aiming for a mid-January beta release, as we continue expanding and stabilizing core mechanics. This is a target, not a promise.</p>
+          <p>Thank you again for being part of this journey - the gate is opening, and the world is taking shape.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="/index.html">Home</a>
+        <a href="/manual.html">Manual</a>
+        <a href="/library.html">Library</a>
+        <a href="/community.html">Community</a>
+        <a href="/events.html">Events</a>
+        <a href="/support.html">Support</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/site-map.html">Site Map</a>
+      </div>
+      <p class="small">RoadMap and Updates archive for Dragon's Gate Reborn.</p>
+    </footer>
+  </div>
+  <script src="/script.js?v=20260104"></script>
+</body>
+</html>

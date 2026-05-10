@@ -1,0 +1,143 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Dragon's Gate Reborn | Psionics Skill</title>
+      <meta name="description" content="Psionics skill details and guidance.">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="/styles.css?v=20260104">
+    </head>
+    <body>
+      <div class="page">
+        <header class="hero hero--inner">
+          <div class="hero-inner">
+            <a class="brand brand-link" href="/index.html">
+              <div class="sigil"></div>
+              <div>
+                <p class="eyebrow">Skills</p>
+                <h1>Psionics</h1>
+                <p class="tagline">Skill guidance and usage notes.</p>
+              </div>
+            </a>
+        <nav class="site-nav">
+              <a href="/index.html">Home</a>
+              <a href="/manual.html">Manual</a>
+              <a href="/library.html">Library</a>
+              <a href="/community.html">Community</a>
+              <a href="/events.html">Events</a>
+              <a href="/support.html">Support</a>
+              <a href="/contact.html">Contact</a>
+              <a href="/site-map.html">Site Map</a>
+            </nav>
+          </div>
+        </header>
+        <main class="layout">
+    <aside class="sidebar left">
+      <details open>
+        <summary>Skills Index</summary>
+      <ul class="skills-mini">
+        <li><a href="/skills/skill-bargaining.html">Bargaining</a></li>
+        <li><a href="/skills/skill-berserk-attack.html">Berserk Attack</a></li>
+        <li><a href="/skills/skill-biting.html">Biting</a></li>
+        <li><a href="/skills/skill-blunt-weapons.html">Blunt Weapons</a></li>
+        <li><a href="/skills/skill-breath-weapon.html">Breath Weapon</a></li>
+        <li><a href="/skills/skill-channeling.html">Channeling</a></li>
+        <li><a href="/skills/skill-clawing.html">Clawing</a></li>
+        <li><a href="/skills/skill-detect-traps.html">Detect Traps</a></li>
+        <li><a href="/skills/skill-disarming.html">Disarming</a></li>
+        <li><a href="/skills/skill-disguise.html">Disguise</a></li>
+        <li><a href="/skills/skill-dodging.html">Dodging</a></li>
+        <li><a href="/skills/skill-edged-weapons.html">Edged Weapons</a></li>
+        <li><a href="/skills/skill-first-aid.html">First-Aid</a></li>
+        <li><a href="/skills/skill-focus-force.html">Focus Force</a></li>
+        <li><a href="/skills/skill-hiding.html">Hiding</a></li>
+        <li><a href="/skills/skill-id-armor.html">ID Armor</a></li>
+        <li><a href="/skills/skill-id-gems.html">ID Gems</a></li>
+        <li><a href="/skills/skill-id-magic.html">ID Magic</a></li>
+        <li><a href="/skills/skill-id-weapon.html">ID Weapon</a></li>
+        <li><a href="/skills/skill-martial-arts.html">Martial Arts</a></li>
+        <li><a href="/skills/skill-missile-weapons.html">Missile Weapons</a></li>
+        <li><a href="/skills/skill-parry-blows.html">Parry Blows</a></li>
+        <li><a href="/skills/skill-pick-locks.html">Pick Locks</a></li>
+        <li><a href="/skills/skill-picking-pockets.html">Picking Pockets</a></li>
+        <li><a href="/skills/skill-play-instruments.html">Play Instruments</a></li>
+        <li><a href="/skills/skill-pole-weapons.html">Pole Weapons</a></li>
+        <li><a href="/skills/skill-psionics.html">Psionics</a></li>
+        <li><a href="/skills/skill-quickdraw.html">Quickdraw</a></li>
+        <li><a href="/skills/skill-remove-traps.html">Remove Traps</a></li>
+        <li><a href="/skills/skill-riding.html">Riding</a></li>
+        <li><a href="/skills/skill-shield-parry.html">Shield Parry</a></li>
+        <li><a href="/skills/skill-shoplifting.html">Shoplifting</a></li>
+        <li><a href="/skills/skill-singing.html">Singing</a></li>
+        <li><a href="/skills/skill-skinning.html">Skinning</a></li>
+        <li><a href="/skills/skill-stealth.html">Stealth</a></li>
+        <li><a href="/skills/skill-swimming.html">Swimming</a></li>
+        <li><a href="/skills/skill-throw-weapons.html">Throw Weapons</a></li>
+        <li><a href="/skills/skill-tracking.html">Tracking</a></li>
+        <li><a href="/skills/skill-turn-undead.html">Turn Undead</a></li>
+        <li><a href="/skills/skill-weapon-skills.html">Weapon Skills</a></li>
+        <li><a href="/skills/skill-webbing.html">Webbing</a></li>
+      </ul>
+      </details>
+    </aside>
+          <section class="content">
+            <article class="card">
+              <h2>Design Overview</h2>
+              <p class="skill-field"><span class="skill-label">Entry Last Update:</span> <br>
+              March 28, 2026</p>
+                            <p class="skill-field"><span class="skill-label">Source Doc:</span> <br>
+              <code>ready_to_implement/classes/psion/PsionicsDesign.md</code></p>
+              <p class="skill-field"><span class="skill-label">Tier:</span> <br>
+              ready</p>
+              <p class="skill-field"><span class="skill-label">Last Synced:</span> <br>
+              March 28, 2026</p>
+<p class="skill-field"><span class="skill-label">Summary:</span> Psionics drives PSI pool growth, command unlock pacing, cast cost, resist resolution, and depletion behavior for psionic abilities.</p>
+                            <p class="skill-field"><span class="skill-label">Notes:</span> <br>
+                Cast flow includes lockout checks (for centering), PSI spend, caster fail roll, then target resist roll before effect application.<br><br>
+                Resist model uses race baseline plus Will, Psion class bonus, active psi-resist effects, and white-exception cap handling.<br><br>
+                Psycian depletion can trigger pass-out and tick-based recovery; non-Psycian casts fail cleanly when PSI is insufficient.</p>
+
+            </article>
+            <article class="card">
+              <h2>Player Overview</h2>
+              <p class="skill-field"><span class="skill-label skill-label--desc">Description:</span> The ability to use your mind for a variety of tasks in and out of combat.</p>
+              <p class="skill-field"><span class="skill-label">Who Can Learn It:</span> Psions (class), Psycians (race) or, Psycian Psion for double the psi pool and recharge rate and learning abilities sooner.</p>
+              <p class="skill-field"><span class="skill-label">What It is Supposed to Do:</span> Allow combat and utility actions that are different from physical and Magick. Range increases psi cost.</p>
+              <p class="skill-field"><span class="skill-label">What it Does:</span> There are several abilities, more as you level.</p>
+              <p class="skill-field"><span class="skill-label">Dart:</span> Psi dart at &lt;target&gt;. This is your early attack. Converts your psi points into damage. Does not cause wounds.</p>
+              <p class="skill-field"><span class="skill-label">Slow:</span> Psi slow at &lt;target&gt;. Causes a great delay with any action that normally causes a delay (probably 3 seconds). Has an ongoing cost until it ends. Great for hindering your greatest threat.</p>
+              <p class="skill-field"><span class="skill-label">ESP:</span> Psi ESP at &lt;target&gt;. Grants ESP on touch. ESP allows the player to contact others within (translocation) range: Contact &lt;target&gt; &lt;message&gt;.</p>
+              <p class="skill-field"><span class="skill-label">Centering:</span> Psi CNTR. Causes your psi to fill at a faster rate; cannot activate new psi powers while centering.</p>
+              <p class="skill-field"><span class="skill-label">Psi bolt:</span> Psi bolt at &lt;target&gt; replaces psi dart. More damage, more psi cost.</p>
+              <p class="skill-field"><span class="skill-label">Psi Dpsi:</span> Detect psionics.</p>
+              <p class="skill-field"><span class="skill-label">Psi Dinv:</span> Detect invisible/hidden.</p>
+              <p class="skill-field"><span class="skill-label">Psi Block:</span> Psi block makes you immune to Psi Dinv and Psi Dpsi for a brief time.</p>
+              <p class="skill-field"><span class="skill-label">Psi Probe:</span> Psi probe at &lt;target&gt; reveals the target's true nature. Considered rude.</p>
+              <p class="skill-field"><span class="skill-label">Higher-level abilities (Psions):</span> Psi Conf at &lt;target&gt; (confusion; NPCs freeze, PCs act erratically). Psi disruption (actual command?) touch-only damage ability. Psi heals/vigor increases HP/FP (does not affect injuries). Psi Fly (you fly).</p>
+              <p class="skill-field"><span class="skill-label">Unconfirmed Rumors (May or May Not Be True):</span> Psions get abilities that Psycian non-Psions do not. Psycian Psions get many abilities 5 levels before non-Psycian Psions and have larger psi pools that naturally refill faster.</p>
+              <p class="skill-field"><span class="skill-label">Notes:</span> <br>
+                Other low level abilities exist. Other high level abilities exist.<br><br>
+                (May or May Not Be True): Running out of psi points may lead to unconsciousness or even death.<br><br>
+                Thanks to Fiora for additions/corrections below.</p>
+            </article>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="footer-links">
+            <a href="/index.html">Home</a>
+            <a href="/manual.html">Manual</a>
+            <a href="/library.html">Library</a>
+            <a href="/community.html">Community</a>
+            <a href="/events.html">Events</a>
+            <a href="/support.html">Support</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+          <p class="small">Manual resources are part of the Dragon's Gate Reborn guidebook.</p>
+        </footer>
+      </div>
+      <script src="/script.js?v=20260104"></script>
+    </body>
+    </html>

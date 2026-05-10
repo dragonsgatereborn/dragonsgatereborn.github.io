@@ -1,0 +1,151 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Dragon's Gate Reborn | Magick</title>
+      <meta name="description" content="Rune magick, spellwork, and arcane systems.">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="/styles.css?v=20260104">
+    </head>
+    <body>
+      <div class="page">
+        <header class="hero hero--inner">
+          <div class="hero-inner">
+            <a class="brand brand-link" href="/index.html">
+              <div class="sigil"></div>
+              <div>
+                <p class="eyebrow">Manual Chapter</p>
+                <h1>Magick</h1>
+                <p class="tagline">A guide to spells, runes, and magical practice.</p>
+              </div>
+            </a>
+        <nav class="site-nav">
+              <a href="/index.html">Home</a>
+              <a href="/manual.html">Manual</a>
+              <a href="/library.html">Library</a>
+              <a href="/community.html">Community</a>
+              <a href="/events.html">Events</a>
+              <a href="/support.html">Support</a>
+              <a href="/contact.html">Contact</a>
+              <a href="/site-map.html">Site Map</a>
+            </nav>
+          </div>
+        </header>
+        <main class="layout single">
+          <section class="content">
+            <article class="card">
+              <p class="caps">Manual Index</p>
+              <div class="section-grid">
+                <div class="section-card">
+                  <h3>Core</h3>
+                  <ul>
+                    <li><a href="/manual/manual-staff.html">Elders and Guides</a></li>
+                    <li><a href="/manual/manual-advancement.html">Advancement</a></li>
+                    <li><a href="/manual/manual-roleplay.html">Concept of Role-Play</a></li>
+                    <li><a href="/manual/manual-hints.html">Gaming Hints</a></li>
+                    <li><a href="/manual/manual-commonsense.html">Commonsense Guide</a></li>
+                  </ul>
+                </div>
+                <div class="section-card">
+                  <h3>Character</h3>
+                  <ul>
+                    <li><a href="/manual/manual-races.html">Races</a></li>
+                    <li><a href="/manual/manual-characteristics.html">Stats</a></li>
+                    <li><a href="/manual/manual-classes.html">Classes</a></li>
+                    <li><a href="/manual/manual-religions.html">Religion</a></li>
+                    <li><a href="/manual/manual-magick.html">Magick</a></li>
+                    <li><a href="/manual/manual-skills.html">Skills</a></li>
+                  </ul>
+                </div>
+                <div class="section-card">
+                  <h3>World &amp; Systems</h3>
+                  <ul>
+                    <li><a href="/manual/manual-geography.html">Geography</a></li>
+                    <li><a href="/manual/manual-timedeath.html">Time and Death</a></li>
+                    <li><a href="/manual/manual-business.html">Business</a></li>
+                    <li><a href="/manual/manual-around.html">Getting Around</a></li>
+                    <li><a href="/manual/manual-credits.html">Credits</a></li>
+                    <li><a href="/manual/manual-appendix.html">Appendix</a></li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Magick</h3>
+              <p>Magick in Dragon's Gate Reborn is rune-based. Casters channel runes into specific spell effects, with availability controlled by class, race, and progression.</p>
+              <p>Runes are not universal. No class can access every rune or every shape, and many effects are intentionally role-specific. Harmful spells are literal: if you cast a harmful spell on yourself, it will affect you.</p>
+
+              <h3>Current System Notes</h3>
+              <ul>
+                <li>The live magick flow uses rune invocation and spellcasting skill checks.</li>
+                <li>Legacy weave/memorize flows are not part of the current implementation.</li>
+                <li>Most balancing is actively iterated from design docs and player logs.</li>
+              </ul>
+
+              <h3>Casting Basics</h3>
+              <ul>
+                <li><strong>Prepare your build:</strong> Learn the runes and spell paths available to your class.</li>
+                <li><strong>Cast with invoke:</strong> Use <code>INVOKE &lt;spell&gt; AT &lt;target&gt;</code>. If no size adjective is provided, standard/average behavior is used.</li>
+                <li><strong>Manage duration and upkeep:</strong> Some spells are instant, others pulse over time, and some consume ongoing fatigue while active.</li>
+              </ul>
+              <p>A target can only hold one active effect of the same type at a time. Effects end by duration, dispel/removal, or resource failure.</p>
+
+              <h3>Spell Shapes and Intent</h3>
+              <ul>
+                <li><strong>Touch:</strong> close-range, same UD lane.</li>
+                <li><strong>Single Range:</strong> targeted ranged cast (ally or enemy depending on spell intent).</li>
+                <li><strong>Group:</strong> party-oriented support effects.</li>
+                <li><strong>AOE:</strong> room/area pressure and control.</li>
+                <li><strong>Aura / Shield / Wall:</strong> sustained buff, resistance, or mitigation lanes.</li>
+              </ul>
+
+              <h3>Class Magick Roles</h3>
+              <ul>
+                <li><strong>Non-Elemental Mage:</strong> utility/control and long-duration pulsing coverage.</li>
+                <li><strong>Air Mage:</strong> balanced offense/defense with mobility and flight focus.</li>
+                <li><strong>Earth Mage:</strong> strongest defensive posture and shield/ward identity.</li>
+                <li><strong>Fire Mage:</strong> highest offensive pressure and damage-focused casting.</li>
+                <li><strong>Water Mage:</strong> utility-heavy toolkit with uncommon control/vision effects.</li>
+                <li><strong>Heart Cleric:</strong> strongest healing and protective support profile.</li>
+                <li><strong>Sword Cleric:</strong> battle support via weapon, durability, and combat buffs.</li>
+                <li><strong>Hand Cleric:</strong> spiritual/chi support with direct combat utility for self and allies.</li>
+                <li><strong>Dragon:</strong> staged rune growth with power expanding by dragon stage.</li>
+                <li><strong>Forester:</strong> nature, animal, and ranged-support spell identity.</li>
+                <li><strong>Thief / Fighter / Barbarian / Psion:</strong> limited spell lists with focused utility lanes.</li>
+                <li><strong>Bard:</strong> song-based magick with support, control, and room-level influence.</li>
+              </ul>
+
+              <h3>Class Pages</h3>
+              <ul>
+                <li><a href="/classes/class-runemage.html">Rune Mage Paths</a></li>
+                <li><a href="/classes/class-cleric.html">Cleric Orders</a></li>
+                <li><a href="/classes/class-bard.html">Bard</a></li>
+                <li><a href="/classes/class-forester.html">Forester</a></li>
+                <li><a href="/classes/class-fighter.html">Fighter</a></li>
+                <li><a href="/classes/class-barbarian.html">Barbarian</a></li>
+                <li><a href="/classes/class-thief.html">Thief</a></li>
+                <li><a href="/classes/class-psion.html">Psion</a></li>
+              </ul>
+            </article>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="footer-links">
+            <a href="/index.html">Home</a>
+            <a href="/manual.html">Manual</a>
+            <a href="/library.html">Library</a>
+            <a href="/community.html">Community</a>
+            <a href="/events.html">Events</a>
+            <a href="/support.html">Support</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+          <p class="small">Manual resources are part of the Dragon's Gate Reborn guidebook.</p>
+        </footer>
+      </div>
+      <script src="/script.js?v=20260104"></script>
+    </body>
+    </html>
