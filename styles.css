@@ -741,6 +741,92 @@ details a:hover {
   background: var(--ember);
 }
 
+.roadmap-overview,
+.roadmap-statement {
+  overflow: hidden;
+}
+
+.roadmap-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.roadmap-heading h2 {
+  margin-top: 0;
+}
+
+.roadmap-heading .eyebrow {
+  color: var(--ember);
+  margin-bottom: 6px;
+}
+
+.roadmap-current {
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border: 1px solid rgba(216, 179, 90, 0.65);
+  border-radius: 999px;
+  color: #fff3c4;
+  background: var(--ember);
+  font-family: "IBM Plex Sans", "Helvetica", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.roadmap-figure {
+  margin: 24px 0 18px;
+}
+
+.roadmap-figure a,
+.roadmap-figure img {
+  display: block;
+}
+
+.roadmap-figure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(216, 179, 90, 0.4);
+  border-radius: 14px;
+  box-shadow: 0 18px 38px rgba(24, 17, 12, 0.28);
+}
+
+.roadmap-figure figcaption {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.roadmap-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.roadmap-statement h3 {
+  margin-top: 30px;
+  color: var(--gold);
+}
+
+.roadmap-method {
+  display: grid;
+  gap: 8px;
+  padding-left: 24px;
+}
+
+.roadmap-note {
+  margin: 28px 0;
+  padding: 16px 18px;
+  border-left: 4px solid var(--gold);
+  border-radius: 0 12px 12px 0;
+  background: rgba(216, 179, 90, 0.1);
+}
+
+.roadmap-note p {
+  margin: 0;
+}
+
 .updates {
   list-style: none;
   padding: 0;
@@ -866,6 +952,15 @@ details a:hover {
 
   .month-pager {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .roadmap-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .roadmap-actions {
+    flex-direction: column;
   }
 
   .pager-archive {
