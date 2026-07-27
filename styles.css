@@ -501,6 +501,246 @@ details a:hover {
   color: var(--ember);
 }
 
+.quarter-guide p:last-child {
+  margin-bottom: 0;
+}
+
+.quarter-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.quarter-group {
+  padding: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.quarter-group > summary {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 22px;
+  color: var(--parchment);
+  background: linear-gradient(140deg, rgba(36, 24, 16, 0.98), rgba(92, 39, 28, 0.95));
+  list-style: none;
+}
+
+.quarter-group > summary::-webkit-details-marker {
+  display: none;
+}
+
+.quarter-group > summary::after {
+  content: "+";
+  margin-left: auto;
+  color: var(--gold);
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.quarter-group[open] > summary::after {
+  content: "−";
+}
+
+.quarter-group > summary span {
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+}
+
+.quarter-group > summary small {
+  color: rgba(247, 237, 216, 0.72);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+.quarter-content {
+  display: grid;
+  gap: 18px;
+  padding: 18px;
+  background: rgba(226, 211, 178, 0.24);
+}
+
+.quarter-content .card {
+  box-shadow: 0 9px 20px rgba(31, 26, 20, 0.11);
+}
+
+.month-heading {
+  border-left: 4px solid var(--gold);
+}
+
+.month-heading h2,
+.update-entry h2 {
+  margin-top: 0;
+}
+
+.update-entry h3 {
+  color: var(--ember);
+  font-family: "IBM Plex Sans", "Helvetica", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.035em;
+}
+
+.updates-toolbar {
+  display: grid;
+  gap: 16px;
+}
+
+.updates-toolbar h2 {
+  margin: 0;
+}
+
+.updates-toolbar .eyebrow {
+  color: var(--ember);
+  margin-bottom: 6px;
+}
+
+.updates-latest-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  color: #f7e9bd;
+  background: var(--ember);
+  font-family: "IBM Plex Sans", "Helvetica", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.updates-quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
+.updates-month-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(90, 68, 40, 0.16);
+  font-family: "IBM Plex Sans", "Helvetica", sans-serif;
+}
+
+.updates-year {
+  color: var(--ember);
+  font-weight: 700;
+}
+
+.updates-quarter-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.updates-quarter-links strong {
+  margin-right: 2px;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.updates-quarter-links a {
+  min-width: 38px;
+  padding: 5px 7px;
+  border: 1px solid rgba(90, 68, 40, 0.18);
+  border-radius: 8px;
+  color: var(--ink);
+  font-size: 0.82rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.updates-quarter-links a:hover,
+.updates-quarter-links a.is-current {
+  color: #fff8e8;
+  background: var(--ember);
+  border-color: var(--ember);
+}
+
+.month-pager {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: stretch;
+  gap: 12px;
+}
+
+.pager-link,
+.pager-archive {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 66px;
+  padding: 12px 16px;
+  border: 1px solid rgba(90, 68, 40, 0.16);
+  border-radius: 12px;
+  color: var(--ink);
+  background: var(--parchment);
+  box-shadow: 0 8px 18px rgba(31, 26, 20, 0.1);
+  font-family: "IBM Plex Sans", "Helvetica", sans-serif;
+  text-decoration: none;
+}
+
+.pager-link span {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.pager-link--newer {
+  text-align: right;
+}
+
+.pager-archive {
+  min-height: auto;
+  align-self: center;
+  color: var(--ember);
+  font-weight: 600;
+  text-align: center;
+}
+
+.pager-link:hover,
+.pager-archive:hover {
+  border-color: rgba(146, 59, 38, 0.55);
+}
+
+.pager-link.is-disabled {
+  opacity: 0.55;
+}
+
+.archive-quarter h2 {
+  margin-bottom: 2px;
+}
+
+.archive-month-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.archive-month-list a {
+  display: block;
+  padding: 12px 14px;
+  border: 1px solid rgba(90, 68, 40, 0.16);
+  border-radius: 10px;
+  color: var(--ink);
+  font-family: "IBM Plex Sans", "Helvetica", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.archive-month-list a:hover {
+  color: #fff8e8;
+  background: var(--ember);
+}
+
 .updates {
   list-style: none;
   padding: 0;
@@ -606,6 +846,31 @@ details a:hover {
 
   .card {
     padding: 18px;
+  }
+
+  .quarter-group > summary {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+    padding: 18px;
+  }
+
+  .quarter-group > summary::after {
+    position: absolute;
+    right: 18px;
+  }
+
+  .quarter-content {
+    padding: 12px;
+  }
+
+  .month-pager {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pager-archive {
+    grid-column: 1 / -1;
+    grid-row: 2;
   }
 
   .section-grid {
