@@ -311,6 +311,12 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+.dragon-stage-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .section-card {
   background: var(--parchment-dark);
   padding: 16px;
@@ -408,6 +414,14 @@ h1 {
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 16px;
+}
+
+.race-review-note {
+  margin-top: 22px;
+}
+
+.race-review-note p {
+  margin: 0;
 }
 
 .pill-list {
@@ -969,6 +983,10 @@ details a:hover {
   }
 
   .section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dragon-stage-grid {
     grid-template-columns: 1fr;
   }
 
