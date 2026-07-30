@@ -317,6 +317,16 @@ h1 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.dragon-stage-art {
+  width: min(420px, 100%);
+  margin: 22px auto 28px;
+}
+
+.dragon-stage-art figcaption {
+  margin-top: 10px;
+  text-align: center;
+}
+
 .section-card {
   background: var(--parchment-dark);
   padding: 16px;
