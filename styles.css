@@ -317,6 +317,19 @@ h1 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.dragon-stage-grid .pill-list {
+  display: block;
+  margin-top: 8px;
+}
+
+.dragon-stage-grid .pill-list li {
+  margin: 3px 0;
+  padding: 3px 2px 3px 18px;
+  border-radius: 0;
+  background: transparent;
+  line-height: 1.35;
+}
+
 .dragon-stage-art {
   width: min(420px, 100%);
   margin: 22px auto 28px;
