@@ -46,10 +46,8 @@ if (
   document.body.appendChild(analytics);
 }
 
-// Public, site-wide counters. Each page is counted once per browser-tab session.
-const counterEndpoint = "https://dgr-page-counter.wizzydizzy.workers.dev/";
-
-window.addEventListener("DOMContentLoaded", async () => {
+// Public, privacy-friendly counters rendered as lightweight badges.
+window.addEventListener("DOMContentLoaded", () => {
   if (!analyticsHosts.includes(window.location.hostname)) {
     return;
   }
@@ -62,45 +60,26 @@ window.addEventListener("DOMContentLoaded", async () => {
   const counter = document.createElement("p");
   counter.className = "view-counter small";
   counter.dataset.viewCounter = "";
-  counter.setAttribute("aria-live", "polite");
-  counter.hidden = true;
-  footer.appendChild(counter);
+  counter.setAttribute("aria-label", "Website view counters");
 
   const pagePath = window.location.pathname === "/index.html"
     ? "/"
     : window.location.pathname || "/";
-  const storageKey = `dgr-view-counted:${pagePath}`;
-  let alreadyCounted = false;
+  const pageSlug = (pagePath === "/" ? "home" : pagePath)
+    .replace(/^\/+|\/+$/g, "")
+    .replace(/[^a-zA-Z0-9._-]+/g, "-");
+  const badgeOptions = "style=flat-square&color=b88a44&labelColor=2b2118";
 
-  try {
-    alreadyCounted = window.sessionStorage.getItem(storageKey) === "1";
-  } catch {
-    // Continue counting if browser storage is unavailable.
-  }
+  const pageBadge = document.createElement("img");
+  pageBadge.src = `https://hits.sh/dragonsgatereborn.com/pages/${pageSlug}.svg?label=Page%20views&${badgeOptions}`;
+  pageBadge.alt = "Page views";
+  pageBadge.decoding = "async";
 
-  try {
-    const response = await fetch(
-      `${counterEndpoint}?path=${encodeURIComponent(pagePath)}`,
-      { method: alreadyCounted ? "GET" : "POST" }
-    );
-    if (!response.ok) {
-      throw new Error(`Counter returned ${response.status}`);
-    }
+  const totalBadge = document.createElement("img");
+  totalBadge.src = `https://hits.sh/dragonsgatereborn.com/all-pages.svg?label=Total%20website%20views&${badgeOptions}`;
+  totalBadge.alt = "Total website views";
+  totalBadge.decoding = "async";
 
-    const counts = await response.json();
-    const format = new Intl.NumberFormat();
-    counter.textContent = `Page views: ${format.format(counts.pageViews)} · Total website views: ${format.format(counts.siteViews)}`;
-    counter.hidden = false;
-
-    if (!alreadyCounted) {
-      try {
-        window.sessionStorage.setItem(storageKey, "1");
-      } catch {
-        // The counter still works when browser storage is unavailable.
-      }
-    }
-  } catch (error) {
-    console.warn("Public view counter is temporarily unavailable.", error);
-    counter.remove();
-  }
+  counter.append(pageBadge, totalBadge);
+  footer.appendChild(counter);
 });
