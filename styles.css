@@ -909,6 +909,12 @@ details a:hover {
   text-decoration: none;
 }
 
+.view-counter {
+  margin: 16px 0 0;
+  color: #d9c8a8;
+  font-variant-numeric: tabular-nums;
+}
+
 .scroll {
   background: linear-gradient(160deg, #401515, #5d1e1e);
   color: #f7e6c3;
