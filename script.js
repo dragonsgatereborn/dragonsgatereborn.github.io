@@ -30,3 +30,18 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Privacy-first, site-wide page-view tracking through Cloudflare Web Analytics.
+const analyticsHosts = ["dragonsgatereborn.com", "www.dragonsgatereborn.com"];
+if (
+  analyticsHosts.includes(window.location.hostname) &&
+  !document.querySelector("script[data-cf-beacon]")
+) {
+  const analytics = document.createElement("script");
+  analytics.type = "module";
+  analytics.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  analytics.dataset.cfBeacon = JSON.stringify({
+    token: "ae2c2d51d159493fbdc1b9828076272c",
+  });
+  document.body.appendChild(analytics);
+}
