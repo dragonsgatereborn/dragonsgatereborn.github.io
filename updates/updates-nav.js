@@ -34,6 +34,11 @@
     "key": "2026-07",
     "name": "July",
     "quarter": "Q3"
+  },
+  {
+    "key": "2026-08",
+    "name": "August",
+    "quarter": "Q3"
   }
 ];
 
