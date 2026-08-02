@@ -440,6 +440,7 @@ h1 {
 }
 
 .race-review-note {
+  clear: both;
   margin-top: 22px;
 }
 
