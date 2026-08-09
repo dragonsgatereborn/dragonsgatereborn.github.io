@@ -41,12 +41,12 @@ function reviewNotice(entry) {
   return `<p><strong>${strong}</strong></p><p class="small">Review flags: ${escapeHtml(labels)}</p>`;
 }
 
-function baseHead(title, description) {
+function baseHead(title, description, noindex = false) {
   return `<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dragon's Gate Reborn | ${escapeHtml(title)}</title>
   <meta name="description" content="${escapeHtml(description)}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+${noindex ? '  <meta name="robots" content="noindex,nofollow,noarchive">\n' : ""}  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css?v=20260809d">`;
@@ -75,6 +75,8 @@ function footer() {
 }
 
 const entries = helpData.entries.map((entry) => ({ ...entry, slug: slugify(entry.title), status: status(entry) }));
+const directoryEntries = entries.filter((entry) => entry.flags.length === 0);
+const withheldEntries = entries.filter((entry) => entry.flags.length > 0);
 const duplicateSlugs = entries.filter((entry, index) => entries.findIndex((candidate) => candidate.slug === entry.slug) !== index);
 if (duplicateSlugs.length) throw new Error(`Duplicate help page slugs: ${duplicateSlugs.map((entry) => entry.title).join(", ")}`);
 
@@ -82,13 +84,14 @@ await fs.mkdir(outputRoot, { recursive: true });
 
 for (let index = 0; index < entries.length; index += 1) {
   const entry = entries[index];
-  const previous = entries[index - 1];
-  const next = entries[index + 1];
+  const directoryIndex = directoryEntries.findIndex((candidate) => candidate.slug === entry.slug);
+  const previous = directoryIndex >= 0 ? directoryEntries[directoryIndex - 1] : null;
+  const next = directoryIndex >= 0 ? directoryEntries[directoryIndex + 1] : null;
   const displayBody = entry.body.replace(/[ \t]+$/gm, "");
   const page = `<!doctype html>
 <html lang="en">
 <head>
-  ${baseHead(`${entry.title} Help`, `${entry.title} in-game help for Dragon's Gate Reborn.`)}
+  ${baseHead(`${entry.title} Help`, `${entry.title} in-game help for Dragon's Gate Reborn.`, entry.flags.length > 0)}
 </head>
 <body>
   <div class="page">
@@ -121,13 +124,13 @@ for (let index = 0; index < entries.length; index += 1) {
   await fs.writeFile(path.join(outputRoot, `${entry.slug}.html`), `${page}\n`, "utf8");
 }
 
-const typeCounts = Object.entries(entries.reduce((counts, entry) => {
+const typeCounts = Object.entries(directoryEntries.reduce((counts, entry) => {
   counts[entry.type] = (counts[entry.type] || 0) + 1;
   return counts;
 }, {})).sort(([a], [b]) => a.localeCompare(b));
-const letters = [...new Set(entries.map((entry) => entry.title[0].toUpperCase()))];
+const letters = [...new Set(directoryEntries.map((entry) => entry.title[0].toUpperCase()))];
 const groups = letters.map((letter) => {
-  const cards = entries.filter((entry) => entry.title.startsWith(letter)).map((entry) => `
+  const cards = directoryEntries.filter((entry) => entry.title.startsWith(letter)).map((entry) => `
             <a class="section-card help-index-entry" href="/help/${entry.slug}.html" data-help-index-entry data-search="${escapeHtml(`${entry.title} ${entry.type} ${entry.keywords}`.toLowerCase())}" data-status="${entry.status}">
               <span class="status-row">${statusBadge(entry)}<span class="small">${escapeHtml(entry.type)}</span></span>
               <h3>${escapeHtml(entry.title)}</h3>
@@ -151,14 +154,14 @@ const indexPage = `<!doctype html>
     <main class="layout single"><section class="content">
       <article class="card feature">
         <p class="caps">Live capture · August 9, 2026</p>
-        <h2>${entries.length} Help Files</h2>
-        <p>Choose any title to open its complete help file. Entries containing inherited ATS, Tempest Season, legacy class, or unfinished formatter references are marked so they are not mistaken for confirmed current guidance.</p>
-        <div class="status-row"><span class="status-badge status-live">Captured live</span><span class="status-badge status-testing">Technical reference</span><span class="status-badge status-legacy">Review required</span></div>
+        <h2>${directoryEntries.length} Help Files Currently Listed</h2>
+        <p>Choose any title to open its complete help file. ${withheldEntries.length} entries containing ATS technical references or other material requiring confirmation are temporarily withheld from this directory and the website search.</p>
+        <div class="status-row"><span class="status-badge status-live">Captured live</span></div>
       </article>
       <article class="card help-directory-controls">
         <label for="help-directory-search"><strong>Search help files</strong></label>
         <input id="help-directory-search" type="search" placeholder="Try inventory, magick, race, or train…" autocomplete="off">
-        <p class="small"><span id="help-directory-count">${entries.length}</span> help files shown.</p>
+        <p class="small"><span id="help-directory-count">${directoryEntries.length}</span> help files shown.</p>
         <div class="inline-links help-letter-links">${letters.map((letter) => `<a class="btn ghost" href="#letter-${letter.toLowerCase()}">${letter}</a>`).join("")}</div>
         <p class="small">${typeCounts.map(([type, count]) => `${escapeHtml(type)}: ${count}`).join(" · ")}</p>
       </article>
@@ -172,4 +175,4 @@ const indexPage = `<!doctype html>
 </html>`;
 
 await fs.writeFile(path.join(outputRoot, "index.html"), `${indexPage}\n`, "utf8");
-console.log(`Built public help directory with ${entries.length} individual pages.`);
+console.log(`Built ${entries.length} individual pages; listed ${directoryEntries.length}; withheld ${withheldEntries.length}.`);
