@@ -29,6 +29,18 @@ function stripTerminalFormatting(value) {
   return value.replace(/\x1b\[[0-?]*[ -/]*[@-~]/g, "");
 }
 
+function getAdventurerNames(playerList) {
+  const sectionMatch = playerList.match(/Current Adventurers\s*([\s\S]*?)\s*You notice/i);
+  if (!sectionMatch) return [];
+
+  return sectionMatch[1]
+    .split("\n")
+    .flatMap((line) => line.trim().split(/\s{2,}/))
+    .map((name) => name.trim().replace(/\s+/g, " "))
+    .filter((name) => name.length > 0 && name.length <= 80)
+    .filter((name) => /^[\p{L}][\p{L}\p{M}' -]*$/u.test(name));
+}
+
 async function readUntil(reader, marker) {
   const decoder = new TextDecoder();
   let output = "";
@@ -73,9 +85,13 @@ async function getLiveWorldStatus() {
       throw new Error("Player count was not present in the game menu response");
     }
 
+    const playerCount = Number(countMatch[1]);
+    const parsedNames = getAdventurerNames(playerList);
+
     return {
       online: true,
-      playerCount: Number(countMatch[1]),
+      playerCount,
+      playerNames: parsedNames.length === playerCount ? parsedNames : [],
       updatedAt: new Date().toISOString(),
     };
   } finally {
