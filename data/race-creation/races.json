@@ -1,0 +1,2710 @@
+{
+  "capturedAt": "2026-08-09T15:30:55.638Z",
+  "verifiedAgainst": "game.dragonsgatereborn.com:8555",
+  "source": "Live character creation flow; drafts were not finalized.",
+  "races": [
+    {
+      "letter": "a",
+      "race": "Anthian",
+      "description": "Anthians are short humanoids with bird and reptilian-like features, distinguished by their feathered wings which grant them the gift of natural flight. Males range from 4'0\" to 5'2\" in height, while females span 3'7\" to 4'8\". They possess sharp facial characteristics and are renowned for their exceptionally beautiful singing voices, which resemble melodic bird chirping. Their lightweight physiology, while enabling flight, restricts their cargo capacity and physical strength compared to larger races. Anthians embrace a reclusive lifestyle, establishing small communities in natural terrain rather than urban centers. They gravitate toward canyons, bluffs and cliffs, crags and rocky outcroppings. They share cultural parallels with Leuians, prioritizing family bonds, community loyalty, and heritage pride. Bards represent their most frequent urban role, leveraging their vocal talents. Foresters also align well with their nature-oriented culture. Anthians traditionally favor Elindale as their primary deity but may follow any religious path and alignment.",
+      "alignments": [
+        "Chaotic",
+        "Entropic",
+        "Orderly"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 45,
+        "max": 110,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 110,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 60,
+        "max": 140,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 3,
+          "inches": 7
+        },
+        "max": {
+          "feet": 5,
+          "inches": 2
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Red",
+          "Brown",
+          "Dark Brown",
+          "Hazel",
+          "Gold",
+          "Orange"
+        ],
+        "hairColor": [
+          "Blonde",
+          "Light Blonde",
+          "Sandy Blonde",
+          "Dirty Blonde",
+          "Light Brown",
+          "Honey Brown",
+          "Reddish Blonde",
+          "Coppery Red",
+          "White",
+          "Silvery"
+        ],
+        "hairLength": [
+          "Short",
+          "Medium",
+          "Ear length",
+          "Close cut"
+        ],
+        "hairStyle": [
+          "Neat",
+          "Clean",
+          "Fresh",
+          "Sleek",
+          "Wavy",
+          "Messy",
+          "Ragged"
+        ],
+        "skinColor": [
+          "Light Brown",
+          "Tanned",
+          "Light Brown",
+          "Gold",
+          "Bronze",
+          "Pale"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "ANTHIAN",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Cleric: Order of the Heart",
+          "Cleric: Order of the Sword",
+          "Cleric: Order of the Hand",
+          "Bard",
+          "Thief",
+          "Barbarian",
+          "Forester",
+          "Rune Mage"
+        ],
+        "racialTensions": "They form their own opinions of each race as they play",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/a-anthian.txt"
+    },
+    {
+      "letter": "b",
+      "race": "Arachnian",
+      "description": "Arachnians are highly intelligent spider-like beings who inhabit the Great Waste in northern Spur's continent, ruled by the fearsome Matriarch. An ancient conflict with the Penthanians resulted in the loss of their rune-magick abilities when Penthanian mages unleashed UnMagick, transforming the Arachnians into chaotic, hostile beings. They are cruel and aggressive, displaying single-mindedly biased attitudes toward other races, particularly despising Penthanians and viewing Secians as embodying their lost magical abilities. Some legends suggest they were originally followers of Order, and prophecies foretell the restoration of their lost powers. Arachnians possess natural body armor in the form of a tough carapace, night vision, high resistance to destructive magic, exceptional strength and dexterity, and the ability to throw webs and deliver fanged bites. They are known for their advanced understanding of alchemy theory.",
+      "alignments": [
+        "Chaotic"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 60,
+        "max": 150,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 150,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 80,
+        "max": 200,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 4,
+          "inches": 0
+        },
+        "max": {
+          "feet": 5,
+          "inches": 0
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Black",
+          "Murky Black",
+          "Pitch Black"
+        ],
+        "skinColor": [
+          "Black",
+          "Dark Gray",
+          "Gray",
+          "Dark Brown",
+          "Brown",
+          "Dark Green",
+          "Dark Purple"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "ARACHNIAN",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Cleric: Order of the Heart",
+          "Cleric: Order of the Sword",
+          "Cleric: Order of the Hand",
+          "Thief",
+          "Barbarian"
+        ],
+        "racialTensions": "Penthanian, Secian",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/b-arachnian.txt"
+    },
+    {
+      "letter": "c",
+      "race": "Draco",
+      "description": "Dragons are the most powerful of all the races of Dragon's Gate Reborn. They represent the apex of power within the game's racial hierarchy, growing through distinct life stages from young Draco to the ancient and mighty Imperial dragon. Unlike other races, dragons operate outside standard game structures - they lack a designated class system and do not worship the mortal pantheon of gods.",
+      "alignments": [
+        "Entropic"
+      ],
+      "sexes": [
+        "Male",
+        "Female"
+      ],
+      "typicalLifespan": null,
+      "allowedAge": null,
+      "weight": {
+        "min": 250,
+        "max": 600,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 5,
+          "inches": 6
+        },
+        "max": {
+          "feet": 7,
+          "inches": 0
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Demonic Red",
+          "Pitch Black",
+          "Pure White",
+          "Glowing Yellow",
+          "Sapphire Blue",
+          "Emerald Green"
+        ],
+        "hairColor": [
+          "Brown",
+          "Dark Brown",
+          "Light Brown",
+          "Honey Brown",
+          "Chestnut Brown",
+          "Raven",
+          "Jet Black",
+          "Blue Black",
+          "Black",
+          "Sable",
+          "Red",
+          "Coppery Red",
+          "Auburn",
+          "Reddish Blonde",
+          "Blonde",
+          "Light Blonde",
+          "Sandy Blonde",
+          "Gray",
+          "Light Gray",
+          "Dark Gray",
+          "Silvery",
+          "Platinum",
+          "Pure White",
+          "White",
+          "Luminous White",
+          "Bald"
+        ],
+        "hairLength": [
+          "Short",
+          "Medium",
+          "Long",
+          "Shoulder length",
+          "Ear length",
+          "Close cut",
+          "Chest length",
+          "Middle Back length",
+          "Waist length"
+        ],
+        "hairStyle": [
+          "Neat",
+          "Messy",
+          "Dirty",
+          "Clean",
+          "Lice Ridden",
+          "Mud Caked",
+          "Fresh",
+          "Curly",
+          "Wavy",
+          "Ragged",
+          "Sleek",
+          "Braided"
+        ],
+        "skinColor": [
+          "Light Brown",
+          "Tanned",
+          "Dark Brown"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "DRACO",
+        "genders": [
+          "Male",
+          "Female"
+        ],
+        "difficulty": "EASY",
+        "role": "Damage, Tank",
+        "allowedClasses": [
+          "N/A - DOES NOT SELECT A CLASS"
+        ],
+        "racialTensions": "They form their own opinions of each race as they play",
+        "racialAbilities": null
+      },
+      "source": "data/race-creation/raw/c-draco.txt"
+    },
+    {
+      "letter": "d",
+      "race": "Drag-al",
+      "description": "Drag-als are short, dragon-like beings who possess the power to breathe fire but lack the claws and wings of true dragons. These jovial creatures enjoy jokes, ale, and storytelling, naturally gravitating toward trading and performance work rather than laborious toil. Their natural scale armor provides innate protection, and they possess night vision along with a knowledge of additional languages. Drag-als form friendships readily and are known for their superior bargaining skills, though their small stature creates challenges in direct combat. Monitanians regard them negatively, viewing them as loud and obnoxious. Common professions include Bard and Runemage, with some pursuing paths as Thieves, Fighters, or Clerics. Barbarians and Foresters among them are rare.",
+      "alignments": [
+        "Chaotic",
+        "Entropic",
+        "Orderly"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 60,
+        "max": 200,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 200,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 60,
+        "max": 150,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 3,
+          "inches": 0
+        },
+        "max": {
+          "feet": 4,
+          "inches": 11
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Black",
+          "Gold",
+          "Silver",
+          "Bronze",
+          "Red",
+          "Fiery Red",
+          "Orange",
+          "Yellow"
+        ],
+        "hairColor": [
+          "Bald"
+        ],
+        "skinColor": [
+          "Black",
+          "Blue",
+          "Green",
+          "Red",
+          "White",
+          "Yellow",
+          "Brown",
+          "Bronze",
+          "Gold",
+          "Silvery",
+          "Platinum"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "DRAG-AL",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Cleric: Order of the Heart",
+          "Cleric: Order of the Sword",
+          "Cleric: Order of the Hand",
+          "Bard",
+          "Thief",
+          "Barbarian",
+          "Forester",
+          "Rune Mage"
+        ],
+        "racialTensions": "Monitanian",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/d-drag-al.txt"
+    },
+    {
+      "letter": "e",
+      "race": "Fir Elf",
+      "description": "The Firians, also known as Fir Elves, are forest elves deeply connected to the natural world. They possess a great love for nature and are renowned for their exceptional archery skills. Athletic in build, Firians prefer wilderness and outdoor living over urban environments, blending effectively into shadows and the forest canopy. They are gifted with night vision, making them formidable in low-light conditions. Firians are known as superior marksmen, wielding missile weapons with unmatched proficiency, particularly bows. Their foresters gain additional skinning bonuses, reflecting their deep practical knowledge of the wild. While physically weaker in melee combat compared to more combat-focused races, their agility and ranged prowess more than compensate. Firians maintain friendly relations with most races, particularly the Anthians, but harbor a strong hatred toward the Sanene, their dark elven kin.",
+      "alignments": [
+        "Entropic",
+        "Orderly"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 200,
+        "max": 800,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 800,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 80,
+        "max": 200,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 3,
+          "inches": 4
+        },
+        "max": {
+          "feet": 6,
+          "inches": 2
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Light Brown",
+          "Dark Brown",
+          "Reddish Brown",
+          "Hazel",
+          "Amber",
+          "Dull Black",
+          "Pitch Black"
+        ],
+        "hairColor": [
+          "Black",
+          "Glossy Black",
+          "Jet Black",
+          "Blue Black",
+          "Sable",
+          "Blonde",
+          "Light Blonde",
+          "Dark Blonde",
+          "Sandy Blonde",
+          "Platinum",
+          "Light Brown",
+          "Dark Brown",
+          "Chestnut Brown",
+          "Honey Brown"
+        ],
+        "hairLength": [
+          "Medium",
+          "Long",
+          "Shoulder length",
+          "Chest length",
+          "Middle Back length",
+          "Waist length"
+        ],
+        "hairStyle": [
+          "Neat",
+          "Clean",
+          "Fresh",
+          "Wavy",
+          "Sleek",
+          "Braided"
+        ],
+        "skinColor": [
+          "Tanned",
+          "Light",
+          "Light Brown",
+          "Pale",
+          "Alabaster"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "FIR ELF",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Cleric: Order of the Heart",
+          "Cleric: Order of the Sword",
+          "Cleric: Order of the Hand",
+          "Bard",
+          "Forester"
+        ],
+        "racialTensions": "San Elf",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/e-fir-elf.txt"
+    },
+    {
+      "letter": "f",
+      "race": "Flerian",
+      "description": "Flerians are short, mildly furry, slightly built humanoids with long dexterous fingers who live in communal underground societies called burrows. They are friendly, curious, talkative, and often dramatic, with short attention spans and a light-hearted nature. Their narrow, sharp features are complemented by large, round eyes that grant them exceptional night vision. Known for their remarkable agility and dexterity, Flerians move almost continuously and are notoriously difficult to restrain. They have a well-earned reputation for grabbing anything that is not nailed down, which often creates conflicts in urban areas. Despite caring little for material possessions, they are fiercely loyal to their burrow and close companions. Members of this race appear quite similar to one another to outsiders, making individual identification a challenge for other races.",
+      "alignments": [
+        "Chaotic",
+        "Entropic",
+        "Orderly"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 40,
+        "max": 90,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 90,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 40,
+        "max": 100,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 3,
+          "inches": 0
+        },
+        "max": {
+          "feet": 4,
+          "inches": 6
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Brown",
+          "Amber",
+          "Black",
+          "Aqua Blue",
+          "Green"
+        ],
+        "hairColor": [
+          "Green",
+          "Bright Green",
+          "Dark Green",
+          "Light Blue",
+          "Blue",
+          "Purple",
+          "Light Purple",
+          "Pink",
+          "Light Pink"
+        ],
+        "hairLength": [
+          "Short",
+          "Medium",
+          "Ear length",
+          "Close cut"
+        ],
+        "hairStyle": [
+          "Neat",
+          "Messy",
+          "Clean",
+          "Fresh",
+          "Curly",
+          "Wavy",
+          "Ragged",
+          "Sleek"
+        ],
+        "skinColor": [
+          "Light Brown",
+          "Brown",
+          "Gold",
+          "Light Gray",
+          "White",
+          "Tanned"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "FLERIAN",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Cleric: Order of the Heart",
+          "Cleric: Order of the Sword",
+          "Cleric: Order of the Hand",
+          "Bard",
+          "Thief",
+          "Barbarian",
+          "Forester",
+          "Rune Mage",
+          "Psion"
+        ],
+        "racialTensions": "They form their own opinions of each race as they play",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/f-flerian.txt"
+    },
+    {
+      "letter": "g",
+      "race": "Frontacian",
+      "description": "Frontacians are one of the oldest and most influential races in Aradath, having ruled the greatest single Empire the world has ever seen. During the Second and Third Ages they built magickal bridges that linked the realm, and their name translates to \"Jeweled Ones\" owing to the three embedded jewel-like formations found on their foreheads and palms. Tall and pale with white hair and eyes, Frontacians view themselves as elite politicians, thinkers, and runemages with aspirations for renewed dominance. The race possesses exceptional magical talent, legendary arcane creations, and the ability to drain energy from others. However, Frontacians suffer from a genetic malady tied to the Great Unmagick, requiring a weekly medication derived almost entirely from dragon essence. Missing a single dose causes instability, and two missed doses risk fatality. Physically fragile compared to martial races, they compensate with unmatched intellect, cunning, and raw magical power. Frontacians exhibit considerable imperial pride and a cold, uncaring demeanor toward those they consider lesser, though honesty holds significant cultural value within their own society.",
+      "alignments": [
+        "Chaotic",
+        "Entropic",
+        "Orderly"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 60,
+        "max": 200,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 200,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 90,
+        "max": 250,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 4,
+          "inches": 4
+        },
+        "max": {
+          "feet": 7,
+          "inches": 0
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "White",
+          "Pure White",
+          "Milk White",
+          "Glowing White",
+          "Silver",
+          "Light Gray",
+          "Silvery Blue",
+          "Violet",
+          "Light Purple"
+        ],
+        "hairColor": [
+          "White",
+          "Pure White",
+          "Luminous White",
+          "Silvery",
+          "Platinum",
+          "Light Gray",
+          "Light Blonde",
+          "Pale Blue"
+        ],
+        "hairLength": [
+          "Short",
+          "Medium",
+          "Long",
+          "Shoulder length",
+          "Chest length"
+        ],
+        "hairStyle": [
+          "Neat",
+          "Clean",
+          "Fresh",
+          "Wavy",
+          "Sleek",
+          "Braided"
+        ],
+        "skinColor": [
+          "Pale",
+          "White",
+          "Pure White",
+          "Luminous White",
+          "Alabaster",
+          "Light Brown",
+          "Silvery"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "FRONTACIAN",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Bard",
+          "Rune Mage"
+        ],
+        "racialTensions": "Arachnian",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/g-frontacian.txt"
+    },
+    {
+      "letter": "h",
+      "race": "Go-blin",
+      "description": "Go-blins are small, wretched creatures that dwell in dark cave systems, organized into tight-knit clans. Standing only three to four feet tall, they possess a distinctive warty green hide covered in pulsating yellow warts, broken tusks, and filthy skin. Their uniformly black eyes peer out from faces universally considered repulsive, featuring mottled green or grey skin with various visible deformities. These nocturnal beings are compulsive hoarders, accumulating refuse and items of questionable value from raids and scavenging expeditions. Spitting serves as a common greeting among their kind, and they actively avoid sunlight whenever possible. Go-blins are punks and bullies by nature, sadistic when the balance is in their favor, yet cowardly when facing genuine threats. They prey on weaker creatures but scatter when confronted by superior force, valuing cowardice as a survival mechanism and disdaining those who stand and fight needlessly.",
+      "alignments": [
+        "Chaotic"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 30,
+        "max": 60,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 12,
+        "max": 60,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 40,
+        "max": 80,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 3,
+          "inches": 0
+        },
+        "max": {
+          "feet": 4,
+          "inches": 0
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Black"
+        ],
+        "hairColor": [
+          "Black",
+          "Murky Black",
+          "Dull Black",
+          "Dark Brown",
+          "Dark Green",
+          "Gray",
+          "Dark Gray",
+          "Bald"
+        ],
+        "hairLength": [
+          "Short",
+          "Medium",
+          "Ear length",
+          "Close cut"
+        ],
+        "hairStyle": [
+          "Dirty",
+          "Messy",
+          "Lice Ridden",
+          "Mud Caked",
+          "Ragged"
+        ],
+        "skinColor": [
+          "Green",
+          "Light Green",
+          "Dark Green",
+          "Gray",
+          "Dark Gray",
+          "Brown",
+          "Dark Brown"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "GO-BLIN",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Cleric: Order of the Heart",
+          "Cleric: Order of the Sword",
+          "Cleric: Order of the Hand",
+          "Bard",
+          "Thief",
+          "Barbarian",
+          "Forester",
+          "Rune Mage",
+          "Psion"
+        ],
+        "racialTensions": "They form their own opinions of each race as they play",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/h-go-blin.txt"
+    },
+    {
+      "letter": "i",
+      "race": "Go-blin-al",
+      "description": "Go-blin-als are believed to be servants to Chaos, possibly created through the warped experiments of the Chaos Lords. Scholars suggest they may be remnants of a formerly mighty race, corrupted and twisted by dark magic into the ugly, mottled green creatures seen today. Standing approximately three feet tall, these bipedal beings are typically filthy and foul-tempered, dwelling in caves within tight-knit clans. Nasty, violent, and full of mischief, Go-blin-als are bullies and punks who become sadistic when they hold the advantage but turn cowardly when facing genuine threats. They avoid sunlight and delight in harassing weaker creatures. Spitting at each other is a common form of greeting among their kind. They speak with distinctive lisp-like patterns and an underdeveloped grasp of Common. Go-blin-als possess natural night vision, quickness, agility, and dexterity, though they suffer from a troublemaker reputation, physical weakness, and communication barriers with other races. Their chaotic alignment draws them primarily to the profession of Thief, with rare individuals becoming Fighters, Barbarians, or Rune Mages.",
+      "alignments": [
+        "Chaotic"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 30,
+        "max": 60,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 10,
+        "max": 60,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 35,
+        "max": 75,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 2,
+          "inches": 6
+        },
+        "max": {
+          "feet": 3,
+          "inches": 6
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Brown",
+          "Dark Brown",
+          "Red",
+          "Fiery Red",
+          "Black",
+          "Murky Black",
+          "Yellow",
+          "Glowing Yellow",
+          "Orange"
+        ],
+        "hairColor": [
+          "Sandy Blonde",
+          "Brown",
+          "Dark Brown",
+          "Light Brown",
+          "Red",
+          "Coppery Red",
+          "Black",
+          "Murky Black",
+          "Dull Black",
+          "Dark Green",
+          "Bald"
+        ],
+        "hairLength": [
+          "Short",
+          "Medium",
+          "Ear length",
+          "Close cut"
+        ],
+        "hairStyle": [
+          "Messy",
+          "Dirty",
+          "Lice Ridden",
+          "Mud Caked",
+          "Ragged"
+        ],
+        "skinColor": [
+          "Green",
+          "Light Green",
+          "Dark Green",
+          "Brown",
+          "Dark Brown",
+          "Gray",
+          "Dark Gray"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "GO-BLIN-AL",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Thief",
+          "Barbarian",
+          "Rune Mage"
+        ],
+        "racialTensions": "They form their own opinions of each race as they play",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/i-go-blin-al.txt"
+    },
+    {
+      "letter": "j",
+      "race": "Hithual",
+      "description": "Hithuals are stout humanoids hailing from Aerhauven within the Great Divide mountain range. Known as some of the finest miners in the lands, they possess above-average strength and an unshakeable resolve. Their culture centers around mining, craftsmanship, and a deep loyalty to family and clan. Fun-loving, brave, proud, and stubborn, Hithuals show equal enthusiasm for hard work and hearty leisure. They form acquaintances readily but develop lasting bonds with outsiders mainly through shared combat experiences. Beards are worn as symbols of skill and respect by accomplished warriors of any gender. They possess a significant natural resistance to magic, though this same resistance prevents them from becoming Rune Mages. Hithuals distrust non-traditional methods such as magic, thievery, or charity, firmly believing that worthwhile accomplishments require genuine effort. They are also renowned for their remarkable tolerance for ale and their love of practical jokes.",
+      "alignments": [
+        "Chaotic",
+        "Entropic",
+        "Orderly"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 80,
+        "max": 250,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 250,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 120,
+        "max": 280,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 3,
+          "inches": 6
+        },
+        "max": {
+          "feet": 4,
+          "inches": 8
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Brown",
+          "Dark Brown",
+          "Red",
+          "Ruby Red",
+          "Black",
+          "Murky Black",
+          "Amber"
+        ],
+        "hairColor": [
+          "Sandy Blonde",
+          "Brown",
+          "Dark Brown",
+          "Light Brown",
+          "Chestnut Brown",
+          "Red",
+          "Coppery Red",
+          "Auburn",
+          "Black",
+          "Jet Black",
+          "Raven",
+          "Gray",
+          "Dark Gray"
+        ],
+        "hairLength": [
+          "Short",
+          "Medium",
+          "Long",
+          "Shoulder length",
+          "Chest length"
+        ],
+        "hairStyle": [
+          "Neat",
+          "Messy",
+          "Dirty",
+          "Clean",
+          "Fresh",
+          "Wavy",
+          "Ragged",
+          "Braided"
+        ],
+        "skinColor": [
+          "Light Brown",
+          "Tanned",
+          "Dark Brown",
+          "Light Brown",
+          "Brown",
+          "Bronze",
+          "Pale"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "HITHUAL",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Cleric: Order of the Heart",
+          "Cleric: Order of the Sword",
+          "Cleric: Order of the Hand",
+          "Bard",
+          "Barbarian",
+          "Psion"
+        ],
+        "racialTensions": "They form their own opinions of each race as they play",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/j-hithual.txt"
+    },
+    {
+      "letter": "k",
+      "race": "Human",
+      "description": "Humans are the most adaptable people in Aradath, thriving in nearly every climate, city, and profession. Their strength lies in flexibility — they learn quickly, switch roles with ease, and build communities wherever they settle. While they lack the extreme gifts or drawbacks of other races, Humans excel through drive, curiosity, and the sheer variety of paths open to them. If you want a race that can grow into almost any story, Humans are the perfect starting point.",
+      "alignments": [
+        "Chaotic",
+        "Entropic",
+        "Orderly"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 45,
+        "max": 85,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 85,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 90,
+        "max": 400,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 4,
+          "inches": 5
+        },
+        "max": {
+          "feet": 6,
+          "inches": 8
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Brown",
+          "Amber",
+          "Black",
+          "Grey",
+          "Blue",
+          "Dark Blue",
+          "Green",
+          "Hazel"
+        ],
+        "hairColor": [
+          "Brown",
+          "Dark Brown",
+          "Light Brown",
+          "Honey Brown",
+          "Chestnut Brown",
+          "Raven",
+          "Jet Black",
+          "Blue Black",
+          "Black",
+          "Sable",
+          "Red",
+          "Coppery Red",
+          "Auburn",
+          "Reddish Blonde",
+          "Blonde",
+          "Light Blonde",
+          "Sandy Blonde",
+          "Gray",
+          "Light Gray",
+          "Dark Gray",
+          "Silvery",
+          "Platinum",
+          "Pure White",
+          "White",
+          "Luminous White",
+          "Bald"
+        ],
+        "hairLength": [
+          "Short",
+          "Medium",
+          "Long",
+          "Shoulder length",
+          "Ear length",
+          "Close cut",
+          "Chest length",
+          "Middle Back length",
+          "Waist length"
+        ],
+        "hairStyle": [
+          "Neat",
+          "Messy",
+          "Dirty",
+          "Clean",
+          "Lice Ridden",
+          "Mud Caked",
+          "Fresh",
+          "Curly",
+          "Wavy",
+          "Ragged",
+          "Sleek",
+          "Braided"
+        ],
+        "skinColor": [
+          "Light Brown",
+          "Tanned",
+          "Dark Brown"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "HUMAN",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Cleric: Order of the Heart",
+          "Cleric: Order of the Sword",
+          "Cleric: Order of the Hand",
+          "Bard",
+          "Thief",
+          "Barbarian",
+          "Forester",
+          "Rune Mage",
+          "Psion"
+        ],
+        "racialTensions": "They form their own opinions of each race as they play",
+        "racialAbilities": "Humans are the most adaptable people in Aradath, thriving in nearly every climate, city,"
+      },
+      "source": "data/race-creation/raw/k-human.txt"
+    },
+    {
+      "letter": "l",
+      "race": "Leuian",
+      "description": "Leuians are fierce warriors, considered some of the most fearsome in the lands. These feline-humanoid beings feature retractable claws, tails, fur, and walk upright. They live by The Precepts, a strict ethical code serving as their law, emphasizing honor, truth, and direct engagement while disdaining deception, theft, and dishonesty.",
+      "alignments": [
+        "Chaotic",
+        "Entropic",
+        "Orderly"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 50,
+        "max": 120,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 120,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 100,
+        "max": 250,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 4,
+          "inches": 4
+        },
+        "max": {
+          "feet": 7,
+          "inches": 8
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Light Brown",
+          "Dark Brown",
+          "Reddish Brown",
+          "Hazel",
+          "Amber",
+          "Pale Green",
+          "Light Green",
+          "Golden"
+        ],
+        "hairColor": [
+          "Dull Black",
+          "Glossy Black",
+          "Reddish Black",
+          "Bluish Black",
+          "Purplish Black",
+          "Light Brown",
+          "Dark Brown",
+          "Chestnut Brown",
+          "Honey Brown",
+          "Sable",
+          "Auburn",
+          "White"
+        ],
+        "hairLength": [
+          "Short",
+          "Medium",
+          "Long"
+        ],
+        "hairStyle": [
+          "Neat",
+          "Messy",
+          "Dirty",
+          "Clean",
+          "Lice Ridden",
+          "Mud Caked",
+          "Fresh",
+          "Curly",
+          "Wavy",
+          "Ragged",
+          "Sleek",
+          "Braided"
+        ],
+        "skinColor": [
+          "Brown",
+          "Light Brown",
+          "Dark Brown",
+          "Gold",
+          "Bronze",
+          "Black",
+          "Gray",
+          "Light Gray",
+          "Dark Gray",
+          "White",
+          "Silvery"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "LEUIAN",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Cleric: Order of the Heart",
+          "Cleric: Order of the Sword",
+          "Cleric: Order of the Hand",
+          "Thief",
+          "Rune Mage",
+          "Psion"
+        ],
+        "racialTensions": "They form their own opinions of each race as they play",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/l-leuian.txt"
+    },
+    {
+      "letter": "m",
+      "race": "Monitanian",
+      "description": "Monitanians are large, scaled, upright-walking lizard-like beings supported by powerful tails. Originating primarily from the Dismal Swamp, they remain mysterious about their history, though historical records recognize them as among the world's bravest peoples. They communicate through gestures, hisses, and grunts, and cannot speak the Common tongue due to vocal limitations, though they are highly intelligent despite racial assumptions otherwise. Monitanians value honor and allegiance above all else. Friendships are forged through battlefield experiences and endure permanently. They possess natural clawing and biting attacks, thick scaled skin that provides inherent armor, and night vision capability. Known for their exceptional strength and sturdy physiology, they prefer the heaviest armor available and often become mercenaries for just causes.",
+      "alignments": [
+        "Chaotic",
+        "Entropic",
+        "Orderly"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 35,
+        "max": 60,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 60,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 150,
+        "max": 350,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 5,
+          "inches": 0
+        },
+        "max": {
+          "feet": 7,
+          "inches": 7
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Black",
+          "Murky Black",
+          "Pitch Black",
+          "Yellow",
+          "Glowing Yellow",
+          "Orange",
+          "Dark Orange",
+          "Dark Green",
+          "Red"
+        ],
+        "skinColor": [
+          "Green",
+          "Dark Green",
+          "Light Green",
+          "Black",
+          "Red",
+          "Yellow",
+          "Brown",
+          "Dark Brown",
+          "Gray",
+          "Dark Gray"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "MONITANIAN",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Thief",
+          "Barbarian",
+          "Rune Mage"
+        ],
+        "racialTensions": "Flerian, Go-blin-al, Drag-al",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/m-monitanian.txt"
+    },
+    {
+      "letter": "n",
+      "race": "Muatana-al",
+      "description": "The origins of the Muatana-al remain shrouded in mystery. Some believe they were once cursed nobility, while others claim the Chaos Lords created them as instruments of terror. Primarily associated with the Isle of Muldavia, they dominate the San Elves and their leader, the Muatana-al Lord of the Dernath Woods, has allegedly forged pacts with Dragons and Wyverns. Tall and gaunt, the Muatana-al possess unnaturally pale flesh that seems to glow faintly in darkness, with luminous veins visible beneath the surface in hues of crimson, blue, green, and violet. They are cold, calculating, and utterly without mercy — intelligent predators and patient hunters capable of stalking prey for extended periods. Solitary by nature, they form alliances only when mutually beneficial, having long since abandoned any semblance of compassion or empathy. The Muatana-al must regularly drain the life force of living creatures to sustain themselves. Feeding requires physical contact, leaving victims weakened, aged, or desiccated. Without feeding, a Muatana-al suffers progressive weakness and eventual death. They are strictly nocturnal creatures — sunlight causes searing pain and prolonged exposure is lethal. Their entire culture revolves around the cycle of night and day.",
+      "alignments": [
+        "Chaotic"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 80,
+        "max": 300,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 300,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 200,
+        "max": 400,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 6,
+          "inches": 0
+        },
+        "max": {
+          "feet": 7,
+          "inches": 0
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Red",
+          "Glowing Red",
+          "Demonic Red",
+          "Ruby Red",
+          "Fiery Red",
+          "Purple",
+          "Dark Purple",
+          "Violet",
+          "Black",
+          "Pitch Black",
+          "Glowing Yellow",
+          "Glowing White"
+        ],
+        "hairColor": [
+          "Black",
+          "Jet Black",
+          "Raven",
+          "Sable",
+          "Deathly Black",
+          "Murky Black",
+          "White",
+          "Pure White",
+          "Luminous White",
+          "Silvery",
+          "Platinum",
+          "Gray",
+          "Dark Gray",
+          "Bald"
+        ],
+        "hairLength": [
+          "Short",
+          "Medium",
+          "Long",
+          "Shoulder length"
+        ],
+        "hairStyle": [
+          "Neat",
+          "Sleek",
+          "Clean",
+          "Ragged",
+          "Messy",
+          "Fresh"
+        ],
+        "skinColor": [
+          "Pale",
+          "Alabaster",
+          "White",
+          "Pure White",
+          "Luminous White",
+          "Light Gray",
+          "Gray"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "MUATANA-AL",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Thief",
+          "Barbarian",
+          "Rune Mage"
+        ],
+        "racialTensions": "San Elf",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/n-muatana-al.txt"
+    },
+    {
+      "letter": "o",
+      "race": "Oog-ra",
+      "description": "The Oog-ra are extremely large, hairy humanoids with sloping foreheads and protruding brows. Their massive frames feature sunken eyes and heavy fur, making them among the most physically imposing beings in the lands. According to legend, the Oog-ra originated from the icy Northern Isles, specifically a remote mountain range near Crescent Lake, and their origins allegedly trace back to the Lords of Chaos. While possessing incredible strength, the Oog-ra are widely regarded as the least intelligent race. They are ruled by instinct rather than intellect, and though they can be violent, they lack malicious intent. Their simple nature makes them easily manipulated and often exploited by other races. Historical records show the Frontacian Empire once debated exterminating them, and later attempted selective breeding to increase their intelligence. Oog-ras enjoy destruction, particularly loud activities like smashing things, and are most commonly found serving as Fighters and Barbarians.",
+      "alignments": [
+        "Chaotic"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 45,
+        "max": 90,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 90,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 200,
+        "max": 450,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 6,
+          "inches": 0
+        },
+        "max": {
+          "feet": 7,
+          "inches": 6
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Light Brown",
+          "Dark Brown",
+          "Reddish Brown",
+          "Hazel",
+          "Amber",
+          "Dull Black",
+          "Pitch Black"
+        ],
+        "hairColor": [
+          "Dull Black",
+          "Glossy Black",
+          "Reddish Black",
+          "Bluish Black",
+          "Purplish Black",
+          "Light Brown",
+          "Dark Brown",
+          "Chestnut Brown",
+          "Honey Brown",
+          "Sable"
+        ],
+        "hairLength": [
+          "Short",
+          "Medium",
+          "Long"
+        ],
+        "hairStyle": [
+          "Messy",
+          "Dirty",
+          "Mud Caked",
+          "Ragged"
+        ],
+        "skinColor": [
+          "Brown",
+          "Light Brown",
+          "Dark Brown",
+          "Gray",
+          "Dark Gray",
+          "Black"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "OOG-RA",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Barbarian"
+        ],
+        "racialTensions": "Thugian",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/o-oog-ra.txt"
+    },
+    {
+      "letter": "p",
+      "race": "Penthanian",
+      "description": "Penthanians were once part of the Frontacian Empire on the northern edge of the Great Divide. During the Great Change, they released an ancient spell against the Arachnians that backfired catastrophically, converting their bodies into soft crystalline substance. They now call themselves the \"Living Jewels\" in their own tongue. Aloof and calculating, Penthanians harbor a deep envy toward the Frontacians who retained their flesh and magical jewels. They possess natural night vision and exceptional intelligence, though their crystalline composition impedes natural healing.",
+      "alignments": [
+        "Chaotic",
+        "Entropic",
+        "Orderly"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 80,
+        "max": 250,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 250,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 120,
+        "max": 300,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 5,
+          "inches": 0
+        },
+        "max": {
+          "feet": 7,
+          "inches": 8
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Black",
+          "Pitch Black",
+          "Murky Black",
+          "Silver",
+          "White",
+          "Purple",
+          "Dark Purple",
+          "Violet"
+        ],
+        "hairColor": [
+          "Bald"
+        ],
+        "skinColor": [
+          "Crystal Blue",
+          "Crystal White",
+          "Purple",
+          "Light Purple",
+          "Dark Purple",
+          "Blue",
+          "Light Blue",
+          "Dark Blue",
+          "White",
+          "Pure White",
+          "Silvery",
+          "Platinum"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "PENTHANIAN",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Thief",
+          "Rune Mage",
+          "Psion"
+        ],
+        "racialTensions": "Frontacian, Arachnian",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/p-penthanian.txt"
+    },
+    {
+      "letter": "q",
+      "race": "Psycian",
+      "description": "Psycians are graceful, human-like beings with immense telepathic power, considered the wisest of all races. They display a calm, distant exterior that masks deep emotion and possess natural psychic abilities allowing them to probe minds at close range. A unique glow forms around the head when their psychic abilities are in use. Descended from survivors of the Isle of Psycia, which was destroyed by the ancient Frontacians roughly a thousand years ago, the Psycians originally served as a telepathic communication network for the Frontacian Empire. They staged a covert rebellion by spreading misinformation, and in retaliation, Frontacian mages destroyed their island and hunted the survivors. A few Psycians escaped to rebuild in secret, and they maintain an unbridled hatred for the Frontacians and seek to restore their lost homeland. Psycians are calm, logical, patient, and loyal, preferring peaceful resolutions to conflict. However, overexposure to uncontrolled minds can cause madness, requiring regular doses of a madness cure. Near Frontacians, they display open loathing and a loss of their characteristic restraint.",
+      "alignments": [
+        "Entropic",
+        "Orderly"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 150,
+        "max": 500,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 500,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 80,
+        "max": 200,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 3,
+          "inches": 11
+        },
+        "max": {
+          "feet": 5,
+          "inches": 10
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Blue",
+          "Dark Blue",
+          "Aqua Blue",
+          "Sapphire Blue",
+          "Silvery Blue",
+          "Brown",
+          "Dark Brown",
+          "Reddish Brown",
+          "Hazel",
+          "Amber",
+          "Light Gray",
+          "Dark Gray",
+          "Black",
+          "Dull Black",
+          "Pitch Black",
+          "Red",
+          "Ruby Red",
+          "Yellow",
+          "Silver",
+          "Violet",
+          "Purple"
+        ],
+        "hairColor": [
+          "Black",
+          "Raven",
+          "Jet Black",
+          "Brown",
+          "Dark Brown",
+          "Light Brown",
+          "Honey Brown",
+          "Blonde",
+          "Light Blonde",
+          "Sandy Blonde",
+          "Red",
+          "Auburn",
+          "Coppery Red",
+          "White",
+          "Pure White",
+          "Luminous White",
+          "Silvery",
+          "Platinum"
+        ],
+        "hairLength": [
+          "Short",
+          "Medium",
+          "Long",
+          "Shoulder length",
+          "Chest length"
+        ],
+        "hairStyle": [
+          "Neat",
+          "Clean",
+          "Fresh",
+          "Sleek",
+          "Wavy",
+          "Braided"
+        ],
+        "skinColor": [
+          "Light Brown",
+          "Pale",
+          "Tanned",
+          "Alabaster",
+          "White",
+          "Silvery"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "PSYCIAN",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Cleric: Order of the Heart",
+          "Cleric: Order of the Sword",
+          "Cleric: Order of the Hand",
+          "Bard",
+          "Barbarian",
+          "Forester",
+          "Rune Mage",
+          "Psion"
+        ],
+        "racialTensions": "Frontacian",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/q-psycian.txt"
+    },
+    {
+      "letter": "r",
+      "race": "San Elf",
+      "description": "The Sanene, also known as San Elves, are dark-skinned elves originating from the Isle of Muldavia. Scholars theorize they are creations of Chaos rather than true elven descendants, a distinction that sets them apart from other elven races. Shorter and more sinewy than their Fir and Usil counterparts, the Sanene possess skin tones ranging from light golden to deep dark brown, with predominantly black hair and dark eyes. The Sanene prize power above all else: power of magick, weapons, information, and manipulation. They are conniving, power-hungry, and quick to anger, embracing destruction and death if it serves their purpose. Their alignment is fundamentally entropic and chaotic, with a deep devotion to Chaos itself. Sanene often infiltrate positions of influence within temples, governments, and elite circles, using their exceptional intelligence and cunning to further their ambitions. Among their advantages, the Sanene possess night vision, excellence in both weaponry and magic, above-average strength for elves, and high intelligence. However, their inherently untrustworthy and self-serving nature is their greatest hindrance, making lasting alliances rare and tenuous.",
+      "alignments": [
+        "Chaotic",
+        "Entropic"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 150,
+        "max": 600,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 600,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 85,
+        "max": 180,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 4,
+          "inches": 8
+        },
+        "max": {
+          "feet": 5,
+          "inches": 10
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Black",
+          "Murky Black",
+          "Pitch Black",
+          "Dark Purple",
+          "Red",
+          "Ruby Red",
+          "Amber",
+          "Violet"
+        ],
+        "hairColor": [
+          "Black",
+          "Raven",
+          "Jet Black",
+          "Blue Black",
+          "Murky Black",
+          "Sable",
+          "Deathly Black",
+          "Dark Purple",
+          "Dark Blue"
+        ],
+        "hairLength": [
+          "Short",
+          "Medium",
+          "Long",
+          "Shoulder length",
+          "Chest length",
+          "Middle Back length",
+          "Waist length"
+        ],
+        "hairStyle": [
+          "Neat",
+          "Clean",
+          "Sleek",
+          "Braided",
+          "Wavy",
+          "Ragged"
+        ],
+        "skinColor": [
+          "Gold",
+          "Bronze",
+          "Light Brown",
+          "Brown",
+          "Dark Brown",
+          "Black",
+          "Dark Brown",
+          "Dark Gray"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "SAN ELF",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Cleric: Order of the Heart",
+          "Cleric: Order of the Sword",
+          "Cleric: Order of the Hand",
+          "Bard",
+          "Thief",
+          "Barbarian",
+          "Rune Mage",
+          "Psion"
+        ],
+        "racialTensions": "Fir Elf, Usilin",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/r-san-elf.txt"
+    },
+    {
+      "letter": "s",
+      "race": "Secian",
+      "description": "Beautiful winged creatures, the Secians are the tiniest of all the races of Aradath. These fairy-like beings hail from the ancient city-state of Secia, transformed during the Great Change. Known for their ruby-red eyes and dazzling blonde hair, Secians are consistently cheerful and compassionate, possessing empathy as a divine gift. They are unfailingly kind, serving as peacemakers who reject violence and avoid lawbreaking or deception. Secians are capable of flight with minimal exertion and possess exceptional healing powers through empathic connection. They maintain strong, ancient bonds with Dragons and have a well-known obsession with jewels and gemstones. Most commonly found as Heart Clerics and Rune-Mages, Secians are extremely fragile but compensate with rapid movement and recovery.",
+      "alignments": [
+        "Orderly"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 80,
+        "max": 200,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 200,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 5,
+        "max": 20,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 1,
+          "inches": 0
+        },
+        "max": {
+          "feet": 1,
+          "inches": 5
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Ruby Red",
+          "Sunstone Orange",
+          "Citrine Yellow",
+          "Emerald Green",
+          "Sapphire Blue",
+          "Crystalline Purple",
+          "Tourmaline Pink",
+          "Moonstone White"
+        ],
+        "hairColor": [
+          "Blonde",
+          "Light Blonde",
+          "Sandy Blonde",
+          "Dirty Blonde",
+          "Luminous White",
+          "White",
+          "Silvery",
+          "Platinum",
+          "Golden"
+        ],
+        "hairLength": [
+          "Short",
+          "Medium",
+          "Long",
+          "Shoulder length",
+          "Waist length"
+        ],
+        "hairStyle": [
+          "Neat",
+          "Clean",
+          "Fresh",
+          "Curly",
+          "Wavy",
+          "Sleek",
+          "Braided"
+        ],
+        "skinColor": [
+          "Light Brown",
+          "Pale",
+          "Alabaster",
+          "White",
+          "Pink",
+          "Gold"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "SECIAN",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Cleric: Order of the Heart",
+          "Cleric: Order of the Sword",
+          "Cleric: Order of the Hand",
+          "Rune Mage",
+          "Psion"
+        ],
+        "racialTensions": "Arachnian",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/s-secian.txt"
+    },
+    {
+      "letter": "t",
+      "race": "Thugian",
+      "description": "Thugians are massive, brutish humanoids renowned for their exceptional physical power and remarkable ability to survive. Considered among the strongest of all humanoid races, these towering beings combine tremendous muscle with an almost supernatural capacity for rapid healing, recovering from wounds that would fell lesser creatures. Their intelligence, however, is severely limited, and their communication skills are poor at best. Despite their fearsome reputation, Thugians have simple needs. They are almost constantly hungry and will consume whatever is readily available, including the flesh of other sentient beings, with particular fondness for humans and trolls. They are easily entertained and attracted to small, shiny, or cute objects, becoming fiercely possessive of anything that catches their eye. A well-fed Thugian can become a surprisingly loyal companion, though their chaotic nature and unpredictable temperament make their anger difficult to foresee. Preferred professions include Fighter and Barbarian, while Thief and Rune Mage are exceedingly rare among their kind.",
+      "alignments": [
+        "Chaotic",
+        "Entropic",
+        "Orderly"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 60,
+        "max": 150,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 150,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 250,
+        "max": 550,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 6,
+          "inches": 0
+        },
+        "max": {
+          "feet": 8,
+          "inches": 0
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Brown",
+          "Dark Brown",
+          "Black",
+          "Murky Black",
+          "Yellow",
+          "Bright Yellow",
+          "Red",
+          "Fiery Red",
+          "Orange",
+          "Dark Orange"
+        ],
+        "hairColor": [
+          "Black",
+          "Dull Black",
+          "Glossy Black",
+          "Murky Black",
+          "Dark Brown",
+          "Brown",
+          "Gray",
+          "Dark Gray",
+          "Red",
+          "Coppery Red",
+          "Bald"
+        ],
+        "hairLength": [
+          "Short",
+          "Medium",
+          "Long"
+        ],
+        "hairStyle": [
+          "Messy",
+          "Dirty",
+          "Mud Caked",
+          "Ragged",
+          "Lice Ridden"
+        ],
+        "skinColor": [
+          "Brown",
+          "Dark Brown",
+          "Gray",
+          "Dark Gray",
+          "Green",
+          "Dark Green",
+          "Black"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "THUGIAN",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Thief",
+          "Barbarian",
+          "Rune Mage"
+        ],
+        "racialTensions": "They form their own opinions of each race as they play",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/t-thugian.txt"
+    },
+    {
+      "letter": "u",
+      "race": "Usilin",
+      "description": "The Usilin, also known as the Usil Elves, are widely regarded as the most intelligent race in Eihydia. Devoted to scholastic pursuits and magical mastery, the Usilin prioritize the accumulation of knowledge and self-improvement as central cultural values. They distinguish themselves from other elven races through their unwavering focus on arcane research, intellectual discourse, and the preservation of ancient lore. Slender in build with pale complexions and refined elven features, the Usilin carry themselves with a quiet confidence born of deep learning. Their society revolves around the renowned Usilin Academy, a center of education and culture where the brightest minds gather to study the arcane arts. While their exceptional intelligence and natural magical aptitude make them formidable spellcasters, the Usilin are physically weaker than most races and possess limited recovery capabilities. The Usilin follow entropic alignment tendencies and practice diverse religious traditions, with worship spanning deities such as Taath, Rinanni, Set, Sa, and Elindale. Common professions among the Usilin include Cleric and Runemage, though some pursue the path of the Bard. Fighters, Thieves, and Psions are rare among their kind.",
+      "alignments": [
+        "Entropic",
+        "Orderly"
+      ],
+      "sexes": [
+        "Male",
+        "Female",
+        "Non-Binary"
+      ],
+      "typicalLifespan": {
+        "min": 150,
+        "max": 500,
+        "unit": "years"
+      },
+      "allowedAge": {
+        "min": 18,
+        "max": 500,
+        "unit": "years"
+      },
+      "weight": {
+        "min": 80,
+        "max": 200,
+        "unit": "pounds"
+      },
+      "height": {
+        "min": {
+          "feet": 3,
+          "inches": 11
+        },
+        "max": {
+          "feet": 6,
+          "inches": 8
+        }
+      },
+      "appearance": {
+        "eyeColor": [
+          "Blue",
+          "Aqua Blue",
+          "Dark Blue",
+          "Sapphire Blue",
+          "Silvery Blue",
+          "Brown",
+          "Dark Brown",
+          "Light Gray",
+          "Amber",
+          "Hazel",
+          "White",
+          "Silver"
+        ],
+        "hairColor": [
+          "Blonde",
+          "Light Blonde",
+          "Sandy Blonde",
+          "Dirty Blonde",
+          "Platinum",
+          "Reddish Blonde",
+          "Coppery Red",
+          "Auburn",
+          "Light Brown",
+          "Honey Brown",
+          "Gray",
+          "Light Gray",
+          "Silvery",
+          "White",
+          "Pure White",
+          "Luminous White"
+        ],
+        "hairLength": [
+          "Medium",
+          "Long",
+          "Shoulder length",
+          "Chest length",
+          "Middle Back length",
+          "Waist length"
+        ],
+        "hairStyle": [
+          "Neat",
+          "Clean",
+          "Fresh",
+          "Wavy",
+          "Sleek",
+          "Braided"
+        ],
+        "skinColor": [
+          "Light Brown",
+          "Pale",
+          "Alabaster",
+          "White",
+          "Silvery"
+        ],
+        "mood": [
+          "Happy",
+          "Calm",
+          "Curious",
+          "Cheerful",
+          "Stoic",
+          "Brooding",
+          "Devious",
+          "Mischievous",
+          "Nervous",
+          "Arrogant",
+          "Distant",
+          "Energetic",
+          "Melancholic",
+          "Ornery",
+          "Upbeat",
+          "Watchful",
+          "Dark",
+          "Joyful",
+          "Angry",
+          "Smug"
+        ]
+      },
+      "inGameHelp": {
+        "title": "USILIN",
+        "genders": [
+          "Male",
+          "Female",
+          "Non-Binary"
+        ],
+        "difficulty": null,
+        "role": null,
+        "allowedClasses": [
+          "Fighter",
+          "Cleric: Order of the Heart",
+          "Cleric: Order of the Sword",
+          "Cleric: Order of the Hand",
+          "Bard",
+          "Thief",
+          "Rune Mage",
+          "Psion"
+        ],
+        "racialTensions": "They form their own opinions of each race as they play",
+        "racialAbilities": "None"
+      },
+      "source": "data/race-creation/raw/u-usilin.txt"
+    }
+  ]
+}

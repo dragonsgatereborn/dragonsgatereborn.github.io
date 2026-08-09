@@ -1,0 +1,210 @@
+BLUNT WEAPONS
+Type: Skill
+Keywords: Blunt Weapons bluntweapons
+Character Level Required: All Classes(1). 
+Maximum Training Level: 1. Range: 10ft
+
+Syntax: automatic
+
+Blunt Weapons
+
+
+Blunt Weapons (automatic): 
+ o increases attack rating while using blunt weapons (+potency) and 
+ o increases stamina (+potency).
+
+TRAINING KEY:
+potency - damage/effectiveness
+
+See: help skill
+-----------------------------------------------------------------------------------------------
+
+EMRBERSERK
+Author: Command Master
+Keywords: emrberserk berserk rage frenzy
+Type: Command
+
+Syntax: berserk - displays your current berserk status.
+Syntax: berserk stop - attempt to calm the rage (chance scales with Berserk skill).
+
+
+ats.text.formatters.HelpTextFormatter@fc1a15
+-----------------------------------------------------------------------------------------------
+
+BOX
+Author: Command Master
+Keywords: box 
+Type: Command
+
+Syntax: box store <item>|<slot> - stores the item stack in the bank vault
+Syntax: box store <#> <item>|<slot> - stores a number of items from your inventory
+Syntax: box remove <item>|<slot> - retrieves the item stack from your bank vault
+Syntax: box view
+Syntax: box upgrade yes|cost - views the cost of the upgrade or purchases an upgrade
+
+
+The box command allows you to manage your stored items in the bank's vault: storing and
+removing items.
+
+The vault has a limited amount of spaces for items, and items inside containers are counted
+towards the total.
+
+Upgrades may be purchased and the size of the bank vault is infinite.
+
+See: help bank, help inventory, help vault, help cache, help currency
+-----------------------------------------------------------------------------------------------
+
+BANK
+Author: Command Master
+Keywords: bank 
+Type: Command
+
+Syntax: bank - enters the bank menu.
+
+The bank command allows you to manage your stored ourrency.
+
+The bank has several available options to manage your account: depositing and withdrawing
+funds, and converting currency.
+
+You may store items in a bank vault. To do so, use the box command.
+
+See: help box, help inventory, help currency
+-----------------------------------------------------------------------------------------------
+
+BUY
+Author: Command Master
+Keywords: buy purchase
+Type: Command
+
+Syntax: buy [mob name] <slot> - buys an item from the shop. mob name is optional (only if there are more than one shop in the same room (works on all shops in the room at once)
+Syntax: buy [mob name] <slot> <amount>
+
+
+The buy command allows you to buy items from shopkeeprs. To buy an item, type: buy <##
+
+
+See: help shop, help sell, help list, help keep, help retain, 
+-----------------------------------------------------------------------------------------------
+
+PAY
+Author: Command Master
+
+
+Keywords: pay bounty wanted law pay jail criminal
+Type: Command
+
+Syntax: pay bounty - tries to pay your bounty to remove the WANTED flag. You must be at a bounty office.
+Syntax: pay check - views the cost to remove your bounty. You must be at a bounty office.
+
+
+The pay command pays off a bounty (WANTED flag) gained from attacking the guards, pick
+pocketing or similar illegal activities.
+
+You can only pay a bounty at the bounty office, Northwest from the center of Spur.
+
+The cost of the bounty scales based on character level.
+
+Being Wanted will cause the city guards to attack on sight so be careful while moving int
+the city!
+-----------------------------------------------------------------------------------------------
+
+BREAK
+Author: Command Master
+Keywords: break 
+Type: Command
+
+Syntax: break <item>|<slot> - destroys an item. Kept and Retained items cannot be broken.
+Syntax: break stack <item>|<slot> - destroys all items at the stack. Kept and Retained items cannot be broken.
+
+
+The break command destroys an item - removing it from the game forever.
+
+To prevent an item from being broken, mark it KEEP or RETAIN.
+
+Note: While selling, there is no need to break empty containers as they can be sold
+on-mass.
+
+See: help keep, help retain, help sell, 
+-----------------------------------------------------------------------------------------------
+
+BLACKJACK
+Author: Command Master
+Keywords: blackjack 
+Type: Command
+
+Syntax: blackjack play <bet> - starts a new game of blackjack with the bet in gold.
+Syntax: blackjack hit - asks for a new card.
+Syntax: blackjack stay - keep your current hand and let the dealer play.
+
+
+Syntax: blackjack view - looks at the dealer's and your cards.
+
+-----------------------------------------------------------------------------------------------
+
+BOXPRODUCER
+Author: Command Master
+Keywords: boxproducer 
+Type: Command
+
+Unknown Command.
+-----------------------------------------------------------------------------------------------
+
+BARD
+Type: Class
+Keywords: Bard
+Difficulty: MEDIUM
+Role: Utility, Control, Healer
+Allowed Races: Anthian, Drag-al, Fir Elf, Flerian, Frontacian, Go-blin, Hithual, Human,
+Psycian, San Elf, Usilin
+Specializations: None
+
+Bards are versatile entertainers capable of casting spells and combat, though their magical
+abilities are less powerful than dedicated spell-casters. They gain some thief-like
+abilities including disguise and excel at performance-based roleplay. The class suits
+players who value versatility, charm, and creative problem-solving within group dynamics.
+
+
+To learn more about the Bard please visit the web page:
+http://dragonsgatereborn.com/classes/class-bard.html
+
+
+See: help skills, help <race name>, help classes, help specialization
+-----------------------------------------------------------------------------------------------
+
+BARBARIAN
+Type: Class
+Keywords: Barbarian
+Difficulty: EASY
+Role: Damage, Tank
+Allowed Races: Anthian, Arachnian, Drag-al, Flerian, Go-blin, Go-blin-al, Hithual, Human,
+Monitanian, Muatana-al, Oog-ra, Psycian, San Elf, Thugian
+Specializations: None
+
+Barbarians are powerful melee combatants distinguished by their signature Berserk ability.
+When sufficiently wounded in combat, they enter an uncontrolled frenzy that dramatically
+
+
+amplifies their damage output and attack speed. However, this berserker state comes at a
+cost - they lose control and become consumed by combat instinct. Once the frenzy ends,
+severe fatigue follows.
+
+
+To learn more about the Barbarian please visit the web page:
+http://dragonsgatereborn.com/classes/class-barbarian.html
+
+
+See: help class ats.commands.combat.DispatchCommand, help skills, help class
+ats.commands.informative.AttackInfoCommand, help <race name>, help classes, help
+specialization
+-----------------------------------------------------------------------------------------------
+
+BRUTE FORCE
+Author: Game
+Keywords: Brute Force
+Type: Fighting Style
+
+Brute Force style focuses the sheer strength of the fighter to achieve maximum damage.
+They can use their strength in a whole host of abilities to unleash
+physically devastating attacks.
+
+See: help style, help fighter

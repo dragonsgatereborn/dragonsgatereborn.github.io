@@ -1,0 +1,124 @@
+Mort scribbles on his parchment. "Drag-al, is it?"
+
+Drag-als are short, dragon-like beings who possess the power to breathe fire but lack the
+claws and wings of true dragons. These jovial creatures enjoy jokes, ale, and storytelling,
+naturally gravitating toward trading and performance work rather than laborious toil. Their
+natural scale armor provides innate protection, and they possess night vision along with a
+knowledge of additional languages. Drag-als form friendships readily and are known for
+their superior bargaining skills, though their small stature creates challenges in direct
+combat. Monitanians regard them negatively, viewing them as loud and obnoxious. Common
+professions include Bard and Runemage, with some pursuing paths as Thieves, Fighters, or
+Clerics. Barbarians and Foresters among them are rare.
+
+Mort peers at you over his spectacles. "So you are Drag-al, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Drag-al. Very good."
+
+Mort flips to a new section of parchment and adjusts his spectacles.
+"Now, a question of character. How would you describe your general
+disposition?"
+
+A) Chaotic
+B) Entropic
+C) Orderly
+
+Alignment is used for deity selection.
+You may request to change your alignment at any time.
+
+Please select your alignment (A-C):
+Mort nods thoughtfully. "Chaotic, I see. Noted."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Drag-al typically live between 60 and 200 years."
+"How old are you? You must be at least 18, and no more than 200."
+Mort nods. "18 years. Moving on."
+
+Mort eyes you up and down.
+"Drag-als typically weigh between 60 and 150 pounds."
+"What is your weight?"
+Mort scribbles. "60 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Drag-als stand between 3'0 and 4'11."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "3'0. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Black
+B) Gold
+C) Silver
+D) Bronze
+E) Red
+F) Fiery Red
+G) Orange
+H) Yellow
+
+Please select (A-H):
+Mort scribbles on his parchment. "black eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) Bald
+
+Please select (A-A):
+Mort nods. "bald hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Black
+B) Blue
+C) Green
+D) Red
+E) White
+F) Yellow
+G) Brown
+H) Bronze
+I) Gold
+J) Silvery
+K) Platinum
+
+Please select (A-K):
+Mort nods approvingly. "black complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

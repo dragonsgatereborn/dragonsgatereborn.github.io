@@ -1,0 +1,461 @@
+THRUST WEAPONS
+Type: Skill
+Keywords: Thrust Weapons thrustweapons
+Character Level Required: All Classes(1). 
+Maximum Training Level: 1. Range: 10ft
+
+Syntax: automatic
+
+Blunt Weapons
+
+
+Thrust Weapons (automatic): 
+ o increases attack rating while using thrust weapons (+potency) and 
+ o increases stamina (+potency).
+
+TRAINING KEY:
+potency - damage/effectiveness
+
+See: help skill
+-----------------------------------------------------------------------------------------------
+
+TAGITEM
+Author: Command Master
+Keywords: tagitem 
+Type: Command
+
+Syntax: tagitem <item|slot|sid> <tag>|CLEAR - tags or removes a tag on an item.
+
+
+The tag item command allows you add a custom tag on an item.
+
+Tags show up in inventory but not the room or equipment.
+
+This will only work on items which do not stack, can only be 5 characters, and no color.
+
+See: help inventory, 
+-----------------------------------------------------------------------------------------------
+
+GET
+Author: Command Master
+Keywords: get take grab retrieve
+Type: Command
+
+Syntax: get <item> - gets an item stack from the room
+Syntax: get <item> - gets the #th item stack from the room that matches the item
+
+
+Syntax: get <#> <item> - gets number of items from the item stack in the room
+
+Syntax: get <slot> - gets an item stack by slot from the room
+Syntax: get <#> <slot> - gets number of items from an item stack by slot from the room
+
+Syntax: get all [item] - gets all, or all items with same name as input, of the items from the room
+
+Container Get Syntax is similiar to the above:
+Syntax: get [#] <item|slot> <container> [room|inv|eq] - gets an item from the corpse or container
+Syntax: get all from <container> [room|inv|eq] - gets all, or all items with same name as input, of the items from the corpse or container
+Syntax: get all [item] <container> [room|inv|eq] - gets all, or all items with same name as input, of the items from the corpse or container
+Using 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.
+
+
+The get command allows a player to pick up an object off the ground or from another object
+such as a box or corpse.
+
+To put all of the items on the ground from a corpse, use the 'strip' command. Get does not
+work on player corpses, to loot a player corpse, use the 'strip' command.
+
+To pick up an item beyond the first, use 
+
+See: help class ats.commands.items.StripCommand, help put, help drop, help look, 
+-----------------------------------------------------------------------------------------------
+
+THROW
+Author: Command Master
+Keywords: throw 
+Type: Command
+
+Syntax: throw <item>|<slot> <target>
+-----------------------------------------------------------------------------------------------
+
+TORCH
+Author: Command Master
+Keywords: torch 
+Type: Command
+
+Syntax: torch - creates a basic torch.
+
+
+The torch command gives a short duration torch to the player if they are under level 11.
+
+Light sources can be purchased at Ally's shop, The Adventurer's Knook, in the Spur Merchant
+District.
+
+
+Light sources can be also be attained from Lightning Mages and Wizards.
+
+See: help equipment, 
+-----------------------------------------------------------------------------------------------
+
+CALL
+Author: Command Master
+Keywords: call pets animal tag mounts
+Type: Command
+
+Syntax: call <item> - summons the pet on a pet tag or mount on a mount tag!
+Syntax: call <slot> - summons the pet on a pet tag or mount on a mount tag!
+Syntax: call patreonPet - summons the patreon pet, if one is made. Use the Patreon command to create a pet!
+Syntax: call patreonMount - summons and mounts the patreon mount, if one is made. Use the Patreon command to create a mount! (Tier 5)
+
+Syntax: call dismiss [longID]|all - dismisses your current pet. If the tag was a single use, this pet will be lost forever.
+Syntax: call list - List the pets and their LongID so you can dismiss or interact with them via order.
+Syntax: call pets - calls for your already existing pets and has them returns to you! This won't work if the pets are in combat.
+Syntax: call resonance - summons your already existing resonance to you!
+
+
+The call command summons a mount, a new pet, dismisses a pet, or returns a lost pet to your
+side.
+
+Typically, pets and mounts must be purchased or acquired through a role play event. They
+can then be summoned with the call command and controlled with the order command.
+
+Pets can perish and be lost forever. Be careful of giving them rare and expensive items as
+they can be easily lost as pet inventory is not saved. Mounts do not perish and last
+forever.
+
+See: help order, help class ats.commands.items.PatreonCommand, help dismount, help role
+play
+-----------------------------------------------------------------------------------------------
+
+TRAIN
+Author: Command Master
+Keywords: train trainer guildlist classlist raise
+Type: Command
+
+Syntax: train list - lists the abilities and specializations that can be trained at this location.
+Syntax: train <slot> - trains the ability up to the next level. This will require a tier point and sometimes an item (the train will inform you on what is needed).
+Syntax: train spec <slot> - trains the specialization up to the next level. This may require a tier point and a small fee.
+
+
+Syntax: train tier cost - checks the cost of the next tier point you may buy.
+Syntax: train tier buy - buys a tier point for the associated gold price.
+Syntax: train tier respec confirm - resets all of your tier points for 5,000 gold. All of the abilities and specializations you trained will be set to lv 1. You will receive a 75% refund of your ability points.
+
+Syntax: train guildlist - views your standing in your classes guild.
+Syntax: train history - views your training attribute gain history.
+
+
+The train command raises a level of an ability, specialization, or aptitude to the next
+level.
+
+The cost of raising to the next level varies:
+1. Possibly using a TIER POINT and/or money, if applicable to raise an ability in level.
+2. Using a TIER point (and money, if applicable) to raise a specialization in level.
+
+The money cost to raise an ability up a level depends on the amount of uses the ability has
+left.
+
+You gain tier points upon leveling up.
+
+You can also buy tier points at the trainer using 'train tier buy'.
+
+Respeccing your tier points will set all of your non-natural abilities to their initial
+level.
+
+To learn more about training and learning new abilities visit the manual:
+www.tempestseason.com/manual/abilities/#Training_Abilities_and_Specializations
+
+See: help learn, help class ats.commands.PracticeCommand, help class
+ats.commands.informative.SpecializationsCommand, help tier points, help anima convergence
+-----------------------------------------------------------------------------------------------
+
+SAY
+Author: Command Master
+Keywords: say speech talk
+Type: Command
+
+Syntax: say <message> - speaks in the current language and sends the message to the current room.
+Syntax: say <NAME, message> - speaks in the current language and sends the message to the current room, addressing the target named NAME.
+
+
+The say command communicates with other players and NPCs in the immediate room.
+
+By default, you speak the common language, which all other races can understand and speak.
+This can be changed by using the language command.
+
+
+You may target a specific person to speak too by typing: say TARGET, MESSAGE. Example: say Dayrinni, Hello there!
+Note the comma after the name.
+
+Adult and Elder dragons can speak while sleeping.
+
+See: help language, help whisper, help shout, help groupchat, help channels
+-----------------------------------------------------------------------------------------------
+
+TARGET
+Author: Command Master
+Keywords: target diagnose
+Type: Command
+
+Syntax: target <target> - locks all non-AE hostile abilities and attacks onto the indicated target.
+
+
+The target command allows a player to lock onto a target where all attacks and hostile
+abilities(skills, spells, etc) will be directed to said target if they are present.
+
+When a target is locked on a (Target) tag will appear by their name in the room.
+
+NOTE: Whenever you use a hostile ability the game will automatically lock onto that target.
+
+For healing targets, see help ally
+
+See: help class ats.commands.combat.AllyCommand, help look, help use, 
+-----------------------------------------------------------------------------------------------
+
+TELLCHAT
+Author: Command Master
+Keywords: tellchat tells
+Type: Command
+
+Syntax: tell <player> <message> - sends the player an OOC message.
+
+The tell command sends a direct message to another player regardless of their current
+location or distance from you.
+
+This is an OOC command.
+
+See: help reply, help class ats.commands.communication.NewbieChatCommand, help oracle, help
+think, help chat, help groupchat, help replay,
+-----------------------------------------------------------------------------------------------
+
+THINK
+
+
+Author: Command Master
+Keywords: think 
+Type: Command
+
+Syntax: think <message> - sends an in character think message to all staff members.
+This is great for RP as it assists the staff in moving events along for your character!
+
+The think command allows your character to have a private thought, which is sent to all
+Staff members.
+
+Thinking during any role play is vital (and highly encouraged) to your characters
+development because it allows the Staff to be notified of active RP and also non-obvious
+information.
+
+Knowing what a character is thinking can allow the staff to move the quest into a more
+meaningful direction. For example: a character may be willing to con a NPC but aren't sure
+if it is possible. A thought about this can give the Staff the information they need to
+open up this line of RP!
+
+Periodically, bonus experience and other RP rewards are given out to characters who use the
+think command often.
+
+Note: Other characters, such as those with psionics, are able to hear thoughts.
+
+This is a role play command - use it to enhance your character!
+
+See: help feel, help socials, help emote, help smote, help pose, help wmote, help mood,
+help role play
+-----------------------------------------------------------------------------------------------
+
+TITLE
+Author: Command Master
+Keywords: title 
+Type: Command
+
+Syntax: title list - lists currently known titles.
+Syntax: title set <slot> - sets your current title. Use title list to get the #
+Syntax: title current - views your current title.
+Syntax: title view <title> - views the indicated title for more information.
+
+
+The title command controls what is seen after your name.
+
+Titles may be earned through RP and denote an established role for that character, whether
+a guild position, assumed name or alias, or profession by which they are commonly known in
+
+
+Spur.
+
+To be considered ready for a custom title, a player must have a clear concept of their
+character, and invest the time, effort and consistency of RP needed to have a
+well-established IC role. A title can then be granted as an RP reward at the staff's
+discretion.
+
+See: help rank, help emote, help smote, help pose, help wmote, help mood, help role play
+-----------------------------------------------------------------------------------------------
+
+CLERIC: ORDER OF THE HEART
+Type: Class
+Keywords: Cleric: Order of the Heart
+Difficulty: EASY
+Role: Healer, Utility
+Allowed Races: Anthian, Arachnian, Drag-al, Fir Elf, Flerian, Go-blin, Hithual, Human,
+Leuian, Psycian, San Elf, Secian, Usilin
+Specializations: None
+
+Heart Clerics serve as primarily healers of their temples, concentrating on healing and
+support rune-magick. They function as backline anchors, developing channeling expertise to
+heal wounds and inflict damage through divine power.
+
+
+To learn more about the Cleric: Order of the Heart please visit the web page:
+http://dragonsgatereborn.com/classes/class-cleric-heart.html
+
+
+See: help skills, help <race name>, help classes, help specialization
+-----------------------------------------------------------------------------------------------
+
+CLERIC: ORDER OF THE SWORD
+Type: Class
+Keywords: Cleric: Order of the Sword
+Difficulty: MEDIUM
+Role: Damage, Tank
+Allowed Races: Anthian, Arachnian, Drag-al, Fir Elf, Flerian, Go-blin, Hithual, Human,
+Leuian, Psycian, San Elf, Secian, Usilin
+Specializations: None
+
+Sword Clerics concentrate on battle rites and frontline engagement, serving as tank
+strikers. While trained in healing magic, their main purpose involves combat strength and
+battle-oriented spellwork.
+
+
+To learn more about the Cleric: Order of the Sword please visit the web page:
+http://dragonsgatereborn.com/classes/class-cleric-sword.html
+
+
+See: help class ats.commands.combat.DispatchCommand, help skills, help class
+ats.commands.informative.AttackInfoCommand, help <race name>, help classes, help
+specialization
+-----------------------------------------------------------------------------------------------
+
+CLERIC: ORDER OF THE HAND
+Type: Class
+Keywords: Cleric: Order of the Hand
+Difficulty: MEDIUM
+Role: Utility, Healer, Tank
+Allowed Races: Anthian, Arachnian, Drag-al, Fir Elf, Flerian, Go-blin, Hithual, Human,
+Leuian, Psycian, San Elf, Secian, Usilin
+Specializations: None
+
+Temple monks who eschew traditional weapons, trained in lethal techniques of unarmed
+combat. They begin with no training in magick, although many later choose to study the
+ways of limited rune-magick.
+
+
+To learn more about the Cleric: Order of the Hand please visit the web page:
+http://dragonsgatereborn.com/classes/class-cleric-hand.html
+
+
+See: help skills, help <race name>, help classes, help specialization
+-----------------------------------------------------------------------------------------------
+
+THIEF
+Type: Class
+Keywords: Thief
+Difficulty: MEDIUM
+Role: Damage, Utility
+Allowed Races: Anthian, Arachnian, Drag-al, Flerian, Go-blin, Go-blin-al, Human, Leuian,
+Monitanian, Muatana-al, Penthanian, San Elf, Thugian, Usilin
+Specializations: None
+
+Thieves specialize in stealth, lock-picking, disguise, and theft. They excel at
+infiltrating society through carefully crafted personas, moving through cities
+unquestioned while pursuing various enterprises.
+
+
+To learn more about the Thief please visit the web page:
+
+
+http://dragonsgatereborn.com/classes/class-thief.html
+
+
+See: help skills, help class ats.commands.informative.AttackInfoCommand, help class
+ats.commands.combat.BackstabCommand, help hide, help stalk, help <race name>, help classes,
+help specialization
+-----------------------------------------------------------------------------------------------
+
+THUGIAN
+Type: Race
+Keywords: Thugian
+Genders: Male, Female, Non-Binary
+Allowed Classes: Fighter, Thief, Barbarian, Rune Mage
+Racial Tensions: They form their own opinions of each race as they play
+Racial Abilities: None
+
+Thugians are massive, brutish humanoids renowned for their exceptional physical power and
+remarkable ability to survive. Considered among the strongest of all humanoid races, these
+towering beings combine tremendous muscle with an almost supernatural capacity for rapid
+healing, recovering from wounds that would fell lesser creatures. Their intelligence,
+however, is severely limited, and their communication skills are poor at best.
+
+Despite their fearsome reputation, Thugians have simple needs. They are almost constantly
+hungry and will consume whatever is readily available, including the flesh of other
+sentient beings, with particular fondness for humans and trolls. They are easily
+entertained and attracted to small, shiny, or cute objects, becoming fiercely possessive of
+anything that catches their eye. A well-fed Thugian can become a surprisingly loyal
+companion, though their chaotic nature and unpredictable temperament make their anger
+difficult to foresee. Preferred professions include Fighter and Barbarian, while Thief and
+Rune Mage are exceedingly rare among their kind.
+
+To learn more about the Thugian please visit the web page:
+http://dragonsgatereborn.com/races/race-thugian.html
+
+
+See: help <ability name>, help <class name>, help races
+-----------------------------------------------------------------------------------------------
+
+MATERIALS
+Type: Materials
+Keywords: Materials,Orinsteel,Platinum,Titanium,Karnite,Miltanium,Metal,Iron Works,Forge,Ore,Ingot,Smelt
+
+A Tempest Season there are several types of rare materials used for high leveled weapons,
+armor and shields.
+
+
+These materials are required to purchase gear upgrades in the Tralisia Merchant District.
+
+1. Acquire a piece of ore: trace or chunk.
+2. Go to the Iron Works and have a smith refine the pieces into ingots by using the BUY command.
+3. Take the refined ingots to the desired store, weapon or armor, and purchase the item.
+
+Tips for finding ore and ingots is as follows:
+Levels 40-69: Orinsteel - Cave and Lake Walkers
+Levels 70-100: Platinum - Basin Worms and Ragweed Beasts (best drop rate)
+Levels 100: Titanium - Hydras
+Levels 100+: Karnite - Dead Oak
+Levels 100+: Miltanium - Completing the quest Protect Tralisia: Destroy the Dead Oak Terror Knight and fighting frostbit trolls, ice spiders, and frost wyverns
+Levels 100+: Wind-metal and Lightning-metal - Tower of Windis and Lita and the Hall of Elements in the Merchant Distrct
+Levels 100+: Frost-metal - Ice Prison and the Hall of Elements in the Merchant Distrct 
+
+The city of Tralisia is always looking to improve their supply and processing of ore and
+events occur to do just this so stay tuned!
+
+The following materials and their respective tiers are as follows:
+
+ -  wood (tier 1)
+ -  copper (tier 2)
+ -  bone (tier 3)
+ -  bronze (tier 4)
+ -  iron (tier 5)
+ -  steel (tier 6)
+ -  orinsteel (tier 7)
+ -  platinum (tier 8)
+ -  titanium (tier 9)
+ -  moonsteel (tier 9)
+ -  karnite (tier 10)
+ -  obsidian (tier 10)
+ -  miltanium (tier 11)
+ -  frost-metal (tier 11)
+ -  lightning-metal (tier 11)
+ -  wind-metal (tier 11)
+ -  flame-metal (tier 11)
+ -  tritanium (tier 12)
+ -  anima (tier 20)
+
+Higher tiers mean stronger damage and protection.
+
+See: help equipment, help leveling, help elemental gear

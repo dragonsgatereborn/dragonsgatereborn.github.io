@@ -1,0 +1,268 @@
+GROUPPROTOTYPE
+Author: Command Master
+Keywords: groupprototype party leader
+Type: Command
+
+Syntax: group - checks the group status.
+Syntax: group <target> - add a player who is following you to your group. Must be the group leader and the target must be in the same room.
+Syntax: group leader <target> - gives group leader to the target. Must be the group leader and the target must be in the same room.
+Syntax: group combine <target> - tries to combine the target's group with yours. Target must be leader and in the same room.
+Syntax: group accept <player> - accepts a request to combine your group from the player. Target must be leader and in the same room.
+Syntax: group allFollowers - groups all followers currently in the same room as you.
+Syntax: group forceGroup <player> - forces this player to join your group and makes them stand (only active during Quest Mode)
+
+
+The group command forms a party from the people currently following you.
+
+While in a group, all experience and ability points are shared. Vitals of the group can be
+seen by typing 'group'.
+
+Group members also gain access to a special channel, gsay, which sends IC messages to all
+other players in the group regardless of location.
+
+See: help follow, help disband, help nofollow, help groupchat, 
+-----------------------------------------------------------------------------------------------
+
+GROUP
+Author: Command Master
+Keywords: group party leader
+Type: Command
+
+Syntax: group - checks the group status.
+Syntax: group <target> - add a player who is following you to your group. Must be the group leader and the target must be in the same room.
+Syntax: group leader <target> - gives group leader to the target. Must be the group leader and the target must be in the same room.
+Syntax: group combine <target> - tries to combine the target's group with yours. Target must be leader and in the same room.
+Syntax: group accept <player> - accepts a request to combine your group from the player. Target must be leader and in the same room.
+Syntax: group allFollowers - groups all followers currently in the same room as you.
+Syntax: group forceGroup <player> - forces this player to join your group and makes them stand (only active during Quest Mode)
+
+
+The group command forms a party from the people currently following you.
+
+While in a group, all experience and ability points are shared. Vitals of the group can be
+seen by typing 'group'.
+
+Group members also gain access to a special channel, gsay, which sends IC messages to all
+
+
+other players in the group regardless of location.
+
+See: help follow, help disband, help nofollow, help groupchat, 
+-----------------------------------------------------------------------------------------------
+
+LOOK
+Author: Command Master
+Keywords: look 
+Type: Command
+
+Syntax: look - looks at the room, showing the description.
+Syntax: look <target name> [full]|<item name>  - looks at the target or item on the target. Full option will display all equipment on target.
+Syntax: look <item name|<room extra description> [room|inv|eq] - looks at the item or room extra description.
+Syntax: look in <container>|<corpse> [room|inv|eq] - looks in a container or corpse.
+Using 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.
+Syntax: look <target name> <equipment item name> - looks at the target's item description
+Syntax: look through <portal name> - looks through the portal IN THE ROOM, to the other side.
+
+
+The look command allows you to examine other players, NPCs, or items in the world.
+
+See: help class ats.commands.informative.ScoreCommand, 
+-----------------------------------------------------------------------------------------------
+
+LAND
+Author: Command Master
+Keywords: land 
+Type: Command
+
+Syntax: land - stops flying and lands on the ground
+
+
+The land command, if flying, causes you the land immediately on the ground!
+
+Be warned! Falling 'out of the sky' will cause grave harm upon impact!
+
+See: help fly, 
+-----------------------------------------------------------------------------------------------
+
+LIST
+Author: Command Master
+Keywords: list 
+Type: Command
+
+Syntax: list [mob name] - displays the shop contents. mob name is optional (only if there are more than one shop in the same room)
+
+
+The list command allows you to list wares of a shop.
+
+To view the items a shop sells, type: list
+
+See: help shop, help buy, help sell, help keep, help retain, 
+-----------------------------------------------------------------------------------------------
+
+LOCK
+Author: Command Master
+Keywords: lock 
+Type: Command
+
+Syntax: lock <item or portal name>|<inv slot> - tries to lock the item or portal in the room
+If you're trying to unlock a chest at the locksmith, type locksmith <item>!
+
+-----------------------------------------------------------------------------------------------
+
+UNLOCK
+Author: Command Master
+Keywords: unlock lockpick lock pick
+Type: Command
+
+Syntax: unlock <item>|<slot> [room|inv|eq]
+Using 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.
+
+
+The unlock command attempts to unlock a container(chest, box, etc) or portal(gate, door,
+etc). Some items require keys to be unlocked, others do not.
+
+For containers, there are three ways to unlock it:
+using the key (if one exists
+asking your neighborhood Rogue to pick the lock
+visiting Hoss at his Locksmith Shop in the alley behind the southern section of Merchant Distirct
+
+For portals, there are two ways to unlock it:
+using the key (if one exists
+asking your neighborhood Rogue to pick the lock
+
+Not all locks can be picked.
+
+For unlocking affects on magic items, see help detectmagic
+
+See: help locksmith, help lock, help open, help close, help picklocks, help detectmagic
+
+
+-----------------------------------------------------------------------------------------------
+
+LOCKSMITH
+Author: Command Master
+Keywords: locksmith 
+Type: Command
+
+Syntax: locksmith <item> - asks the locksmith to unlock this item.
+Syntax: locksmith all [empty] - asks the locksmith to unlock and open all your locked items. If 'empty' is used he buys the chests and gives you the items.
+
+
+The locksmith command, when performed at a locksmith, unlocks all containers for a small
+fee per chest.
+
+The locksmith can be found in the Spur Merchant District: all south, through the alley, all
+east, through the door.
+
+It is better to seek out a Rogue to perform unlocking services as much more gold will be
+gained!
+
+See: help open, help unlock, help close, help lock, help rogue, help pick lock
+-----------------------------------------------------------------------------------------------
+
+PAY
+Author: Command Master
+Keywords: pay bounty wanted law pay jail criminal
+Type: Command
+
+Syntax: pay bounty - tries to pay your bounty to remove the WANTED flag. You must be at a bounty office.
+Syntax: pay check - views the cost to remove your bounty. You must be at a bounty office.
+
+
+The pay command pays off a bounty (WANTED flag) gained from attacking the guards, pick
+pocketing or similar illegal activities.
+
+You can only pay a bounty at the bounty office, Northwest from the center of Spur.
+
+The cost of the bounty scales based on character level.
+
+Being Wanted will cause the city guards to attack on sight so be careful while moving int
+the city!
+-----------------------------------------------------------------------------------------------
+
+LEARN
+Author: Command Master
+
+
+Keywords: learn 
+Type: Command
+
+learn list - lists the abilities and specializations that can be learned at this location.
+learn ability <slot> - learns the ability from the trainer for a fee.
+learn spec <slot> - learns the specialization from the trainer for a fee.
+learn fromItem|item <item name>|<slot> - scribes the knowledge from an item in your inventory, which may give new specializations or abilities.
+
+See help learn for more information.
+
+To train existing abilities, see the train command.
+
+
+The learn command learns a new ability or specialization at the trainer.
+
+Abilities can be learned at any level at the trainer.
+
+Specializations can be learned starting at level 25 at the trainer.
+
+(Mages learn from Scrolls and Blood Shamans from Totems found in the wild).
+
+See: help train, help class ats.commands.PracticeCommand, help class
+ats.commands.informative.SpecializationsCommand, help scribe, help class
+ats.commands.items.TotemCommand, help progression
+-----------------------------------------------------------------------------------------------
+
+LIEDOWN
+Author: Command Master
+Keywords: liedown rest
+Type: Command
+
+Syntax: lie
+Syntax: lie <item> - tries to lie on an item
+
+
+The lie command puts your character into a prone position.
+
+It is possible to lie on an item in the room, such as a chair, table or rune.
+
+While prone, enhanced regeneration will occur.
+
+See: help stand, help sit, help sleep, help wake, help rest
+-----------------------------------------------------------------------------------------------
+
+LANGUAGE
+
+
+Author: Command Master
+Keywords: language languages
+Type: Command
+
+Syntax: language - displays the currently language you are speaking
+
+The language command displays the current known languages as well as a way to change the
+current spoken language.
+
+The languages a player begins the game with is based upon race.
+
+New languages can only be gained through RP at this time.
+
+See: help say, help role play
+-----------------------------------------------------------------------------------------------
+
+LEUIAN
+Type: Race
+Keywords: Leuian
+Genders: Male, Female, Non-Binary
+Allowed Classes: Fighter, Cleric: Order of the Heart, Cleric: Order of the Sword, Cleric:
+Order of the Hand, Thief, Rune Mage, Psion
+Racial Tensions: They form their own opinions of each race as they play
+Racial Abilities: None
+
+Leuians are fierce warriors, considered some of the most fearsome in the lands. These
+feline-humanoid beings feature retractable claws, tails, fur, and walk upright. They live
+by The Precepts, a strict ethical code serving as their law, emphasizing honor, truth, and
+direct engagement while disdaining deception, theft, and dishonesty.
+
+To learn more about the Leuian please visit the web page:
+http://dragonsgatereborn.com/races/race-leuian.html
+
+
+See: help <ability name>, help <class name>, help races

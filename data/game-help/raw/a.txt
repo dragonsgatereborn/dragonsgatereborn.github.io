@@ -1,0 +1,348 @@
+FIRST AID
+Type: Skill
+Keywords: First Aid firstaid
+Character Level Required: All Classes(1). 
+Maximum Training Level: 1. Range: 10ft
+
+Syntax: use firstaid <target> - applies first aid to heal a target's wounds
+
+First Aid.
+
+First Aid (single victim): applies first aid to heal wounds (+chance, +potency, -delay).
+
+The target must be sitting or lying down to receive first aid. Healing scales from First
+Aid level, Wisdom, and Dexterity. Result quality ranges from Partial to Critical, with a
+hard cap of 35 on critical heals.
+
+TRAINING KEY: potency - damage/effectiveness, chance - chance of failure/success, delay -
+length of ability delay on use
+
+See: help skill
+-----------------------------------------------------------------------------------------------
+
+ID ARMOR
+Type: Skill
+Keywords: ID Armor idarmor
+Character Level Required: All Classes(1). 
+Maximum Training Level: 1. Range: 10ft
+
+Syntax: automatic
+
+See: help id
+
+ID Armor (automatic):
+
+See: help arcanist, help cleric, help explorer, help fighter, help mage, help rogue, help templar, help agent, help blood shaman, help ranger, help wizard, help lunar sage, help mystic knight, help necromancer, help solar magus, help cosmic herald, help oblivion lord, help arcane inquisitor, help dragon, help dragon, help dragon, help dragon, help dragon, help ethari, help fighter, help cleric: order of the heart, help cleric: order of the sword, help cleric: order of the hand, help bard, help thief, help barbarian, help forester, help rune mage, help psion, help shaman, help assassin, help draco, help wyvern, help classless
+-----------------------------------------------------------------------------------------------
+
+ADVANCE
+Author: Command Master
+Keywords: advance 
+Type: Command
+
+Syntax: advance [units] - advances forwards in a room at max units unless specified. 1 unit = 5 feet.
+Syntax: advance <target> - advances forwards to the target.
+Use assess to see the current location situation.
+
+
+The advance command allows you to move forward in a room by a number of units. Engaged NPCs
+will try to ensure they are always in attack range. If using a ranged weapon, it is best to
+advance or retreat prior to starting combat. You may see the current location of all NPCs
+and players in a room by using the assess command.
+
+See: help retreat, help move, help assess, help fire, help ranger
+-----------------------------------------------------------------------------------------------
+
+ASSESS
+Author: Command Master
+Keywords: assess 
+Type: Command
+
+Syntax: assess - displays everyones location in the room.
+
+The assess command gives a detailed listing of every NPC and player's location in the room
+and how many units you may move at a time.
+
+See: help advance, help retreat, help move, help fire, help ranger
+-----------------------------------------------------------------------------------------------
+
+ALIAS
+Author: Command Master
+Keywords: alias 
+Type: Command
+
+Syntax: alias list - lists all aliases
+Syntax: alias add <name> <ability> - creates an alias
+Syntax: alias remove <number> - removes an alias by number
+Syntax: alias clear - removes all aliases
+
+-----------------------------------------------------------------------------------------------
+
+MA
+Author: Command Master
+Keywords: ma martial arts martialarts
+Type: Command
+
+Syntax: ma <maneuver> [at] <target>
+Example: ma kick goblin
+Example: ma sweep at goblin
+
+
+The ma command executes martial arts maneuvers.
+
+Martial arts is an unarmed combat style. Maneuvers unlock as you train the Martial Arts
+skill (levels 1-41).
+
+Type 'info martialarts' to see available and locked maneuvers.
+-----------------------------------------------------------------------------------------------
+
+ANALYZE
+Author: Command Master
+Keywords: analyze diagnose
+Type: Command
+
+Syntax: analyze - analyizes all players and npcs in the room.
+Syntax: analyze <target>|self [full] - analyizes the player or npc in the room. Use the full option to show affects on the target.
+Syntax: analyze <target>|self affects - analyizes the player's affects.
+Syntax: analyze <target>|self myaffects - analyizes the player's affects you put on them.
+Note: You may shorthand the above (full, affects, myaffects) for easier typing.
+Note: You may also use 'self' to target you.
+
+
+The analyze command allows a player to view important diagnostic information on a target.
+
+This information includes condition (ie: near death), affects, and so on.
+
+Analyze is a vital command to playing utility and healing classes such as Clerics and
+Arcanists.
+
+See: help group, help class ats.commands.informative.HealthCommand, 
+-----------------------------------------------------------------------------------------------
+
+ACTIVATE
+Author: Command Master
+Keywords: activate 
+Type: Command
+
+Syntax: activate <item>|<inv slot> [target] [room|inv|eq]
+Using 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.
+
+
+The activate command allow you to use an item to perform some function. For example,
+pressing a button may open a door nearby. Some buttons can be pressed only once per reset
+while others can be pressed multiple times.
+
+To determine if an item can be activated look at or inspect it.
+
+
+See: help inventory, help inspect, help look, 
+-----------------------------------------------------------------------------------------------
+
+CALL
+Author: Command Master
+Keywords: call pets animal tag mounts
+Type: Command
+
+Syntax: call <item> - summons the pet on a pet tag or mount on a mount tag!
+Syntax: call <slot> - summons the pet on a pet tag or mount on a mount tag!
+Syntax: call patreonPet - summons the patreon pet, if one is made. Use the Patreon command to create a pet!
+Syntax: call patreonMount - summons and mounts the patreon mount, if one is made. Use the Patreon command to create a mount! (Tier 5)
+
+Syntax: call dismiss [longID]|all - dismisses your current pet. If the tag was a single use, this pet will be lost forever.
+Syntax: call list - List the pets and their LongID so you can dismiss or interact with them via order.
+Syntax: call pets - calls for your already existing pets and has them returns to you! This won't work if the pets are in combat.
+Syntax: call resonance - summons your already existing resonance to you!
+
+
+The call command summons a mount, a new pet, dismisses a pet, or returns a lost pet to your
+side.
+
+Typically, pets and mounts must be purchased or acquired through a role play event. They
+can then be summoned with the call command and controlled with the order command.
+
+Pets can perish and be lost forever. Be careful of giving them rare and expensive items as
+they can be easily lost as pet inventory is not saved. Mounts do not perish and last
+forever.
+
+See: help order, help class ats.commands.items.PatreonCommand, help dismount, help role
+play
+-----------------------------------------------------------------------------------------------
+
+ORACLE
+Author: Command Master
+Keywords: oracle elder staff gm gamemaster guide assist
+Type: Command
+
+Syntax: oracle <message> - sends a help message to staff members. If there are no staff members on, this will send an email to Dayrinni.
+    An email can only be sent every 30 seconds (game wide).
+    In addition, all oracles are saved per server session so staff can see them upon logging into the game at a later date!
+
+
+The oracle command allows a player to send a Helper and Staff wide help message. Any active
+
+
+Helper and Staff will see this message and assist you.
+
+If there are no staff online, a notification will be sent and the message logged for when a
+staff member enters the game.
+
+You may email Dayrinni(dayrinni@tempestseason.com) for assistance.
+
+You may also try other help files which could provide assistance: channels, feedback,
+discord, stuck.
+
+See: help class ats.commands.communication.NewbieChatCommand, help feedback, help channels,
+help discord, help stuck
+-----------------------------------------------------------------------------------------------
+
+WMOTE
+Author: Command Master
+Keywords: wmote arrival
+Type: Command
+
+Syntax: wmote enter <string> - switches to a new enter emote.
+Syntax: wmote exit <string> - switches to a new exit emote.
+Syntax: wmote current - views the current wmotes.
+Syntax: wmote clear - resets your current wmotes to be default (nothing).
+
+
+Wmote allows a player to change their enter and exit messages while moving between rooms
+from the default enter and exit messsages.
+
+Instead of seeing the default messages:
+Dayrinni leaves southeast.
+Dayrinni enters from the north.
+
+Custom messages can be displayed, such as:
+Dayrinni leaves southeast, while skipping.
+Dayrinni enters, talking to everyone he sees from the west.
+
+This is a role play command - use it to enhance your character!
+
+This command will be monitored for abuse. Report anything inappropriate, including OOC
+messages or anything that violates the game policy.
+
+See: help emote, help smote, help socials, help pose, help mood, help role play
+-----------------------------------------------------------------------------------------------
+
+AFK
+
+
+Author: Command Master
+Keywords: afk 
+Type: Command
+
+Syntax: afk - enters or leaves AFK mode.
+
+
+The AFK command is an OOC notification you are away. AFK mode will automatically be entered
+after idling for 1 hour. Any tells received while AFK will be marked with an AFK tag so you
+can see what was missed while AFK.
+
+You can and will be attacked and robbed! Make sure to AFK in a safe place. If there is any
+doubt - logout!
+
+See: help replay, help logout, 
+-----------------------------------------------------------------------------------------------
+
+COLOR
+Author: Command Master
+Keywords: color colorset ansi colors colours
+Type: Command
+
+Syntax: color set <type> <colorTag>|default - sets the given type to use the indicated color tag.
+Syntax: color list - lists all current colors.
+
+Syntax: color brief - toggles brief color on/off.
+Syntax: color none - toggles no color on/off.
+Syntax: color xterm - toggles xterm color(256 colors - need client support) on/off.
+Syntax: color trueColor - toggles true color on/off and xterm on if off.
+
+
+The color command can change many aspects of color in A Tempest Season.
+
+The following color codes exist:
+#c/#C: cyan/bright cyan
+#r/#R: red/bright red
+#g/#G: green/bright green
+#b/#B: blue/bright blue
+#p/#P: purple/bright purple
+#y/#Y: yellow/bright yellow
+#s/#S: gray/black
+#w/#W: gray/white
+#d: default color
+#h: default highlight color
+#x: terminates color and reverts to client's default
+
+
+The game also supports xterm color (type: color xterm to turn on):
+#e1 to #e255: a specific color, that matches the chart from the following website:
+https://i.stack.imgur.com/KTSQa.png
+
+The game also supports true color (type: color trueColor to turn on):
+#t(6-digit hex code): a specific color that matches the hex code in rgb color space. Example: #t(e3cdb6)
+#t[keyword]: a specific color that matches the keyword. Example: #t[cotton]
+ Note: Keywords are added by Actinate and Dayrinni. Not all keywords will exist.
+
+See: help put, help get, help look, 
+-----------------------------------------------------------------------------------------------
+
+ANTHIAN
+Type: Race
+Keywords: Anthian
+Genders: Male, Female, Non-Binary
+Allowed Classes: Fighter, Cleric: Order of the Heart, Cleric: Order of the Sword, Cleric:
+Order of the Hand, Bard, Thief, Barbarian, Forester, Rune Mage
+Racial Tensions: They form their own opinions of each race as they play
+Racial Abilities: None
+
+Anthians are short humanoids with bird and reptilian-like features, distinguished by their
+feathered wings which grant them the gift of natural flight. Males range from 4'0" to 5'2"
+in height, while females span 3'7" to 4'8". They possess sharp facial characteristics and
+are renowned for their exceptionally beautiful singing voices, which resemble melodic bird
+chirping.
+
+Their lightweight physiology, while enabling flight, restricts their cargo capacity and
+physical strength compared to larger races. Anthians embrace a reclusive lifestyle,
+establishing small communities in natural terrain rather than urban centers. They gravitate
+toward canyons, bluffs and cliffs, crags and rocky outcroppings. They share cultural
+parallels with Leuians, prioritizing family bonds, community loyalty, and heritage pride.
+
+Bards represent their most frequent urban role, leveraging their vocal talents. Foresters
+also align well with their nature-oriented culture. Anthians traditionally favor Elindale
+as their primary deity but may follow any religious path and alignment.
+
+To learn more about the Anthian please visit the web page:
+http://dragonsgatereborn.com/races/race-anthian.html
+
+
+See: help <ability name>, help <class name>, help races
+-----------------------------------------------------------------------------------------------
+
+
+ARACHNIAN
+Type: Race
+Keywords: Arachnian
+Genders: Male, Female, Non-Binary
+Allowed Classes: Fighter, Cleric: Order of the Heart, Cleric: Order of the Sword, Cleric:
+Order of the Hand, Thief, Barbarian
+Racial Tensions: Penthanian, Secian
+Racial Abilities: None
+
+Arachnians are highly intelligent spider-like beings who inhabit the Great Waste in
+northern Spur's continent, ruled by the fearsome Matriarch. An ancient conflict with the
+Penthanians resulted in the loss of their rune-magick abilities when Penthanian mages
+unleashed UnMagick, transforming the Arachnians into chaotic, hostile beings. They are
+cruel and aggressive, displaying single-mindedly biased attitudes toward other races,
+particularly despising Penthanians and viewing Secians as embodying their lost magical
+abilities. Some legends suggest they were originally followers of Order, and prophecies
+foretell the restoration of their lost powers. Arachnians possess natural body armor in the
+form of a tough carapace, night vision, high resistance to destructive magic, exceptional
+strength and dexterity, and the ability to throw webs and deliver fanged bites. They are
+known for their advanced understanding of alchemy theory.
+
+To learn more about the Arachnian please visit the web page:
+http://dragonsgatereborn.com/races/race-arachnian.html
+
+
+See: help <ability name>, help <class name>, help races

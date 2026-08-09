@@ -1,0 +1,163 @@
+Mort scribbles on his parchment. "San Elf, is it?"
+
+The Sanene, also known as San Elves, are dark-skinned elves originating from the Isle of
+Muldavia. Scholars theorize they are creations of Chaos rather than true elven descendants,
+a distinction that sets them apart from other elven races. Shorter and more sinewy than
+their Fir and Usil counterparts, the Sanene possess skin tones ranging from light golden to
+deep dark brown, with predominantly black hair and dark eyes.
+
+The Sanene prize power above all else: power of magick, weapons, information, and
+manipulation. They are conniving, power-hungry, and quick to anger, embracing destruction
+and death if it serves their purpose. Their alignment is fundamentally entropic and
+chaotic, with a deep devotion to Chaos itself. Sanene often infiltrate positions of
+influence within temples, governments, and elite circles, using their exceptional
+intelligence and cunning to further their ambitions.
+
+Among their advantages, the Sanene possess night vision, excellence in both weaponry and
+magic, above-average strength for elves, and high intelligence. However, their inherently
+untrustworthy and self-serving nature is their greatest hindrance, making lasting alliances
+rare and tenuous.
+
+Mort peers at you over his spectacles. "So you are San Elf, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A San Elf. Very good."
+
+Mort flips to a new section of parchment and adjusts his spectacles.
+"Now, a question of character. How would you describe your general
+disposition?"
+
+A) Chaotic
+B) Entropic
+
+Alignment is used for deity selection.
+You may request to change your alignment at any time.
+
+Please select your alignment (A-B):
+Mort nods thoughtfully. "Chaotic, I see. Noted."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"San Elf typically live between 150 and 600 years."
+"How old are you? You must be at least 18, and no more than 600."
+Mort nods. "18 years. Moving on."
+
+Mort eyes you up and down.
+"San Elves typically weigh between 85 and 180 pounds."
+"What is your weight?"
+Mort scribbles. "85 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"San Elves stand between 4'8 and 5'10."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "4'8. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Black
+B) Murky Black
+C) Pitch Black
+D) Dark Purple
+E) Red
+F) Ruby Red
+G) Amber
+H) Violet
+
+Please select (A-H):
+Mort scribbles on his parchment. "black eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) Black
+B) Raven
+C) Jet Black
+D) Blue Black
+E) Murky Black
+F) Sable
+G) Deathly Black
+H) Dark Purple
+I) Dark Blue
+
+Please select (A-I):
+Mort nods. "black hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your hair length."
+
+A) Short
+B) Medium
+C) Long
+D) Shoulder length
+E) Chest length
+F) Middle Back length
+G) Waist length
+
+Please select (A-G):
+Mort jots it down. "short length, got it."
+
+Mort peers at his parchment.
+"Now then, let's record your hair style."
+
+A) Neat
+B) Clean
+C) Sleek
+D) Braided
+E) Wavy
+F) Ragged
+
+Please select (A-F):
+Mort makes a note. "neat style. Very distinctive."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Gold
+B) Bronze
+C) Light Brown
+D) Brown
+E) Dark Brown
+F) Black
+G) Dark Brown
+H) Dark Gray
+
+Please select (A-H):
+Mort nods approvingly. "gold complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

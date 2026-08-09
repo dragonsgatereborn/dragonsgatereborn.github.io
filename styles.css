@@ -1435,3 +1435,30 @@ details a:hover {
     animation: none;
   }
 }
+.live-creation-card .creation-facts {
+  margin-top: 1rem;
+}
+
+.creation-option-list {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.creation-options {
+  border: 1px solid rgba(208, 171, 92, 0.28);
+  border-radius: 8px;
+  background: rgba(21, 16, 12, 0.45);
+  padding: 0.65rem 0.8rem;
+}
+
+.creation-options summary {
+  cursor: pointer;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.creation-options p {
+  margin: 0.55rem 0 0;
+}

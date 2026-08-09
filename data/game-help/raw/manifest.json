@@ -1,0 +1,137 @@
+{
+  "capturedAt": "2026-08-09T15:26:22.820Z",
+  "host": "game.dragonsgatereborn.com",
+  "port": 8555,
+  "results": [
+    {
+      "letter": "a",
+      "bytes": 14215,
+      "pages": 8
+    },
+    {
+      "letter": "b",
+      "bytes": 6894,
+      "pages": 5
+    },
+    {
+      "letter": "c",
+      "bytes": 17811,
+      "pages": 10
+    },
+    {
+      "letter": "d",
+      "bytes": 14688,
+      "pages": 9
+    },
+    {
+      "letter": "e",
+      "bytes": 11248,
+      "pages": 7
+    },
+    {
+      "letter": "f",
+      "bytes": 15552,
+      "pages": 9
+    },
+    {
+      "letter": "g",
+      "bytes": 15439,
+      "pages": 8
+    },
+    {
+      "letter": "h",
+      "bytes": 5225,
+      "pages": 3
+    },
+    {
+      "letter": "i",
+      "bytes": 11840,
+      "pages": 7
+    },
+    {
+      "letter": "j",
+      "bytes": 2381,
+      "pages": 2
+    },
+    {
+      "letter": "k",
+      "bytes": 3747,
+      "pages": 3
+    },
+    {
+      "letter": "l",
+      "bytes": 10341,
+      "pages": 6
+    },
+    {
+      "letter": "m",
+      "bytes": 11732,
+      "pages": 7
+    },
+    {
+      "letter": "n",
+      "bytes": 536,
+      "pages": 1
+    },
+    {
+      "letter": "o",
+      "bytes": 8664,
+      "pages": 5
+    },
+    {
+      "letter": "p",
+      "bytes": 18773,
+      "pages": 11
+    },
+    {
+      "letter": "q",
+      "bytes": 3700,
+      "pages": 3
+    },
+    {
+      "letter": "r",
+      "bytes": 17986,
+      "pages": 11
+    },
+    {
+      "letter": "s",
+      "bytes": 33850,
+      "pages": 18
+    },
+    {
+      "letter": "t",
+      "bytes": 18058,
+      "pages": 10
+    },
+    {
+      "letter": "u",
+      "bytes": 4930,
+      "pages": 3
+    },
+    {
+      "letter": "v",
+      "bytes": 3056,
+      "pages": 2
+    },
+    {
+      "letter": "w",
+      "bytes": 9766,
+      "pages": 7
+    },
+    {
+      "letter": "x",
+      "bytes": 41,
+      "pages": 1
+    },
+    {
+      "letter": "y",
+      "bytes": 359,
+      "pages": 1
+    },
+    {
+      "letter": "z",
+      "bytes": 41,
+      "pages": 1
+    }
+  ]
+}

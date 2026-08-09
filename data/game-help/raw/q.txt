@@ -1,0 +1,95 @@
+QUICKDRAW
+Type: Skill
+Keywords: Quickdraw quickdraw
+Character Level Required: All Classes(1). 
+Maximum Training Level: 1. Range: 10ft
+
+Syntax: automatic
+
+Quickdraw.
+
+
+Quickdraw (automatic): modifies weapon ready delay (+potency).
+
+TRAINING KEY:
+potency - damage/effectiveness
+
+See: help skill
+-----------------------------------------------------------------------------------------------
+
+QUEUE
+Author: Command Master
+Keywords: queue 
+Type: Command
+
+Syntax: queue clear|c - clears the queue
+Syntax: queue list - lists the queue
+
+
+The queue command manages the commands you send to the game. Any commands received while in
+delay will be added to the command queue and automatically executed when the delay ends.
+
+To manage the queue easier, such as automatically clearing the queue after each NPC kill,
+type: CONFIG CLEAR_QUEUE_ON_KILL To view a notifcation of when a command is placed in the
+queue, type: CONFIG VIEW_COMMAND_QUEUE_MESSAGES
+
+Delays occur when an action takes place, such as swinging a weapon, casting a spell, and,
+picking up, unlocking or selling hordes of items.
+
+The delays tick down every second and any commands entered which also are delayed, will be
+placed in the queue. Not all commands are delayed actions, and can be performed while in
+delay. Commands like say, inventory, and skills are examples for non-delayed commands.
+
+See: help delay, help class ats.commands.informative.CoolDownsCommand, help config, 
+-----------------------------------------------------------------------------------------------
+
+
+QUEST
+Author: Command Master
+Keywords: quest quests journal
+Type: Command
+
+quest request <npc name> - requests the quest from the NPC and adds it to your journal.
+quest info <npc name> - asks the NPC about their quest but does not take it. This will display the start text.
+quest return <npc name> - turns in a completed quest to a NPC and receives any rewards.quest journal - lists a summary of your quests.
+quest journal <progress|completed|turnedin|all> - lists a summary of the quests in the indicated state. Can abbreviate these, ie: quest j p to view quests in progress.
+quest journal view <slot>|all - views a specific quest from the last quest journal display unless all is used
+quest visit <npc name> - visits a NPC that's needed for a quest.
+quest use <item name> (Have to be in the correct room for this to work)
+quest delete <exact quest name> - deletes a quest by the exact name. It's case sensitive.
+
+
+Questing in A Tempest Season is an exciting and rewarding activity to take part in. The
+commands above are how you interact with NPCs and their quests.
+
+First, one must request a quest from a NPC. NPCs who have quests show up with (Quest)
+around their names.
+
+Second, after receiving the quest, you must complete the objectives. These may involve
+finding items, visiting certain NPCs or rooms, or simply slaying beasts!
+
+Finally, once the quest is finished, return to the original NPC to receive your reward!
+
+You may also view your journal by typing 'quest journal'.
+
+Some quests are difficult to solve - so feel free to ask for help. There are also rare
+quests that give rich rewards so be on the look out!
+-----------------------------------------------------------------------------------------------
+
+QUIT
+Author: Command Master
+Keywords: quit 
+Type: Command
+
+Syntax: quit - disconnects from the game. Your character is automatically saved.
+
+
+Quit disconnects you from A Tempest Season. Your character will be saved automatically upon
+using this command.
+
+You cannot quit during combat or a short time after being in combat.
+
+
+If you wish to switch to another character without quitting, use the 'logout' command.
+
+See: help logout, help delete,

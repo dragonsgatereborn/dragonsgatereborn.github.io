@@ -1,0 +1,135 @@
+UNHIDE
+Author: Command Master
+Keywords: unhide 
+Type: Command
+
+Syntax: unhide - removes hidden state
+
+
+The unhide command removes you from hidden state.
+
+See: help search, help reveal, help hide, help stalk
+-----------------------------------------------------------------------------------------------
+
+UNREADY
+Author: Command Master
+Keywords: unready 
+Type: Command
+
+UNREADY
+
+Remove your primary weapon and put it in your inventory
+
+Syntax: unready - Removes your primary weapon.
+
+
+The unready command removes your primary weapon and puts it in your inventory.
+
+This is the reverse of the wield/ready command.
+
+See: help wield, help remove, help equipment, help inventory, 
+-----------------------------------------------------------------------------------------------
+
+UNLOAD
+Author: Command Master
+Keywords: unload 
+Type: Command
+
+Syntax: unload - unloads the equipped firearm/crossbow with its bolt/magazine.
+Syntax: unload <item> - unloads the indicated firearm/crossbow with its bolt/magazine. Your equipment will be checked first, then your inventory
+
+
+The unload command is used to remove ammo from crossbows or firearms. The removed
+projectile or magazine is placed in your inventory.
+
+See: help fire, help reload, help ranger
+
+
+-----------------------------------------------------------------------------------------------
+
+UNLOCK
+Author: Command Master
+Keywords: unlock lockpick lock pick
+Type: Command
+
+Syntax: unlock <item>|<slot> [room|inv|eq]
+Using 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.
+
+
+The unlock command attempts to unlock a container(chest, box, etc) or portal(gate, door,
+etc). Some items require keys to be unlocked, others do not.
+
+For containers, there are three ways to unlock it:
+using the key (if one exists
+asking your neighborhood Rogue to pick the lock
+visiting Hoss at his Locksmith Shop in the alley behind the southern section of Merchant Distirct
+
+For portals, there are two ways to unlock it:
+using the key (if one exists
+asking your neighborhood Rogue to pick the lock
+
+Not all locks can be picked.
+
+For unlocking affects on magic items, see help detectmagic
+
+See: help locksmith, help lock, help open, help close, help picklocks, help detectmagic
+-----------------------------------------------------------------------------------------------
+
+USE
+Author: Command Master
+Keywords: use 
+Type: Command
+
+Syntax: use <skill name> <target> - uses the skill on the target
+Leaving <target> blank will target the caster automatically.
+
+
+The use command uses a skill.
+
+Skills typically use stamina. Stamina is restored every 20 seconds out of combat. Sleeping
+is the best way to restore stamina outside of restoration abilities.
+
+Skills are unique, and the game will search for the skill to execute on every input. For
+
+
+example, if 'kick' was typed, the game would first search for a regular kick command, and
+if it did not find one, it would try to execute 'use kick' automatically.
+
+To learn more about abilities please visit this web page:
+http://tempestseason.com/manual/abilities/
+
+See: help skills, 
+-----------------------------------------------------------------------------------------------
+
+USILIN
+Type: Race
+Keywords: Usilin
+Genders: Male, Female, Non-Binary
+Allowed Classes: Fighter, Cleric: Order of the Heart, Cleric: Order of the Sword, Cleric:
+Order of the Hand, Bard, Thief, Rune Mage, Psion
+Racial Tensions: They form their own opinions of each race as they play
+Racial Abilities: None
+
+The Usilin, also known as the Usil Elves, are widely regarded as the most intelligent race
+in Eihydia. Devoted to scholastic pursuits and magical mastery, the Usilin prioritize the
+accumulation of knowledge and self-improvement as central cultural values. They distinguish
+themselves from other elven races through their unwavering focus on arcane research,
+intellectual discourse, and the preservation of ancient lore.
+
+Slender in build with pale complexions and refined elven features, the Usilin carry
+themselves with a quiet confidence born of deep learning. Their society revolves around the
+renowned Usilin Academy, a center of education and culture where the brightest minds gather
+to study the arcane arts. While their exceptional intelligence and natural magical aptitude
+make them formidable spellcasters, the Usilin are physically weaker than most races and
+possess limited recovery capabilities.
+
+The Usilin follow entropic alignment tendencies and practice diverse religious traditions,
+with worship spanning deities such as Taath, Rinanni, Set, Sa, and Elindale. Common
+professions among the Usilin include Cleric and Runemage, though some pursue the path of
+the Bard. Fighters, Thieves, and Psions are rare among their kind.
+
+To learn more about the Usilin please visit the web page:
+http://dragonsgatereborn.com/races/race-usilin.html
+
+
+See: help <ability name>, help <class name>, help races

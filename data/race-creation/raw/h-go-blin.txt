@@ -1,0 +1,135 @@
+Mort scribbles on his parchment. "Go-blin, is it?"
+
+Go-blins are small, wretched creatures that dwell in dark cave systems, organized into
+tight-knit clans. Standing only three to four feet tall, they possess a distinctive warty
+green hide covered in pulsating yellow warts, broken tusks, and filthy skin. Their
+uniformly black eyes peer out from faces universally considered repulsive, featuring
+mottled green or grey skin with various visible deformities.
+
+These nocturnal beings are compulsive hoarders, accumulating refuse and items of
+questionable value from raids and scavenging expeditions. Spitting serves as a common
+greeting among their kind, and they actively avoid sunlight whenever possible. Go-blins are
+punks and bullies by nature, sadistic when the balance is in their favor, yet cowardly when
+facing genuine threats. They prey on weaker creatures but scatter when confronted by
+superior force, valuing cowardice as a survival mechanism and disdaining those who stand
+and fight needlessly.
+
+Mort peers at you over his spectacles. "So you are Go-blin, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Go-blin. Very good."
+
+Mort notes your disposition. "Chaotic, naturally."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Go-blin typically live between 30 and 60 years."
+"How old are you? You must be at least 12, and no more than 60."
+Mort nods. "12 years. Moving on."
+
+Mort eyes you up and down.
+"Go-blins typically weigh between 40 and 80 pounds."
+"What is your weight?"
+Mort scribbles. "40 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Go-blins stand between 3'0 and 4'0."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "3'0. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Black
+
+Please select (A-A):
+Mort scribbles on his parchment. "black eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) Black
+B) Murky Black
+C) Dull Black
+D) Dark Brown
+E) Dark Green
+F) Gray
+G) Dark Gray
+H) Bald
+
+Please select (A-H):
+Mort nods. "black hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your hair length."
+
+A) Short
+B) Medium
+C) Ear length
+D) Close cut
+
+Please select (A-D):
+Mort jots it down. "short length, got it."
+
+Mort peers at his parchment.
+"Now then, let's record your hair style."
+
+A) Dirty
+B) Messy
+C) Lice Ridden
+D) Mud Caked
+E) Ragged
+
+Please select (A-E):
+Mort makes a note. "dirty style. Very distinctive."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Green
+B) Light Green
+C) Dark Green
+D) Gray
+E) Dark Gray
+F) Brown
+G) Dark Brown
+
+Please select (A-G):
+Mort nods approvingly. "green complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

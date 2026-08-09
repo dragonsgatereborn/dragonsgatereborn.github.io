@@ -1,0 +1,99 @@
+Mort scribbles on his parchment. "Arachnian, is it?"
+
+Arachnians are highly intelligent spider-like beings who inhabit the Great Waste in
+northern Spur's continent, ruled by the fearsome Matriarch. An ancient conflict with the
+Penthanians resulted in the loss of their rune-magick abilities when Penthanian mages
+unleashed UnMagick, transforming the Arachnians into chaotic, hostile beings. They are
+cruel and aggressive, displaying single-mindedly biased attitudes toward other races,
+particularly despising Penthanians and viewing Secians as embodying their lost magical
+abilities. Some legends suggest they were originally followers of Order, and prophecies
+foretell the restoration of their lost powers. Arachnians possess natural body armor in the
+form of a tough carapace, night vision, high resistance to destructive magic, exceptional
+strength and dexterity, and the ability to throw webs and deliver fanged bites. They are
+known for their advanced understanding of alchemy theory.
+
+Mort peers at you over his spectacles. "So you are Arachnian, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Arachnian. Very good."
+
+Mort notes your disposition. "Chaotic, naturally."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Arachnian typically live between 60 and 150 years."
+"How old are you? You must be at least 18, and no more than 150."
+Mort nods. "18 years. Moving on."
+
+Mort eyes you up and down.
+"Arachnians typically weigh between 80 and 200 pounds."
+"What is your weight?"
+Mort scribbles. "80 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Arachnians stand between 4'0 and 5'0."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "4'0. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Black
+B) Murky Black
+C) Pitch Black
+
+Please select (A-C):
+Mort scribbles on his parchment. "black eyes, noted."
+
+Mort notes: "Your kind has no hair. Moving on."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Black
+B) Dark Gray
+C) Gray
+D) Dark Brown
+E) Brown
+F) Dark Green
+G) Dark Purple
+
+Please select (A-G):
+Mort nods approvingly. "black complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

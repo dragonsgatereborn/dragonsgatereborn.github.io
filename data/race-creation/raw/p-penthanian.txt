@@ -1,0 +1,123 @@
+Mort scribbles on his parchment. "Penthanian, is it?"
+
+Penthanians were once part of the Frontacian Empire on the northern edge of the Great
+Divide. During the Great Change, they released an ancient spell against the Arachnians that
+backfired catastrophically, converting their bodies into soft crystalline substance. They
+now call themselves the "Living Jewels" in their own tongue. Aloof and calculating,
+Penthanians harbor a deep envy toward the Frontacians who retained their flesh and magical
+jewels. They possess natural night vision and exceptional intelligence, though their
+crystalline composition impedes natural healing.
+
+Mort peers at you over his spectacles. "So you are Penthanian, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Penthanian. Very good."
+
+Mort flips to a new section of parchment and adjusts his spectacles.
+"Now, a question of character. How would you describe your general
+disposition?"
+
+A) Chaotic
+B) Entropic
+C) Orderly
+
+Alignment is used for deity selection.
+You may request to change your alignment at any time.
+
+Please select your alignment (A-C):
+Mort nods thoughtfully. "Chaotic, I see. Noted."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Penthanian typically live between 80 and 250 years."
+"How old are you? You must be at least 18, and no more than 250."
+Mort nods. "18 years. Moving on."
+
+Mort eyes you up and down.
+"Penthanians typically weigh between 120 and 300 pounds."
+"What is your weight?"
+Mort scribbles. "120 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Penthanians stand between 5'0 and 7'8."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "5'0. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Black
+B) Pitch Black
+C) Murky Black
+D) Silver
+E) White
+F) Purple
+G) Dark Purple
+H) Violet
+
+Please select (A-H):
+Mort scribbles on his parchment. "black eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) Bald
+
+Please select (A-A):
+Mort nods. "bald hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Crystal Blue
+B) Crystal White
+C) Purple
+D) Light Purple
+E) Dark Purple
+F) Blue
+G) Light Blue
+H) Dark Blue
+I) White
+J) Pure White
+K) Silvery
+L) Platinum
+
+Please select (A-L):
+Mort nods approvingly. "crystal blue complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

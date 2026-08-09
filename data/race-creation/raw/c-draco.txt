@@ -1,0 +1,153 @@
+Mort scribbles on his parchment. "Draco, is it?"
+
+Dragons are the most powerful of all the races of Dragon's Gate Reborn. They represent the
+apex of power within the game's racial hierarchy, growing through distinct life stages from
+young Draco to the ancient and mighty Imperial dragon.
+
+Unlike other races, dragons operate outside standard game structures - they lack a
+designated class system and do not worship the mortal pantheon of gods.
+
+Mort peers at you over his spectacles. "So you are Draco, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Draco. Very good."
+
+Mort notes your disposition. "Entropic, naturally."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+
+Please select (A-B):
+Mort makes a note. "Male. Got it."
+
+Mort eyes you up and down.
+"Dracos typically weigh between 250 and 600 pounds."
+"What is your weight?"
+Mort scribbles. "250 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Dracos stand between 5'6 and 7'0."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "5'6. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Demonic Red
+B) Pitch Black
+C) Pure White
+D) Glowing Yellow
+E) Sapphire Blue
+F) Emerald Green
+
+Please select (A-F):
+Mort scribbles on his parchment. "demonic red eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) Brown
+B) Dark Brown
+C) Light Brown
+D) Honey Brown
+E) Chestnut Brown
+F) Raven
+G) Jet Black
+H) Blue Black
+I) Black
+J) Sable
+K) Red
+L) Coppery Red
+M) Auburn
+N) Reddish Blonde
+O) Blonde
+P) Light Blonde
+Q) Sandy Blonde
+R) Gray
+S) Light Gray
+T) Dark Gray
+U) Silvery
+V) Platinum
+W) Pure White
+X) White
+Y) Luminous White
+Z) Bald
+
+Please select (A-Z):
+Mort nods. "brown hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your hair length."
+
+A) Short
+B) Medium
+C) Long
+D) Shoulder length
+E) Ear length
+F) Close cut
+G) Chest length
+H) Middle Back length
+I) Waist length
+
+Please select (A-I):
+Mort jots it down. "short length, got it."
+
+Mort peers at his parchment.
+"Now then, let's record your hair style."
+
+A) Neat
+B) Messy
+C) Dirty
+D) Clean
+E) Lice Ridden
+F) Mud Caked
+G) Fresh
+H) Curly
+I) Wavy
+J) Ragged
+K) Sleek
+L) Braided
+
+Please select (A-L):
+Mort makes a note. "neat style. Very distinctive."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Light Brown
+B) Tanned
+C) Dark Brown
+
+Please select (A-C):
+Mort nods approvingly. "light brown complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

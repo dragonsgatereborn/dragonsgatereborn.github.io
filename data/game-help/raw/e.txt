@@ -1,0 +1,304 @@
+EDGE WEAPONS
+Type: Skill
+Keywords: Edge Weapons edgeweapons
+Character Level Required: All Classes(1). 
+Maximum Training Level: 1. Range: 10ft
+
+Syntax: automatic
+
+Edged Weapons
+
+
+Edge Weapons (automatic): 
+ o increases attack rating while using edge weapons (+potency) and 
+ o increases stamina (+potency).
+
+TRAINING KEY:
+potency - damage/effectiveness
+
+See: help skill
+-----------------------------------------------------------------------------------------------
+
+ENTER
+Author: Command Master
+Keywords: enter 
+Type: Command
+
+Syntax: go|enter|leave <exit name> - moves through the indicated exit, such as a door or gate in the room.
+
+
+The enter command tries to go through a portal(exit that is an object, such as a door).
+
+In many cases, these portals are closed and need to be opened first. Sometimes, they are
+locked and may require a key.
+
+See: help open, help close, help unlock, help picklock
+-----------------------------------------------------------------------------------------------
+
+EMRBERSERK
+Author: Command Master
+Keywords: emrberserk berserk rage frenzy
+Type: Command
+
+Syntax: berserk - displays your current berserk status.
+Syntax: berserk stop - attempt to calm the rage (chance scales with Berserk skill).
+
+
+ats.text.formatters.HelpTextFormatter@fc1a15
+-----------------------------------------------------------------------------------------------
+
+EMRHEALTH
+Author: Command Master
+Keywords: emrhealth 
+Type: Command
+
+Syntax: health - displays your health and fatigue.
+
+-----------------------------------------------------------------------------------------------
+
+INSPECT
+Author: Command Master
+Keywords: inspect value worth examine identify
+Type: Command
+
+Syntax: inspect <item>|<slot> [room|inv|eq] - inspects an item.
+Syntax: inspect <item>|<slot> [contianer] [room|inv|eq] - inspects an item inside a container.
+Using 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.
+
+
+The inspect command displays detailed information about a specific item, such as weight,
+key words, wear locations and so on.
+
+In order to view magical properties on an item, an Erius' Magnificent Magnifying Glass must
+be in your possession. Mages can also use Detect Magic on an item to view magical
+properties.
+
+This item can be purchased from Ally's Shop, The Adventurer's Nook, in the Spur Merchant
+District.
+
+See: help magnifying glass, help detect magic, help appraise, help haggle, help bargain,
+help currency
+-----------------------------------------------------------------------------------------------
+
+EQUIPMENT
+Author: Command Master
+Keywords: equipment 
+Type: Command
+
+Syntax: equipment - shows your current equipment
+
+The equipment command shows all currently equipped items.
+
+
+You may wield, wear and remove items.
+
+See: help wear, help wield, help remove, help get, help inventory, help inspect, 
+-----------------------------------------------------------------------------------------------
+
+EAT
+Author: Command Master
+Keywords: eat 
+Type: Command
+
+Syntax: eat <item> - eat the item if it is food or a pill.
+
+The eat command allows you to eat an object such as pie, bread, and the delicatable hotis
+dogis.
+
+Food can contain more than a single bite. The amount of bites, or uses, can be seen in the
+inventory, room, and item inspection.
+
+See: help drink, help fill, help inspect, 
+-----------------------------------------------------------------------------------------------
+
+ORACLE
+Author: Command Master
+Keywords: oracle elder staff gm gamemaster guide assist
+Type: Command
+
+Syntax: oracle <message> - sends a help message to staff members. If there are no staff members on, this will send an email to Dayrinni.
+    An email can only be sent every 30 seconds (game wide).
+    In addition, all oracles are saved per server session so staff can see them upon logging into the game at a later date!
+
+
+The oracle command allows a player to send a Helper and Staff wide help message. Any active
+Helper and Staff will see this message and assist you.
+
+If there are no staff online, a notification will be sent and the message logged for when a
+staff member enters the game.
+
+You may email Dayrinni(dayrinni@tempestseason.com) for assistance.
+
+You may also try other help files which could provide assistance: channels, feedback,
+discord, stuck.
+
+See: help class ats.commands.communication.NewbieChatCommand, help feedback, help channels,
+help discord, help stuck
+
+
+-----------------------------------------------------------------------------------------------
+
+EMOTE
+Author: Command Master
+Keywords: emote 
+Type: Command
+
+Syntax: emote <message> - displays the message to the room, with your name first.
+
+
+Emote displays a message to the room for role play purposes. Your name is highlighted in
+yellow and quoted speech is highlighted in green. You can use $c to insert your capitalized
+name.
+
+Example:
+emote jumps up on the table
+Would show up as:
+Dayrinni jumps up on the table.
+
+A message that opens with punctuation runs straight on from your name, so possessives and
+asides read naturally. A message that does not already end in . ? or ! gets a period.
+Example:
+emote 's eyes narrow
+Would show up as:
+Dayrinni's eyes narrow.
+
+You can insert your character's pronouns based on your sex: $e (he/she), $s (his/her), and
+$m (him/her).
+Example:
+emote grins and cracks $s knuckles.
+Would show up as (for a male character):
+Dayrinni grins and cracks his knuckles.
+
+Capitalized $E (he/she), $S (his/her), and $M (him/her) insert your target's pronouns
+instead - the nearest player or NPC you name with @ before the token.
+Example:
+emote claps @john on the back as $E grins.
+Would show up as (if John is male):
+Dayrinni claps John on the back as he grins.
+
+You can target players, NPCs, or objects using the @ prefix, which is replaced with the
+target's name.
+Example:
+emote looks at @john and waves at @sword
+Would show up as:
+
+
+Dayrinni looks at John and waves at an iron sword.
+
+Targets are searched in this order: players/NPCs in the room, inventory, equipment, then
+room objects.
+
+Punctuation after a target is kept, so you can write possessives and asides straight
+through.
+Example:
+emote looks at @john's red eyes, then at @sword...
+Would show up as:
+Dayrinni looks at John's red eyes, then at an iron sword...
+
+For precise targeting, use a prefix modifier:
+@name - searches all (player/NPC, then inventory, equipment, room)
+@self or @me - your own name, so a line can refer back to you
+@p:name - player/NPC only
+@i:name - inventory only (also supports slot: @i:2 for slot 2)
+@e:name - equipment only
+@r:name - room only (also supports slot: @r:3 for slot 3)
+
+See: help socials, help smote, help pose, help wmote, help mood, help think, help role play
+-----------------------------------------------------------------------------------------------
+
+EXITS
+Author: Command Master
+Keywords: exits 
+Type: Command
+
+Syntax: exits - displays all non-item exits in the room.
+
+
+The exits command allows you to see all non-item exits in the curreet room.
+
+See: help look, help enter, 
+-----------------------------------------------------------------------------------------------
+
+SOCIALS
+Author: Command Master
+Keywords: socials emotes
+Type: Command
+
+Syntax: socials - lists all the socials you have access to.
+Syntax: [sociial] <social name> - performs the social, ie: smile or social smile.
+Syntax: [sociial] <social name> [target] - performs the social at the target, ie: smile dayrinni
+Syntax: [sociial]  <social name> [target] [message] - performs the social at the target with the extra message, ie: smile dayrinni and pats his back
+
+
+The socials command lists all of the socials (RP actions) you have access to.
+
+Socials are actions used during RP, such as laughing, smirking, or crying. Many socials
+accept targets and text on the end.
+For example: smile dayrinni would smile at Dayrinni.
+For example: smile dayrinni and then pats his back would smile at Dayrinni and then have your character pat his back.
+
+See: help emote, help smote, help pose, help wmote, help mood, help think, help role play
+-----------------------------------------------------------------------------------------------
+
+FIR ELF
+Type: Race
+Keywords: Fir Elf
+Genders: Male, Female, Non-Binary
+Allowed Classes: Fighter, Cleric: Order of the Heart, Cleric: Order of the Sword, Cleric:
+Order of the Hand, Bard, Forester
+Racial Tensions: San Elf
+Racial Abilities: None
+
+The Firians, also known as Fir Elves, are forest elves deeply connected to the natural
+world. They possess a great love for nature and are renowned for their exceptional archery
+skills. Athletic in build, Firians prefer wilderness and outdoor living over urban
+environments, blending effectively into shadows and the forest canopy. They are gifted with
+night vision, making them formidable in low-light conditions. Firians are known as superior
+marksmen, wielding missile weapons with unmatched proficiency, particularly bows. Their
+foresters gain additional skinning bonuses, reflecting their deep practical knowledge of
+the wild. While physically weaker in melee combat compared to more combat-focused races,
+their agility and ranged prowess more than compensate. Firians maintain friendly relations
+with most races, particularly the Anthians, but harbor a strong hatred toward the Sanene,
+their dark elven kin.
+
+To learn more about the Fir Elf please visit the web page:
+http://dragonsgatereborn.com/races/race-firian.html
+
+
+See: help <ability name>, help <class name>, help races
+-----------------------------------------------------------------------------------------------
+
+SAN ELF
+Type: Race
+Keywords: San Elf
+Genders: Male, Female, Non-Binary
+Allowed Classes: Fighter, Cleric: Order of the Heart, Cleric: Order of the Sword, Cleric:
+
+
+Order of the Hand, Bard, Thief, Barbarian, Rune Mage, Psion
+Racial Tensions: Fir Elf, Usilin
+Racial Abilities: None
+
+The Sanene, also known as San Elves, are dark-skinned elves originating from the Isle of
+Muldavia. Scholars theorize they are creations of Chaos rather than true elven descendants,
+a distinction that sets them apart from other elven races. Shorter and more sinewy than
+their Fir and Usil counterparts, the Sanene possess skin tones ranging from light golden to
+deep dark brown, with predominantly black hair and dark eyes.
+
+The Sanene prize power above all else: power of magick, weapons, information, and
+manipulation. They are conniving, power-hungry, and quick to anger, embracing destruction
+and death if it serves their purpose. Their alignment is fundamentally entropic and
+chaotic, with a deep devotion to Chaos itself. Sanene often infiltrate positions of
+influence within temples, governments, and elite circles, using their exceptional
+intelligence and cunning to further their ambitions.
+
+Among their advantages, the Sanene possess night vision, excellence in both weaponry and
+magic, above-average strength for elves, and high intelligence. However, their inherently
+untrustworthy and self-serving nature is their greatest hindrance, making lasting alliances
+rare and tenuous.
+
+To learn more about the San Elf please visit the web page:
+http://dragonsgatereborn.com/races/race-sanene.html
+
+
+See: help <ability name>, help <class name>, help races

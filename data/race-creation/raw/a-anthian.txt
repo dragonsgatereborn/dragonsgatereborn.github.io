@@ -1,0 +1,157 @@
+Mort scribbles on his parchment. "Anthian, is it?"
+
+Anthians are short humanoids with bird and reptilian-like features, distinguished by their
+feathered wings which grant them the gift of natural flight. Males range from 4'0" to 5'2"
+in height, while females span 3'7" to 4'8". They possess sharp facial characteristics and
+are renowned for their exceptionally beautiful singing voices, which resemble melodic bird
+chirping.
+
+Their lightweight physiology, while enabling flight, restricts their cargo capacity and
+physical strength compared to larger races. Anthians embrace a reclusive lifestyle,
+establishing small communities in natural terrain rather than urban centers. They gravitate
+toward canyons, bluffs and cliffs, crags and rocky outcroppings. They share cultural
+parallels with Leuians, prioritizing family bonds, community loyalty, and heritage pride.
+
+Bards represent their most frequent urban role, leveraging their vocal talents. Foresters
+also align well with their nature-oriented culture. Anthians traditionally favor Elindale
+as their primary deity but may follow any religious path and alignment.
+
+Mort peers at you over his spectacles. "So you are Anthian, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Anthian. Very good."
+
+Mort flips to a new section of parchment and adjusts his spectacles.
+"Now, a question of character. How would you describe your general
+disposition?"
+
+A) Chaotic
+B) Entropic
+C) Orderly
+
+Alignment is used for deity selection.
+You may request to change your alignment at any time.
+
+Please select your alignment (A-C):
+Mort nods thoughtfully. "Chaotic, I see. Noted."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Anthian typically live between 45 and 110 years."
+"How old are you? You must be at least 18, and no more than 110."
+Mort nods. "18 years. Moving on."
+
+Mort eyes you up and down.
+"Anthians typically weigh between 60 and 140 pounds."
+"What is your weight?"
+Mort scribbles. "60 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Anthians stand between 3'7 and 5'2."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "3'7. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Red
+B) Brown
+C) Dark Brown
+D) Hazel
+E) Gold
+F) Orange
+
+Please select (A-F):
+Mort scribbles on his parchment. "red eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) Blonde
+B) Light Blonde
+C) Sandy Blonde
+D) Dirty Blonde
+E) Light Brown
+F) Honey Brown
+G) Reddish Blonde
+H) Coppery Red
+I) White
+J) Silvery
+
+Please select (A-J):
+Mort nods. "blonde hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your hair length."
+
+A) Short
+B) Medium
+C) Ear length
+D) Close cut
+
+Please select (A-D):
+Mort jots it down. "short length, got it."
+
+Mort peers at his parchment.
+"Now then, let's record your hair style."
+
+A) Neat
+B) Clean
+C) Fresh
+D) Sleek
+E) Wavy
+F) Messy
+G) Ragged
+
+Please select (A-G):
+Mort makes a note. "neat style. Very distinctive."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Light Brown
+B) Tanned
+C) Light Brown
+D) Gold
+E) Bronze
+F) Pale
+
+Please select (A-F):
+Mort nods approvingly. "light brown complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

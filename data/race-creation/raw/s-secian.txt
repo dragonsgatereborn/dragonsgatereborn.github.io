@@ -1,0 +1,141 @@
+Mort scribbles on his parchment. "Secian, is it?"
+
+Beautiful winged creatures, the Secians are the tiniest of all the races of Aradath. These
+fairy-like beings hail from the ancient city-state of Secia, transformed during the Great
+Change. Known for their ruby-red eyes and dazzling blonde hair, Secians are consistently
+cheerful and compassionate, possessing empathy as a divine gift. They are unfailingly kind,
+serving as peacemakers who reject violence and avoid lawbreaking or deception. Secians are
+capable of flight with minimal exertion and possess exceptional healing powers through
+empathic connection. They maintain strong, ancient bonds with Dragons and have a well-known
+obsession with jewels and gemstones. Most commonly found as Heart Clerics and Rune-Mages,
+Secians are extremely fragile but compensate with rapid movement and recovery.
+
+Mort peers at you over his spectacles. "So you are Secian, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Secian. Very good."
+
+Mort notes your disposition. "Orderly, naturally."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Secian typically live between 80 and 200 years."
+"How old are you? You must be at least 18, and no more than 200."
+Mort nods. "18 years. Moving on."
+
+Mort eyes you up and down.
+"Secians typically weigh between 5 and 20 pounds."
+"What is your weight?"
+Mort scribbles. "5 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Secians stand between 1'0 and 1'5."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "1'0. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Ruby Red
+B) Sunstone Orange
+C) Citrine Yellow
+D) Emerald Green
+E) Sapphire Blue
+F) Crystalline Purple
+G) Tourmaline Pink
+H) Moonstone White
+
+Please select (A-H):
+Mort scribbles on his parchment. "ruby red eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) Blonde
+B) Light Blonde
+C) Sandy Blonde
+D) Dirty Blonde
+E) Luminous White
+F) White
+G) Silvery
+H) Platinum
+I) Golden
+
+Please select (A-I):
+Mort nods. "blonde hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your hair length."
+
+A) Short
+B) Medium
+C) Long
+D) Shoulder length
+E) Waist length
+
+Please select (A-E):
+Mort jots it down. "short length, got it."
+
+Mort peers at his parchment.
+"Now then, let's record your hair style."
+
+A) Neat
+B) Clean
+C) Fresh
+D) Curly
+E) Wavy
+F) Sleek
+G) Braided
+
+Please select (A-G):
+Mort makes a note. "neat style. Very distinctive."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Light Brown
+B) Pale
+C) Alabaster
+D) White
+E) Pink
+F) Gold
+
+Please select (A-F):
+Mort nods approvingly. "light brown complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

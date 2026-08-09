@@ -1,0 +1,22 @@
+NOFOLLOW
+Author: Command Master
+Keywords: nofollow 
+Type: Command
+
+Syntax: nofollow - prevents people from following you. Removes anyone currently following you.
+
+
+The nofollow command prevents anyone from folllowing you and removes all current followers.
+
+This is a toggle command so type it again in order to revert it.
+
+See: help group, help follow, 
+-----------------------------------------------------------------------------------------------
+
+NONE
+Author: Game
+Keywords: None
+Type: Fighting Style
+
+
+See: help style, help fighter

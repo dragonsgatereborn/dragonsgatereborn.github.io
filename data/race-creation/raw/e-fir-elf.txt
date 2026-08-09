@@ -1,0 +1,157 @@
+Mort scribbles on his parchment. "Fir Elf, is it?"
+
+The Firians, also known as Fir Elves, are forest elves deeply connected to the natural
+world. They possess a great love for nature and are renowned for their exceptional archery
+skills. Athletic in build, Firians prefer wilderness and outdoor living over urban
+environments, blending effectively into shadows and the forest canopy. They are gifted with
+night vision, making them formidable in low-light conditions. Firians are known as superior
+marksmen, wielding missile weapons with unmatched proficiency, particularly bows. Their
+foresters gain additional skinning bonuses, reflecting their deep practical knowledge of
+the wild. While physically weaker in melee combat compared to more combat-focused races,
+their agility and ranged prowess more than compensate. Firians maintain friendly relations
+with most races, particularly the Anthians, but harbor a strong hatred toward the Sanene,
+their dark elven kin.
+
+Mort peers at you over his spectacles. "So you are Fir Elf, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Fir Elf. Very good."
+
+Mort flips to a new section of parchment and adjusts his spectacles.
+"Now, a question of character. How would you describe your general
+disposition?"
+
+A) Entropic
+B) Orderly
+
+Alignment is used for deity selection.
+You may request to change your alignment at any time.
+
+Please select your alignment (A-B):
+Mort nods thoughtfully. "Entropic, I see. Noted."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Fir Elf typically live between 200 and 800 years."
+"How old are you? You must be at least 18, and no more than 800."
+Mort nods. "18 years. Moving on."
+
+Mort eyes you up and down.
+"Fir Elves typically weigh between 80 and 200 pounds."
+"What is your weight?"
+Mort scribbles. "80 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Fir Elves stand between 3'4 and 6'2."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "3'4. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Light Brown
+B) Dark Brown
+C) Reddish Brown
+D) Hazel
+E) Amber
+F) Dull Black
+G) Pitch Black
+
+Please select (A-G):
+Mort scribbles on his parchment. "light brown eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) Black
+B) Glossy Black
+C) Jet Black
+D) Blue Black
+E) Sable
+F) Blonde
+G) Light Blonde
+H) Dark Blonde
+I) Sandy Blonde
+J) Platinum
+K) Light Brown
+L) Dark Brown
+M) Chestnut Brown
+N) Honey Brown
+
+Please select (A-N):
+Mort nods. "black hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your hair length."
+
+A) Medium
+B) Long
+C) Shoulder length
+D) Chest length
+E) Middle Back length
+F) Waist length
+
+Please select (A-F):
+Mort jots it down. "medium length, got it."
+
+Mort peers at his parchment.
+"Now then, let's record your hair style."
+
+A) Neat
+B) Clean
+C) Fresh
+D) Wavy
+E) Sleek
+F) Braided
+
+Please select (A-F):
+Mort makes a note. "neat style. Very distinctive."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Tanned
+B) Light
+C) Light Brown
+D) Pale
+E) Alabaster
+
+Please select (A-E):
+Mort nods approvingly. "tanned complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

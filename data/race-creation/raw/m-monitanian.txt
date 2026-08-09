@@ -1,0 +1,121 @@
+Mort scribbles on his parchment. "Monitanian, is it?"
+
+Monitanians are large, scaled, upright-walking lizard-like beings supported by powerful
+tails. Originating primarily from the Dismal Swamp, they remain mysterious about their
+history, though historical records recognize them as among the world's bravest peoples.
+They communicate through gestures, hisses, and grunts, and cannot speak the Common tongue
+due to vocal limitations, though they are highly intelligent despite racial assumptions
+otherwise.
+
+Monitanians value honor and allegiance above all else. Friendships are forged through
+battlefield experiences and endure permanently. They possess natural clawing and biting
+attacks, thick scaled skin that provides inherent armor, and night vision capability. Known
+for their exceptional strength and sturdy physiology, they prefer the heaviest armor
+available and often become mercenaries for just causes.
+
+Mort peers at you over his spectacles. "So you are Monitanian, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Monitanian. Very good."
+
+Mort flips to a new section of parchment and adjusts his spectacles.
+"Now, a question of character. How would you describe your general
+disposition?"
+
+A) Chaotic
+B) Entropic
+C) Orderly
+
+Alignment is used for deity selection.
+You may request to change your alignment at any time.
+
+Please select your alignment (A-C):
+Mort nods thoughtfully. "Chaotic, I see. Noted."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Monitanian typically live between 35 and 60 years."
+"How old are you? You must be at least 18, and no more than 60."
+Mort nods. "18 years. Moving on."
+
+Mort eyes you up and down.
+"Monitanians typically weigh between 150 and 350 pounds."
+"What is your weight?"
+Mort scribbles. "150 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Monitanians stand between 5'0 and 7'7."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "5'0. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Black
+B) Murky Black
+C) Pitch Black
+D) Yellow
+E) Glowing Yellow
+F) Orange
+G) Dark Orange
+H) Dark Green
+I) Red
+
+Please select (A-I):
+Mort scribbles on his parchment. "black eyes, noted."
+
+Mort notes: "Your kind has no hair. Moving on."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Green
+B) Dark Green
+C) Light Green
+D) Black
+E) Red
+F) Yellow
+G) Brown
+H) Dark Brown
+I) Gray
+J) Dark Gray
+
+Please select (A-J):
+Mort nods approvingly. "green complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

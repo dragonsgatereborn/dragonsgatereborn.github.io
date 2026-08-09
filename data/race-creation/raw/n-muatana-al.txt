@@ -1,0 +1,158 @@
+Mort scribbles on his parchment. "Muatana-al, is it?"
+
+The origins of the Muatana-al remain shrouded in mystery. Some believe they were once
+cursed nobility, while others claim the Chaos Lords created them as instruments of terror.
+Primarily associated with the Isle of Muldavia, they dominate the San Elves and their
+leader, the Muatana-al Lord of the Dernath Woods, has allegedly forged pacts with Dragons
+and Wyverns.
+
+Tall and gaunt, the Muatana-al possess unnaturally pale flesh that seems to glow faintly in
+darkness, with luminous veins visible beneath the surface in hues of crimson, blue, green,
+and violet. They are cold, calculating, and utterly without mercy — intelligent predators
+and patient hunters capable of stalking prey for extended periods. Solitary by nature, they
+form alliances only when mutually beneficial, having long since abandoned any semblance of
+compassion or empathy.
+
+The Muatana-al must regularly drain the life force of living creatures to sustain
+themselves. Feeding requires physical contact, leaving victims weakened, aged, or
+desiccated. Without feeding, a Muatana-al suffers progressive weakness and eventual death.
+They are strictly nocturnal creatures — sunlight causes searing pain and prolonged exposure
+is lethal. Their entire culture revolves around the cycle of night and day.
+
+Mort peers at you over his spectacles. "So you are Muatana-al, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Muatana-al. Very good."
+
+Mort notes your disposition. "Chaotic, naturally."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Muatana-al typically live between 80 and 300 years."
+"How old are you? You must be at least 18, and no more than 300."
+Mort nods. "18 years. Moving on."
+
+Mort eyes you up and down.
+"Muatana-als typically weigh between 200 and 400 pounds."
+"What is your weight?"
+Mort scribbles. "200 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Muatana-als stand between 6'0 and 7'0."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "6'0. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Red
+B) Glowing Red
+C) Demonic Red
+D) Ruby Red
+E) Fiery Red
+F) Purple
+G) Dark Purple
+H) Violet
+I) Black
+J) Pitch Black
+K) Glowing Yellow
+L) Glowing White
+
+Please select (A-L):
+Mort scribbles on his parchment. "red eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) Black
+B) Jet Black
+C) Raven
+D) Sable
+E) Deathly Black
+F) Murky Black
+G) White
+H) Pure White
+I) Luminous White
+J) Silvery
+K) Platinum
+L) Gray
+M) Dark Gray
+N) Bald
+
+Please select (A-N):
+Mort nods. "black hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your hair length."
+
+A) Short
+B) Medium
+C) Long
+D) Shoulder length
+
+Please select (A-D):
+Mort jots it down. "short length, got it."
+
+Mort peers at his parchment.
+"Now then, let's record your hair style."
+
+A) Neat
+B) Sleek
+C) Clean
+D) Ragged
+E) Messy
+F) Fresh
+
+Please select (A-F):
+Mort makes a note. "neat style. Very distinctive."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Pale
+B) Alabaster
+C) White
+D) Pure White
+E) Luminous White
+F) Light Gray
+G) Gray
+
+Please select (A-G):
+Mort nods approvingly. "pale complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)
