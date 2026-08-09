@@ -30,6 +30,8 @@ function plainText(value) {
 const pages = [];
 for (const file of await htmlFiles(root)) {
   const html = await readFile(file, "utf8");
+  const robotsMatch = html.match(/<meta\s+name=["']robots["']\s+content=["']([^"']*)["']/i);
+  if (robotsMatch && /\bnoindex\b/i.test(robotsMatch[1])) continue;
   const titleMatch = html.match(/<title>([\s\S]*?)<\/title>/i);
   if (!titleMatch) continue;
   const descriptionMatch = html.match(/<meta\s+name=["']description["']\s+content=["']([^"']*)["']/i);
