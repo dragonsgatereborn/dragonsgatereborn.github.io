@@ -1,0 +1,462 @@
+INVENTORY
+Author: Command Master
+Keywords: inventory carry items
+Type: Command
+
+Syntax: inventory - displays your inventory.
+Syntax: inventory sort inv|bank|room|<container name> <sort type>|list - changes the sorting method of the selected inventory.
+  Use 'list' to see a list of available options.
+Syntax: inventory carry - displays your carry information regarding your inventory.
+Syntax: inventory updateKeys|updateGems|updateCoins - looks through all of your inventory items (not in containers) and updates all non-keys/etc to be keys, which are keys and are also non-keys during the key updating process.
+
+
+The inventory command shows all currently held items.
+
+When you receive an item, such as picking one up, it goes into your inventory. You can only
+carry a limited amount of items (35 item stacks). Buying containers (such as backpacks) and
+using the bank vault can store more items.
+
+You may drop, give, inspect, keep, retain items (and more!).
+
+See: help drop, help give, help inspect, help keep, help retain, help equipment, help box,
+help vault, help cache, help break,
+-----------------------------------------------------------------------------------------------
+
+CONTACT
+Author: Command Master
+Keywords: contact 
+Type: Command
+
+Syntax: contact <target> <message> - psionic contact with a single target (psionics level 1).
+        contact room <message>     - psionic contact with everyone in your room (psionics level 10).
+        contact all <message>      - global psionic contact (psionics level 20).
+
+-----------------------------------------------------------------------------------------------
+
+COMPARE
+Author: Command Master
+Keywords: compare 
+Type: Command
+
+Syntax: compare <first item name> <second item name> - compares a weapon or armor to another of the same type. Checks your inventory and then your equipment.
+
+
+The compare command compares two items of the same type to determine which one is better or
+different.
+
+
+Currently, weapon, armor and shields can be compared.
+
+See: help inspect, help inventory, 
+-----------------------------------------------------------------------------------------------
+
+CACHE
+Author: Command Master
+Keywords: cache 
+Type: Command
+
+Syntax: cache store <item>|<slot> - stores the item stack in the cache
+Syntax: cache store <#> <item>|<slot> - stores a number of items from your inventory
+Syntax: cache remove <item>|<slot> - retrieves the item stack from your cache (staff and helper only)
+Syntax: cache view
+
+
+The cache command allows you to manage your stored items in the cache: ONLY storing items.
+Items CANNOT be removed unless a specific condition occurs. Specific conditions usually are
+RP based, for example, a bank robbery occurs and now you can remove items from the cache.
+These conditions are usually explained to you when you are given a cache.
+
+The cache has a has 150 spaces for items and items inside containers are counted towards
+the total.
+
+Upgrades may be not currently be purchased. Gaining a cache is a RP reward and you will be
+approached to acquire one; please do not ask for a cache.
+
+See: help box, help vault, help inventory, help roleplay
+-----------------------------------------------------------------------------------------------
+
+CLOSE
+Author: Command Master
+Keywords: close 
+Type: Command
+
+Syntax: close <item>|<inv slot> [room|inv|eq] - closes an item.
+Using 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.
+
+-----------------------------------------------------------------------------------------------
+
+PAY
+Author: Command Master
+Keywords: pay bounty wanted law pay jail criminal
+Type: Command
+
+
+Syntax: pay bounty - tries to pay your bounty to remove the WANTED flag. You must be at a bounty office.
+Syntax: pay check - views the cost to remove your bounty. You must be at a bounty office.
+
+
+The pay command pays off a bounty (WANTED flag) gained from attacking the guards, pick
+pocketing or similar illegal activities.
+
+You can only pay a bounty at the bounty office, Northwest from the center of Spur.
+
+The cost of the bounty scales based on character level.
+
+Being Wanted will cause the city guards to attack on sight so be careful while moving int
+the city!
+-----------------------------------------------------------------------------------------------
+
+CALL
+Author: Command Master
+Keywords: call pets animal tag mounts
+Type: Command
+
+Syntax: call <item> - summons the pet on a pet tag or mount on a mount tag!
+Syntax: call <slot> - summons the pet on a pet tag or mount on a mount tag!
+Syntax: call patreonPet - summons the patreon pet, if one is made. Use the Patreon command to create a pet!
+Syntax: call patreonMount - summons and mounts the patreon mount, if one is made. Use the Patreon command to create a mount! (Tier 5)
+
+Syntax: call dismiss [longID]|all - dismisses your current pet. If the tag was a single use, this pet will be lost forever.
+Syntax: call list - List the pets and their LongID so you can dismiss or interact with them via order.
+Syntax: call pets - calls for your already existing pets and has them returns to you! This won't work if the pets are in combat.
+Syntax: call resonance - summons your already existing resonance to you!
+
+
+The call command summons a mount, a new pet, dismisses a pet, or returns a lost pet to your
+side.
+
+Typically, pets and mounts must be purchased or acquired through a role play event. They
+can then be summoned with the call command and controlled with the order command.
+
+Pets can perish and be lost forever. Be careful of giving them rare and expensive items as
+they can be easily lost as pet inventory is not saved. Mounts do not perish and last
+forever.
+
+See: help order, help class ats.commands.items.PatreonCommand, help dismount, help role
+play
+-----------------------------------------------------------------------------------------------
+
+
+COMBINE
+Author: Command Master
+Keywords: combine 
+Type: Command
+
+Syntax: combine - tries to combine all items in the held 'combiner' container into another item.
+Syntax: combine list - lists all known public recipes.
+
+
+The combine command tries to combine several items together to form a new one. To combine
+several items together, HOLD the combiner and place itmes into it. Then type COMBINE
+
+To purchase a combiner visit Ally's shop, The Adventurer's Nook,  in the Merchant District.
+
+Note: There is a limited amount of possible combines so trying to combine items together
+without doing something specific will not yield any results.
+Often, items will indicate in their description if they can be combined.
+
+See: help put, help get, help look, 
+-----------------------------------------------------------------------------------------------
+
+TRAIN
+Author: Command Master
+Keywords: train trainer guildlist classlist raise
+Type: Command
+
+Syntax: train list - lists the abilities and specializations that can be trained at this location.
+Syntax: train <slot> - trains the ability up to the next level. This will require a tier point and sometimes an item (the train will inform you on what is needed).
+Syntax: train spec <slot> - trains the specialization up to the next level. This may require a tier point and a small fee.
+
+Syntax: train tier cost - checks the cost of the next tier point you may buy.
+Syntax: train tier buy - buys a tier point for the associated gold price.
+Syntax: train tier respec confirm - resets all of your tier points for 5,000 gold. All of the abilities and specializations you trained will be set to lv 1. You will receive a 75% refund of your ability points.
+
+Syntax: train guildlist - views your standing in your classes guild.
+Syntax: train history - views your training attribute gain history.
+
+
+The train command raises a level of an ability, specialization, or aptitude to the next
+level.
+
+The cost of raising to the next level varies:
+1. Possibly using a TIER POINT and/or money, if applicable to raise an ability in level.
+2. Using a TIER point (and money, if applicable) to raise a specialization in level.
+
+
+The money cost to raise an ability up a level depends on the amount of uses the ability has
+left.
+
+You gain tier points upon leveling up.
+
+You can also buy tier points at the trainer using 'train tier buy'.
+
+Respeccing your tier points will set all of your non-natural abilities to their initial
+level.
+
+To learn more about training and learning new abilities visit the manual:
+www.tempestseason.com/manual/abilities/#Training_Abilities_and_Specializations
+
+See: help learn, help class ats.commands.PracticeCommand, help class
+ats.commands.informative.SpecializationsCommand, help tier points, help anima convergence
+-----------------------------------------------------------------------------------------------
+
+CHAT
+Author: Command Master
+Keywords: chat 
+Type: Command
+
+Syntax: chat <message> - displays an OOC message to all players viewing chats.
+Syntax: chat - toggles viewing chats on/off.
+
+
+The chat command displays an Out Of Character(OOC) message to all players viewing chats.
+
+Since this is an OOC command and my disrupt RP, it may be turned ON or OFF by typing: CHAT
+
+See: help class ats.commands.communication.NewbieChatCommand, help oracle, help think, help
+tellchat, help groupchat, help replay,
+-----------------------------------------------------------------------------------------------
+
+INFO
+Author: Command Master
+Keywords: info info character summary
+Type: Command
+
+INFO
+
+Display character information summary
+
+Syntax: info display - Displays a compact summary of your character.
+
+
+Syntax: info religion - Displays your religion information.
+Syntax: info magick - Displays your magick information.
+Syntax: info languages - Displays your language information.
+Syntax: info martialarts - Displays your martial arts information.
+Syntax: info psionics - Displays your psionic abilities.
+Syntax: info money - Displays your money information.
+Syntax: info runespells - Displays your rune spell information.
+Syntax: info titles - Displays your title information.
+Syntax: info disguise - Displays your disguise information.
+
+
+The info command shows a compact summary of your character including identity, vitals, and attributes.
+Use 'info magick' to view your rune inventory, or 'info runespells' to see your prepared corridors.
+-----------------------------------------------------------------------------------------------
+
+CUT
+Author: Command Master
+Keywords: cut 
+Type: Command
+
+Syntax: cut - cut yourself. Blood Shamans have a chance to gain some blood.
+
+
+The cut command cuts your character, dealing damage and restoring blood if a Blood Shaman.
+
+Otherwise, this is mostly a role play command.
+
+See: help class ats.commands.informative.RitesCommand, help class
+ats.commands.combat.EffuseCommand, help blood shaman
+-----------------------------------------------------------------------------------------------
+
+S
+Author: Command Master
+Keywords: s 
+Type: Command
+
+Syntax: commands - lists all the commands you have access to.
+
+
+The commands command lists all of the commands you have access to.
+
+You can see the help file for each command by typing: help <command>
+You can see the syntax file for each command by typing: <command> help
+
+See: help help, 
+
+
+-----------------------------------------------------------------------------------------------
+
+CONFIG
+Author: Command Master
+Keywords: config set
+Type: Command
+
+Syntax: config <config type> - toggles the config option on/off.
+Example: config NO_COLOR - toggles the coloring of text on/off.
+
+Syntax: config screenreader - sets your configuration setup to work better for screeneaders.
+Syntax: config buffersize <lines> - sets the number of lines per Hit Enter text.
+Syntax: config export [delimiter] - exports configs for use in another character (copy and paste). If 'delimiter' is used, output is on a single line.
+
+Syntax: config list - views the current configuation setup.
+Syntax: config types - views each config and their description.
+
+Syntax: config messages <messageType> <mode> - sets mode (FULL, BRIEF, NONE) for a given message type(YOURS, OTHER).
+Syntax: config messages list - views current modes for all messages.
+Syntax: config batchedcombat - toggles batched combat message mode on/off.
+
+To change colors, see color help
+
+
+The config command allow you to control certain features and behavior in the game. For
+example, this command can be used to turn the map on/off, chat color, and hints.
+
+To configure color, see help color
+
+Configs can be exported with config export for use on other characters.
+
+See: help inspect, help inventory, help brief, help color, help channels
+-----------------------------------------------------------------------------------------------
+
+COLOR
+Author: Command Master
+Keywords: color colorset ansi colors colours
+Type: Command
+
+Syntax: color set <type> <colorTag>|default - sets the given type to use the indicated color tag.
+Syntax: color list - lists all current colors.
+
+Syntax: color brief - toggles brief color on/off.
+Syntax: color none - toggles no color on/off.
+Syntax: color xterm - toggles xterm color(256 colors - need client support) on/off.
+
+
+Syntax: color trueColor - toggles true color on/off and xterm on if off.
+
+
+The color command can change many aspects of color in A Tempest Season.
+
+The following color codes exist:
+#c/#C: cyan/bright cyan
+#r/#R: red/bright red
+#g/#G: green/bright green
+#b/#B: blue/bright blue
+#p/#P: purple/bright purple
+#y/#Y: yellow/bright yellow
+#s/#S: gray/black
+#w/#W: gray/white
+#d: default color
+#h: default highlight color
+#x: terminates color and reverts to client's default
+
+The game also supports xterm color (type: color xterm to turn on):
+#e1 to #e255: a specific color, that matches the chart from the following website:
+https://i.stack.imgur.com/KTSQa.png
+
+The game also supports true color (type: color trueColor to turn on):
+#t(6-digit hex code): a specific color that matches the hex code in rgb color space. Example: #t(e3cdb6)
+#t[keyword]: a specific color that matches the keyword. Example: #t[cotton]
+ Note: Keywords are added by Actinate and Dayrinni. Not all keywords will exist.
+
+See: help put, help get, help look, 
+-----------------------------------------------------------------------------------------------
+
+CLERIC: ORDER OF THE HEART
+Type: Class
+Keywords: Cleric: Order of the Heart
+Difficulty: EASY
+Role: Healer, Utility
+Allowed Races: Anthian, Arachnian, Drag-al, Fir Elf, Flerian, Go-blin, Hithual, Human,
+Leuian, Psycian, San Elf, Secian, Usilin
+Specializations: None
+
+Heart Clerics serve as primarily healers of their temples, concentrating on healing and
+support rune-magick. They function as backline anchors, developing channeling expertise to
+heal wounds and inflict damage through divine power.
+
+
+To learn more about the Cleric: Order of the Heart please visit the web page:
+
+
+http://dragonsgatereborn.com/classes/class-cleric-heart.html
+
+
+See: help skills, help <race name>, help classes, help specialization
+-----------------------------------------------------------------------------------------------
+
+CLERIC: ORDER OF THE SWORD
+Type: Class
+Keywords: Cleric: Order of the Sword
+Difficulty: MEDIUM
+Role: Damage, Tank
+Allowed Races: Anthian, Arachnian, Drag-al, Fir Elf, Flerian, Go-blin, Hithual, Human,
+Leuian, Psycian, San Elf, Secian, Usilin
+Specializations: None
+
+Sword Clerics concentrate on battle rites and frontline engagement, serving as tank
+strikers. While trained in healing magic, their main purpose involves combat strength and
+battle-oriented spellwork.
+
+
+To learn more about the Cleric: Order of the Sword please visit the web page:
+http://dragonsgatereborn.com/classes/class-cleric-sword.html
+
+
+See: help class ats.commands.combat.DispatchCommand, help skills, help class
+ats.commands.informative.AttackInfoCommand, help <race name>, help classes, help
+specialization
+-----------------------------------------------------------------------------------------------
+
+CLERIC: ORDER OF THE HAND
+Type: Class
+Keywords: Cleric: Order of the Hand
+Difficulty: MEDIUM
+Role: Utility, Healer, Tank
+Allowed Races: Anthian, Arachnian, Drag-al, Fir Elf, Flerian, Go-blin, Hithual, Human,
+Leuian, Psycian, San Elf, Secian, Usilin
+Specializations: None
+
+Temple monks who eschew traditional weapons, trained in lethal techniques of unarmed
+combat. They begin with no training in magick, although many later choose to study the
+ways of limited rune-magick.
+
+
+To learn more about the Cleric: Order of the Hand please visit the web page:
+http://dragonsgatereborn.com/classes/class-cleric-hand.html
+
+
+See: help skills, help <race name>, help classes, help specialization
+-----------------------------------------------------------------------------------------------
+
+COMMAND
+Author: Game
+Keywords: Command
+Type: Fighting Style
+
+The Command style focuses on controlling the battlefield and the opponents in it.
+They are better suited for fighting multiple or with group members.
+Their abilities deal with applying short term buffs on themselves and group members.
+The more targets they are fighting, the more often these buffs will trigger.
+
+See: help style, help fighter
+-----------------------------------------------------------------------------------------------
+
+CLASSES
+Type: Class
+Keywords: Classes
+
+A Tempest Season has many classes for the player to select from.
+
+Each has their own advantages and disadvantages.
+
+Please see each class's help file for more information.
+
+To learn much more about the classes please visit this web page:
+http://tempestseason.com/manual/classes/class-overview/
+
+The following classes are currently available for rollup:
+
+ -  Barbarian
+ -  Bard
+ -  Cleric: Order of the Hand
+ -  Cleric: Order of the Heart
+ -  Cleric: Order of the Sword
+ -  Fighter
+ -  Forester
+ -  Psion
+ -  Rune Mage
+ -  Thief
+
+See: help <class name>

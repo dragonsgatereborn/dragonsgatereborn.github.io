@@ -1,0 +1,159 @@
+Mort scribbles on his parchment. "Leuian, is it?"
+
+Leuians are fierce warriors, considered some of the most fearsome in the lands. These
+feline-humanoid beings feature retractable claws, tails, fur, and walk upright. They live
+by The Precepts, a strict ethical code serving as their law, emphasizing honor, truth, and
+direct engagement while disdaining deception, theft, and dishonesty.
+
+Mort peers at you over his spectacles. "So you are Leuian, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Leuian. Very good."
+
+Mort flips to a new section of parchment and adjusts his spectacles.
+"Now, a question of character. How would you describe your general
+disposition?"
+
+A) Chaotic
+B) Entropic
+C) Orderly
+
+Alignment is used for deity selection.
+You may request to change your alignment at any time.
+
+Please select your alignment (A-C):
+Mort nods thoughtfully. "Chaotic, I see. Noted."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Leuian typically live between 50 and 120 years."
+"How old are you? You must be at least 18, and no more than 120."
+Mort nods. "18 years. Moving on."
+
+Mort eyes you up and down.
+"Leuians typically weigh between 100 and 250 pounds."
+"What is your weight?"
+Mort scribbles. "100 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Leuians stand between 4'4 and 7'8."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "4'4. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Light Brown
+B) Dark Brown
+C) Reddish Brown
+D) Hazel
+E) Amber
+F) Pale Green
+G) Light Green
+H) Golden
+
+Please select (A-H):
+Mort scribbles on his parchment. "light brown eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) Dull Black
+B) Glossy Black
+C) Reddish Black
+D) Bluish Black
+E) Purplish Black
+F) Light Brown
+G) Dark Brown
+H) Chestnut Brown
+I) Honey Brown
+J) Sable
+K) Auburn
+L) White
+
+Please select (A-L):
+Mort nods. "dull black hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your hair length."
+
+A) Short
+B) Medium
+C) Long
+
+Please select (A-C):
+Mort jots it down. "short length, got it."
+
+Mort peers at his parchment.
+"Now then, let's record your hair style."
+
+A) Neat
+B) Messy
+C) Dirty
+D) Clean
+E) Lice Ridden
+F) Mud Caked
+G) Fresh
+H) Curly
+I) Wavy
+J) Ragged
+K) Sleek
+L) Braided
+
+Please select (A-L):
+Mort makes a note. "neat style. Very distinctive."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Brown
+B) Light Brown
+C) Dark Brown
+D) Gold
+E) Bronze
+F) Black
+G) Gray
+H) Light Gray
+I) Dark Gray
+J) White
+K) Silvery
+
+Please select (A-K):
+Mort nods approvingly. "brown complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

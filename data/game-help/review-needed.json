@@ -1,0 +1,643 @@
+{
+  "capturedAt": "2026-08-09T15:26:22.820Z",
+  "flaggedCount": 53,
+  "duplicateTitles": [],
+  "entries": [
+    {
+      "title": "ADVANCE",
+      "type": "Command",
+      "flags": [
+        "legacy-class-reference"
+      ],
+      "matchedLetters": [
+        "a"
+      ],
+      "body": "ADVANCE\nAuthor: Command Master\nKeywords: advance \nType: Command\n\nSyntax: advance [units] - advances forwards in a room at max units unless specified. 1 unit = 5 feet.\nSyntax: advance <target> - advances forwards to the target.\nUse assess to see the current location situation.\n\n\nThe advance command allows you to move forward in a room by a number of units. Engaged NPCs\nwill try to ensure they are always in attack range. If using a ranged weapon, it is best to\nadvance or retreat prior to starting combat. You may see the current location of all NPCs\nand players in a room by using the assess command.\n\nSee: help retreat, help move, help assess, help fire, help ranger"
+    },
+    {
+      "title": "ANALYZE",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "a",
+        "d"
+      ],
+      "body": "ANALYZE\nAuthor: Command Master\nKeywords: analyze diagnose\nType: Command\n\nSyntax: analyze - analyizes all players and npcs in the room.\nSyntax: analyze <target>|self [full] - analyizes the player or npc in the room. Use the full option to show affects on the target.\nSyntax: analyze <target>|self affects - analyizes the player's affects.\nSyntax: analyze <target>|self myaffects - analyizes the player's affects you put on them.\nNote: You may shorthand the above (full, affects, myaffects) for easier typing.\nNote: You may also use 'self' to target you.\n\n\nThe analyze command allows a player to view important diagnostic information on a target.\n\nThis information includes condition (ie: near death), affects, and so on.\n\nAnalyze is a vital command to playing utility and healing classes such as Clerics and\nArcanists.\n\nSee: help group, help class ats.commands.informative.HealthCommand,"
+    },
+    {
+      "title": "ASSESS",
+      "type": "Command",
+      "flags": [
+        "legacy-class-reference"
+      ],
+      "matchedLetters": [
+        "a"
+      ],
+      "body": "ASSESS\nAuthor: Command Master\nKeywords: assess \nType: Command\n\nSyntax: assess - displays everyones location in the room.\n\nThe assess command gives a detailed listing of every NPC and player's location in the room\nand how many units you may move at a time.\n\nSee: help advance, help retreat, help move, help fire, help ranger"
+    },
+    {
+      "title": "BARBARIAN",
+      "type": "Class",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "b"
+      ],
+      "body": "BARBARIAN\nType: Class\nKeywords: Barbarian\nDifficulty: EASY\nRole: Damage, Tank\nAllowed Races: Anthian, Arachnian, Drag-al, Flerian, Go-blin, Go-blin-al, Hithual, Human,\nMonitanian, Muatana-al, Oog-ra, Psycian, San Elf, Thugian\nSpecializations: None\n\nBarbarians are powerful melee combatants distinguished by their signature Berserk ability.\nWhen sufficiently wounded in combat, they enter an uncontrolled frenzy that dramatically\n\n\namplifies their damage output and attack speed. However, this berserker state comes at a\ncost - they lose control and become consumed by combat instinct. Once the frenzy ends,\nsevere fatigue follows.\n\n\nTo learn more about the Barbarian please visit the web page:\nhttp://dragonsgatereborn.com/classes/class-barbarian.html\n\n\nSee: help class ats.commands.combat.DispatchCommand, help skills, help class\nats.commands.informative.AttackInfoCommand, help <race name>, help classes, help\nspecialization"
+    },
+    {
+      "title": "CALL",
+      "type": "Command",
+      "flags": [
+        "ats-namespace",
+        "legacy-feature-reference"
+      ],
+      "matchedLetters": [
+        "a",
+        "c",
+        "m",
+        "p",
+        "t"
+      ],
+      "body": "CALL\nAuthor: Command Master\nKeywords: call pets animal tag mounts\nType: Command\n\nSyntax: call <item> - summons the pet on a pet tag or mount on a mount tag!\nSyntax: call <slot> - summons the pet on a pet tag or mount on a mount tag!\nSyntax: call patreonPet - summons the patreon pet, if one is made. Use the Patreon command to create a pet!\nSyntax: call patreonMount - summons and mounts the patreon mount, if one is made. Use the Patreon command to create a mount! (Tier 5)\n\nSyntax: call dismiss [longID]|all - dismisses your current pet. If the tag was a single use, this pet will be lost forever.\nSyntax: call list - List the pets and their LongID so you can dismiss or interact with them via order.\nSyntax: call pets - calls for your already existing pets and has them returns to you! This won't work if the pets are in combat.\nSyntax: call resonance - summons your already existing resonance to you!\n\n\nThe call command summons a mount, a new pet, dismisses a pet, or returns a lost pet to your\nside.\n\nTypically, pets and mounts must be purchased or acquired through a role play event. They\ncan then be summoned with the call command and controlled with the order command.\n\nPets can perish and be lost forever. Be careful of giving them rare and expensive items as\nthey can be easily lost as pet inventory is not saved. Mounts do not perish and last\nforever.\n\nSee: help order, help class ats.commands.items.PatreonCommand, help dismount, help role\nplay"
+    },
+    {
+      "title": "CHAT",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "c"
+      ],
+      "body": "CHAT\nAuthor: Command Master\nKeywords: chat \nType: Command\n\nSyntax: chat <message> - displays an OOC message to all players viewing chats.\nSyntax: chat - toggles viewing chats on/off.\n\n\nThe chat command displays an Out Of Character(OOC) message to all players viewing chats.\n\nSince this is an OOC command and my disrupt RP, it may be turned ON or OFF by typing: CHAT\n\nSee: help class ats.commands.communication.NewbieChatCommand, help oracle, help think, help\ntellchat, help groupchat, help replay,"
+    },
+    {
+      "title": "CLASSES",
+      "type": "Class",
+      "flags": [
+        "tempest-branding"
+      ],
+      "matchedLetters": [
+        "c"
+      ],
+      "body": "CLASSES\nType: Class\nKeywords: Classes\n\nA Tempest Season has many classes for the player to select from.\n\nEach has their own advantages and disadvantages.\n\nPlease see each class's help file for more information.\n\nTo learn much more about the classes please visit this web page:\nhttp://tempestseason.com/manual/classes/class-overview/\n\nThe following classes are currently available for rollup:\n\n -  Barbarian\n -  Bard\n -  Cleric: Order of the Hand\n -  Cleric: Order of the Heart\n -  Cleric: Order of the Sword\n -  Fighter\n -  Forester\n -  Psion\n -  Rune Mage\n -  Thief\n\nSee: help <class name>"
+    },
+    {
+      "title": "CLERIC: ORDER OF THE SWORD",
+      "type": "Class",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "c",
+        "o",
+        "s",
+        "t"
+      ],
+      "body": "CLERIC: ORDER OF THE SWORD\nType: Class\nKeywords: Cleric: Order of the Sword\nDifficulty: MEDIUM\nRole: Damage, Tank\nAllowed Races: Anthian, Arachnian, Drag-al, Fir Elf, Flerian, Go-blin, Hithual, Human,\nLeuian, Psycian, San Elf, Secian, Usilin\nSpecializations: None\n\nSword Clerics concentrate on battle rites and frontline engagement, serving as tank\nstrikers. While trained in healing magic, their main purpose involves combat strength and\nbattle-oriented spellwork.\n\n\nTo learn more about the Cleric: Order of the Sword please visit the web page:\nhttp://dragonsgatereborn.com/classes/class-cleric-sword.html\n\n\nSee: help class ats.commands.combat.DispatchCommand, help skills, help class\nats.commands.informative.AttackInfoCommand, help <race name>, help classes, help\nspecialization"
+    },
+    {
+      "title": "COLOR",
+      "type": "Command",
+      "flags": [
+        "tempest-branding"
+      ],
+      "matchedLetters": [
+        "a",
+        "c"
+      ],
+      "body": "COLOR\nAuthor: Command Master\nKeywords: color colorset ansi colors colours\nType: Command\n\nSyntax: color set <type> <colorTag>|default - sets the given type to use the indicated color tag.\nSyntax: color list - lists all current colors.\n\nSyntax: color brief - toggles brief color on/off.\nSyntax: color none - toggles no color on/off.\nSyntax: color xterm - toggles xterm color(256 colors - need client support) on/off.\nSyntax: color trueColor - toggles true color on/off and xterm on if off.\n\n\nThe color command can change many aspects of color in A Tempest Season.\n\nThe following color codes exist:\n#c/#C: cyan/bright cyan\n#r/#R: red/bright red\n#g/#G: green/bright green\n#b/#B: blue/bright blue\n#p/#P: purple/bright purple\n#y/#Y: yellow/bright yellow\n#s/#S: gray/black\n#w/#W: gray/white\n#d: default color\n#h: default highlight color\n#x: terminates color and reverts to client's default\n\n\nThe game also supports xterm color (type: color xterm to turn on):\n#e1 to #e255: a specific color, that matches the chart from the following website:\nhttps://i.stack.imgur.com/KTSQa.png\n\nThe game also supports true color (type: color trueColor to turn on):\n#t(6-digit hex code): a specific color that matches the hex code in rgb color space. Example: #t(e3cdb6)\n#t[keyword]: a specific color that matches the keyword. Example: #t[cotton]\n Note: Keywords are added by Actinate and Dayrinni. Not all keywords will exist.\n\nSee: help put, help get, help look,"
+    },
+    {
+      "title": "CUT",
+      "type": "Command",
+      "flags": [
+        "ats-namespace",
+        "legacy-class-reference"
+      ],
+      "matchedLetters": [
+        "c"
+      ],
+      "body": "CUT\nAuthor: Command Master\nKeywords: cut \nType: Command\n\nSyntax: cut - cut yourself. Blood Shamans have a chance to gain some blood.\n\n\nThe cut command cuts your character, dealing damage and restoring blood if a Blood Shaman.\n\nOtherwise, this is mostly a role play command.\n\nSee: help class ats.commands.informative.RitesCommand, help class\nats.commands.combat.EffuseCommand, help blood shaman"
+    },
+    {
+      "title": "DELAY",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "d",
+        "s"
+      ],
+      "body": "DELAY\nAuthor: Command Master\nKeywords: delay delays stun\nType: Command\n\nSyntax: delay - displays current delay and combat timer.\n\nThe delay command shows the current delay and combat timer of a player.\n\nDelays occur when an action takes place, such as swinging a weapon, casting a spell, and,\npicking up, unlocking or selling hordes of items.\n\nThe combat timer begins whenever a hostile action is performed. Certain commands and\nactions are restricted while in a combat timer, such as the quit command.\n\nThe delays tick down every second and any commands entered which also are delayed, will be\nplaced in the queue. Not all commands are delayed actions, and can be performed while in\ndelay. Commands like say, inventory, and skills are examples for non-delayed commands.\n\nSee: help class ats.commands.informative.CoolDownsCommand,"
+    },
+    {
+      "title": "DELETE",
+      "type": "Command",
+      "flags": [
+        "tempest-branding"
+      ],
+      "matchedLetters": [
+        "d"
+      ],
+      "body": "DELETE\nAuthor: Command Master\nKeywords: delete \nType: Command\n\nSyntax: delete now - begins deletion process.\nSyntax: delete confirm - to confirm deletion after 'delete now' is typed.\nSyntax: delete cancel - to cancel deletion.\n\n\nThe delete command allows you to remove the character from your account and game world.\n\n\nThis is a two step process and can be completed by typing the following commands:\n\ndelete now\n\n\ndelete confirm\n\n\nIn the event of a mistaken deletion, please contact Dayrinni@tempestseason.com for a\nrestoration request.\n\nSee: help quit, help logout,"
+    },
+    {
+      "title": "DIE",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "d",
+        "r"
+      ],
+      "body": "DIE\nAuthor: Command Master\nKeywords: die revive death dying debt resurrect\n\n\nType: Command\n\n\nThe die command brings you back to life!\n\nIf you have been killed in combat, you may die and return to life. You will be revived at\nyour religion's temple, or the center of Spur if there is no temple.\n\nNote: If Quest Mode is on, your revive location is the current room.\n\n\nThere are penalties associated with dying if you are over level 10: a debt to your\nexperience will incur. This debt must be paid back before any progress will resume for the\nnext level. The current debt can be seen under the score command.\n\nYou keep all of your equipment, items, and currency when you die.\n\n(Exploring the game while under level 10 is a good idea since there are no penalties when\ndying.)\n\nSee: help class ats.commands.informative.ScoreCommand, help experience, help quest mode"
+    },
+    {
+      "title": "EMRBERSERK",
+      "type": "Command",
+      "flags": [
+        "ats-namespace",
+        "formatter-error"
+      ],
+      "matchedLetters": [
+        "b",
+        "e",
+        "f",
+        "r"
+      ],
+      "body": "EMRBERSERK\nAuthor: Command Master\nKeywords: emrberserk berserk rage frenzy\nType: Command\n\nSyntax: berserk - displays your current berserk status.\nSyntax: berserk stop - attempt to calm the rage (chance scales with Berserk skill).\n\n\nats.text.formatters.HelpTextFormatter@fc1a15"
+    },
+    {
+      "title": "FIGHTER",
+      "type": "Class",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "f"
+      ],
+      "body": "FIGHTER\nType: Class\nKeywords: Fighter\nDifficulty: EASY\nRole: Damage, Tank\nAllowed Races: Anthian, Arachnian, Drag-al, Fir Elf, Flerian, Frontacian, Go-blin,\nGo-blin-al, Hithual, Human, Leuian, Monitanian, Muatana-al, Oog-ra, Psycian, San Elf,\nThugian, Usilin\nSpecializations: None\n\nFighters are the stalwart of any adventuring party, serving as the backbone through\nmartial skill and determination. They can master multiple weapon types and equip any armor\nor shield, making them reliable frontline defenders.\n\n\nTo learn more about the Fighter please visit the web page:\nhttp://dragonsgatereborn.com/classes/class-fighter.html\n\n\nSee: help class ats.commands.combat.DispatchCommand, help skills, help class\nats.commands.informative.AttackInfoCommand, help <race name>, help classes, help\nspecialization"
+    },
+    {
+      "title": "FIRE",
+      "type": "Command",
+      "flags": [
+        "ats-namespace",
+        "legacy-class-reference"
+      ],
+      "matchedLetters": [
+        "f",
+        "v"
+      ],
+      "body": "FIRE\nAuthor: Command Master\nKeywords: fire volley\nType: Command\n\nSyntax: fire <rapid|deftly|precisely> <target> - fires with the indicated attack. (Can abbr the attack types, ie: r for rapid)\nSyntax: fire <direction> <range> - fires a volley in the indicated direction.\nSyntax: fire artillery [room cannon] <target> - fires the equipped or room artillery at the target. If the target is out of range, the cannon will still fire.\n\n\nThe fire command is used to fire bows, crossbows and firearms at a target. The weapon\ngenerally requires some form of ammo required, such as a quiver with arrows or bolts, or a\nmagazine in a fire arm. Bows are automatically loaded from the equipped quiver on each\nfire. Crossbows and firearms require a manual reload. Ranged weapons can also be unloaded,\nif needed.\n\nBows recieve a 50% damage bonus if used outside of melee range(2 units (10 feet)) of a\ntarget. Advance or retreat before battle to do maximum damage.\n\nBows can also be volleyed into other rooms, dealing damage from afar. Damage is reduced by\n25%. Be warned, any struck targets will chase after you after taking fire!\n\nTo see the differences between rapid, deftly and precisely type: attackinfo\n\nSee: help advance, help retreat, help move, help reload, help unload, help class\nats.commands.informative.AttackInfoCommand, help ranger, help risk"
+    },
+    {
+      "title": "GET",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "g",
+        "r",
+        "t"
+      ],
+      "body": "GET\nAuthor: Command Master\nKeywords: get take grab retrieve\nType: Command\n\nSyntax: get <item> - gets an item stack from the room\nSyntax: get <item> - gets the #th item stack from the room that matches the item\nSyntax: get <#> <item> - gets number of items from the item stack in the room\n\nSyntax: get <slot> - gets an item stack by slot from the room\nSyntax: get <#> <slot> - gets number of items from an item stack by slot from the room\n\nSyntax: get all [item] - gets all, or all items with same name as input, of the items from the room\n\nContainer Get Syntax is similiar to the above:\nSyntax: get [#] <item|slot> <container> [room|inv|eq] - gets an item from the corpse or container\nSyntax: get all from <container> [room|inv|eq] - gets all, or all items with same name as input, of the items from the corpse or container\nSyntax: get all [item] <container> [room|inv|eq] - gets all, or all items with same name as input, of the items from the corpse or container\nUsing 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.\n\n\nThe get command allows a player to pick up an object off the ground or from another object\nsuch as a box or corpse.\n\nTo put all of the items on the ground from a corpse, use the 'strip' command. Get does not\nwork on player corpses, to loot a player corpse, use the 'strip' command.\n\n\nTo pick up an item beyond the first, use \n\nSee: help class ats.commands.items.StripCommand, help put, help drop, help look,"
+    },
+    {
+      "title": "ID ARMOR",
+      "type": "Skill",
+      "flags": [
+        "legacy-class-reference"
+      ],
+      "matchedLetters": [
+        "a",
+        "i"
+      ],
+      "body": "ID ARMOR\nType: Skill\nKeywords: ID Armor idarmor\nCharacter Level Required: All Classes(1). \nMaximum Training Level: 1. Range: 10ft\n\nSyntax: automatic\n\nSee: help id\n\nID Armor (automatic):\n\nSee: help arcanist, help cleric, help explorer, help fighter, help mage, help rogue, help templar, help agent, help blood shaman, help ranger, help wizard, help lunar sage, help mystic knight, help necromancer, help solar magus, help cosmic herald, help oblivion lord, help arcane inquisitor, help dragon, help dragon, help dragon, help dragon, help dragon, help ethari, help fighter, help cleric: order of the heart, help cleric: order of the sword, help cleric: order of the hand, help bard, help thief, help barbarian, help forester, help rune mage, help psion, help shaman, help assassin, help draco, help wyvern, help classless"
+    },
+    {
+      "title": "ID GEMS",
+      "type": "Skill",
+      "flags": [
+        "legacy-class-reference"
+      ],
+      "matchedLetters": [
+        "g",
+        "i"
+      ],
+      "body": "ID GEMS\nType: Skill\nKeywords: ID Gems idgems\nCharacter Level Required: All Classes(1). \nMaximum Training Level: 1. Range: 10ft\n\nSyntax: automatic\n\nSee: help id\n\nID Gems (automatic):\n\nSee: help arcanist, help cleric, help explorer, help fighter, help mage, help rogue, help templar, help agent, help blood shaman, help ranger, help wizard, help lunar sage, help mystic knight, help necromancer, help solar magus, help cosmic herald, help oblivion lord, help arcane inquisitor, help dragon, help dragon, help dragon, help dragon, help dragon, help ethari, help fighter, help cleric: order of the heart, help cleric: order of the sword, help cleric: order of the hand, help bard, help thief, help barbarian, help forester, help rune mage, help psion, help shaman, help assassin, help draco, help wyvern, help classless"
+    },
+    {
+      "title": "ID MAGICK",
+      "type": "Skill",
+      "flags": [
+        "legacy-class-reference"
+      ],
+      "matchedLetters": [
+        "i",
+        "m"
+      ],
+      "body": "ID MAGICK\nType: Skill\nKeywords: ID Magick idmagick\nCharacter Level Required: All Classes(1). \nMaximum Training Level: 1. Range: 10ft\n\nSyntax: automatic\n\nSee: help id\n\nID Magick (automatic):\n\nSee: help arcanist, help cleric, help explorer, help fighter, help mage, help rogue, help templar, help agent, help blood shaman, help ranger, help wizard, help lunar sage, help mystic knight, help necromancer, help solar magus, help cosmic herald, help oblivion lord, help arcane inquisitor, help dragon, help dragon, help dragon, help dragon, help dragon, help ethari, help fighter, help cleric: order of the heart, help cleric: order of the sword, help cleric: order of the hand, help bard, help thief, help barbarian, help forester, help rune mage, help psion, help shaman, help assassin, help draco, help wyvern, help classless"
+    },
+    {
+      "title": "ID WEAPON",
+      "type": "Skill",
+      "flags": [
+        "legacy-class-reference"
+      ],
+      "matchedLetters": [
+        "i",
+        "w"
+      ],
+      "body": "ID WEAPON\nType: Skill\nKeywords: ID Weapon idweapon\nCharacter Level Required: All Classes(1). \nMaximum Training Level: 1. Range: 10ft\n\nSyntax: automatic\n\nSee: help id\n\nID Weapon (automatic):\n\nSee: help arcanist, help cleric, help explorer, help fighter, help mage, help rogue, help templar, help agent, help blood shaman, help ranger, help wizard, help lunar sage, help mystic knight, help necromancer, help solar magus, help cosmic herald, help oblivion lord, help arcane inquisitor, help dragon, help dragon, help dragon, help dragon, help dragon, help ethari, help fighter, help cleric: order of the heart, help cleric: order of the sword, help cleric: order of the hand, help bard, help thief, help barbarian, help forester, help rune mage, help psion, help shaman, help assassin, help draco, help wyvern, help classless"
+    },
+    {
+      "title": "IGNORE",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "i"
+      ],
+      "body": "IGNORE\nAuthor: Command Master\nKeywords: ignore \nType: Command\n\nSyntax: chat <message> - displays an OOC message to all players viewing chats.\nSyntax: chat - toggles viewing chats on/off.\n\n\nThe ignore command allows you to ignore all OOC channels from a player.\n\nDue to disguise and various ways to change your name, there is no information give or\ndisplayed for listed ignores.\n\nSee: help class ats.commands.communication.NewbieChatCommand, help oracle, help think, help\ntellchat, help groupchat, help replay, help channels"
+    },
+    {
+      "title": "KILL",
+      "type": "Command",
+      "flags": [
+        "ats-namespace",
+        "tempest-branding"
+      ],
+      "matchedLetters": [
+        "k"
+      ],
+      "body": "KILL\nAuthor: Command Master\nKeywords: kill \nType: Command\n\nSyntax: kill <target> - attack the target with your equipped weapon.\nIf already attacking a target, you may type kill to resume attacking.\n\n\n    Classes: Any\nWeapon Type: Any Melee Weapon\nPower Level: +\n   Accuracy: +\nRisk Change: None\n\nA basic melee attack with your equipped weapon. Works with any melee weapon type and\ngenerally costs stamina to use.\n\nTo gain more information about a weapon, such as if it is slashing, use the inspect command\non the weapon.\n\nTo learn more about combat please visit this web page:\nhttp://tempestseason.com/manual/combat/\n\nSee: help class ats.commands.informative.AttackInfoCommand, help inspect, help class\nats.commands.informative.HindranceCommand, help risk"
+    },
+    {
+      "title": "LEARN",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "l"
+      ],
+      "body": "LEARN\nAuthor: Command Master\n\n\nKeywords: learn \nType: Command\n\nlearn list - lists the abilities and specializations that can be learned at this location.\nlearn ability <slot> - learns the ability from the trainer for a fee.\nlearn spec <slot> - learns the specialization from the trainer for a fee.\nlearn fromItem|item <item name>|<slot> - scribes the knowledge from an item in your inventory, which may give new specializations or abilities.\n\nSee help learn for more information.\n\nTo train existing abilities, see the train command.\n\n\nThe learn command learns a new ability or specialization at the trainer.\n\nAbilities can be learned at any level at the trainer.\n\nSpecializations can be learned starting at level 25 at the trainer.\n\n(Mages learn from Scrolls and Blood Shamans from Totems found in the wild).\n\nSee: help train, help class ats.commands.PracticeCommand, help class\nats.commands.informative.SpecializationsCommand, help scribe, help class\nats.commands.items.TotemCommand, help progression"
+    },
+    {
+      "title": "LOCKSMITH",
+      "type": "Command",
+      "flags": [
+        "legacy-class-reference"
+      ],
+      "matchedLetters": [
+        "l"
+      ],
+      "body": "LOCKSMITH\nAuthor: Command Master\nKeywords: locksmith \nType: Command\n\nSyntax: locksmith <item> - asks the locksmith to unlock this item.\nSyntax: locksmith all [empty] - asks the locksmith to unlock and open all your locked items. If 'empty' is used he buys the chests and gives you the items.\n\n\nThe locksmith command, when performed at a locksmith, unlocks all containers for a small\nfee per chest.\n\nThe locksmith can be found in the Spur Merchant District: all south, through the alley, all\neast, through the door.\n\nIt is better to seek out a Rogue to perform unlocking services as much more gold will be\ngained!\n\nSee: help open, help unlock, help close, help lock, help rogue, help pick lock"
+    },
+    {
+      "title": "LOOK",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "l"
+      ],
+      "body": "LOOK\nAuthor: Command Master\nKeywords: look \nType: Command\n\nSyntax: look - looks at the room, showing the description.\nSyntax: look <target name> [full]|<item name>  - looks at the target or item on the target. Full option will display all equipment on target.\nSyntax: look <item name|<room extra description> [room|inv|eq] - looks at the item or room extra description.\nSyntax: look in <container>|<corpse> [room|inv|eq] - looks in a container or corpse.\nUsing 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.\nSyntax: look <target name> <equipment item name> - looks at the target's item description\nSyntax: look through <portal name> - looks through the portal IN THE ROOM, to the other side.\n\n\nThe look command allows you to examine other players, NPCs, or items in the world.\n\nSee: help class ats.commands.informative.ScoreCommand,"
+    },
+    {
+      "title": "MATERIALS",
+      "type": "Materials",
+      "flags": [
+        "tempest-branding"
+      ],
+      "matchedLetters": [
+        "f",
+        "i",
+        "k",
+        "m",
+        "o",
+        "p",
+        "s",
+        "t"
+      ],
+      "body": "MATERIALS\nType: Materials\nKeywords: Materials,Orinsteel,Platinum,Titanium,Karnite,Miltanium,Metal,Iron Works,Forge,Ore,Ingot,Smelt\n\nA Tempest Season there are several types of rare materials used for high leveled weapons,\narmor and shields.\n\nThese materials are required to purchase gear upgrades in the Tralisia Merchant District.\n\n1. Acquire a piece of ore: trace or chunk.\n\n\n2. Go to the Iron Works and have a smith refine the pieces into ingots by using the BUY command.\n3. Take the refined ingots to the desired store, weapon or armor, and purchase the item.\n\nTips for finding ore and ingots is as follows:\nLevels 40-69: Orinsteel - Cave and Lake Walkers\nLevels 70-100: Platinum - Basin Worms and Ragweed Beasts (best drop rate)\nLevels 100: Titanium - Hydras\nLevels 100+: Karnite - Dead Oak\nLevels 100+: Miltanium - Completing the quest Protect Tralisia: Destroy the Dead Oak Terror Knight and fighting frostbit trolls, ice spiders, and frost wyverns\nLevels 100+: Wind-metal and Lightning-metal - Tower of Windis and Lita and the Hall of Elements in the Merchant Distrct\nLevels 100+: Frost-metal - Ice Prison and the Hall of Elements in the Merchant Distrct \n\nThe city of Tralisia is always looking to improve their supply and processing of ore and\nevents occur to do just this so stay tuned!\n\nThe following materials and their respective tiers are as follows:\n\n -  wood (tier 1)\n -  copper (tier 2)\n -  bone (tier 3)\n -  bronze (tier 4)\n -  iron (tier 5)\n -  steel (tier 6)\n -  orinsteel (tier 7)\n -  platinum (tier 8)\n -  titanium (tier 9)\n -  moonsteel (tier 9)\n -  karnite (tier 10)\n -  obsidian (tier 10)\n -  miltanium (tier 11)\n -  frost-metal (tier 11)\n -  lightning-metal (tier 11)\n -  wind-metal (tier 11)\n -  flame-metal (tier 11)\n -  tritanium (tier 12)\n -  anima (tier 20)\n\nHigher tiers mean stronger damage and protection.\n\nSee: help equipment, help leveling, help elemental gear"
+    },
+    {
+      "title": "MOVE",
+      "type": "Command",
+      "flags": [
+        "legacy-class-reference"
+      ],
+      "matchedLetters": [
+        "m"
+      ],
+      "body": "MOVE\nAuthor: Command Master\nKeywords: move \nType: Command\n\nSyntax: move +/-<units> - advances or retreats in a room. 1 unit = 5 feet.\nSyntax: move <target> - move towards the target.\n\n\nThe move command allows you to move forwards or backwards in a room by a number of units.\nEngaged NPCs will try to ensure they are always in attack range. If using a ranged weapon,\nit is best to advance or retreat prior to starting combat. You may see the current location\nof all NPCs and players in a room by using the assess command.\n\nSee: help advance, help retreat, help assess, help fire, help ranger"
+    },
+    {
+      "title": "ORACLE",
+      "type": "Command",
+      "flags": [
+        "ats-namespace",
+        "tempest-branding"
+      ],
+      "matchedLetters": [
+        "a",
+        "e",
+        "g",
+        "o",
+        "s"
+      ],
+      "body": "ORACLE\nAuthor: Command Master\nKeywords: oracle elder staff gm gamemaster guide assist\nType: Command\n\nSyntax: oracle <message> - sends a help message to staff members. If there are no staff members on, this will send an email to Dayrinni.\n    An email can only be sent every 30 seconds (game wide).\n    In addition, all oracles are saved per server session so staff can see them upon logging into the game at a later date!\n\n\nThe oracle command allows a player to send a Helper and Staff wide help message. Any active\n\n\nHelper and Staff will see this message and assist you.\n\nIf there are no staff online, a notification will be sent and the message logged for when a\nstaff member enters the game.\n\nYou may email Dayrinni(dayrinni@tempestseason.com) for assistance.\n\nYou may also try other help files which could provide assistance: channels, feedback,\ndiscord, stuck.\n\nSee: help class ats.commands.communication.NewbieChatCommand, help feedback, help channels,\nhelp discord, help stuck"
+    },
+    {
+      "title": "PROGRAMCHAT",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "p"
+      ],
+      "body": "PROGRAMCHAT\nAuthor: Command Master\n\n\nKeywords: programchat \nType: Command\n\nSyntax: @p <message> - displays an OOC message to all program players viewing progra chats.\nSyntax: @p - toggles viewing program chats on/off.\n\n\nThe program chat command displays an Out Of Character(OOC) message to all program players\nviewing program chats.\n\n\nSee: help class ats.commands.communication.NewbieChatCommand, help oracle, help think, help\ntellchat, help groupchat, help replay,"
+    },
+    {
+      "title": "PSIONICS",
+      "type": "Command",
+      "flags": [
+        "ats-namespace",
+        "tempest-branding",
+        "legacy-class-reference"
+      ],
+      "matchedLetters": [
+        "p"
+      ],
+      "body": "PSIONICS\nAuthor: Command Master\nKeywords: psionics \nType: Command\n\nSyntax: psionics - lists all the psionics you have access to.\n\n\nThe psionics command lists all of the psionic abilities you have access to.\n\nTo use a psionic ability, you use the manipulate command.\n\nTo learn more about abilities please visit this web page:\nhttp://tempestseason.com/manual/abilities/\n\n\nSee: help class ats.commands.PracticeCommand, help train, help learn, help skills, help\nclass ats.commands.informative.SpecializationsCommand, help class\nats.commands.combat.ManipulateCommand, help ethari"
+    },
+    {
+      "title": "PUT",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "p"
+      ],
+      "body": "PUT\nAuthor: Command Master\nKeywords: put \nType: Command\n\nSyntax: put <item>|<slot> [in] <container> [room|inv|eq] - puts an item stack from your inventory into the corpse or container.\nSyntax: put # <item>|<slot> [in] <container> [room|inv|eq] - puts an item stack from your inventory into the corpse or container.\n\n\nSyntax: put all [item] [in] <<container> [room|inv|eq] - puts all, or all items with same name as input, of the items from your inventory into the corpse or container.\nUsing 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.\n\n\nThe put command allows a player to place an object into another object.\n\nItems can only be placed in a container, such as a chest or trunk.\n\nTo put an item beyond the first, use \n\n\nSee: help class ats.commands.items.StripCommand, help get, help drop,"
+    },
+    {
+      "title": "QUEST",
+      "type": "Command",
+      "flags": [
+        "tempest-branding"
+      ],
+      "matchedLetters": [
+        "j",
+        "q"
+      ],
+      "body": "QUEST\nAuthor: Command Master\nKeywords: quest quests journal\nType: Command\n\nquest request <npc name> - requests the quest from the NPC and adds it to your journal.\nquest info <npc name> - asks the NPC about their quest but does not take it. This will display the start text.\nquest return <npc name> - turns in a completed quest to a NPC and receives any rewards.quest journal - lists a summary of your quests.\nquest journal <progress|completed|turnedin|all> - lists a summary of the quests in the indicated state. Can abbreviate these, ie: quest j p to view quests in progress.\nquest journal view <slot>|all - views a specific quest from the last quest journal display unless all is used\nquest visit <npc name> - visits a NPC that's needed for a quest.\nquest use <item name> (Have to be in the correct room for this to work)\nquest delete <exact quest name> - deletes a quest by the exact name. It's case sensitive.\n\n\nQuesting in A Tempest Season is an exciting and rewarding activity to take part in. The\ncommands above are how you interact with NPCs and their quests.\n\nFirst, one must request a quest from a NPC. NPCs who have quests show up with (Quest)\naround their names.\n\nSecond, after receiving the quest, you must complete the objectives. These may involve\nfinding items, visiting certain NPCs or rooms, or simply slaying beasts!\n\nFinally, once the quest is finished, return to the original NPC to receive your reward!\n\n\nYou may also view your journal by typing 'quest journal'.\n\nSome quests are difficult to solve - so feel free to ask for help. There are also rare\nquests that give rich rewards so be on the look out!"
+    },
+    {
+      "title": "QUEUE",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "q"
+      ],
+      "body": "QUEUE\nAuthor: Command Master\nKeywords: queue \nType: Command\n\nSyntax: queue clear|c - clears the queue\nSyntax: queue list - lists the queue\n\n\nThe queue command manages the commands you send to the game. Any commands received while in\ndelay will be added to the command queue and automatically executed when the delay ends.\n\nTo manage the queue easier, such as automatically clearing the queue after each NPC kill,\ntype: CONFIG CLEAR_QUEUE_ON_KILL To view a notifcation of when a command is placed in the\nqueue, type: CONFIG VIEW_COMMAND_QUEUE_MESSAGES\n\nDelays occur when an action takes place, such as swinging a weapon, casting a spell, and,\npicking up, unlocking or selling hordes of items.\n\nThe delays tick down every second and any commands entered which also are delayed, will be\nplaced in the queue. Not all commands are delayed actions, and can be performed while in\ndelay. Commands like say, inventory, and skills are examples for non-delayed commands.\n\nSee: help delay, help class ats.commands.informative.CoolDownsCommand, help config,"
+    },
+    {
+      "title": "QUIT",
+      "type": "Command",
+      "flags": [
+        "tempest-branding"
+      ],
+      "matchedLetters": [
+        "q"
+      ],
+      "body": "QUIT\nAuthor: Command Master\nKeywords: quit \nType: Command\n\nSyntax: quit - disconnects from the game. Your character is automatically saved.\n\n\nQuit disconnects you from A Tempest Season. Your character will be saved automatically upon\nusing this command.\n\nYou cannot quit during combat or a short time after being in combat.\n\n\nIf you wish to switch to another character without quitting, use the 'logout' command.\n\nSee: help logout, help delete,"
+    },
+    {
+      "title": "RACES",
+      "type": "Race",
+      "flags": [
+        "tempest-branding"
+      ],
+      "matchedLetters": [
+        "r"
+      ],
+      "body": "RACES\nType: Race\nKeywords: Races\n\nA Tempest Season has many races for the player to select from.\n\nEach has their own advantages and disadvantages. While races may start with different\nattributes, they end up at the same maximum amount with the exception of dragons who gain\nhigher caps as they age.\n\nPlease see each race's help file for more information.\n\nTo learn much more about the races please visit this web page:\nhttps://tempestseason.com/manual/races/\n\nThe following races are currently available for rollup:\n\n -  Anthian\n -  Arachnian\n -  Draco\n -  Drag-al\n\n\n -  Fir Elf\n -  Flerian\n -  Frontacian\n -  Go-blin\n -  Go-blin-al\n -  Hithual\n -  Human\n -  Leuian\n -  Monitanian\n -  Muatana-al\n -  Oog-ra\n -  Penthanian\n -  Psycian\n -  San Elf\n -  Secian\n -  Thugian\n -  Usilin\n\nSee: help <race name>"
+    },
+    {
+      "title": "RELIGION",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "r"
+      ],
+      "body": "RELIGION\nAuthor: Command Master\nKeywords: religion \nType: Command\n\nSyntax: religion - shows current religion\n\n\nThe religion command views the religious information about your character.\n\n\nBesides the RP information it provides, Clerics can see their progression with their Entity\nfor then next devotion level. Dragons can use the devote command to follow the religion of\nthe target player.\n\nSee: help class ats.commands.items.DonateCommand, help devotion"
+    },
+    {
+      "title": "RELOAD",
+      "type": "Command",
+      "flags": [
+        "legacy-class-reference"
+      ],
+      "matchedLetters": [
+        "r"
+      ],
+      "body": "RELOAD\nAuthor: Command Master\nKeywords: reload \nType: Command\n\nSyntax: reload <item>|<slot> - reloads the currently equipped firearm/crossbow with the indicated magazine.\nSyntax: reload <weapon> <item>|<slot> - reloads the firearm/crossbow with the indicated ammo. Equipment and then inventory is checked for the weapon.\n   If quiver is specificed for crossbows, it'll remove a bolt from the quiver.\nSyntax: reload - reloads the firearm/crossbow automatically (crossbow: equipped quiver, firearm: first non-empty magazine found in the inventory)\n\n\nThe reload command is used to reload crossbows or firearms. Bolts are used from a quiver to\nreload a crossbow, while a bullet or magazine are used for fire arms, depending on the\ntype. These weapons can also be unloaded, if needed.\n\nSee: help fire, help unload, help ranger"
+    },
+    {
+      "title": "REPLAY",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "r"
+      ],
+      "body": "REPLAY\nAuthor: Command Master\nKeywords: replay \nType: Command\n\nSyntax: replay - displays the most recent chat messages.\nSyntax: replay CHAT - displays the most recent chat messages.\nSyntax: replay NEWBIE - displays the most recent newbie messages.\nSyntax: replay DRAGON_LINK - displays the most recent dragon_link messages.\nSyntax: replay DEATHBOND - displays the most recent deathbond messages.\nSyntax: replay WORSHIP - displays the most recent worship messages.\nSyntax: replay WHISPER - displays the most recent whisper messages.\nSyntax: replay TELLS - displays the most recent tells messages.\nSyntax: replay EMOTE - displays the most recent emote messages.\nSyntax: replay SAY - displays the most recent say messages.\nSyntax: replay GROUP - displays the most recent group messages.\n\n\nThe replay command allows you to view recent or missed messages.\n\n\nSome of the messages that can be replayed are: chat, tells, newbie, and says.\n\nSee: help chat, help class ats.commands.communication.NewbieChatCommand, help class\nats.commands.communication.DragonLinkCommand, help class ats.commands.DeathbondCommand,\nhelp class ats.commands.WorshipCommand, help whisper, help tellchat, help emote, help say,\nhelp groupchat,"
+    },
+    {
+      "title": "RETREAT",
+      "type": "Command",
+      "flags": [
+        "legacy-class-reference"
+      ],
+      "matchedLetters": [
+        "r"
+      ],
+      "body": "RETREAT\nAuthor: Command Master\nKeywords: retreat \nType: Command\n\nSyntax: retreat [units] - retreats backwards in a room at max units unless specified. 1 unit = 5 feet.\nSyntax: retreat <target> - retreats backwards to the target.\nUse assess to see the current location situation.\n\n\nThe retreat command allows you to move backwards in a room by a number of units. Engaged\nNPCs will try to ensure they are always in attack range. If using a ranged weapon, it is\nbest to advance or retreat prior to starting combat. You may see the current location of\nall NPCs and players in a room by using the assess command.\n\nSee: help advance, help move, help assess, help fire, help ranger"
+    },
+    {
+      "title": "RIPOFF",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "o",
+        "r"
+      ],
+      "body": "RIPOFF\nAuthor: Command Master\nKeywords: ripoff rip off\nType: Command\n\nSyntax: ripoff <target> - tries to rip off a 'someone' disguise from a player.\n\n\nThe ripoff command tries to remove a disguise from a target.\n\nRipoff may only be used on a target every once in awhile. The success rate depends on the\nattributes of both players.\n\nSee: help class ats.commands.informative.ScoreCommand, help disguise"
+    },
+    {
+      "title": "RUNE MAGE",
+      "type": "Class",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "m",
+        "r"
+      ],
+      "body": "RUNE MAGE\nType: Class\nKeywords: Rune Mage\nDifficulty: MEDIUM\nRole: Damage, Control\nAllowed Races: Anthian, Drag-al, Flerian, Frontacian, Go-blin, Go-blin-al, Human, Leuian,\nMonitanian, Muatana-al, Penthanian, Psycian, San Elf, Secian, Thugian, Usilin\nSpecializations: None\n\nRune Mages achieve their power through scholarly discipline and study rather than divine\nfavor. They excel in both offensive and defensive magic, capable of reshaping battlefields\nwith area spells despite being physically weaker than martial classes.\n\n\nTo learn more about the Rune Mage please visit the web page:\nhttp://dragonsgatereborn.com/classes/class-runemage.html\n\n\nSee: help class ats.commands.combat.CastCommand, help spells, help <race name>, help\nclasses, help specialization"
+    },
+    {
+      "title": "SCRIBE",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "r",
+        "s"
+      ],
+      "body": "SCRIBE\nAuthor: Command Master\nKeywords: scribe scroll read\nType: Command\n\nSyntax: scribe <item>|<slot> - scribes the scroll to your memory, if you are a mage.\n\n\nThe scribe command is only used by Mages and allows them to commit a spell scroll to their\narsenal (spell screen).\n\nScrolls are purchased in the Spur Merchant District along with a small chance to find some\nbasic spell scrolls on low leveled monsters.\n\n(You are looking to reduce scroll/text in the game, please see the help file for CONFIG)\n\nSee: help spells, help class ats.commands.combat.CastCommand, help config, help mage"
+    },
+    {
+      "title": "SKILLS",
+      "type": "Command",
+      "flags": [
+        "ats-namespace",
+        "tempest-branding"
+      ],
+      "matchedLetters": [
+        "s"
+      ],
+      "body": "SKILLS\nAuthor: Command Master\nKeywords: skills \nType: Command\n\nSyntax: skills [search] - lists all the skills you have access to. Optional search.\n\n\nThe skills command lists all of the skill abilities you have access to.\n\nTo use a skill ability, you use the use command.\n\nSkills are unique, and the game will search for the skill to execute on every input. For\nexample, if 'kick' was typed, the game would first search for a regular kick command, and\nif it did not find one, it would try to execute 'use kick' automatically.\n\nTo learn more about abilities please visit this web page:\nhttp://tempestseason.com/manual/abilities/\n\nSee: help class ats.commands.PracticeCommand, help train, help learn, help class\nats.commands.informative.SpecializationsCommand, help use,"
+    },
+    {
+      "title": "TARGET",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "d",
+        "t"
+      ],
+      "body": "TARGET\n\n\nAuthor: Command Master\nKeywords: target diagnose\nType: Command\n\nSyntax: target <target> - locks all non-AE hostile abilities and attacks onto the indicated target.\n\n\nThe target command allows a player to lock onto a target where all attacks and hostile\nabilities(skills, spells, etc) will be directed to said target if they are present.\n\nWhen a target is locked on a (Target) tag will appear by their name in the room.\n\nNOTE: Whenever you use a hostile ability the game will automatically lock onto that target.\n\nFor healing targets, see help ally\n\nSee: help class ats.commands.combat.AllyCommand, help look, help use,"
+    },
+    {
+      "title": "TELLCHAT",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "t"
+      ],
+      "body": "TELLCHAT\nAuthor: Command Master\nKeywords: tellchat tells\nType: Command\n\nSyntax: tell <player> <message> - sends the player an OOC message.\n\nThe tell command sends a direct message to another player regardless of their current\nlocation or distance from you.\n\nThis is an OOC command.\n\nSee: help reply, help class ats.commands.communication.NewbieChatCommand, help oracle, help\nthink, help chat, help groupchat, help replay,"
+    },
+    {
+      "title": "THIEF",
+      "type": "Class",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "t"
+      ],
+      "body": "THIEF\nType: Class\nKeywords: Thief\nDifficulty: MEDIUM\nRole: Damage, Utility\nAllowed Races: Anthian, Arachnian, Drag-al, Flerian, Go-blin, Go-blin-al, Human, Leuian,\nMonitanian, Muatana-al, Penthanian, San Elf, Thugian, Usilin\nSpecializations: None\n\nThieves specialize in stealth, lock-picking, disguise, and theft. They excel at\ninfiltrating society through carefully crafted personas, moving through cities\nunquestioned while pursuing various enterprises.\n\n\nTo learn more about the Thief please visit the web page:\n\n\nhttp://dragonsgatereborn.com/classes/class-thief.html\n\n\nSee: help skills, help class ats.commands.informative.AttackInfoCommand, help class\nats.commands.combat.BackstabCommand, help hide, help stalk, help <race name>, help classes,\nhelp specialization"
+    },
+    {
+      "title": "TRAIN",
+      "type": "Command",
+      "flags": [
+        "ats-namespace",
+        "tempest-branding",
+        "legacy-feature-reference"
+      ],
+      "matchedLetters": [
+        "c",
+        "g",
+        "r",
+        "t"
+      ],
+      "body": "TRAIN\nAuthor: Command Master\nKeywords: train trainer guildlist classlist raise\nType: Command\n\nSyntax: train list - lists the abilities and specializations that can be trained at this location.\nSyntax: train <slot> - trains the ability up to the next level. This will require a tier point and sometimes an item (the train will inform you on what is needed).\nSyntax: train spec <slot> - trains the specialization up to the next level. This may require a tier point and a small fee.\n\nSyntax: train tier cost - checks the cost of the next tier point you may buy.\nSyntax: train tier buy - buys a tier point for the associated gold price.\nSyntax: train tier respec confirm - resets all of your tier points for 5,000 gold. All of the abilities and specializations you trained will be set to lv 1. You will receive a 75% refund of your ability points.\n\nSyntax: train guildlist - views your standing in your classes guild.\nSyntax: train history - views your training attribute gain history.\n\n\nThe train command raises a level of an ability, specialization, or aptitude to the next\nlevel.\n\nThe cost of raising to the next level varies:\n1. Possibly using a TIER POINT and/or money, if applicable to raise an ability in level.\n2. Using a TIER point (and money, if applicable) to raise a specialization in level.\n\n\nThe money cost to raise an ability up a level depends on the amount of uses the ability has\nleft.\n\nYou gain tier points upon leveling up.\n\nYou can also buy tier points at the trainer using 'train tier buy'.\n\nRespeccing your tier points will set all of your non-natural abilities to their initial\nlevel.\n\nTo learn more about training and learning new abilities visit the manual:\nwww.tempestseason.com/manual/abilities/#Training_Abilities_and_Specializations\n\nSee: help learn, help class ats.commands.PracticeCommand, help class\nats.commands.informative.SpecializationsCommand, help tier points, help anima convergence"
+    },
+    {
+      "title": "UNLOAD",
+      "type": "Command",
+      "flags": [
+        "legacy-class-reference"
+      ],
+      "matchedLetters": [
+        "u"
+      ],
+      "body": "UNLOAD\nAuthor: Command Master\nKeywords: unload \nType: Command\n\nSyntax: unload - unloads the equipped firearm/crossbow with its bolt/magazine.\nSyntax: unload <item> - unloads the indicated firearm/crossbow with its bolt/magazine. Your equipment will be checked first, then your inventory\n\n\nThe unload command is used to remove ammo from crossbows or firearms. The removed\nprojectile or magazine is placed in your inventory.\n\nSee: help fire, help reload, help ranger"
+    },
+    {
+      "title": "UNLOCK",
+      "type": "Command",
+      "flags": [
+        "legacy-class-reference"
+      ],
+      "matchedLetters": [
+        "l",
+        "p",
+        "u"
+      ],
+      "body": "UNLOCK\nAuthor: Command Master\nKeywords: unlock lockpick lock pick\nType: Command\n\nSyntax: unlock <item>|<slot> [room|inv|eq]\nUsing 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.\n\n\nThe unlock command attempts to unlock a container(chest, box, etc) or portal(gate, door,\netc). Some items require keys to be unlocked, others do not.\n\nFor containers, there are three ways to unlock it:\nusing the key (if one exists\nasking your neighborhood Rogue to pick the lock\nvisiting Hoss at his Locksmith Shop in the alley behind the southern section of Merchant Distirct\n\nFor portals, there are two ways to unlock it:\nusing the key (if one exists\nasking your neighborhood Rogue to pick the lock\n\nNot all locks can be picked.\n\nFor unlocking affects on magic items, see help detectmagic\n\nSee: help locksmith, help lock, help open, help close, help picklocks, help detectmagic"
+    },
+    {
+      "title": "USE",
+      "type": "Command",
+      "flags": [
+        "tempest-branding"
+      ],
+      "matchedLetters": [
+        "u"
+      ],
+      "body": "USE\nAuthor: Command Master\nKeywords: use \nType: Command\n\nSyntax: use <skill name> <target> - uses the skill on the target\nLeaving <target> blank will target the caster automatically.\n\n\nThe use command uses a skill.\n\nSkills typically use stamina. Stamina is restored every 20 seconds out of combat. Sleeping\nis the best way to restore stamina outside of restoration abilities.\n\nSkills are unique, and the game will search for the skill to execute on every input. For\n\n\nexample, if 'kick' was typed, the game would first search for a regular kick command, and\nif it did not find one, it would try to execute 'use kick' automatically.\n\nTo learn more about abilities please visit this web page:\nhttp://tempestseason.com/manual/abilities/\n\nSee: help skills,"
+    },
+    {
+      "title": "WEALTH",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "w"
+      ],
+      "body": "WEALTH\nAuthor: Command Master\nKeywords: wealth \nType: Command\n\nSyntax: wealth - displays the amount of money on you.\n\n\nThe wealth command allows you to see the money on your character.\n\nSee: help inventory, help class ats.commands.informative.ScoreCommand,"
+    },
+    {
+      "title": "WIELD",
+      "type": "Command",
+      "flags": [
+        "ats-namespace"
+      ],
+      "matchedLetters": [
+        "w"
+      ],
+      "body": "WIELD\nAuthor: Command Master\nKeywords: wield \nType: Command\n\nSSyntax: wield <item>|<slot> - wields the item in the primary slot.\n\nSee help: dualwield\n\n\nThe wield command tries to equip a weapon in the primary or secondary slot.\n\nA weapon is needed to perform any melee attacks and to parry. Some skills may also require\nan equipped weapon.\n\nSome weapons can be swapped between 1 hand and 2 hand. To do this, use the grip command.\nGripped one handed weapons receive a damage bonus compared to one handed weapons but less\nthan fully fledged 2 handed weapons.\n\n\nNot all classes can dual wield.\n\nTo dual wield a weapon, see help dualwield\n\nSee: help dualwield, help grip, help class ats.commands.informative.AttackInfoCommand, help\nwear, help hold, help remove, help equipment, help inventory, help inspect,"
+    }
+  ]
+}

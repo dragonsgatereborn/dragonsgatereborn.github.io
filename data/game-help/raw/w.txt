@@ -1,0 +1,299 @@
+EDGE WEAPONS
+Type: Skill
+Keywords: Edge Weapons edgeweapons
+Character Level Required: All Classes(1). 
+Maximum Training Level: 1. Range: 10ft
+
+Syntax: automatic
+
+Edged Weapons
+
+
+Edge Weapons (automatic): 
+ o increases attack rating while using edge weapons (+potency) and 
+ o increases stamina (+potency).
+
+TRAINING KEY:
+potency - damage/effectiveness
+
+See: help skill
+-----------------------------------------------------------------------------------------------
+
+BLUNT WEAPONS
+Type: Skill
+Keywords: Blunt Weapons bluntweapons
+Character Level Required: All Classes(1). 
+Maximum Training Level: 1. Range: 10ft
+
+Syntax: automatic
+
+Blunt Weapons
+
+
+Blunt Weapons (automatic): 
+ o increases attack rating while using blunt weapons (+potency) and 
+ o increases stamina (+potency).
+
+TRAINING KEY:
+potency - damage/effectiveness
+
+See: help skill
+-----------------------------------------------------------------------------------------------
+
+THRUST WEAPONS
+Type: Skill
+Keywords: Thrust Weapons thrustweapons
+
+
+Character Level Required: All Classes(1). 
+Maximum Training Level: 1. Range: 10ft
+
+Syntax: automatic
+
+Blunt Weapons
+
+
+Thrust Weapons (automatic): 
+ o increases attack rating while using thrust weapons (+potency) and 
+ o increases stamina (+potency).
+
+TRAINING KEY:
+potency - damage/effectiveness
+
+See: help skill
+-----------------------------------------------------------------------------------------------
+
+WARRIOR'S DEXTERITY
+Type: Spell
+Keywords: Warrior's Dexterity warriorsdexterity
+Character Level Required: Fighter(5). Range: 30ft
+
+Syntax: invoke warriorsdexterity
+
+Runemagick that sharpens the fighter's reflexes, boosting offensive rating.
+
+
+Warrior's Dexterity (magic user): increases melee and range attack rating by 20 for a
+medium length of time (+duration).
+
+TRAINING KEY:
+duration - length of effect
+
+See: help invoke
+-----------------------------------------------------------------------------------------------
+
+ID WEAPON
+Type: Skill
+Keywords: ID Weapon idweapon
+Character Level Required: All Classes(1). 
+Maximum Training Level: 1. Range: 10ft
+
+Syntax: automatic
+
+
+See: help id
+
+ID Weapon (automatic):
+
+See: help arcanist, help cleric, help explorer, help fighter, help mage, help rogue, help templar, help agent, help blood shaman, help ranger, help wizard, help lunar sage, help mystic knight, help necromancer, help solar magus, help cosmic herald, help oblivion lord, help arcane inquisitor, help dragon, help dragon, help dragon, help dragon, help dragon, help ethari, help fighter, help cleric: order of the heart, help cleric: order of the sword, help cleric: order of the hand, help bard, help thief, help barbarian, help forester, help rune mage, help psion, help shaman, help assassin, help draco, help wyvern, help classless
+-----------------------------------------------------------------------------------------------
+
+WEAR
+Author: Command Master
+Keywords: wear 
+Type: Command
+
+Syntax: wear <item>|<slot> [wear slot] - wears an item on the default slot or the provided one. Slot is optional.
+Syntax: wear <inventoryIndex> [wear slot] - wears an item at the inventory slot on the default slot or the provided one. Slot is optional. (Check inventory for index)
+Note: If using the wear slot option, it must be fully typed out. For example wear ring right finger (NOT right fing)
+
+
+The wear command allows you to wear or equip an item. If an item is already equipped, it'll
+be replaced.
+
+You may also specify what wear location to wear an item at if the item has mulitple slots.
+For example, wearing a headdress as a HAT rather than a HEAD (armor).
+
+See: help wield, help dualwield, help remove, help equipment, help inventory, 
+-----------------------------------------------------------------------------------------------
+
+WIELD
+Author: Command Master
+Keywords: wield 
+Type: Command
+
+SSyntax: wield <item>|<slot> - wields the item in the primary slot.
+
+See help: dualwield
+
+
+The wield command tries to equip a weapon in the primary or secondary slot.
+
+A weapon is needed to perform any melee attacks and to parry. Some skills may also require
+an equipped weapon.
+
+Some weapons can be swapped between 1 hand and 2 hand. To do this, use the grip command.
+Gripped one handed weapons receive a damage bonus compared to one handed weapons but less
+than fully fledged 2 handed weapons.
+
+
+Not all classes can dual wield.
+
+To dual wield a weapon, see help dualwield
+
+See: help dualwield, help grip, help class ats.commands.informative.AttackInfoCommand, help
+wear, help hold, help remove, help equipment, help inventory, help inspect,
+-----------------------------------------------------------------------------------------------
+
+INSPECT
+Author: Command Master
+Keywords: inspect value worth examine identify
+Type: Command
+
+Syntax: inspect <item>|<slot> [room|inv|eq] - inspects an item.
+Syntax: inspect <item>|<slot> [contianer] [room|inv|eq] - inspects an item inside a container.
+Using 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.
+
+
+The inspect command displays detailed information about a specific item, such as weight,
+key words, wear locations and so on.
+
+In order to view magical properties on an item, an Erius' Magnificent Magnifying Glass must
+be in your possession. Mages can also use Detect Magic on an item to view magical
+properties.
+
+This item can be purchased from Ally's Shop, The Adventurer's Nook, in the Spur Merchant
+District.
+
+See: help magnifying glass, help detect magic, help appraise, help haggle, help bargain,
+help currency
+-----------------------------------------------------------------------------------------------
+
+WEALTH
+Author: Command Master
+Keywords: wealth 
+Type: Command
+
+Syntax: wealth - displays the amount of money on you.
+
+
+The wealth command allows you to see the money on your character.
+
+See: help inventory, help class ats.commands.informative.ScoreCommand, 
+-----------------------------------------------------------------------------------------------
+
+
+PAY
+Author: Command Master
+Keywords: pay bounty wanted law pay jail criminal
+Type: Command
+
+Syntax: pay bounty - tries to pay your bounty to remove the WANTED flag. You must be at a bounty office.
+Syntax: pay check - views the cost to remove your bounty. You must be at a bounty office.
+
+
+The pay command pays off a bounty (WANTED flag) gained from attacking the guards, pick
+pocketing or similar illegal activities.
+
+You can only pay a bounty at the bounty office, Northwest from the center of Spur.
+
+The cost of the bounty scales based on character level.
+
+Being Wanted will cause the city guards to attack on sight so be careful while moving int
+the city!
+-----------------------------------------------------------------------------------------------
+
+WHERE
+Author: Command Master
+Keywords: where 
+Type: Command
+
+
+The where command gives some general information about the current area (zone) you are in..
+
+Information includes a general idea of the number of players (not exact) and if aggressive
+NPCs are detected.
+
+See: help scan, help who, 
+-----------------------------------------------------------------------------------------------
+
+WMOTE
+Author: Command Master
+Keywords: wmote arrival
+Type: Command
+
+Syntax: wmote enter <string> - switches to a new enter emote.
+Syntax: wmote exit <string> - switches to a new exit emote.
+Syntax: wmote current - views the current wmotes.
+Syntax: wmote clear - resets your current wmotes to be default (nothing).
+
+
+Wmote allows a player to change their enter and exit messages while moving between rooms
+from the default enter and exit messsages.
+
+Instead of seeing the default messages:
+Dayrinni leaves southeast.
+Dayrinni enters from the north.
+
+Custom messages can be displayed, such as:
+Dayrinni leaves southeast, while skipping.
+Dayrinni enters, talking to everyone he sees from the west.
+
+This is a role play command - use it to enhance your character!
+
+This command will be monitored for abuse. Report anything inappropriate, including OOC
+messages or anything that violates the game policy.
+
+See: help emote, help smote, help socials, help pose, help mood, help role play
+-----------------------------------------------------------------------------------------------
+
+WHISPER
+Author: Command Master
+Keywords: whisper 
+Type: Command
+
+Syntax: whisper <player> <message> - sends an in character private message to the player in the room
+
+
+The whisper command sends a private IC message to another player.
+
+Language does not work in whispers, all communication is automatically in common.
+
+See: help language, help say, help shout, help groupchat, help channels
+-----------------------------------------------------------------------------------------------
+
+WAKE
+Author: Command Master
+Keywords: wake 
+Type: Command
+
+Syntax: wake - wakes from sleeping
+Syntax: wake <target> - wakes the player.
+
+
+The wake command, if your character is sleeping, ends sleeping, while sleeping and you will
+
+
+become erect in a standing position.
+
+Turning on the config option LOOK_ON_WAKING_STAND will automatically look.
+
+See: help stand, help liedown, help sleep, help config, help rest
+-----------------------------------------------------------------------------------------------
+
+WHO
+Author: Command Master
+Keywords: who 
+Type: Command
+
+Syntax: who - displays all active players and visible staff
+Syntax: who brief - displays a comma delimited list of all active players and visible staff
+
+
+The who command brings up the list of currently connected players, their respective racee,
+profression, ranks and titles.
+
+Who is is an In Character means of information gathering. The proper way to refer to a
+connected player is 'awake' or 'present'.
+
+See: help rank, help title, help classes, help races, help role play

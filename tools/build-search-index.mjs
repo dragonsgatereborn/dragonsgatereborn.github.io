@@ -3,11 +3,12 @@ import { extname, relative, resolve } from "node:path";
 
 const root = resolve(import.meta.dirname, "..");
 const ignoredDirectories = new Set([".git", "node_modules", "tools"]);
+const ignoredFiles = new Set(["game-help-library.html"]);
 
 async function htmlFiles(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
   const nested = await Promise.all(entries.map(async (entry) => {
-    if (entry.name.startsWith(".") || ignoredDirectories.has(entry.name)) return [];
+    if (entry.name.startsWith(".") || ignoredDirectories.has(entry.name) || ignoredFiles.has(entry.name)) return [];
     const path = resolve(directory, entry.name);
     if (entry.isDirectory()) return htmlFiles(path);
     return extname(entry.name) === ".html" ? [path] : [];

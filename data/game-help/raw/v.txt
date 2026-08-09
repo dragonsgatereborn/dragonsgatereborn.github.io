@@ -1,0 +1,73 @@
+FIRE
+Author: Command Master
+Keywords: fire volley
+Type: Command
+
+Syntax: fire <rapid|deftly|precisely> <target> - fires with the indicated attack. (Can abbr the attack types, ie: r for rapid)
+Syntax: fire <direction> <range> - fires a volley in the indicated direction.
+Syntax: fire artillery [room cannon] <target> - fires the equipped or room artillery at the target. If the target is out of range, the cannon will still fire.
+
+
+The fire command is used to fire bows, crossbows and firearms at a target. The weapon
+generally requires some form of ammo required, such as a quiver with arrows or bolts, or a
+magazine in a fire arm. Bows are automatically loaded from the equipped quiver on each
+fire. Crossbows and firearms require a manual reload. Ranged weapons can also be unloaded,
+if needed.
+
+Bows recieve a 50% damage bonus if used outside of melee range(2 units (10 feet)) of a
+target. Advance or retreat before battle to do maximum damage.
+
+Bows can also be volleyed into other rooms, dealing damage from afar. Damage is reduced by
+25%. Be warned, any struck targets will chase after you after taking fire!
+
+To see the differences between rapid, deftly and precisely type: attackinfo
+
+See: help advance, help retreat, help move, help reload, help unload, help class
+ats.commands.informative.AttackInfoCommand, help ranger, help risk
+-----------------------------------------------------------------------------------------------
+
+INSPECT
+Author: Command Master
+Keywords: inspect value worth examine identify
+Type: Command
+
+Syntax: inspect <item>|<slot> [room|inv|eq] - inspects an item.
+Syntax: inspect <item>|<slot> [contianer] [room|inv|eq] - inspects an item inside a container.
+Using 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.
+
+
+The inspect command displays detailed information about a specific item, such as weight,
+key words, wear locations and so on.
+
+In order to view magical properties on an item, an Erius' Magnificent Magnifying Glass must
+be in your possession. Mages can also use Detect Magic on an item to view magical
+properties.
+
+
+This item can be purchased from Ally's Shop, The Adventurer's Nook, in the Spur Merchant
+District.
+
+See: help magnifying glass, help detect magic, help appraise, help haggle, help bargain,
+help currency
+-----------------------------------------------------------------------------------------------
+
+VAULT
+Author: Command Master
+Keywords: vault 
+Type: Command
+
+Syntax: vault store <item>|<slot> - stores the item stack in the house vault
+Syntax: vault store <#> <item>|<slot> - stores a number of items from your inventory
+Syntax: vault remove <item>|<slot> - retrieves the item stack from your house vault
+Syntax: vault view
+
+
+The vault command allows you to manage your stored items in the house vault: storing and
+removing items.
+
+The vault has a has 150 spaces for items and items inside containers are counted towards
+the total.
+
+Upgrades may be not currently be purchased.
+
+See: help box, help inventory, help cache,

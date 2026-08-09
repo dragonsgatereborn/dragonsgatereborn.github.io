@@ -1,0 +1,137 @@
+HIDE
+Type: Skill
+Keywords: Hide hide
+Character Level Required: All Classes(1). 
+Maximum Training Level: 1. Range: 10ft
+
+Syntax: use hide - attempts to slip into the shadows
+
+Hiding.
+
+Hide (single victim): allows you to slip into the shadows (+chance, -delay).
+
+Success depends on your Hiding skill, Stealth skill, Agility, and Dexterity. Room lighting,
+nearby enemies, and combat status affect your chances. Actions like attacking, casting, or
+manipulating objects will reveal you.
+
+TRAINING KEY: chance - chance of failure/success, delay - length of ability delay on use
+
+See: help skill
+-----------------------------------------------------------------------------------------------
+
+HOLD
+Author: Command Master
+Keywords: hold 
+Type: Command
+
+Syntax: hold <item>|<slot> - holds the item in the primary slot.
+
+
+The hold command allow you to equipment an item in the HOLD wear slot.
+
+Holding a light illuminates a room.
+
+The hold command can be used as a RP command.
+
+See: help equipment, help inspect, help wear, help role play
+-----------------------------------------------------------------------------------------------
+
+CLERIC: ORDER OF THE HEART
+Type: Class
+Keywords: Cleric: Order of the Heart
+Difficulty: EASY
+Role: Healer, Utility
+Allowed Races: Anthian, Arachnian, Drag-al, Fir Elf, Flerian, Go-blin, Hithual, Human,
+Leuian, Psycian, San Elf, Secian, Usilin
+
+
+Specializations: None
+
+Heart Clerics serve as primarily healers of their temples, concentrating on healing and
+support rune-magick. They function as backline anchors, developing channeling expertise to
+heal wounds and inflict damage through divine power.
+
+
+To learn more about the Cleric: Order of the Heart please visit the web page:
+http://dragonsgatereborn.com/classes/class-cleric-heart.html
+
+
+See: help skills, help <race name>, help classes, help specialization
+-----------------------------------------------------------------------------------------------
+
+CLERIC: ORDER OF THE HAND
+Type: Class
+Keywords: Cleric: Order of the Hand
+Difficulty: MEDIUM
+Role: Utility, Healer, Tank
+Allowed Races: Anthian, Arachnian, Drag-al, Fir Elf, Flerian, Go-blin, Hithual, Human,
+Leuian, Psycian, San Elf, Secian, Usilin
+Specializations: None
+
+Temple monks who eschew traditional weapons, trained in lethal techniques of unarmed
+combat. They begin with no training in magick, although many later choose to study the
+ways of limited rune-magick.
+
+
+To learn more about the Cleric: Order of the Hand please visit the web page:
+http://dragonsgatereborn.com/classes/class-cleric-hand.html
+
+
+See: help skills, help <race name>, help classes, help specialization
+-----------------------------------------------------------------------------------------------
+
+HITHUAL
+Type: Race
+Keywords: Hithual
+Genders: Male, Female, Non-Binary
+Allowed Classes: Fighter, Cleric: Order of the Heart, Cleric: Order of the Sword, Cleric:
+Order of the Hand, Bard, Barbarian, Psion
+Racial Tensions: They form their own opinions of each race as they play
+Racial Abilities: None
+
+Hithuals are stout humanoids hailing from Aerhauven within the Great Divide mountain range.
+
+
+Known as some of the finest miners in the lands, they possess above-average strength and an
+unshakeable resolve. Their culture centers around mining, craftsmanship, and a deep loyalty
+to family and clan.
+
+Fun-loving, brave, proud, and stubborn, Hithuals show equal enthusiasm for hard work and
+hearty leisure. They form acquaintances readily but develop lasting bonds with outsiders
+mainly through shared combat experiences. Beards are worn as symbols of skill and respect
+by accomplished warriors of any gender. They possess a significant natural resistance to
+magic, though this same resistance prevents them from becoming Rune Mages.
+
+Hithuals distrust non-traditional methods such as magic, thievery, or charity, firmly
+believing that worthwhile accomplishments require genuine effort. They are also renowned
+for their remarkable tolerance for ale and their love of practical jokes.
+
+To learn more about the Hithual please visit the web page:
+http://dragonsgatereborn.com/races/race-hithual.html
+
+
+See: help <ability name>, help <class name>, help races
+-----------------------------------------------------------------------------------------------
+
+HUMAN
+Type: Race
+Keywords: Human
+Genders: Male, Female, Non-Binary
+Allowed Classes: Fighter, Cleric: Order of the Heart, Cleric: Order of the Sword, Cleric:
+Order of the Hand, Bard, Thief, Barbarian, Forester, Rune Mage, Psion
+Racial Tensions: They form their own opinions of each race as they play
+Racial Abilities: 
+
+Humans are the most adaptable people in Aradath, thriving in nearly every climate, city,
+and profession. Their strength lies in flexibility — they learn quickly, switch roles with
+ease, and build communities wherever they settle.
+
+While they lack the extreme gifts or drawbacks of other races, Humans excel through drive,
+curiosity, and the sheer variety of paths open to them. If you want a race that can grow
+into almost any story, Humans are the perfect starting point.
+
+To learn more about the Human please visit the web page:
+http://dragonsgatereborn.com/races/race-human.html
+
+
+See: help <ability name>, help <class name>, help races

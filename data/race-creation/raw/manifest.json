@@ -1,0 +1,133 @@
+{
+  "capturedAt": "2026-08-09T15:30:55.638Z",
+  "host": "game.dragonsgatereborn.com",
+  "port": 8555,
+  "results": [
+    {
+      "letter": "a",
+      "race": "Anthian",
+      "prompts": 12,
+      "bytes": 3864
+    },
+    {
+      "letter": "b",
+      "race": "Arachnian",
+      "prompts": 8,
+      "bytes": 2809
+    },
+    {
+      "letter": "c",
+      "race": "Draco",
+      "prompts": 10,
+      "bytes": 3014
+    },
+    {
+      "letter": "d",
+      "race": "Drag-al",
+      "prompts": 10,
+      "bytes": 3096
+    },
+    {
+      "letter": "e",
+      "race": "Fir Elf",
+      "prompts": 12,
+      "bytes": 3821
+    },
+    {
+      "letter": "f",
+      "race": "Flerian",
+      "prompts": 12,
+      "bytes": 3633
+    },
+    {
+      "letter": "g",
+      "race": "Frontacian",
+      "prompts": 12,
+      "bytes": 4034
+    },
+    {
+      "letter": "h",
+      "race": "Go-blin",
+      "prompts": 11,
+      "bytes": 3347
+    },
+    {
+      "letter": "i",
+      "race": "Go-blin-al",
+      "prompts": 11,
+      "bytes": 3691
+    },
+    {
+      "letter": "j",
+      "race": "Hithual",
+      "prompts": 12,
+      "bytes": 3862
+    },
+    {
+      "letter": "k",
+      "race": "Human",
+      "prompts": 12,
+      "bytes": 3571
+    },
+    {
+      "letter": "l",
+      "race": "Leuian",
+      "prompts": 12,
+      "bytes": 3304
+    },
+    {
+      "letter": "m",
+      "race": "Monitanian",
+      "prompts": 9,
+      "bytes": 3153
+    },
+    {
+      "letter": "n",
+      "race": "Muatana-al",
+      "prompts": 11,
+      "bytes": 3903
+    },
+    {
+      "letter": "o",
+      "race": "Oog-ra",
+      "prompts": 11,
+      "bytes": 3491
+    },
+    {
+      "letter": "p",
+      "race": "Penthanian",
+      "prompts": 10,
+      "bytes": 2995
+    },
+    {
+      "letter": "q",
+      "race": "Psycian",
+      "prompts": 12,
+      "bytes": 4206
+    },
+    {
+      "letter": "r",
+      "race": "San Elf",
+      "prompts": 12,
+      "bytes": 4055
+    },
+    {
+      "letter": "s",
+      "race": "Secian",
+      "prompts": 11,
+      "bytes": 3356
+    },
+    {
+      "letter": "t",
+      "race": "Thugian",
+      "prompts": 12,
+      "bytes": 3923
+    },
+    {
+      "letter": "u",
+      "race": "Usilin",
+      "prompts": 12,
+      "bytes": 4212
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+ID GEMS
+Type: Skill
+Keywords: ID Gems idgems
+Character Level Required: All Classes(1). 
+Maximum Training Level: 1. Range: 10ft
+
+Syntax: automatic
+
+See: help id
+
+ID Gems (automatic):
+
+See: help arcanist, help cleric, help explorer, help fighter, help mage, help rogue, help templar, help agent, help blood shaman, help ranger, help wizard, help lunar sage, help mystic knight, help necromancer, help solar magus, help cosmic herald, help oblivion lord, help arcane inquisitor, help dragon, help dragon, help dragon, help dragon, help dragon, help ethari, help fighter, help cleric: order of the heart, help cleric: order of the sword, help cleric: order of the hand, help bard, help thief, help barbarian, help forester, help rune mage, help psion, help shaman, help assassin, help draco, help wyvern, help classless
+-----------------------------------------------------------------------------------------------
+
+GROUPPROTOTYPE
+Author: Command Master
+Keywords: groupprototype party leader
+Type: Command
+
+Syntax: group - checks the group status.
+Syntax: group <target> - add a player who is following you to your group. Must be the group leader and the target must be in the same room.
+Syntax: group leader <target> - gives group leader to the target. Must be the group leader and the target must be in the same room.
+Syntax: group combine <target> - tries to combine the target's group with yours. Target must be leader and in the same room.
+Syntax: group accept <player> - accepts a request to combine your group from the player. Target must be leader and in the same room.
+Syntax: group allFollowers - groups all followers currently in the same room as you.
+Syntax: group forceGroup <player> - forces this player to join your group and makes them stand (only active during Quest Mode)
+
+
+The group command forms a party from the people currently following you.
+
+While in a group, all experience and ability points are shared. Vitals of the group can be
+seen by typing 'group'.
+
+Group members also gain access to a special channel, gsay, which sends IC messages to all
+other players in the group regardless of location.
+
+See: help follow, help disband, help nofollow, help groupchat, 
+-----------------------------------------------------------------------------------------------
+
+GROUP
+Author: Command Master
+Keywords: group party leader
+Type: Command
+
+
+Syntax: group - checks the group status.
+Syntax: group <target> - add a player who is following you to your group. Must be the group leader and the target must be in the same room.
+Syntax: group leader <target> - gives group leader to the target. Must be the group leader and the target must be in the same room.
+Syntax: group combine <target> - tries to combine the target's group with yours. Target must be leader and in the same room.
+Syntax: group accept <player> - accepts a request to combine your group from the player. Target must be leader and in the same room.
+Syntax: group allFollowers - groups all followers currently in the same room as you.
+Syntax: group forceGroup <player> - forces this player to join your group and makes them stand (only active during Quest Mode)
+
+
+The group command forms a party from the people currently following you.
+
+While in a group, all experience and ability points are shared. Vitals of the group can be
+seen by typing 'group'.
+
+Group members also gain access to a special channel, gsay, which sends IC messages to all
+other players in the group regardless of location.
+
+See: help follow, help disband, help nofollow, help groupchat, 
+-----------------------------------------------------------------------------------------------
+
+GROUPCHAT
+Author: Command Master
+Keywords: groupchat gchat groupsay gsay
+Type: Command
+
+Syntax: gsay <message> - sends a message to all your group members. This is an OOC means of communication.
+
+The gchat command sends a worldwide Out Of Character(OOC) message to all group members who
+are viewing gchats.
+
+Since this is an OOC command and my disrupt RP, it may be turned ON or OFF by typing: GCHAT
+
+See: help say, help whisper, help chat, help group, help channels
+-----------------------------------------------------------------------------------------------
+
+GROW
+Author: Command Master
+Keywords: grow 
+Type: Command
+
+Syntax: grow begin - start the aging process (if requirements are met)
+Syntax: grow drain - drains a nearby pocket of essence to gather energy to grow.
+Syntax: grow discharge - discharge the energy, at Dragonfire Summit, to grow. (Must have reached 100% charge)
+
+-----------------------------------------------------------------------------------------------
+
+
+GRIP
+Author: Command Master
+Keywords: grip 
+Type: Command
+
+Syntax: grip - grips (or ungrips) the equipped primary weapon to two handed mode.
+
+
+The grip command allows shifts between a 1.5 handed to a 2 handed weapon or vice versa. Not
+all weapons can be gripped.
+
+Gripped one handed weapons receive a damage bonus compared to one handed weapons but less
+than fully fledged 2 handed weapons.
+
+See: help wield, help dualwield, help equipment, help inspect, 
+-----------------------------------------------------------------------------------------------
+
+GET
+Author: Command Master
+Keywords: get take grab retrieve
+Type: Command
+
+Syntax: get <item> - gets an item stack from the room
+Syntax: get <item> - gets the #th item stack from the room that matches the item
+Syntax: get <#> <item> - gets number of items from the item stack in the room
+
+Syntax: get <slot> - gets an item stack by slot from the room
+Syntax: get <#> <slot> - gets number of items from an item stack by slot from the room
+
+Syntax: get all [item] - gets all, or all items with same name as input, of the items from the room
+
+Container Get Syntax is similiar to the above:
+Syntax: get [#] <item|slot> <container> [room|inv|eq] - gets an item from the corpse or container
+Syntax: get all from <container> [room|inv|eq] - gets all, or all items with same name as input, of the items from the corpse or container
+Syntax: get all [item] <container> [room|inv|eq] - gets all, or all items with same name as input, of the items from the corpse or container
+Using 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.
+
+
+The get command allows a player to pick up an object off the ground or from another object
+such as a box or corpse.
+
+To put all of the items on the ground from a corpse, use the 'strip' command. Get does not
+work on player corpses, to loot a player corpse, use the 'strip' command.
+
+
+To pick up an item beyond the first, use 
+
+See: help class ats.commands.items.StripCommand, help put, help drop, help look, 
+-----------------------------------------------------------------------------------------------
+
+GIVE
+Author: Command Master
+Keywords: give 
+Type: Command
+
+Syntax: give # <item>|<slot> <player> - gives the item stack from your inventory to the player.
+Syntax: give <amount> gold <player> - gives the amount of gold from your inventory to the player.
+Syntax: give <amount> silver <player> - gives the amount of silver from your inventory to the player.
+Syntax: give <amount> gold <amount> silver <player> - gives the amount of gold and silver from your inventory to the player.
+
+
+The give command allows you to transfer an item or items to another player..
+
+To give a single item, from a stack, to a player, type: give 1 <player> <item>. Example:
+give 1 sword dayrinni.
+
+See: help inventory, help get, help drop, 
+-----------------------------------------------------------------------------------------------
+
+TRAIN
+Author: Command Master
+Keywords: train trainer guildlist classlist raise
+Type: Command
+
+Syntax: train list - lists the abilities and specializations that can be trained at this location.
+Syntax: train <slot> - trains the ability up to the next level. This will require a tier point and sometimes an item (the train will inform you on what is needed).
+Syntax: train spec <slot> - trains the specialization up to the next level. This may require a tier point and a small fee.
+
+Syntax: train tier cost - checks the cost of the next tier point you may buy.
+Syntax: train tier buy - buys a tier point for the associated gold price.
+Syntax: train tier respec confirm - resets all of your tier points for 5,000 gold. All of the abilities and specializations you trained will be set to lv 1. You will receive a 75% refund of your ability points.
+
+Syntax: train guildlist - views your standing in your classes guild.
+Syntax: train history - views your training attribute gain history.
+
+
+The train command raises a level of an ability, specialization, or aptitude to the next
+level.
+
+The cost of raising to the next level varies:
+
+
+1. Possibly using a TIER POINT and/or money, if applicable to raise an ability in level.
+2. Using a TIER point (and money, if applicable) to raise a specialization in level.
+
+The money cost to raise an ability up a level depends on the amount of uses the ability has
+left.
+
+You gain tier points upon leveling up.
+
+You can also buy tier points at the trainer using 'train tier buy'.
+
+Respeccing your tier points will set all of your non-natural abilities to their initial
+level.
+
+To learn more about training and learning new abilities visit the manual:
+www.tempestseason.com/manual/abilities/#Training_Abilities_and_Specializations
+
+See: help learn, help class ats.commands.PracticeCommand, help class
+ats.commands.informative.SpecializationsCommand, help tier points, help anima convergence
+-----------------------------------------------------------------------------------------------
+
+ORACLE
+Author: Command Master
+Keywords: oracle elder staff gm gamemaster guide assist
+Type: Command
+
+Syntax: oracle <message> - sends a help message to staff members. If there are no staff members on, this will send an email to Dayrinni.
+    An email can only be sent every 30 seconds (game wide).
+    In addition, all oracles are saved per server session so staff can see them upon logging into the game at a later date!
+
+
+The oracle command allows a player to send a Helper and Staff wide help message. Any active
+Helper and Staff will see this message and assist you.
+
+If there are no staff online, a notification will be sent and the message logged for when a
+staff member enters the game.
+
+You may email Dayrinni(dayrinni@tempestseason.com) for assistance.
+
+You may also try other help files which could provide assistance: channels, feedback,
+discord, stuck.
+
+See: help class ats.commands.communication.NewbieChatCommand, help feedback, help channels,
+help discord, help stuck
+-----------------------------------------------------------------------------------------------
+
+
+GUARD
+Author: Command Master
+Keywords: guard defend
+Type: Command
+
+Syntax: guard <target>
+
+
+The guard command allows you to attempt to draw a monster's attacks away from someone, and
+onto yourself. The attempt always works, as long as you are close enough to step in front
+of them.
+
+Note: Monsters choose who they wish to target each attack and may revert back to the
+defended target if they attacked the monster again or if the monster is aggressive,
+
+There are abilities which lock a monsters target to you and are more effective than guard.
+-----------------------------------------------------------------------------------------------
+
+SPLIT
+Author: Command Master
+Keywords: split gsplit
+Type: Command
+
+Syntax: split <amount> gold|silver - splits the indicated amount with your group
+Syntax: split all - splits all of the money on you with your group.
+
+
+The split command allows you to split coins amongst your group members. It does not count
+NPCs as a group member. In addition, any reminder coins are given to the person performing
+the split.
+
+See: help inventory, help group, help currency, help treasure
+-----------------------------------------------------------------------------------------------
+
+GENDERSWITCH
+Author: Command Master
+Keywords: genderswitch 
+Type: Command
+
+Syntax: genderswitch list - shows the valid genders that can be switched
+Syntax: genderswitch <type> - swaps your gender to the other one
+
+
+The genderswitch command allow you to change your gender to another. Not all races can do
+this as they may not have the ability.
+
+
+See: help races
+-----------------------------------------------------------------------------------------------
+
+GO-BLIN
+Type: Race
+Keywords: Go-blin
+Genders: Male, Female, Non-Binary
+Allowed Classes: Fighter, Cleric: Order of the Heart, Cleric: Order of the Sword, Cleric:
+Order of the Hand, Bard, Thief, Barbarian, Forester, Rune Mage, Psion
+Racial Tensions: They form their own opinions of each race as they play
+Racial Abilities: None
+
+Go-blins are small, wretched creatures that dwell in dark cave systems, organized into
+tight-knit clans. Standing only three to four feet tall, they possess a distinctive warty
+green hide covered in pulsating yellow warts, broken tusks, and filthy skin. Their
+uniformly black eyes peer out from faces universally considered repulsive, featuring
+mottled green or grey skin with various visible deformities.
+
+These nocturnal beings are compulsive hoarders, accumulating refuse and items of
+questionable value from raids and scavenging expeditions. Spitting serves as a common
+greeting among their kind, and they actively avoid sunlight whenever possible. Go-blins are
+punks and bullies by nature, sadistic when the balance is in their favor, yet cowardly when
+facing genuine threats. They prey on weaker creatures but scatter when confronted by
+superior force, valuing cowardice as a survival mechanism and disdaining those who stand
+and fight needlessly.
+
+To learn more about the Go-blin please visit the web page:
+http://dragonsgatereborn.com/races/race-goblin.html
+
+
+See: help <ability name>, help <class name>, help races
+-----------------------------------------------------------------------------------------------
+
+GO-BLIN-AL
+Type: Race
+Keywords: Go-blin-al
+Genders: Male, Female, Non-Binary
+Allowed Classes: Fighter, Thief, Barbarian, Rune Mage
+Racial Tensions: They form their own opinions of each race as they play
+Racial Abilities: None
+
+Go-blin-als are believed to be servants to Chaos, possibly created through the warped
+experiments of the Chaos Lords. Scholars suggest they may be remnants of a formerly mighty
+
+
+race, corrupted and twisted by dark magic into the ugly, mottled green creatures seen
+today. Standing approximately three feet tall, these bipedal beings are typically filthy
+and foul-tempered, dwelling in caves within tight-knit clans.
+
+Nasty, violent, and full of mischief, Go-blin-als are bullies and punks who become sadistic
+when they hold the advantage but turn cowardly when facing genuine threats. They avoid
+sunlight and delight in harassing weaker creatures. Spitting at each other is a common form
+of greeting among their kind. They speak with distinctive lisp-like patterns and an
+underdeveloped grasp of Common.
+
+Go-blin-als possess natural night vision, quickness, agility, and dexterity, though they
+suffer from a troublemaker reputation, physical weakness, and communication barriers with
+other races. Their chaotic alignment draws them primarily to the profession of Thief, with
+rare individuals becoming Fighters, Barbarians, or Rune Mages.
+
+To learn more about the Go-blin-al please visit the web page:
+http://dragonsgatereborn.com/races/race-goblinal.html
+
+
+See: help <ability name>, help <class name>, help races

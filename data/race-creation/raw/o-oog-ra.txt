@@ -1,0 +1,140 @@
+Mort scribbles on his parchment. "Oog-ra, is it?"
+
+The Oog-ra are extremely large, hairy humanoids with sloping foreheads and protruding
+brows. Their massive frames feature sunken eyes and heavy fur, making them among the most
+physically imposing beings in the lands. According to legend, the Oog-ra originated from
+the icy Northern Isles, specifically a remote mountain range near Crescent Lake, and their
+origins allegedly trace back to the Lords of Chaos.
+
+While possessing incredible strength, the Oog-ra are widely regarded as the least
+intelligent race. They are ruled by instinct rather than intellect, and though they can be
+violent, they lack malicious intent. Their simple nature makes them easily manipulated and
+often exploited by other races. Historical records show the Frontacian Empire once debated
+exterminating them, and later attempted selective breeding to increase their intelligence.
+Oog-ras enjoy destruction, particularly loud activities like smashing things, and are most
+commonly found serving as Fighters and Barbarians.
+
+Mort peers at you over his spectacles. "So you are Oog-ra, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Oog-ra. Very good."
+
+Mort notes your disposition. "Chaotic, naturally."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Oog-ra typically live between 45 and 90 years."
+"How old are you? You must be at least 18, and no more than 90."
+Mort nods. "18 years. Moving on."
+
+Mort eyes you up and down.
+"Oog-ras typically weigh between 200 and 450 pounds."
+"What is your weight?"
+Mort scribbles. "200 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Oog-ras stand between 6'0 and 7'6."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "6'0. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Light Brown
+B) Dark Brown
+C) Reddish Brown
+D) Hazel
+E) Amber
+F) Dull Black
+G) Pitch Black
+
+Please select (A-G):
+Mort scribbles on his parchment. "light brown eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) Dull Black
+B) Glossy Black
+C) Reddish Black
+D) Bluish Black
+E) Purplish Black
+F) Light Brown
+G) Dark Brown
+H) Chestnut Brown
+I) Honey Brown
+J) Sable
+
+Please select (A-J):
+Mort nods. "dull black hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your hair length."
+
+A) Short
+B) Medium
+C) Long
+
+Please select (A-C):
+Mort jots it down. "short length, got it."
+
+Mort peers at his parchment.
+"Now then, let's record your hair style."
+
+A) Messy
+B) Dirty
+C) Mud Caked
+D) Ragged
+
+Please select (A-D):
+Mort makes a note. "messy style. Very distinctive."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Brown
+B) Light Brown
+C) Dark Brown
+D) Gray
+E) Dark Gray
+F) Black
+
+Please select (A-F):
+Mort nods approvingly. "brown complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

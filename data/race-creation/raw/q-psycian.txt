@@ -1,0 +1,180 @@
+Mort scribbles on his parchment. "Psycian, is it?"
+
+Psycians are graceful, human-like beings with immense telepathic power, considered the
+wisest of all races. They display a calm, distant exterior that masks deep emotion and
+possess natural psychic abilities allowing them to probe minds at close range. A unique
+glow forms around the head when their psychic abilities are in use.
+
+Descended from survivors of the Isle of Psycia, which was destroyed by the ancient
+Frontacians roughly a thousand years ago, the Psycians originally served as a telepathic
+communication network for the Frontacian Empire. They staged a covert rebellion by
+spreading misinformation, and in retaliation, Frontacian mages destroyed their island and
+hunted the survivors. A few Psycians escaped to rebuild in secret, and they maintain an
+unbridled hatred for the Frontacians and seek to restore their lost homeland.
+
+Psycians are calm, logical, patient, and loyal, preferring peaceful resolutions to
+conflict. However, overexposure to uncontrolled minds can cause madness, requiring regular
+doses of a madness cure. Near Frontacians, they display open loathing and a loss of their
+characteristic restraint.
+
+Mort peers at you over his spectacles. "So you are Psycian, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Psycian. Very good."
+
+Mort flips to a new section of parchment and adjusts his spectacles.
+"Now, a question of character. How would you describe your general
+disposition?"
+
+A) Entropic
+B) Orderly
+
+Alignment is used for deity selection.
+You may request to change your alignment at any time.
+
+Please select your alignment (A-B):
+Mort nods thoughtfully. "Entropic, I see. Noted."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Psycian typically live between 150 and 500 years."
+"How old are you? You must be at least 18, and no more than 500."
+Mort nods. "18 years. Moving on."
+
+Mort eyes you up and down.
+"Psycians typically weigh between 80 and 200 pounds."
+"What is your weight?"
+Mort scribbles. "80 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Psycians stand between 3'11 and 5'10."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "3'11. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Blue
+B) Dark Blue
+C) Aqua Blue
+D) Sapphire Blue
+E) Silvery Blue
+F) Brown
+G) Dark Brown
+H) Reddish Brown
+I) Hazel
+J) Amber
+K) Light Gray
+L) Dark Gray
+M) Black
+N) Dull Black
+O) Pitch Black
+P) Red
+Q) Ruby Red
+R) Yellow
+S) Silver
+T) Violet
+U) Purple
+
+Please select (A-U):
+Mort scribbles on his parchment. "blue eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) Black
+B) Raven
+C) Jet Black
+D) Brown
+E) Dark Brown
+F) Light Brown
+G) Honey Brown
+H) Blonde
+I) Light Blonde
+J) Sandy Blonde
+K) Red
+L) Auburn
+M) Coppery Red
+N) White
+O) Pure White
+P) Luminous White
+Q) Silvery
+R) Platinum
+
+Please select (A-R):
+Mort nods. "black hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your hair length."
+
+A) Short
+B) Medium
+C) Long
+D) Shoulder length
+E) Chest length
+
+Please select (A-E):
+Mort jots it down. "short length, got it."
+
+Mort peers at his parchment.
+"Now then, let's record your hair style."
+
+A) Neat
+B) Clean
+C) Fresh
+D) Sleek
+E) Wavy
+F) Braided
+
+Please select (A-F):
+Mort makes a note. "neat style. Very distinctive."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Light Brown
+B) Pale
+C) Tanned
+D) Alabaster
+E) White
+F) Silvery
+
+Please select (A-F):
+Mort nods approvingly. "light brown complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

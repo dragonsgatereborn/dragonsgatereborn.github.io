@@ -1,0 +1,481 @@
+EMRBERSERK
+Author: Command Master
+Keywords: emrberserk berserk rage frenzy
+Type: Command
+
+Syntax: berserk - displays your current berserk status.
+Syntax: berserk stop - attempt to calm the rage (chance scales with Berserk skill).
+
+
+ats.text.formatters.HelpTextFormatter@fc1a15
+-----------------------------------------------------------------------------------------------
+
+DIE
+Author: Command Master
+Keywords: die revive death dying debt resurrect
+Type: Command
+
+
+The die command brings you back to life!
+
+If you have been killed in combat, you may die and return to life. You will be revived at
+your religion's temple, or the center of Spur if there is no temple.
+
+Note: If Quest Mode is on, your revive location is the current room.
+
+
+There are penalties associated with dying if you are over level 10: a debt to your
+experience will incur. This debt must be paid back before any progress will resume for the
+next level. The current debt can be seen under the score command.
+
+You keep all of your equipment, items, and currency when you die.
+
+(Exploring the game while under level 10 is a good idea since there are no penalties when
+dying.)
+
+See: help class ats.commands.informative.ScoreCommand, help experience, help quest mode
+-----------------------------------------------------------------------------------------------
+
+REPLY
+Author: Command Master
+Keywords: reply 
+Type: Command
+
+Syntax: reply <message> - sends a tell to the last person you messages or messaged you.
+
+
+The replay command allows you to send a direct tell to the last person that sent you one.
+
+The purpose of this command is to make it easier to have one-on-one conversations in
+tells..
+
+Note: If talking to more than 1 person at once in tells, it is suggested to avoid using the
+reply command due to the high chance that a message will be sent to the wrong person. Use
+the tell command instead.
+
+See: help tellchat, help replay, help channels
+-----------------------------------------------------------------------------------------------
+
+RETREAT
+Author: Command Master
+Keywords: retreat 
+Type: Command
+
+Syntax: retreat [units] - retreats backwards in a room at max units unless specified. 1 unit = 5 feet.
+Syntax: retreat <target> - retreats backwards to the target.
+Use assess to see the current location situation.
+
+
+The retreat command allows you to move backwards in a room by a number of units. Engaged
+NPCs will try to ensure they are always in attack range. If using a ranged weapon, it is
+best to advance or retreat prior to starting combat. You may see the current location of
+all NPCs and players in a room by using the assess command.
+
+See: help advance, help move, help assess, help fire, help ranger
+-----------------------------------------------------------------------------------------------
+
+RIPOFF
+Author: Command Master
+Keywords: ripoff rip off
+Type: Command
+
+Syntax: ripoff <target> - tries to rip off a 'someone' disguise from a player.
+
+
+The ripoff command tries to remove a disguise from a target.
+
+Ripoff may only be used on a target every once in awhile. The success rate depends on the
+attributes of both players.
+
+
+See: help class ats.commands.informative.ScoreCommand, help disguise
+-----------------------------------------------------------------------------------------------
+
+REMOVE
+Author: Command Master
+Keywords: remove 
+Type: Command
+
+Syntax: remove <item>
+Syntax: remove fromWound <item> - searches your wounds for the item name and removes it.
+
+Note: If you want to remove an item from a container, use the GET command.
+
+
+The remove command removes an equipped item.
+
+To view the curerntly equipped items, type: equipment
+
+See: help equipment, help wear, help wield, help get, help inventory, help inspect, 
+-----------------------------------------------------------------------------------------------
+
+SCRIBE
+Author: Command Master
+Keywords: scribe scroll read
+Type: Command
+
+Syntax: scribe <item>|<slot> - scribes the scroll to your memory, if you are a mage.
+
+
+The scribe command is only used by Mages and allows them to commit a spell scroll to their
+arsenal (spell screen).
+
+Scrolls are purchased in the Spur Merchant District along with a small chance to find some
+basic spell scrolls on low leveled monsters.
+
+(You are looking to reduce scroll/text in the game, please see the help file for CONFIG)
+
+See: help spells, help class ats.commands.combat.CastCommand, help config, help mage
+-----------------------------------------------------------------------------------------------
+
+RETAIN
+Author: Command Master
+Keywords: retain 
+Type: Command
+
+
+Syntax: retain <item>|<slot> - marks/unmarks the item as retained - you won't put it in containers using 'put all'.
+If the marked item is a container, then it will be KEPT during selling all of the items it contains.
+
+
+The retain command has two modes: 
+
+ 1. For non-container items the item cannot be dropped or placed into containers.
+ 2. For container items the container cannot be dropped and while selling, the contents of the container will be sold but not the container itself!
+
+See: help inventory, help inspect, help keep, help drop, help shop, help break, 
+-----------------------------------------------------------------------------------------------
+
+RELOAD
+Author: Command Master
+Keywords: reload 
+Type: Command
+
+Syntax: reload <item>|<slot> - reloads the currently equipped firearm/crossbow with the indicated magazine.
+Syntax: reload <weapon> <item>|<slot> - reloads the firearm/crossbow with the indicated ammo. Equipment and then inventory is checked for the weapon.
+   If quiver is specificed for crossbows, it'll remove a bolt from the quiver.
+Syntax: reload - reloads the firearm/crossbow automatically (crossbow: equipped quiver, firearm: first non-empty magazine found in the inventory)
+
+
+The reload command is used to reload crossbows or firearms. Bolts are used from a quiver to
+reload a crossbow, while a bullet or magazine are used for fire arms, depending on the
+type. These weapons can also be unloaded, if needed.
+
+See: help fire, help unload, help ranger
+-----------------------------------------------------------------------------------------------
+
+GET
+Author: Command Master
+Keywords: get take grab retrieve
+Type: Command
+
+Syntax: get <item> - gets an item stack from the room
+Syntax: get <item> - gets the #th item stack from the room that matches the item
+Syntax: get <#> <item> - gets number of items from the item stack in the room
+
+Syntax: get <slot> - gets an item stack by slot from the room
+Syntax: get <#> <slot> - gets number of items from an item stack by slot from the room
+
+Syntax: get all [item] - gets all, or all items with same name as input, of the items from the room
+
+Container Get Syntax is similiar to the above:
+
+
+Syntax: get [#] <item|slot> <container> [room|inv|eq] - gets an item from the corpse or container
+Syntax: get all from <container> [room|inv|eq] - gets all, or all items with same name as input, of the items from the corpse or container
+Syntax: get all [item] <container> [room|inv|eq] - gets all, or all items with same name as input, of the items from the corpse or container
+Using 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.
+
+
+The get command allows a player to pick up an object off the ground or from another object
+such as a box or corpse.
+
+To put all of the items on the ground from a corpse, use the 'strip' command. Get does not
+work on player corpses, to loot a player corpse, use the 'strip' command.
+
+To pick up an item beyond the first, use 
+
+See: help class ats.commands.items.StripCommand, help put, help drop, help look, 
+-----------------------------------------------------------------------------------------------
+
+REPAIR
+Author: Command Master
+Keywords: repair 
+Type: Command
+
+Syntax: repair <item>|<slot> [room|inv|eq] - repairs the item from your equipment and inventory, if repairable. You have to be in a room that is able to repair items.
+Syntax: repair cost <item>|<slot> - checks the cost to repair the given item from your equipment and inventory.
+Syntax: repair equipment - repairs all your equipped weapons and armor.
+
+
+The repair command repairs an item's durability, such as a weapon, piece of armor or
+shield. Not all items can be repaired.
+
+Items can be repaired at various locations in the world, with the most common location
+being the Iron Works in the Spur Merchant District.
+
+Note: If an item breaks due to low durability, it will be lost forever! It is important to
+keep close eyes on durability of weapons and armor with the inspect command.
+
+See: help inspect, 
+-----------------------------------------------------------------------------------------------
+
+REVEAL
+Author: Command Master
+Keywords: reveal 
+Type: Command
+
+Syntax: reveal - searches the room attempting the make any hidden targets drop from the shadows.
+
+
+To simply search a room, type search room
+
+
+The reveal command is used to force players or npcs who are hidden in the shadows to reveal
+themselves. The chance depends on the players Abstraction and Coordination attributes vs
+the targets hide skill.
+
+It is harder to reveal rather than to search.
+
+Delay is reduced by the players hide skill and Flexibility attribute.
+
+See: help search, help hide
+-----------------------------------------------------------------------------------------------
+
+RENAMEITEM
+Author: Command Master
+Keywords: renameitem 
+Type: Command
+
+Syntax: renameitem item <item>|<slot> <new short desc> - sets the short description of the intended item.
+
+
+The Rename Item command renames an item's short description to be different (and long
+description automatically). The text is colored automatically.
+
+Currently, only Dragon claw-guards can be renamed at the Dragon Sanctuary at the claw-guard
+smith.
+
+The item must be in the inventory and not equipped.
+
+It is recommended, but not required, to retain the same material level of an item. Do not
+increase the material level. Generally speaking, the renamed item should be similar in
+potency and spirit.
+
+Example: some steel claw-guards -> some bright red flaming steel claw-guards
+
+This command is logged and reviewed, and any abuse or inappropriate text will be severely
+punished including revoking usage of this command and removal of the renamed item.
+-----------------------------------------------------------------------------------------------
+
+TRAIN
+Author: Command Master
+Keywords: train trainer guildlist classlist raise
+Type: Command
+
+
+Syntax: train list - lists the abilities and specializations that can be trained at this location.
+Syntax: train <slot> - trains the ability up to the next level. This will require a tier point and sometimes an item (the train will inform you on what is needed).
+Syntax: train spec <slot> - trains the specialization up to the next level. This may require a tier point and a small fee.
+
+Syntax: train tier cost - checks the cost of the next tier point you may buy.
+Syntax: train tier buy - buys a tier point for the associated gold price.
+Syntax: train tier respec confirm - resets all of your tier points for 5,000 gold. All of the abilities and specializations you trained will be set to lv 1. You will receive a 75% refund of your ability points.
+
+Syntax: train guildlist - views your standing in your classes guild.
+Syntax: train history - views your training attribute gain history.
+
+
+The train command raises a level of an ability, specialization, or aptitude to the next
+level.
+
+The cost of raising to the next level varies:
+1. Possibly using a TIER POINT and/or money, if applicable to raise an ability in level.
+2. Using a TIER point (and money, if applicable) to raise a specialization in level.
+
+The money cost to raise an ability up a level depends on the amount of uses the ability has
+left.
+
+You gain tier points upon leveling up.
+
+You can also buy tier points at the trainer using 'train tier buy'.
+
+Respeccing your tier points will set all of your non-natural abilities to their initial
+level.
+
+To learn more about training and learning new abilities visit the manual:
+www.tempestseason.com/manual/abilities/#Training_Abilities_and_Specializations
+
+See: help learn, help class ats.commands.PracticeCommand, help class
+ats.commands.informative.SpecializationsCommand, help tier points, help anima convergence
+-----------------------------------------------------------------------------------------------
+
+RELIGION
+Author: Command Master
+Keywords: religion 
+Type: Command
+
+Syntax: religion - shows current religion
+
+
+The religion command views the religious information about your character.
+
+
+Besides the RP information it provides, Clerics can see their progression with their Entity
+for then next devotion level. Dragons can use the devote command to follow the religion of
+the target player.
+
+See: help class ats.commands.items.DonateCommand, help devotion
+-----------------------------------------------------------------------------------------------
+
+LIEDOWN
+Author: Command Master
+Keywords: liedown rest
+Type: Command
+
+Syntax: lie
+Syntax: lie <item> - tries to lie on an item
+
+
+The lie command puts your character into a prone position.
+
+It is possible to lie on an item in the room, such as a chair, table or rune.
+
+While prone, enhanced regeneration will occur.
+
+See: help stand, help sit, help sleep, help wake, help rest
+-----------------------------------------------------------------------------------------------
+
+REPLAY
+Author: Command Master
+Keywords: replay 
+Type: Command
+
+Syntax: replay - displays the most recent chat messages.
+Syntax: replay CHAT - displays the most recent chat messages.
+Syntax: replay NEWBIE - displays the most recent newbie messages.
+Syntax: replay DRAGON_LINK - displays the most recent dragon_link messages.
+Syntax: replay DEATHBOND - displays the most recent deathbond messages.
+Syntax: replay WORSHIP - displays the most recent worship messages.
+Syntax: replay WHISPER - displays the most recent whisper messages.
+Syntax: replay TELLS - displays the most recent tells messages.
+Syntax: replay EMOTE - displays the most recent emote messages.
+Syntax: replay SAY - displays the most recent say messages.
+Syntax: replay GROUP - displays the most recent group messages.
+
+
+The replay command allows you to view recent or missed messages.
+
+
+Some of the messages that can be replayed are: chat, tells, newbie, and says.
+
+See: help chat, help class ats.commands.communication.NewbieChatCommand, help class
+ats.commands.communication.DragonLinkCommand, help class ats.commands.DeathbondCommand,
+help class ats.commands.WorshipCommand, help whisper, help tellchat, help emote, help say,
+help groupchat,
+-----------------------------------------------------------------------------------------------
+
+RANK
+Author: Command Master
+Keywords: rank 
+Type: Command
+
+Syntax: rank list - lists currently known ranks.
+Syntax: rank set <slot> - sets your current rank. Use rank list to get the # 
+Syntax: rank clear - clears your current rank.
+Syntax: rank current - views your current rank.
+Syntax: rank view <rank> - views the indicated rank for more information.
+
+
+The rank command controls what is seen in front of your name. Ranks are similiar to titles,
+but are means of formal address, such as Sir or Lady.
+
+To be considered ready for a rank, a player must have a clear concept of their character,
+and invest the time, effort and consistency of RP needed to have a well-established IC
+role. A rank can then be granted as an RP reward at the staff's discretion.
+
+The Master rank is the only non-RP rank. It is awarded for being in 1st position on the
+Guild List at the training hall.
+
+See: help title, help role play
+-----------------------------------------------------------------------------------------------
+
+RUNERECHARGE
+Author: Command Master
+Keywords: runerecharge 
+Type: Command
+
+Syntax: recharge list - displays your current rune weaves and availability.
+Syntax: recharge all - recharges (renews) all available runes to their maximum weaves.
+Syntax: recharge <name> - recharges (renews) a specific rune type.
+
+
+The recharge command restores (renews) your rune weaves at a rune vendor. Only rune types used by spells you are trained enough to cast can be recharged.
+
+
+-----------------------------------------------------------------------------------------------
+
+RUNE MAGE
+Type: Class
+Keywords: Rune Mage
+Difficulty: MEDIUM
+Role: Damage, Control
+Allowed Races: Anthian, Drag-al, Flerian, Frontacian, Go-blin, Go-blin-al, Human, Leuian,
+Monitanian, Muatana-al, Penthanian, Psycian, San Elf, Secian, Thugian, Usilin
+Specializations: None
+
+Rune Mages achieve their power through scholarly discipline and study rather than divine
+favor. They excel in both offensive and defensive magic, capable of reshaping battlefields
+with area spells despite being physically weaker than martial classes.
+
+
+To learn more about the Rune Mage please visit the web page:
+http://dragonsgatereborn.com/classes/class-runemage.html
+
+
+See: help class ats.commands.combat.CastCommand, help spells, help <race name>, help
+classes, help specialization
+-----------------------------------------------------------------------------------------------
+
+RACES
+Type: Race
+Keywords: Races
+
+A Tempest Season has many races for the player to select from.
+
+Each has their own advantages and disadvantages. While races may start with different
+attributes, they end up at the same maximum amount with the exception of dragons who gain
+higher caps as they age.
+
+Please see each race's help file for more information.
+
+To learn much more about the races please visit this web page:
+https://tempestseason.com/manual/races/
+
+The following races are currently available for rollup:
+
+ -  Anthian
+ -  Arachnian
+ -  Draco
+ -  Drag-al
+
+
+ -  Fir Elf
+ -  Flerian
+ -  Frontacian
+ -  Go-blin
+ -  Go-blin-al
+ -  Hithual
+ -  Human
+ -  Leuian
+ -  Monitanian
+ -  Muatana-al
+ -  Oog-ra
+ -  Penthanian
+ -  Psycian
+ -  San Elf
+ -  Secian
+ -  Thugian
+ -  Usilin
+
+See: help <race name>

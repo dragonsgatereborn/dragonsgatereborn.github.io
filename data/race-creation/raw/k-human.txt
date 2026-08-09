@@ -1,0 +1,174 @@
+Mort scribbles on his parchment. "Human, is it?"
+
+Humans are the most adaptable people in Aradath, thriving in nearly every climate, city,
+and profession. Their strength lies in flexibility — they learn quickly, switch roles with
+ease, and build communities wherever they settle.
+
+While they lack the extreme gifts or drawbacks of other races, Humans excel through drive,
+curiosity, and the sheer variety of paths open to them. If you want a race that can grow
+into almost any story, Humans are the perfect starting point.
+
+Mort peers at you over his spectacles. "So you are Human, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Human. Very good."
+
+Mort flips to a new section of parchment and adjusts his spectacles.
+"Now, a question of character. How would you describe your general
+disposition?"
+
+A) Chaotic
+B) Entropic
+C) Orderly
+
+Alignment is used for deity selection.
+You may request to change your alignment at any time.
+
+Please select your alignment (A-C):
+Mort nods thoughtfully. "Chaotic, I see. Noted."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Human typically live between 45 and 85 years."
+"How old are you? You must be at least 18, and no more than 85."
+Mort nods. "18 years. Moving on."
+
+Mort eyes you up and down.
+"Humans typically weigh between 90 and 400 pounds."
+"What is your weight?"
+Mort scribbles. "90 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Humans stand between 4'5 and 6'8."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "4'5. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Brown
+B) Amber
+C) Black
+D) Grey
+E) Blue
+F) Dark Blue
+G) Green
+H) Hazel
+
+Please select (A-H):
+Mort scribbles on his parchment. "brown eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) Brown
+B) Dark Brown
+C) Light Brown
+D) Honey Brown
+E) Chestnut Brown
+F) Raven
+G) Jet Black
+H) Blue Black
+I) Black
+J) Sable
+K) Red
+L) Coppery Red
+M) Auburn
+N) Reddish Blonde
+O) Blonde
+P) Light Blonde
+Q) Sandy Blonde
+R) Gray
+S) Light Gray
+T) Dark Gray
+U) Silvery
+V) Platinum
+W) Pure White
+X) White
+Y) Luminous White
+Z) Bald
+
+Please select (A-Z):
+Mort nods. "brown hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your hair length."
+
+A) Short
+B) Medium
+C) Long
+D) Shoulder length
+E) Ear length
+F) Close cut
+G) Chest length
+H) Middle Back length
+I) Waist length
+
+Please select (A-I):
+Mort jots it down. "short length, got it."
+
+Mort peers at his parchment.
+"Now then, let's record your hair style."
+
+A) Neat
+B) Messy
+C) Dirty
+D) Clean
+E) Lice Ridden
+F) Mud Caked
+G) Fresh
+H) Curly
+I) Wavy
+J) Ragged
+K) Sleek
+L) Braided
+
+Please select (A-L):
+Mort makes a note. "neat style. Very distinctive."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Light Brown
+B) Tanned
+C) Dark Brown
+
+Please select (A-C):
+Mort nods approvingly. "light brown complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

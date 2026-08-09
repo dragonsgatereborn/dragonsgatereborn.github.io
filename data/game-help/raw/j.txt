@@ -1,0 +1,51 @@
+PAY
+Author: Command Master
+Keywords: pay bounty wanted law pay jail criminal
+Type: Command
+
+Syntax: pay bounty - tries to pay your bounty to remove the WANTED flag. You must be at a bounty office.
+Syntax: pay check - views the cost to remove your bounty. You must be at a bounty office.
+
+
+The pay command pays off a bounty (WANTED flag) gained from attacking the guards, pick
+pocketing or similar illegal activities.
+
+You can only pay a bounty at the bounty office, Northwest from the center of Spur.
+
+The cost of the bounty scales based on character level.
+
+Being Wanted will cause the city guards to attack on sight so be careful while moving int
+the city!
+-----------------------------------------------------------------------------------------------
+
+QUEST
+Author: Command Master
+Keywords: quest quests journal
+Type: Command
+
+quest request <npc name> - requests the quest from the NPC and adds it to your journal.
+quest info <npc name> - asks the NPC about their quest but does not take it. This will display the start text.
+quest return <npc name> - turns in a completed quest to a NPC and receives any rewards.quest journal - lists a summary of your quests.
+quest journal <progress|completed|turnedin|all> - lists a summary of the quests in the indicated state. Can abbreviate these, ie: quest j p to view quests in progress.
+quest journal view <slot>|all - views a specific quest from the last quest journal display unless all is used
+quest visit <npc name> - visits a NPC that's needed for a quest.
+quest use <item name> (Have to be in the correct room for this to work)
+quest delete <exact quest name> - deletes a quest by the exact name. It's case sensitive.
+
+
+Questing in A Tempest Season is an exciting and rewarding activity to take part in. The
+commands above are how you interact with NPCs and their quests.
+
+First, one must request a quest from a NPC. NPCs who have quests show up with (Quest)
+around their names.
+
+Second, after receiving the quest, you must complete the objectives. These may involve
+finding items, visiting certain NPCs or rooms, or simply slaying beasts!
+
+Finally, once the quest is finished, return to the original NPC to receive your reward!
+
+
+You may also view your journal by typing 'quest journal'.
+
+Some quests are difficult to solve - so feel free to ask for help. There are also rare
+quests that give rich rewards so be on the look out!

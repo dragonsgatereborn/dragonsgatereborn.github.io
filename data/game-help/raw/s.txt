@@ -1,0 +1,829 @@
+SPELLCASTING
+Type: Skill
+Keywords: Spellcasting spellcasting
+Character Level Required: All Classes(1). 
+Maximum Training Level: 1. Range: 10ft
+
+Syntax: automatic
+
+Channeling
+
+
+Spellcasting (automatic): 
+ o increases spell attack (+potency) and 
+ o increases stamina (+potency).
+
+TRAINING KEY:
+potency - damage/effectiveness
+
+See: help skill
+Spellcasting.
+
+See: help skill
+-----------------------------------------------------------------------------------------------
+
+SHIELD PARRY
+Type: Skill
+Keywords: Shield Parry shieldparry
+Character Level Required: All Classes(1). 
+Maximum Training Level: 1. Range: 10ft
+
+Syntax: automatic
+
+Shield Parry.
+
+
+Shield Parry (automatic): increases shield block chance.
+
+See: help skill
+-----------------------------------------------------------------------------------------------
+
+SAVE
+Author: Command Master
+Keywords: save 
+Type: Command
+
+
+The save command saves your character and all current progress.
+
+Saving is an automatic process, everying 15 minutes, and sometimes after certain actions
+(such as completing a quest). In addition, when you quit or logout, your character is
+automatically saved.
+
+When the game reboots, copyovers, or shutsdown, every character is saved. On every
+copyover, a backup of every character is made prior.
+
+See: help quit, help logout, 
+-----------------------------------------------------------------------------------------------
+
+SCAN
+Author: Command Master
+Keywords: scan 
+Type: Command
+
+Syntax: scan - scans the area directly around you.
+Syntax: scan <exit name>|<direction> - scans in the given direction.
+Syntax: scan help - shows this help screen.
+
+
+The scan command views all the nearby rooms and displays any visible NPCs and players.
+
+The scan command also supports a farther scan, in a single direction. This can be useful
+looking down long hallways or city streets.
+
+See: help where, help who, 
+-----------------------------------------------------------------------------------------------
+
+SCRIBE
+Author: Command Master
+Keywords: scribe scroll read
+Type: Command
+
+Syntax: scribe <item>|<slot> - scribes the scroll to your memory, if you are a mage.
+
+
+The scribe command is only used by Mages and allows them to commit a spell scroll to their
+arsenal (spell screen).
+
+Scrolls are purchased in the Spur Merchant District along with a small chance to find some
+basic spell scrolls on low leveled monsters.
+
+
+(You are looking to reduce scroll/text in the game, please see the help file for CONFIG)
+
+See: help spells, help class ats.commands.combat.CastCommand, help config, help mage
+-----------------------------------------------------------------------------------------------
+
+SHOP
+Author: Command Master
+Keywords: shop 
+Type: Command
+
+Syntax: shop list|l [mob name] - displays the shop contents. mob name is optional (only if there are more than one shop in the same room)
+Syntax: shop buy [mob name] <slot> - buys an item from the shop. mob name is optional (only if there are more than one shop in the same room (works on all shops in the room at once)
+Syntax: shop buy [mob name] <slot> <amount>
+Syntax: shop appraise <slot>
+Syntax: shop inspect|examine|exam <slot>
+Syntax: shop compare <shop slot> <your item>|<shop slot> - compares an item in the shop to an item in your inventory or equipment (Checks inventory first) or shop slot item
+Syntax: shop sell <item>|<slot>
+Syntax: shop sellstack <item>|<slot>
+
+Rune Vendor Commands:
+Syntax: shop list runes - displays your current rune weaves and renewal cost.
+Syntax: shop renew all - renews all available runes to their maximum weaves.
+Syntax: shop renew <name> - renews a specific rune type.
+
+Note: You may use 'buy', 'sell' and 'list' as commands to buy, sell or list. They are aliases for the shop commands above.
+
+
+The shop command allows you to interact with shopkeeprs to list wares, buy and sell items,
+and inspect items.
+
+To view the items a shop sells, type: list
+
+To buy an item, type: buy <##
+
+To sell an item, type: sell <item name>|<slot>|<sid> To sell an item stack, type: sellstack
+<item name>|<slot>|<sid> To sell all items, type: shop sellall
+
+shop detectmagic will work even if you are not a magic user.
+
+
+If an item is marked KEEP or RETAIN, it will not be sold.
+If a container is marked only RETAIN, the contents inside will be sold but not the container itself (KEPT items are skipped).
+
+
+Shop search supports a special search syntax - please see the associated help file for more
+information.
+
+See: help buy, help sell, help list, help keep, help retain, help shopsearch
+-----------------------------------------------------------------------------------------------
+
+SEARCH
+Author: Command Master
+Keywords: search 
+Type: Command
+
+Syntax: search [initem] <item name> - searches the contents of an item in a room.
+Syntax: search room - searches the room for NONE players AND items. Use 'reveal' to break hidden player's hide.
+
+
+The search command is used to search rooms for items, players or npcs. Additionally, the
+inside of items can be searched for secret contents.
+
+When searching the room and a secret item exists and the search fails, a hint message will
+appear indicating another search would be worthwhile.
+
+When searching the room and a hidden player exists, the success rate is based on the
+players Abstraction and Coordination attributes vs the targets hide skill.
+
+Searching for players does not force them to exit the shadows, to do that, use the reveal
+command.
+
+Delay is reduced by the players hide skill and Flexibility attribute.
+
+See: help reveal, help hide
+-----------------------------------------------------------------------------------------------
+
+SELL
+Author: Command Master
+Keywords: sell 
+Type: Command
+
+Syntax: sell <item>|<slot>
+Syntax: shop sellall (This will sell ALL items NOT marked kept. USE WITH CAUTION! See KEEP for more information)
+
+
+The sell command allows you to sell items to shopkeeprs. To sell an item, type: sell <item
+name>|<slot>|<sid> To sell all items, type: shop sellall
+
+
+If an item is marked KEEP or RETAIN, it will not be sold.
+If a container is marked only RETAIN, the contents inside will be sold but not the container itself (KEPT items are skipped).
+
+See: help shop, help buy, help list, help keep, help retain, 
+-----------------------------------------------------------------------------------------------
+
+SHARD
+Author: Command Master
+Keywords: shard 
+Type: Command
+
+Syntax: essence - creates a basic essence shard.
+-----------------------------------------------------------------------------------------------
+
+SAY
+Author: Command Master
+Keywords: say speech talk
+Type: Command
+
+Syntax: say <message> - speaks in the current language and sends the message to the current room.
+Syntax: say <NAME, message> - speaks in the current language and sends the message to the current room, addressing the target named NAME.
+
+
+The say command communicates with other players and NPCs in the immediate room.
+
+By default, you speak the common language, which all other races can understand and speak.
+This can be changed by using the language command.
+You may target a specific person to speak too by typing: say TARGET, MESSAGE. Example: say Dayrinni, Hello there!
+Note the comma after the name.
+
+Adult and Elder dragons can speak while sleeping.
+
+See: help language, help whisper, help shout, help groupchat, help channels
+-----------------------------------------------------------------------------------------------
+
+ORACLE
+Author: Command Master
+Keywords: oracle elder staff gm gamemaster guide assist
+Type: Command
+
+Syntax: oracle <message> - sends a help message to staff members. If there are no staff members on, this will send an email to Dayrinni.
+    An email can only be sent every 30 seconds (game wide).
+    In addition, all oracles are saved per server session so staff can see them upon logging into the game at a later date!
+
+
+The oracle command allows a player to send a Helper and Staff wide help message. Any active
+Helper and Staff will see this message and assist you.
+
+If there are no staff online, a notification will be sent and the message logged for when a
+staff member enters the game.
+
+You may email Dayrinni(dayrinni@tempestseason.com) for assistance.
+
+You may also try other help files which could provide assistance: channels, feedback,
+discord, stuck.
+
+See: help class ats.commands.communication.NewbieChatCommand, help feedback, help channels,
+help discord, help stuck
+-----------------------------------------------------------------------------------------------
+
+SHOUT
+Author: Command Master
+Keywords: shout yell
+Type: Command
+
+Syntax: shout <message> - displays a message in the entire area.
+
+
+The shout command communicates with other players and NPCs in the area.
+
+Language does not work in shouts, all communication is automatically in common.
+
+See: help language, help whisper, help say, help groupchat, help channels
+-----------------------------------------------------------------------------------------------
+
+SMOTE
+Author: Command Master
+Keywords: smote 
+Type: Command
+
+Syntax: smote <message> - displays the message to the room, where your name must be contained somewhere inside the message text.
+
+
+Smote works like emote, except your name is not printed first automatically. Instead, you
+provide your name (case insensitive) in the text. If your name is not provided an error
+message is displayed. This does text highlighting for your name(yellow) and says (green).
+You can also use $n and $c for auto replacement for your name. $n will not capitalize your
+name, $c will. Note: All player names are already capitalized.
+
+You can also use $n and $c for auto replacement for your name. $n will not capitalize your
+
+
+name, $c will. Note: All player names are already capitalized.
+
+You can insert your character's pronouns based on your sex: $e (he/she), $s (his/her), and
+$m (him/her).
+Example:
+smote Dayrinni cracks $s knuckles as $e grins.
+Would show up as (for a male character):
+Dayrinni cracks his knuckles as he grins.
+
+Capitalized $E (he/she), $S (his/her), and $M (him/her) insert your target's pronouns
+instead - the nearest player or NPC you name with @ before the token.
+
+Example:
+smote You see Dayrinni look at you for a moment, before he says "Hello!"
+or
+smote You see $n look at you for a moment, before he says "Hello!"
+
+You can target players, NPCs, or objects using the @ prefix. The @ prefix will
+automatically be replaced with the target's name.
+Example:
+smote Dayrinni looks at @john and waves at @sword
+Would show up as:
+Dayrinni looks at John and waves at iron sword.
+
+Objects are searched in this order: inventory, equipment, then room. Players and NPCs must
+be in the same room.
+
+Punctuation after a target is kept, so you can write possessives and asides straight
+through.
+Example:
+smote Dayrinni looks at @john's red eyes, then at @sword...
+Would show up as:
+Dayrinni looks at John's red eyes, then at an iron sword...
+
+For precise targeting, you can use prefix modifiers:
+@name - searches all (player/NPC, then inventory, equipment, room)
+@self or @me - your own name, so a line can refer back to you
+@p:name - player/NPC only
+@i:name - inventory only (also supports slot: @i:2 for slot 2)
+@e:name - equipment only
+@r:name - room only (also supports slot: @r:3 for slot 3)
+
+This is a role play command - use it to enhance your character!
+
+See: help emote, help socials, help pose, help wmote, help think, help role play
+
+
+-----------------------------------------------------------------------------------------------
+
+INFO
+Author: Command Master
+Keywords: info info character summary
+Type: Command
+
+INFO
+
+Display character information summary
+
+Syntax: info display - Displays a compact summary of your character.
+Syntax: info religion - Displays your religion information.
+Syntax: info magick - Displays your magick information.
+Syntax: info languages - Displays your language information.
+Syntax: info martialarts - Displays your martial arts information.
+Syntax: info psionics - Displays your psionic abilities.
+Syntax: info money - Displays your money information.
+Syntax: info runespells - Displays your rune spell information.
+Syntax: info titles - Displays your title information.
+Syntax: info disguise - Displays your disguise information.
+
+
+The info command shows a compact summary of your character including identity, vitals, and attributes.
+Use 'info magick' to view your rune inventory, or 'info runespells' to see your prepared corridors.
+-----------------------------------------------------------------------------------------------
+
+DELAY
+Author: Command Master
+Keywords: delay delays stun
+Type: Command
+
+Syntax: delay - displays current delay and combat timer.
+
+The delay command shows the current delay and combat timer of a player.
+
+Delays occur when an action takes place, such as swinging a weapon, casting a spell, and,
+picking up, unlocking or selling hordes of items.
+
+The combat timer begins whenever a hostile action is performed. Certain commands and
+actions are restricted while in a combat timer, such as the quit command.
+
+The delays tick down every second and any commands entered which also are delayed, will be
+placed in the queue. Not all commands are delayed actions, and can be performed while in
+delay. Commands like say, inventory, and skills are examples for non-delayed commands.
+
+
+See: help class ats.commands.informative.CoolDownsCommand, 
+-----------------------------------------------------------------------------------------------
+
+SIT
+Author: Command Master
+Keywords: sit 
+Type: Command
+
+Syntax: sit - sit on the ground
+Syntax: sit <item> - tries to sit on an item in the room
+
+
+The sit command puts your character into a sitting position.
+
+It is possible to sit on an item in the room, such as a chair, table or rune.
+
+See: help stand, help liedown, help sleep, help wake, help rest
+-----------------------------------------------------------------------------------------------
+
+STAND
+Author: Command Master
+Keywords: stand 
+Type: Command
+
+Syntax: stand - stands up if you're not already standing.
+Syntax: stand <item> - tries to stand on an item in the room
+Syntax: stand off - to step off of the current item you're standing on
+
+
+The stand command puts your character into an upright, default, position.
+
+It is possible to stand on an item in the room, such as a chair, table or rune.
+
+To step off of an item, type: stand off
+
+See: help liedown, help sit, help sleep, help wake, help rest
+-----------------------------------------------------------------------------------------------
+
+SLEEP
+Author: Command Master
+Keywords: sleep 
+Type: Command
+
+Syntax: sleep - sleep on the ground
+
+
+Syntax: sleep <item> - tries to sleep on an item in the room
+
+
+The sleep command places your character in a deep slumber. While sleeping, you will be
+vulnerable to attack, and be unable to access certain information such as says or perform
+actions. Howver, your regeneration of health and stamina will be greatly enhanced.
+
+In order to regain health and stamina the fastest, it is suggested to bind any wounds and
+then sleep. These vitals should be fully restored within 40 to 60 seconds (2-3 ticks).
+
+See: help down, help sit, help liedown, help stand, help config, help bind wounds, help
+sanctified rest
+-----------------------------------------------------------------------------------------------
+
+SKILLS
+Author: Command Master
+Keywords: skills 
+Type: Command
+
+Syntax: skills [search] - lists all the skills you have access to. Optional search.
+
+
+The skills command lists all of the skill abilities you have access to.
+
+To use a skill ability, you use the use command.
+
+Skills are unique, and the game will search for the skill to execute on every input. For
+example, if 'kick' was typed, the game would first search for a regular kick command, and
+if it did not find one, it would try to execute 'use kick' automatically.
+
+To learn more about abilities please visit this web page:
+http://tempestseason.com/manual/abilities/
+
+See: help class ats.commands.PracticeCommand, help train, help learn, help class
+ats.commands.informative.SpecializationsCommand, help use,
+-----------------------------------------------------------------------------------------------
+
+SOCIALS
+Author: Command Master
+Keywords: socials emotes
+Type: Command
+
+Syntax: socials - lists all the socials you have access to.
+Syntax: [sociial] <social name> - performs the social, ie: smile or social smile.
+Syntax: [sociial] <social name> [target] - performs the social at the target, ie: smile dayrinni
+
+
+Syntax: [sociial]  <social name> [target] [message] - performs the social at the target with the extra message, ie: smile dayrinni and pats his back
+
+
+The socials command lists all of the socials (RP actions) you have access to.
+
+Socials are actions used during RP, such as laughing, smirking, or crying. Many socials
+accept targets and text on the end.
+For example: smile dayrinni would smile at Dayrinni.
+For example: smile dayrinni and then pats his back would smile at Dayrinni and then have your character pat his back.
+
+See: help emote, help smote, help pose, help wmote, help mood, help think, help role play
+-----------------------------------------------------------------------------------------------
+
+SPEAK
+Author: Command Master
+Keywords: speak 
+Type: Command
+
+Syntax: speak <language> - speak the indicated language.
+Use 'languages' to see what languages you can speak.
+
+-----------------------------------------------------------------------------------------------
+
+SPLIT
+Author: Command Master
+Keywords: split gsplit
+Type: Command
+
+Syntax: split <amount> gold|silver - splits the indicated amount with your group
+Syntax: split all - splits all of the money on you with your group.
+
+
+The split command allows you to split coins amongst your group members. It does not count
+NPCs as a group member. In addition, any reminder coins are given to the person performing
+the split.
+
+See: help inventory, help group, help currency, help treasure
+-----------------------------------------------------------------------------------------------
+
+STOP
+Author: Command Master
+Keywords: stop 
+Type: Command
+
+Syntax: stop - stops attacking. Usable by NPCs only.
+
+
+-----------------------------------------------------------------------------------------------
+
+CONFIG
+Author: Command Master
+Keywords: config set
+Type: Command
+
+Syntax: config <config type> - toggles the config option on/off.
+Example: config NO_COLOR - toggles the coloring of text on/off.
+
+Syntax: config screenreader - sets your configuration setup to work better for screeneaders.
+Syntax: config buffersize <lines> - sets the number of lines per Hit Enter text.
+Syntax: config export [delimiter] - exports configs for use in another character (copy and paste). If 'delimiter' is used, output is on a single line.
+
+Syntax: config list - views the current configuation setup.
+Syntax: config types - views each config and their description.
+
+Syntax: config messages <messageType> <mode> - sets mode (FULL, BRIEF, NONE) for a given message type(YOURS, OTHER).
+Syntax: config messages list - views current modes for all messages.
+Syntax: config batchedcombat - toggles batched combat message mode on/off.
+
+To change colors, see color help
+
+
+The config command allow you to control certain features and behavior in the game. For
+example, this command can be used to turn the map on/off, chat color, and hints.
+
+To configure color, see help color
+
+Configs can be exported with config export for use on other characters.
+
+See: help inspect, help inventory, help brief, help color, help channels
+-----------------------------------------------------------------------------------------------
+
+SKIN
+Author: Command Master
+Keywords: skin 
+Type: Command
+
+Syntax: skin apply <item>|<slot> <skin ID> - applies a skin onto this item.
+Syntax: skin remove <item>|<slot> - removes a skin from this item.
+Syntax: skin list - lists all known skins.
+Syntax: skin view <slot> - shows the skin at the indicated slot.
+
+
+The skin command applies a cosmetic skin to an item. This changes their short, long, and
+description to be whatever the skin is.
+
+Skins can be collected in the game through various means: shops, monster drops, quests, RP
+events, and more.
+
+See: help wield, help wear, help look, help equipment, help inspect, 
+-----------------------------------------------------------------------------------------------
+
+CLERIC: ORDER OF THE SWORD
+Type: Class
+Keywords: Cleric: Order of the Sword
+Difficulty: MEDIUM
+Role: Damage, Tank
+Allowed Races: Anthian, Arachnian, Drag-al, Fir Elf, Flerian, Go-blin, Hithual, Human,
+Leuian, Psycian, San Elf, Secian, Usilin
+Specializations: None
+
+Sword Clerics concentrate on battle rites and frontline engagement, serving as tank
+strikers. While trained in healing magic, their main purpose involves combat strength and
+battle-oriented spellwork.
+
+
+To learn more about the Cleric: Order of the Sword please visit the web page:
+http://dragonsgatereborn.com/classes/class-cleric-sword.html
+
+
+See: help class ats.commands.combat.DispatchCommand, help skills, help class
+ats.commands.informative.AttackInfoCommand, help <race name>, help classes, help
+specialization
+-----------------------------------------------------------------------------------------------
+
+SAN ELF
+Type: Race
+Keywords: San Elf
+Genders: Male, Female, Non-Binary
+Allowed Classes: Fighter, Cleric: Order of the Heart, Cleric: Order of the Sword, Cleric:
+Order of the Hand, Bard, Thief, Barbarian, Rune Mage, Psion
+Racial Tensions: Fir Elf, Usilin
+Racial Abilities: None
+
+The Sanene, also known as San Elves, are dark-skinned elves originating from the Isle of
+Muldavia. Scholars theorize they are creations of Chaos rather than true elven descendants,
+a distinction that sets them apart from other elven races. Shorter and more sinewy than
+their Fir and Usil counterparts, the Sanene possess skin tones ranging from light golden to
+
+
+deep dark brown, with predominantly black hair and dark eyes.
+
+The Sanene prize power above all else: power of magick, weapons, information, and
+manipulation. They are conniving, power-hungry, and quick to anger, embracing destruction
+and death if it serves their purpose. Their alignment is fundamentally entropic and
+chaotic, with a deep devotion to Chaos itself. Sanene often infiltrate positions of
+influence within temples, governments, and elite circles, using their exceptional
+intelligence and cunning to further their ambitions.
+
+Among their advantages, the Sanene possess night vision, excellence in both weaponry and
+magic, above-average strength for elves, and high intelligence. However, their inherently
+untrustworthy and self-serving nature is their greatest hindrance, making lasting alliances
+rare and tenuous.
+
+To learn more about the San Elf please visit the web page:
+http://dragonsgatereborn.com/races/race-sanene.html
+
+
+See: help <ability name>, help <class name>, help races
+-----------------------------------------------------------------------------------------------
+
+SECIAN
+Type: Race
+Keywords: Secian
+Genders: Male, Female, Non-Binary
+Allowed Classes: Cleric: Order of the Heart, Cleric: Order of the Sword, Cleric: Order of
+the Hand, Rune Mage, Psion
+Racial Tensions: Arachnian
+Racial Abilities: None
+
+Beautiful winged creatures, the Secians are the tiniest of all the races of Aradath. These
+fairy-like beings hail from the ancient city-state of Secia, transformed during the Great
+Change. Known for their ruby-red eyes and dazzling blonde hair, Secians are consistently
+cheerful and compassionate, possessing empathy as a divine gift. They are unfailingly kind,
+serving as peacemakers who reject violence and avoid lawbreaking or deception. Secians are
+capable of flight with minimal exertion and possess exceptional healing powers through
+empathic connection. They maintain strong, ancient bonds with Dragons and have a well-known
+obsession with jewels and gemstones. Most commonly found as Heart Clerics and Rune-Mages,
+Secians are extremely fragile but compensate with rapid movement and recovery.
+
+To learn more about the Secian please visit the web page:
+http://dragonsgatereborn.com/races/race-secian.html
+
+
+See: help <ability name>, help <class name>, help races
+
+
+-----------------------------------------------------------------------------------------------
+
+INNER SELF
+Author: Game
+Keywords: Inner Self
+Type: Fighting Style
+
+Every action has a consequence on the surroundings around the fighter.
+This style takes that into consideration and produces a method to use these to the advantage.
+They also use their inner willpower and drive to overcome deadly situations
+that others would not be able to.
+
+See: help style, help fighter
+-----------------------------------------------------------------------------------------------
+
+SHOPSEARCH
+Author: Command Master
+Type: Search
+Keywords: ShopSearch
+
+The shop search feature in the shop command can be used to search shop items while shopping
+at shops for items.
+
+The syntax is as follows:
+Operator Searches:
+shop search +<field to search> <operator> <data>
+
+Non-Operator Searches:
+shop search +<field to search> <data>
+
+
+Fields:
+affect_<mod type name>
+name
+type
+wear_type
+flag
+cost
+cost_silver
+
+Operators:
+=,==,<=,>=,!=
+
+Examples:
+shop search +affect_stat_hp > 50
+
+
+shop search +name hood
+shop search +type Armor
+
+More than one + search can be used at once. If so, all elements must be true to return a
+found item:
+shop search +affect_stat_dex > 5 +wear_type FINGER
+This would reteurn all items that had dex greater than 5 and could be worn on the finger
+slot. Note: The syntax is not case sensitive.
+
+Common Data:
+ATTACK                             ATTACK_GADGET                      BACKSTAB_DAMAGE                 
+COMMAND_CHANCE                     CRANK_STEAM_PERCENT                CRITICAL_CHANCE                 
+CRITICAL_DAMAGE                    DAMAGE                             DAMAGE_VIRTUE                   
+DEFENSE                            ESSENCE_REGEN                      FAVOR_REGEN_PERCENT             
+FLARE_ATTACK                       HEALTH_REGEN                       HEAL_CRITICAL_CHANCE            
+HEAL_CRITICAL_DAMAGE               HEAL_SYZYGY_PERCENT_BONUS          HOLY_CRITICAL_CHANCE            
+HOLY_CRITICAL_DAMAGE               HOLY_DAMAGE                        KNOCK_DOWN_CHANCE               
+MELEE_ATTACK                       MELEE_CRITICAL_CHANCE              MELEE_CRITICAL_DAMAGE           
+MELEE_DAMAGE                       MELEE_DEFENSE                      MITIGATE_CRITICAL_DAMAGE_PERCENT
+PARRY_DEFENSE                      POTENCY_EVOCATION                  PRAY_ATTACK                     
+PREACH_SUCCESS                     PSIONIC_ATTACK                     PSIONIC_CRITICAL_CHANCE         
+PSIONIC_CRITICAL_DAMAGE            RANGE_CRITICAL_CHANCE              RANGE_DAMAGE                    
+RITES_ATTACK                       RITES_DAMAGE                       SPELL_ATTACK                    
+SPELL_CRITICAL_CHANCE              SPELL_CRITICAL_DAMAGE              SPELL_DAMAGE                    
+SPELL_DEFENSE                      STALK_SUCCESS                      STAMINA_REGEN                   
+STAT_AGI                           STAT_CHA                           STAT_CON                        
+STAT_COSMIC_ENERGY                 STAT_DEX                           STAT_ELDRITCH_POWER             
+STAT_ESSENCE                       STAT_FAVOR                         STAT_HP                         
+STAT_INT                           STAT_LUNAR                         STAT_SOLAR_FURY                 
+STAT_STAMINA                       STAT_STR                           STAT_WIS                        
+SURROUNDING_ENVIRON_CHANCE         SYZYGY_ATTACK                   
+
+
+Type:
+AMMO CONTAINER                     ARMOR                              ARTIFACT                        
+ARTILLERY                          COIN                               CONTAINER                       
+DIRTY                              DRINK                              ESSENCE SHARD                   
+FOOD                               FOUNTAIN                           FURNITURE                       
+GEM                                GENERAL ITEM                       INGREDIENT                      
+INGREDIENT POUCH                   KEY                                LIGHT                           
+LOCKPICK                           MONEY                              MOUNT TAG                       
+NPCCORPSE                          ORE                                OWNED                           
+PET TAG                            PILL                               PORTAL                          
+POTION                             PROJECTILE                         RUNE                            
+SCROLL                             SHIELD                             SIFT                            
+
+
+STAFF                              TOME                               TOY                             
+TRAINING MANUAL                    TRASH                              WARP STONE                      
+WEAPON                          
+
+Wear Type:
+ABOUT                              ACC                                ANIMA_BRAND                     
+ANKLES                             ARMLET                             ARMS                            
+AURA                               BACK                               BACKSHEATH                      
+BELT                               BELT_IN                            BUTT                            
+CAPE                               CHEST                              CLOAK                           
+COAT                               CREST                              CROTCH                          
+DRESS                              EARS                               EYES                            
+FACE                               FACIAL_HAIR                        FEET                            
+FINGER                             FLOAT                              FOREARMS                        
+FOREHEAD                           GADGET_PHASING_DEVICE              GADGET_SHIMMERSHIELD            
+HAIR                               HANDS                              HAT                             
+HEAD                               HIP                                HOLD                            
+LEGS                               LIGHT                              MOUTH                           
+NECK                               NONE                               NOSE                            
+OUTERWEAR                          PALMS                              PANT                            
+POWER                              PRIMARY                            QUIVER                          
+RUNE_EYES                          RUNE_FACE                          RUNE_HANDS                      
+RUNE_NECK                          RUNE_PALM                          RUNE_SHOULDERS                  
+SECONDARY                          SHEATH                             SHIRT                           
+SHOULDERS                          SKIRT                              SPINNERET                       
+SUMMONED_WEAPON                    TAIL                               TATTOO                          
+TEETH                              THROAT                             UNDERGARMENT                    
+VEST                               WAIST                              WATCH                           
+WRIST                           
+
+Flags:
+ACTIVATED_MAGIC                    MAGIC                              MAGIC_UNLOCK_FUEL               
+WEAPON_BLUNT                       WEAPON_SHARP                       WEAPON_THRUST                   
+WEAPON_TWO_HANDS                   WEAPON_ZAP                      
+
+
+See: help shop, help keep, help retain, 
+-----------------------------------------------------------------------------------------------
+
+MATERIALS
+Type: Materials
+Keywords: Materials,Orinsteel,Platinum,Titanium,Karnite,Miltanium,Metal,Iron Works,Forge,Ore,Ingot,Smelt
+
+A Tempest Season there are several types of rare materials used for high leveled weapons,
+armor and shields.
+
+
+These materials are required to purchase gear upgrades in the Tralisia Merchant District.
+
+1. Acquire a piece of ore: trace or chunk.
+2. Go to the Iron Works and have a smith refine the pieces into ingots by using the BUY command.
+3. Take the refined ingots to the desired store, weapon or armor, and purchase the item.
+
+Tips for finding ore and ingots is as follows:
+Levels 40-69: Orinsteel - Cave and Lake Walkers
+Levels 70-100: Platinum - Basin Worms and Ragweed Beasts (best drop rate)
+Levels 100: Titanium - Hydras
+Levels 100+: Karnite - Dead Oak
+Levels 100+: Miltanium - Completing the quest Protect Tralisia: Destroy the Dead Oak Terror Knight and fighting frostbit trolls, ice spiders, and frost wyverns
+Levels 100+: Wind-metal and Lightning-metal - Tower of Windis and Lita and the Hall of Elements in the Merchant Distrct
+Levels 100+: Frost-metal - Ice Prison and the Hall of Elements in the Merchant Distrct 
+
+The city of Tralisia is always looking to improve their supply and processing of ore and
+events occur to do just this so stay tuned!
+
+The following materials and their respective tiers are as follows:
+
+ -  wood (tier 1)
+ -  copper (tier 2)
+ -  bone (tier 3)
+ -  bronze (tier 4)
+ -  iron (tier 5)
+ -  steel (tier 6)
+ -  orinsteel (tier 7)
+ -  platinum (tier 8)
+ -  titanium (tier 9)
+ -  moonsteel (tier 9)
+ -  karnite (tier 10)
+ -  obsidian (tier 10)
+ -  miltanium (tier 11)
+ -  frost-metal (tier 11)
+ -  lightning-metal (tier 11)
+ -  wind-metal (tier 11)
+ -  flame-metal (tier 11)
+ -  tritanium (tier 12)
+ -  anima (tier 20)
+
+Higher tiers mean stronger damage and protection.
+
+See: help equipment, help leveling, help elemental gear

@@ -1,0 +1,163 @@
+Mort scribbles on his parchment. "Hithual, is it?"
+
+Hithuals are stout humanoids hailing from Aerhauven within the Great Divide mountain range.
+Known as some of the finest miners in the lands, they possess above-average strength and an
+unshakeable resolve. Their culture centers around mining, craftsmanship, and a deep loyalty
+to family and clan.
+
+Fun-loving, brave, proud, and stubborn, Hithuals show equal enthusiasm for hard work and
+hearty leisure. They form acquaintances readily but develop lasting bonds with outsiders
+mainly through shared combat experiences. Beards are worn as symbols of skill and respect
+by accomplished warriors of any gender. They possess a significant natural resistance to
+magic, though this same resistance prevents them from becoming Rune Mages.
+
+Hithuals distrust non-traditional methods such as magic, thievery, or charity, firmly
+believing that worthwhile accomplishments require genuine effort. They are also renowned
+for their remarkable tolerance for ale and their love of practical jokes.
+
+Mort peers at you over his spectacles. "So you are Hithual, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Hithual. Very good."
+
+Mort flips to a new section of parchment and adjusts his spectacles.
+"Now, a question of character. How would you describe your general
+disposition?"
+
+A) Chaotic
+B) Entropic
+C) Orderly
+
+Alignment is used for deity selection.
+You may request to change your alignment at any time.
+
+Please select your alignment (A-C):
+Mort nods thoughtfully. "Chaotic, I see. Noted."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Hithual typically live between 80 and 250 years."
+"How old are you? You must be at least 18, and no more than 250."
+Mort nods. "18 years. Moving on."
+
+Mort eyes you up and down.
+"Hithuals typically weigh between 120 and 280 pounds."
+"What is your weight?"
+Mort scribbles. "120 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Hithuals stand between 3'6 and 4'8."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "3'6. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Brown
+B) Dark Brown
+C) Red
+D) Ruby Red
+E) Black
+F) Murky Black
+G) Amber
+
+Please select (A-G):
+Mort scribbles on his parchment. "brown eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) Sandy Blonde
+B) Brown
+C) Dark Brown
+D) Light Brown
+E) Chestnut Brown
+F) Red
+G) Coppery Red
+H) Auburn
+I) Black
+J) Jet Black
+K) Raven
+L) Gray
+M) Dark Gray
+
+Please select (A-M):
+Mort nods. "sandy blonde hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your hair length."
+
+A) Short
+B) Medium
+C) Long
+D) Shoulder length
+E) Chest length
+
+Please select (A-E):
+Mort jots it down. "short length, got it."
+
+Mort peers at his parchment.
+"Now then, let's record your hair style."
+
+A) Neat
+B) Messy
+C) Dirty
+D) Clean
+E) Fresh
+F) Wavy
+G) Ragged
+H) Braided
+
+Please select (A-H):
+Mort makes a note. "neat style. Very distinctive."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Light Brown
+B) Tanned
+C) Dark Brown
+D) Light Brown
+E) Brown
+F) Bronze
+G) Pale
+
+Please select (A-G):
+Mort nods approvingly. "light brown complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

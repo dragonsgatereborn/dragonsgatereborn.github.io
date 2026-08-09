@@ -1,0 +1,159 @@
+Mort scribbles on his parchment. "Thugian, is it?"
+
+Thugians are massive, brutish humanoids renowned for their exceptional physical power and
+remarkable ability to survive. Considered among the strongest of all humanoid races, these
+towering beings combine tremendous muscle with an almost supernatural capacity for rapid
+healing, recovering from wounds that would fell lesser creatures. Their intelligence,
+however, is severely limited, and their communication skills are poor at best.
+
+Despite their fearsome reputation, Thugians have simple needs. They are almost constantly
+hungry and will consume whatever is readily available, including the flesh of other
+sentient beings, with particular fondness for humans and trolls. They are easily
+entertained and attracted to small, shiny, or cute objects, becoming fiercely possessive of
+anything that catches their eye. A well-fed Thugian can become a surprisingly loyal
+companion, though their chaotic nature and unpredictable temperament make their anger
+difficult to foresee. Preferred professions include Fighter and Barbarian, while Thief and
+Rune Mage are exceedingly rare among their kind.
+
+Mort peers at you over his spectacles. "So you are Thugian, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Thugian. Very good."
+
+Mort flips to a new section of parchment and adjusts his spectacles.
+"Now, a question of character. How would you describe your general
+disposition?"
+
+A) Chaotic
+B) Entropic
+C) Orderly
+
+Alignment is used for deity selection.
+You may request to change your alignment at any time.
+
+Please select your alignment (A-C):
+Mort nods thoughtfully. "Chaotic, I see. Noted."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Thugian typically live between 60 and 150 years."
+"How old are you? You must be at least 18, and no more than 150."
+Mort nods. "18 years. Moving on."
+
+Mort eyes you up and down.
+"Thugians typically weigh between 250 and 550 pounds."
+"What is your weight?"
+Mort scribbles. "250 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Thugians stand between 6'0 and 8'0."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "6'0. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Brown
+B) Dark Brown
+C) Black
+D) Murky Black
+E) Yellow
+F) Bright Yellow
+G) Red
+H) Fiery Red
+I) Orange
+J) Dark Orange
+
+Please select (A-J):
+Mort scribbles on his parchment. "brown eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) Black
+B) Dull Black
+C) Glossy Black
+D) Murky Black
+E) Dark Brown
+F) Brown
+G) Gray
+H) Dark Gray
+I) Red
+J) Coppery Red
+K) Bald
+
+Please select (A-K):
+Mort nods. "black hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your hair length."
+
+A) Short
+B) Medium
+C) Long
+
+Please select (A-C):
+Mort jots it down. "short length, got it."
+
+Mort peers at his parchment.
+"Now then, let's record your hair style."
+
+A) Messy
+B) Dirty
+C) Mud Caked
+D) Ragged
+E) Lice Ridden
+
+Please select (A-E):
+Mort makes a note. "messy style. Very distinctive."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Brown
+B) Dark Brown
+C) Gray
+D) Dark Gray
+E) Green
+F) Dark Green
+G) Black
+
+Please select (A-G):
+Mort nods approvingly. "brown complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

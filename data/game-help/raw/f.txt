@@ -1,0 +1,413 @@
+FIRST AID
+Type: Skill
+Keywords: First Aid firstaid
+Character Level Required: All Classes(1). 
+Maximum Training Level: 1. Range: 10ft
+
+Syntax: use firstaid <target> - applies first aid to heal a target's wounds
+
+First Aid.
+
+First Aid (single victim): applies first aid to heal wounds (+chance, +potency, -delay).
+
+The target must be sitting or lying down to receive first aid. Healing scales from First
+Aid level, Wisdom, and Dexterity. Result quality ranges from Partial to Critical, with a
+hard cap of 35 on critical heals.
+
+TRAINING KEY: potency - damage/effectiveness, chance - chance of failure/success, delay -
+length of ability delay on use
+
+See: help skill
+-----------------------------------------------------------------------------------------------
+
+FORCE FIST
+Type: Spell
+Keywords: Force Fist forcefist
+Character Level Required: Fighter(1). Range: 30ft
+
+Syntax: invoke forcefist <target> - executes the ability on the target(Single)
+
+A focused blast of runemagick force shaped into a fist, striking the target from range.
+
+
+Force Fist (single victim): deals blunt damage.
+
+See: help invoke
+-----------------------------------------------------------------------------------------------
+
+FOCUS FORCE
+Type: Skill
+Keywords: Focus Force focusforce
+Character Level Required: Fighter(1). Maximum Training Level: 1. Range: 0ft
+
+Syntax: use focusforce
+Can Toggle Ability (turn on/off).
+
+
+You concentrate all your might into your attacks, gaining increased offensive rating and
+damage at the cost of slower attacks.
+
+
+Focus Force (user): 
+ o increases melee and range attack rating by 15 (+potency), 
+ o increases weapon damage done (+potency), and 
+ o increases weapon delay.
+
+TRAINING KEY:
+potency - damage/effectiveness
+
+See: help skill
+-----------------------------------------------------------------------------------------------
+
+FIRE
+Author: Command Master
+Keywords: fire volley
+Type: Command
+
+Syntax: fire <rapid|deftly|precisely> <target> - fires with the indicated attack. (Can abbr the attack types, ie: r for rapid)
+Syntax: fire <direction> <range> - fires a volley in the indicated direction.
+Syntax: fire artillery [room cannon] <target> - fires the equipped or room artillery at the target. If the target is out of range, the cannon will still fire.
+
+
+The fire command is used to fire bows, crossbows and firearms at a target. The weapon
+generally requires some form of ammo required, such as a quiver with arrows or bolts, or a
+magazine in a fire arm. Bows are automatically loaded from the equipped quiver on each
+fire. Crossbows and firearms require a manual reload. Ranged weapons can also be unloaded,
+if needed.
+
+Bows recieve a 50% damage bonus if used outside of melee range(2 units (10 feet)) of a
+target. Advance or retreat before battle to do maximum damage.
+
+Bows can also be volleyed into other rooms, dealing damage from afar. Damage is reduced by
+25%. Be warned, any struck targets will chase after you after taking fire!
+
+To see the differences between rapid, deftly and precisely type: attackinfo
+
+See: help advance, help retreat, help move, help reload, help unload, help class
+ats.commands.informative.AttackInfoCommand, help ranger, help risk
+-----------------------------------------------------------------------------------------------
+
+EMRBERSERK
+Author: Command Master
+
+
+Keywords: emrberserk berserk rage frenzy
+Type: Command
+
+Syntax: berserk - displays your current berserk status.
+Syntax: berserk stop - attempt to calm the rage (chance scales with Berserk skill).
+
+
+ats.text.formatters.HelpTextFormatter@fc1a15
+-----------------------------------------------------------------------------------------------
+
+FOLLOW
+Author: Command Master
+Keywords: follow follower
+Type: Command
+
+Syntax: follow <target> - follows the target.
+Note: Use group <target> to group a player already following you.
+
+
+The follow command follows another player. When the followed player moves, you will
+automatically move with them unless in a position(such as sitting) or restricted(such as
+rooted).
+
+Groups can be formed from players who are currently following you.
+
+To stop people from following, use the nofollow command.
+
+See: help nofollow, help group, help disband, help groupchat, 
+-----------------------------------------------------------------------------------------------
+
+FLY
+Author: Command Master
+Keywords: fly 
+Type: Command
+
+Syntax: fly up - flies up 5 feet
+Syntax: fly down - flies down 5 feet
+Syntax: fly [-/+#] - flies up or down (rounded to nearest 5 ft, minimum 5)
+To land type: land
+
+
+The fly command, if bestowed with the power of flight, allows you to take to the sky or
+change the current elevation!
+
+Be warned! Falling 'out of the sky' will cause grave harm upon impact!
+
+
+See: help land, 
+-----------------------------------------------------------------------------------------------
+
+FLIP
+Author: Command Master
+Keywords: flip 
+Type: Command
+
+Syntax: flip <item>|<slot> [room|inv|eq] - flips a coin.
+Using 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.
+
+-----------------------------------------------------------------------------------------------
+
+FILL
+Author: Command Master
+Keywords: fill 
+Type: Command
+
+Syntax: fill <item>|<slot> <fountain> - refills a drink from a fountain or drink in the room.
+
+
+The fill command allows you to refill a drinking container from a source, such as a
+fountain.
+
+See: help drink, help eat, help inspect, 
+-----------------------------------------------------------------------------------------------
+
+FEEL
+Author: Command Master
+Keywords: feel 
+Type: Command
+
+Syntax: feel <message> - sends an in character feel message to all staff members.
+This is great for RP as it assists the staff in moving events along for your character!
+
+The feel command allows your character to have a private feelings, which is sent to all
+Staff members.
+
+Feeling during any role play is vital (and highly encouraged) to your characters
+development because it allows the Staff to be notified of active RP and also non-obvious
+information.
+
+Knowing what a character is feeling can allow the staff to move the quest into a more
+meaningful direction. For example: a character may be willing to con a NPC but aren't sure
+
+
+if it is possible. A thought about this can give the Staff the information they need to
+open up this line of RP!
+
+Periodically, bonus experience and other RP rewards are given out to characters who use the
+feel command often.
+
+Note: Other characters may be able to sense feelings.
+
+This is a role play command - use it to enhance your character!
+
+See: help think, help socials, help emote, help smote, help pose, help wmote, help mood,
+help role play
+-----------------------------------------------------------------------------------------------
+
+FIGHTER
+Type: Class
+Keywords: Fighter
+Difficulty: EASY
+Role: Damage, Tank
+Allowed Races: Anthian, Arachnian, Drag-al, Fir Elf, Flerian, Frontacian, Go-blin,
+Go-blin-al, Hithual, Human, Leuian, Monitanian, Muatana-al, Oog-ra, Psycian, San Elf,
+Thugian, Usilin
+Specializations: None
+
+Fighters are the stalwart of any adventuring party, serving as the backbone through
+martial skill and determination. They can master multiple weapon types and equip any armor
+or shield, making them reliable frontline defenders.
+
+
+To learn more about the Fighter please visit the web page:
+http://dragonsgatereborn.com/classes/class-fighter.html
+
+
+See: help class ats.commands.combat.DispatchCommand, help skills, help class
+ats.commands.informative.AttackInfoCommand, help <race name>, help classes, help
+specialization
+-----------------------------------------------------------------------------------------------
+
+FORESTER
+Type: Class
+Keywords: Forester
+Difficulty: MEDIUM
+Role: Damage, Utility
+Allowed Races: Anthian, Drag-al, Fir Elf, Flerian, Go-blin, Human, Psycian
+Specializations: None
+
+
+These forest dwellers demonstrate competence with bows, limited magical abilities derived
+from the forest itself, and talent for tracking and detecting unusual signs. Their
+capacity to tame pets and skin animals adds to their versatility.
+
+
+To learn more about the Forester please visit the web page:
+http://dragonsgatereborn.com/classes/class-forester.html
+
+
+See: help <race name>, help classes, help specialization
+-----------------------------------------------------------------------------------------------
+
+FIR ELF
+Type: Race
+Keywords: Fir Elf
+Genders: Male, Female, Non-Binary
+Allowed Classes: Fighter, Cleric: Order of the Heart, Cleric: Order of the Sword, Cleric:
+Order of the Hand, Bard, Forester
+Racial Tensions: San Elf
+Racial Abilities: None
+
+The Firians, also known as Fir Elves, are forest elves deeply connected to the natural
+world. They possess a great love for nature and are renowned for their exceptional archery
+skills. Athletic in build, Firians prefer wilderness and outdoor living over urban
+environments, blending effectively into shadows and the forest canopy. They are gifted with
+night vision, making them formidable in low-light conditions. Firians are known as superior
+marksmen, wielding missile weapons with unmatched proficiency, particularly bows. Their
+foresters gain additional skinning bonuses, reflecting their deep practical knowledge of
+the wild. While physically weaker in melee combat compared to more combat-focused races,
+their agility and ranged prowess more than compensate. Firians maintain friendly relations
+with most races, particularly the Anthians, but harbor a strong hatred toward the Sanene,
+their dark elven kin.
+
+To learn more about the Fir Elf please visit the web page:
+http://dragonsgatereborn.com/races/race-firian.html
+
+
+See: help <ability name>, help <class name>, help races
+-----------------------------------------------------------------------------------------------
+
+FLERIAN
+Type: Race
+Keywords: Flerian
+Genders: Male, Female, Non-Binary
+
+
+Allowed Classes: Fighter, Cleric: Order of the Heart, Cleric: Order of the Sword, Cleric:
+Order of the Hand, Bard, Thief, Barbarian, Forester, Rune Mage, Psion
+Racial Tensions: They form their own opinions of each race as they play
+Racial Abilities: None
+
+Flerians are short, mildly furry, slightly built humanoids with long dexterous fingers who
+live in communal underground societies called burrows. They are friendly, curious,
+talkative, and often dramatic, with short attention spans and a light-hearted nature. Their
+narrow, sharp features are complemented by large, round eyes that grant them exceptional
+night vision.
+
+Known for their remarkable agility and dexterity, Flerians move almost continuously and are
+notoriously difficult to restrain. They have a well-earned reputation for grabbing anything
+that is not nailed down, which often creates conflicts in urban areas. Despite caring
+little for material possessions, they are fiercely loyal to their burrow and close
+companions. Members of this race appear quite similar to one another to outsiders, making
+individual identification a challenge for other races.
+
+To learn more about the Flerian please visit the web page:
+http://dragonsgatereborn.com/races/race-flerian.html
+
+
+See: help <ability name>, help <class name>, help races
+-----------------------------------------------------------------------------------------------
+
+FRONTACIAN
+Type: Race
+Keywords: Frontacian
+Genders: Male, Female, Non-Binary
+Allowed Classes: Fighter, Bard, Rune Mage
+Racial Tensions: Arachnian
+Racial Abilities: None
+
+Frontacians are one of the oldest and most influential races in Aradath, having ruled the
+greatest single Empire the world has ever seen. During the Second and Third Ages they built
+magickal bridges that linked the realm, and their name translates to "Jeweled Ones" owing
+to the three embedded jewel-like formations found on their foreheads and palms. Tall and
+pale with white hair and eyes, Frontacians view themselves as elite politicians, thinkers,
+and runemages with aspirations for renewed dominance.
+
+The race possesses exceptional magical talent, legendary arcane creations, and the ability
+to drain energy from others. However, Frontacians suffer from a genetic malady tied to the
+Great Unmagick, requiring a weekly medication derived almost entirely from dragon essence.
+Missing a single dose causes instability, and two missed doses risk fatality. Physically
+fragile compared to martial races, they compensate with unmatched intellect, cunning, and
+
+
+raw magical power. Frontacians exhibit considerable imperial pride and a cold, uncaring
+demeanor toward those they consider lesser, though honesty holds significant cultural value
+within their own society.
+
+To learn more about the Frontacian please visit the web page:
+http://dragonsgatereborn.com/races/race-frontacian.html
+
+
+See: help <ability name>, help <class name>, help races
+-----------------------------------------------------------------------------------------------
+
+FINESSE
+Author: Game
+Keywords: Finesse
+Type: Fighting Style
+
+The Finesse style focuses on using highly specialized motions in specific moments to
+attain the maximum benefit. This style has a mixture of defensive and offensive
+abilities.
+
+See: help style, help fighter
+-----------------------------------------------------------------------------------------------
+
+BRUTE FORCE
+Author: Game
+Keywords: Brute Force
+Type: Fighting Style
+
+Brute Force style focuses the sheer strength of the fighter to achieve maximum damage.
+They can use their strength in a whole host of abilities to unleash
+physically devastating attacks.
+
+See: help style, help fighter
+-----------------------------------------------------------------------------------------------
+
+MATERIALS
+Type: Materials
+Keywords: Materials,Orinsteel,Platinum,Titanium,Karnite,Miltanium,Metal,Iron Works,Forge,Ore,Ingot,Smelt
+
+A Tempest Season there are several types of rare materials used for high leveled weapons,
+armor and shields.
+
+These materials are required to purchase gear upgrades in the Tralisia Merchant District.
+
+1. Acquire a piece of ore: trace or chunk.
+
+
+2. Go to the Iron Works and have a smith refine the pieces into ingots by using the BUY command.
+3. Take the refined ingots to the desired store, weapon or armor, and purchase the item.
+
+Tips for finding ore and ingots is as follows:
+Levels 40-69: Orinsteel - Cave and Lake Walkers
+Levels 70-100: Platinum - Basin Worms and Ragweed Beasts (best drop rate)
+Levels 100: Titanium - Hydras
+Levels 100+: Karnite - Dead Oak
+Levels 100+: Miltanium - Completing the quest Protect Tralisia: Destroy the Dead Oak Terror Knight and fighting frostbit trolls, ice spiders, and frost wyverns
+Levels 100+: Wind-metal and Lightning-metal - Tower of Windis and Lita and the Hall of Elements in the Merchant Distrct
+Levels 100+: Frost-metal - Ice Prison and the Hall of Elements in the Merchant Distrct 
+
+The city of Tralisia is always looking to improve their supply and processing of ore and
+events occur to do just this so stay tuned!
+
+The following materials and their respective tiers are as follows:
+
+ -  wood (tier 1)
+ -  copper (tier 2)
+ -  bone (tier 3)
+ -  bronze (tier 4)
+ -  iron (tier 5)
+ -  steel (tier 6)
+ -  orinsteel (tier 7)
+ -  platinum (tier 8)
+ -  titanium (tier 9)
+ -  moonsteel (tier 9)
+ -  karnite (tier 10)
+ -  obsidian (tier 10)
+ -  miltanium (tier 11)
+ -  frost-metal (tier 11)
+ -  lightning-metal (tier 11)
+ -  wind-metal (tier 11)
+ -  flame-metal (tier 11)
+ -  tritanium (tier 12)
+ -  anima (tier 20)
+
+Higher tiers mean stronger damage and protection.
+
+See: help equipment, help leveling, help elemental gear

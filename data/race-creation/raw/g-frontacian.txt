@@ -1,0 +1,159 @@
+Mort scribbles on his parchment. "Frontacian, is it?"
+
+Frontacians are one of the oldest and most influential races in Aradath, having ruled the
+greatest single Empire the world has ever seen. During the Second and Third Ages they built
+magickal bridges that linked the realm, and their name translates to "Jeweled Ones" owing
+to the three embedded jewel-like formations found on their foreheads and palms. Tall and
+pale with white hair and eyes, Frontacians view themselves as elite politicians, thinkers,
+and runemages with aspirations for renewed dominance.
+
+The race possesses exceptional magical talent, legendary arcane creations, and the ability
+to drain energy from others. However, Frontacians suffer from a genetic malady tied to the
+Great Unmagick, requiring a weekly medication derived almost entirely from dragon essence.
+Missing a single dose causes instability, and two missed doses risk fatality. Physically
+fragile compared to martial races, they compensate with unmatched intellect, cunning, and
+raw magical power. Frontacians exhibit considerable imperial pride and a cold, uncaring
+demeanor toward those they consider lesser, though honesty holds significant cultural value
+within their own society.
+
+Mort peers at you over his spectacles. "So you are Frontacian, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Frontacian. Very good."
+
+Mort flips to a new section of parchment and adjusts his spectacles.
+"Now, a question of character. How would you describe your general
+disposition?"
+
+A) Chaotic
+B) Entropic
+C) Orderly
+
+Alignment is used for deity selection.
+You may request to change your alignment at any time.
+
+Please select your alignment (A-C):
+Mort nods thoughtfully. "Chaotic, I see. Noted."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Frontacian typically live between 60 and 200 years."
+"How old are you? You must be at least 18, and no more than 200."
+Mort nods. "18 years. Moving on."
+
+Mort eyes you up and down.
+"Frontacians typically weigh between 90 and 250 pounds."
+"What is your weight?"
+Mort scribbles. "90 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Frontacians stand between 4'4 and 7'0."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "4'4. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) White
+B) Pure White
+C) Milk White
+D) Glowing White
+E) Silver
+F) Light Gray
+G) Silvery Blue
+H) Violet
+I) Light Purple
+
+Please select (A-I):
+Mort scribbles on his parchment. "white eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) White
+B) Pure White
+C) Luminous White
+D) Silvery
+E) Platinum
+F) Light Gray
+G) Light Blonde
+H) Pale Blue
+
+Please select (A-H):
+Mort nods. "white hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your hair length."
+
+A) Short
+B) Medium
+C) Long
+D) Shoulder length
+E) Chest length
+
+Please select (A-E):
+Mort jots it down. "short length, got it."
+
+Mort peers at his parchment.
+"Now then, let's record your hair style."
+
+A) Neat
+B) Clean
+C) Fresh
+D) Wavy
+E) Sleek
+F) Braided
+
+Please select (A-F):
+Mort makes a note. "neat style. Very distinctive."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Pale
+B) White
+C) Pure White
+D) Luminous White
+E) Alabaster
+F) Light Brown
+G) Silvery
+
+Please select (A-G):
+Mort nods approvingly. "pale complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

@@ -1,0 +1,13 @@
+SHOUT
+Author: Command Master
+Keywords: shout yell
+Type: Command
+
+Syntax: shout <message> - displays a message in the entire area.
+
+
+The shout command communicates with other players and NPCs in the area.
+
+Language does not work in shouts, all communication is automatically in common.
+
+See: help language, help whisper, help say, help groupchat, help channels

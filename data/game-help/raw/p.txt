@@ -1,0 +1,482 @@
+SHIELD PARRY
+Type: Skill
+Keywords: Shield Parry shieldparry
+Character Level Required: All Classes(1). 
+Maximum Training Level: 1. Range: 10ft
+
+Syntax: automatic
+
+Shield Parry.
+
+
+Shield Parry (automatic): increases shield block chance.
+
+See: help skill
+-----------------------------------------------------------------------------------------------
+
+PSI
+Author: Command Master
+Keywords: psi 
+Type: Command
+
+Syntax: psi <psionic name> <target> - Uses a psionic ability at your target.
+Leaving <target> blank will target the caster automatically.
+
+
+The psi command uses a psionic ability.
+
+Psions use psi energy to manipulate the world around them with their mind.
+
+
+See: help psionics, 
+-----------------------------------------------------------------------------------------------
+
+GROUPPROTOTYPE
+Author: Command Master
+Keywords: groupprototype party leader
+Type: Command
+
+Syntax: group - checks the group status.
+Syntax: group <target> - add a player who is following you to your group. Must be the group leader and the target must be in the same room.
+Syntax: group leader <target> - gives group leader to the target. Must be the group leader and the target must be in the same room.
+Syntax: group combine <target> - tries to combine the target's group with yours. Target must be leader and in the same room.
+Syntax: group accept <player> - accepts a request to combine your group from the player. Target must be leader and in the same room.
+Syntax: group allFollowers - groups all followers currently in the same room as you.
+Syntax: group forceGroup <player> - forces this player to join your group and makes them stand (only active during Quest Mode)
+
+
+The group command forms a party from the people currently following you.
+
+While in a group, all experience and ability points are shared. Vitals of the group can be
+seen by typing 'group'.
+
+Group members also gain access to a special channel, gsay, which sends IC messages to all
+other players in the group regardless of location.
+
+See: help follow, help disband, help nofollow, help groupchat, 
+-----------------------------------------------------------------------------------------------
+
+GROUP
+Author: Command Master
+Keywords: group party leader
+Type: Command
+
+Syntax: group - checks the group status.
+Syntax: group <target> - add a player who is following you to your group. Must be the group leader and the target must be in the same room.
+Syntax: group leader <target> - gives group leader to the target. Must be the group leader and the target must be in the same room.
+Syntax: group combine <target> - tries to combine the target's group with yours. Target must be leader and in the same room.
+Syntax: group accept <player> - accepts a request to combine your group from the player. Target must be leader and in the same room.
+Syntax: group allFollowers - groups all followers currently in the same room as you.
+Syntax: group forceGroup <player> - forces this player to join your group and makes them stand (only active during Quest Mode)
+
+
+The group command forms a party from the people currently following you.
+
+While in a group, all experience and ability points are shared. Vitals of the group can be
+seen by typing 'group'.
+
+Group members also gain access to a special channel, gsay, which sends IC messages to all
+other players in the group regardless of location.
+
+See: help follow, help disband, help nofollow, help groupchat, 
+-----------------------------------------------------------------------------------------------
+
+PUT
+Author: Command Master
+Keywords: put 
+Type: Command
+
+Syntax: put <item>|<slot> [in] <container> [room|inv|eq] - puts an item stack from your inventory into the corpse or container.
+Syntax: put # <item>|<slot> [in] <container> [room|inv|eq] - puts an item stack from your inventory into the corpse or container.
+
+
+Syntax: put all [item] [in] <<container> [room|inv|eq] - puts all, or all items with same name as input, of the items from your inventory into the corpse or container.
+Using 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.
+
+
+The put command allows a player to place an object into another object.
+
+Items can only be placed in a container, such as a chest or trunk.
+
+To put an item beyond the first, use 
+
+
+See: help class ats.commands.items.StripCommand, help get, help drop, 
+-----------------------------------------------------------------------------------------------
+
+PLACE
+Author: Command Master
+Keywords: place 
+Type: Command
+
+Syntax: place <item> - places the item from your inventory.
+Syntax: place <item> - places the of the item. IE: place 2.sword would place the 2nd sword.
+Syntax: place <slot> - places the item at the slot. Use inventory to find the slot number.
+Syntax: place all - places everything from your inventory.
+Syntax: place <amount> gold - places the indicated gold.
+Syntax: place <amount> silver - places the indicated silver.
+Syntax: place <amount> gold <amount> silver - places the indicated gold and silver.
+You need ownership of the room in order to place items such they last long term.
+Any items PUT into a PLACED container in the room will be SAVED through copyovers, etc.
+
+-----------------------------------------------------------------------------------------------
+
+BUY
+Author: Command Master
+Keywords: buy purchase
+Type: Command
+
+Syntax: buy [mob name] <slot> - buys an item from the shop. mob name is optional (only if there are more than one shop in the same room (works on all shops in the room at once)
+Syntax: buy [mob name] <slot> <amount>
+
+
+The buy command allows you to buy items from shopkeeprs. To buy an item, type: buy <##
+
+
+See: help shop, help sell, help list, help keep, help retain, 
+-----------------------------------------------------------------------------------------------
+
+
+UNLOCK
+Author: Command Master
+Keywords: unlock lockpick lock pick
+Type: Command
+
+Syntax: unlock <item>|<slot> [room|inv|eq]
+Using 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.
+
+
+The unlock command attempts to unlock a container(chest, box, etc) or portal(gate, door,
+etc). Some items require keys to be unlocked, others do not.
+
+For containers, there are three ways to unlock it:
+using the key (if one exists
+asking your neighborhood Rogue to pick the lock
+visiting Hoss at his Locksmith Shop in the alley behind the southern section of Merchant Distirct
+
+For portals, there are two ways to unlock it:
+using the key (if one exists
+asking your neighborhood Rogue to pick the lock
+
+Not all locks can be picked.
+
+For unlocking affects on magic items, see help detectmagic
+
+See: help locksmith, help lock, help open, help close, help picklocks, help detectmagic
+-----------------------------------------------------------------------------------------------
+
+PAY
+Author: Command Master
+Keywords: pay bounty wanted law pay jail criminal
+Type: Command
+
+Syntax: pay bounty - tries to pay your bounty to remove the WANTED flag. You must be at a bounty office.
+Syntax: pay check - views the cost to remove your bounty. You must be at a bounty office.
+
+
+The pay command pays off a bounty (WANTED flag) gained from attacking the guards, pick
+pocketing or similar illegal activities.
+
+You can only pay a bounty at the bounty office, Northwest from the center of Spur.
+
+The cost of the bounty scales based on character level.
+
+
+Being Wanted will cause the city guards to attack on sight so be careful while moving int
+the city!
+-----------------------------------------------------------------------------------------------
+
+CALL
+Author: Command Master
+Keywords: call pets animal tag mounts
+Type: Command
+
+Syntax: call <item> - summons the pet on a pet tag or mount on a mount tag!
+Syntax: call <slot> - summons the pet on a pet tag or mount on a mount tag!
+Syntax: call patreonPet - summons the patreon pet, if one is made. Use the Patreon command to create a pet!
+Syntax: call patreonMount - summons and mounts the patreon mount, if one is made. Use the Patreon command to create a mount! (Tier 5)
+
+Syntax: call dismiss [longID]|all - dismisses your current pet. If the tag was a single use, this pet will be lost forever.
+Syntax: call list - List the pets and their LongID so you can dismiss or interact with them via order.
+Syntax: call pets - calls for your already existing pets and has them returns to you! This won't work if the pets are in combat.
+Syntax: call resonance - summons your already existing resonance to you!
+
+
+The call command summons a mount, a new pet, dismisses a pet, or returns a lost pet to your
+side.
+
+Typically, pets and mounts must be purchased or acquired through a role play event. They
+can then be summoned with the call command and controlled with the order command.
+
+Pets can perish and be lost forever. Be careful of giving them rare and expensive items as
+they can be easily lost as pet inventory is not saved. Mounts do not perish and last
+forever.
+
+See: help order, help class ats.commands.items.PatreonCommand, help dismount, help role
+play
+-----------------------------------------------------------------------------------------------
+
+PLAYED
+Author: Command Master
+Keywords: played 
+Type: Command
+
+Syntax: played - displays your time played information.
+
+-----------------------------------------------------------------------------------------------
+
+PROGRAMCHAT
+Author: Command Master
+
+
+Keywords: programchat 
+Type: Command
+
+Syntax: @p <message> - displays an OOC message to all program players viewing progra chats.
+Syntax: @p - toggles viewing program chats on/off.
+
+
+The program chat command displays an Out Of Character(OOC) message to all program players
+viewing program chats.
+
+
+See: help class ats.commands.communication.NewbieChatCommand, help oracle, help think, help
+tellchat, help groupchat, help replay,
+-----------------------------------------------------------------------------------------------
+
+POSE
+Author: Command Master
+Keywords: pose 
+Type: Command
+
+Syntax: pose set <string> - switches to a new pose. (Emote or Smote method)
+Syntax: pose current - views the current pose.
+Syntax: pose clear - resets your current pose to be default (nothing).
+
+
+Pose allows a player to change their long description in the rooms they are in.
+
+Instead of seeing the default messages:
+Dayrinni the Human is here.
+
+A custom message can be displayed, such as:
+Dayrinni is here, working on something.
+
+
+The pose command can also be used in a SMOTE version, by including your exact name in the
+string. For example:
+pose set The area glows green as you see Dayrinni praying to his god here.
+This would then show up as the following in the room:
+The area glows green as you see Dayrinni praying to his god here.
+
+You can also use $n and $c for auto replacement for your name. $n will not capitalize your
+name, $c will. Note: All player names are already capitalized.
+
+This is a role play command - use it to enhance your character!
+
+
+This command will be monitored for abuse. Report anything inappropriate, including OOC
+messages or anything that violates the game policy.
+
+See: help emote, help smote, help wmote, help socials, help mood, help think, help role
+play
+-----------------------------------------------------------------------------------------------
+
+PROMPT
+Author: Command Master
+Keywords: prompt 
+Type: Command
+
+Syntax: prompt show          - show your current prompt format
+Syntax: prompt default       - reset the prompt to the default
+Syntax: prompt tokens        - list all available prompt tokens
+Syntax: prompt set <format>  - set a custom format using text and/or tokens
+
+Example: prompt set H: %h/%H S: %s/%S
+
+
+The prompt command lets you customize the text displayed after every command. The format
+usually shows vitals such as health and stamina.
+
+Tokens let you embed live values in your prompt. Use % for single-char tokens (e.g. %h for
+health) and {} for named tokens (e.g. {cosmic}). Type 'prompt tokens' for the full list.
+
+Example: prompt set H: %h/%H S: %s/%S
+  Displays: H: 100/100 S: 50/50
+-----------------------------------------------------------------------------------------------
+
+PSIONICS
+Author: Command Master
+Keywords: psionics 
+Type: Command
+
+Syntax: psionics - lists all the psionics you have access to.
+
+
+The psionics command lists all of the psionic abilities you have access to.
+
+To use a psionic ability, you use the manipulate command.
+
+To learn more about abilities please visit this web page:
+http://tempestseason.com/manual/abilities/
+
+
+See: help class ats.commands.PracticeCommand, help train, help learn, help skills, help
+class ats.commands.informative.SpecializationsCommand, help class
+ats.commands.combat.ManipulateCommand, help ethari
+-----------------------------------------------------------------------------------------------
+
+PROVOKE
+Author: Command Master
+Keywords: provoke 
+Type: Command
+
+Syntax: provoke
+
+
+The provoke command allows you to begin combat with all the NPCs in the room. In other
+words, it will place you in their aggro lists and begin to attack.
+
+This is not a taunt.
+-----------------------------------------------------------------------------------------------
+
+PASSWORD
+Author: Command Master
+Keywords: password 
+Type: Command
+
+Syntax: password <old> <new> - changes the password on your account.
+
+-----------------------------------------------------------------------------------------------
+
+PSION
+Type: Class
+Keywords: Psion
+Difficulty: MEDIUM
+Role: Control, Damage, Debuffer
+Allowed Races: Flerian, Go-blin, Hithual, Human, Leuian, Penthanian, Psycian, San Elf,
+Secian, Usilin
+Specializations: None
+
+Psions wield psionics: the ability to use only one's mind to affect the world around them.
+They tend to be deep thinkers who operate under common-sense methodologies, often pursuing
+enlightenment through mental perfection rather than religious devotion.
+
+
+To learn more about the Psion please visit the web page:
+http://dragonsgatereborn.com/classes/class-psion.html
+
+
+See: help skills, help <race name>, help classes, help specialization
+-----------------------------------------------------------------------------------------------
+
+PENTHANIAN
+Type: Race
+Keywords: Penthanian
+Genders: Male, Female, Non-Binary
+Allowed Classes: Thief, Rune Mage, Psion
+Racial Tensions: Frontacian, Arachnian
+Racial Abilities: None
+
+Penthanians were once part of the Frontacian Empire on the northern edge of the Great
+Divide. During the Great Change, they released an ancient spell against the Arachnians that
+backfired catastrophically, converting their bodies into soft crystalline substance. They
+now call themselves the "Living Jewels" in their own tongue. Aloof and calculating,
+Penthanians harbor a deep envy toward the Frontacians who retained their flesh and magical
+jewels. They possess natural night vision and exceptional intelligence, though their
+crystalline composition impedes natural healing.
+
+To learn more about the Penthanian please visit the web page:
+http://dragonsgatereborn.com/races/race-penthanian.html
+
+
+See: help <ability name>, help <class name>, help races
+-----------------------------------------------------------------------------------------------
+
+PSYCIAN
+Type: Race
+Keywords: Psycian
+Genders: Male, Female, Non-Binary
+Allowed Classes: Fighter, Cleric: Order of the Heart, Cleric: Order of the Sword, Cleric:
+Order of the Hand, Bard, Barbarian, Forester, Rune Mage, Psion
+Racial Tensions: Frontacian
+Racial Abilities: None
+
+Psycians are graceful, human-like beings with immense telepathic power, considered the
+wisest of all races. They display a calm, distant exterior that masks deep emotion and
+possess natural psychic abilities allowing them to probe minds at close range. A unique
+glow forms around the head when their psychic abilities are in use.
+
+Descended from survivors of the Isle of Psycia, which was destroyed by the ancient
+Frontacians roughly a thousand years ago, the Psycians originally served as a telepathic
+communication network for the Frontacian Empire. They staged a covert rebellion by
+spreading misinformation, and in retaliation, Frontacian mages destroyed their island and
+
+
+hunted the survivors. A few Psycians escaped to rebuild in secret, and they maintain an
+unbridled hatred for the Frontacians and seek to restore their lost homeland.
+
+Psycians are calm, logical, patient, and loyal, preferring peaceful resolutions to
+conflict. However, overexposure to uncontrolled minds can cause madness, requiring regular
+doses of a madness cure. Near Frontacians, they display open loathing and a loss of their
+characteristic restraint.
+
+To learn more about the Psycian please visit the web page:
+http://dragonsgatereborn.com/races/race-psycian.html
+
+
+See: help <ability name>, help <class name>, help races
+-----------------------------------------------------------------------------------------------
+
+MATERIALS
+Type: Materials
+Keywords: Materials,Orinsteel,Platinum,Titanium,Karnite,Miltanium,Metal,Iron Works,Forge,Ore,Ingot,Smelt
+
+A Tempest Season there are several types of rare materials used for high leveled weapons,
+armor and shields.
+
+These materials are required to purchase gear upgrades in the Tralisia Merchant District.
+
+1. Acquire a piece of ore: trace or chunk.
+2. Go to the Iron Works and have a smith refine the pieces into ingots by using the BUY command.
+3. Take the refined ingots to the desired store, weapon or armor, and purchase the item.
+
+Tips for finding ore and ingots is as follows:
+Levels 40-69: Orinsteel - Cave and Lake Walkers
+Levels 70-100: Platinum - Basin Worms and Ragweed Beasts (best drop rate)
+Levels 100: Titanium - Hydras
+Levels 100+: Karnite - Dead Oak
+Levels 100+: Miltanium - Completing the quest Protect Tralisia: Destroy the Dead Oak Terror Knight and fighting frostbit trolls, ice spiders, and frost wyverns
+Levels 100+: Wind-metal and Lightning-metal - Tower of Windis and Lita and the Hall of Elements in the Merchant Distrct
+Levels 100+: Frost-metal - Ice Prison and the Hall of Elements in the Merchant Distrct 
+
+The city of Tralisia is always looking to improve their supply and processing of ore and
+events occur to do just this so stay tuned!
+
+The following materials and their respective tiers are as follows:
+
+ -  wood (tier 1)
+ -  copper (tier 2)
+ -  bone (tier 3)
+
+
+ -  bronze (tier 4)
+ -  iron (tier 5)
+ -  steel (tier 6)
+ -  orinsteel (tier 7)
+ -  platinum (tier 8)
+ -  titanium (tier 9)
+ -  moonsteel (tier 9)
+ -  karnite (tier 10)
+ -  obsidian (tier 10)
+ -  miltanium (tier 11)
+ -  frost-metal (tier 11)
+ -  lightning-metal (tier 11)
+ -  wind-metal (tier 11)
+ -  flame-metal (tier 11)
+ -  tritanium (tier 12)
+ -  anima (tier 20)
+
+Higher tiers mean stronger damage and protection.
+
+See: help equipment, help leveling, help elemental gear

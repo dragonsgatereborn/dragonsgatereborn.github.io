@@ -1,0 +1,149 @@
+Mort scribbles on his parchment. "Go-blin-al, is it?"
+
+Go-blin-als are believed to be servants to Chaos, possibly created through the warped
+experiments of the Chaos Lords. Scholars suggest they may be remnants of a formerly mighty
+race, corrupted and twisted by dark magic into the ugly, mottled green creatures seen
+today. Standing approximately three feet tall, these bipedal beings are typically filthy
+and foul-tempered, dwelling in caves within tight-knit clans.
+
+Nasty, violent, and full of mischief, Go-blin-als are bullies and punks who become sadistic
+when they hold the advantage but turn cowardly when facing genuine threats. They avoid
+sunlight and delight in harassing weaker creatures. Spitting at each other is a common form
+of greeting among their kind. They speak with distinctive lisp-like patterns and an
+underdeveloped grasp of Common.
+
+Go-blin-als possess natural night vision, quickness, agility, and dexterity, though they
+suffer from a troublemaker reputation, physical weakness, and communication barriers with
+other races. Their chaotic alignment draws them primarily to the profession of Thief, with
+rare individuals becoming Fighters, Barbarians, or Rune Mages.
+
+Mort peers at you over his spectacles. "So you are Go-blin-al, then? Is that correct?" (Y/N)
+Mort nods and writes carefully. "A Go-blin-al. Very good."
+
+Mort notes your disposition. "Chaotic, naturally."
+
+Mort peers at his parchment.
+"Now then, let's record your sex."
+
+A) Male
+B) Female
+C) Non-Binary
+
+Please select (A-C):
+Mort makes a note. "Male. Got it."
+
+Mort studies you for a moment.
+"Go-blin-al typically live between 30 and 60 years."
+"How old are you? You must be at least 10, and no more than 60."
+Mort nods. "10 years. Moving on."
+
+Mort eyes you up and down.
+"Go-blin-als typically weigh between 35 and 75 pounds."
+"What is your weight?"
+Mort scribbles. "35 pounds pounds. Very well."
+
+Mort reaches for a measuring stick.
+"Go-blin-als stand between 2'6 and 3'6."
+"What is your height? Example: 5 6 for five feet, six inches."
+Mort notes the measurement. "2'6. Got it."
+
+Mort peers at his parchment.
+"Now then, let's record your eye color."
+
+A) Brown
+B) Dark Brown
+C) Red
+D) Fiery Red
+E) Black
+F) Murky Black
+G) Yellow
+H) Glowing Yellow
+I) Orange
+
+Please select (A-I):
+Mort scribbles on his parchment. "brown eyes, noted."
+
+Mort peers at his parchment.
+"Now then, let's record your hair color."
+
+A) Sandy Blonde
+B) Brown
+C) Dark Brown
+D) Light Brown
+E) Red
+F) Coppery Red
+G) Black
+H) Murky Black
+I) Dull Black
+J) Dark Green
+K) Bald
+
+Please select (A-K):
+Mort nods. "sandy blonde hair, very well."
+
+Mort peers at his parchment.
+"Now then, let's record your hair length."
+
+A) Short
+B) Medium
+C) Ear length
+D) Close cut
+
+Please select (A-D):
+Mort jots it down. "short length, got it."
+
+Mort peers at his parchment.
+"Now then, let's record your hair style."
+
+A) Messy
+B) Dirty
+C) Lice Ridden
+D) Mud Caked
+E) Ragged
+
+Please select (A-E):
+Mort makes a note. "messy style. Very distinctive."
+
+Mort peers at his parchment.
+"Now then, let's record your skin color."
+
+A) Green
+B) Light Green
+C) Dark Green
+D) Brown
+E) Dark Brown
+F) Gray
+G) Dark Gray
+
+Please select (A-G):
+Mort nods approvingly. "green complexion. Noted."
+
+Mort tilts his head, studying you closely.
+"And what of your demeanor? How would you describe your general mood?"
+
+A) Happy
+B) Calm
+C) Curious
+D) Cheerful
+E) Stoic
+F) Brooding
+G) Devious
+H) Mischievous
+I) Nervous
+J) Arrogant
+K) Distant
+L) Energetic
+M) Melancholic
+N) Ornery
+O) Upbeat
+P) Watchful
+Q) Dark
+R) Joyful
+S) Angry
+T) Smug
+
+Please select (A-T):
+Mort nods. "Happy. I can see that about you."
+
+Mort looks over his parchment one last time.
+"Is everything correct?" (Y/N)

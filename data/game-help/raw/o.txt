@@ -1,0 +1,225 @@
+RIPOFF
+Author: Command Master
+Keywords: ripoff rip off
+Type: Command
+
+Syntax: ripoff <target> - tries to rip off a 'someone' disguise from a player.
+
+
+The ripoff command tries to remove a disguise from a target.
+
+Ripoff may only be used on a target every once in awhile. The success rate depends on the
+attributes of both players.
+
+See: help class ats.commands.informative.ScoreCommand, help disguise
+-----------------------------------------------------------------------------------------------
+
+OPEN
+Author: Command Master
+Keywords: open 
+Type: Command
+
+Syntax: open <item>|<slot> [room|inv|eq] - opens the item.
+Using 'room', 'inv', or 'eq' will ensure an item will only be from that location (the room or your inventory or eq). Optional.
+
+-----------------------------------------------------------------------------------------------
+
+ORACLE
+Author: Command Master
+Keywords: oracle elder staff gm gamemaster guide assist
+Type: Command
+
+Syntax: oracle <message> - sends a help message to staff members. If there are no staff members on, this will send an email to Dayrinni.
+    An email can only be sent every 30 seconds (game wide).
+    In addition, all oracles are saved per server session so staff can see them upon logging into the game at a later date!
+
+
+The oracle command allows a player to send a Helper and Staff wide help message. Any active
+Helper and Staff will see this message and assist you.
+
+If there are no staff online, a notification will be sent and the message logged for when a
+staff member enters the game.
+
+You may email Dayrinni(dayrinni@tempestseason.com) for assistance.
+
+You may also try other help files which could provide assistance: channels, feedback,
+
+
+discord, stuck.
+
+See: help class ats.commands.communication.NewbieChatCommand, help feedback, help channels,
+help discord, help stuck
+-----------------------------------------------------------------------------------------------
+
+ORDER
+Author: Command Master
+Keywords: order 
+Type: Command
+
+Syntax: order <player>|<longID>|all <command> - orders NPC(s) to do a command. To find longID, use call list
+Syntax: order <player>|<longID>|all kill <target> - orders NPC(s) to attack the target. To find longID, use call list
+Syntax: order <player>|all stop - cancels any current combat action.
+This command is logged. Abuse is NOT tolerated! Pets do not save their inventory and any given items CAN BE LOST!
+
+
+The order command allows control of pets and other followers.
+
+To have your pets and followers attack a target, order them to kill <target>
+
+For example, if a pet can speak, you could make it say something like so: order thug say
+Hey there.
+
+This command is logged. Abuse is NOT tolerated! Pets do not save their inventory and any
+given items CAN BE LOST!
+
+See: help call, help role play
+-----------------------------------------------------------------------------------------------
+
+CLERIC: ORDER OF THE HEART
+Type: Class
+Keywords: Cleric: Order of the Heart
+Difficulty: EASY
+Role: Healer, Utility
+Allowed Races: Anthian, Arachnian, Drag-al, Fir Elf, Flerian, Go-blin, Hithual, Human,
+Leuian, Psycian, San Elf, Secian, Usilin
+Specializations: None
+
+Heart Clerics serve as primarily healers of their temples, concentrating on healing and
+support rune-magick. They function as backline anchors, developing channeling expertise to
+heal wounds and inflict damage through divine power.
+
+
+To learn more about the Cleric: Order of the Heart please visit the web page:
+
+
+http://dragonsgatereborn.com/classes/class-cleric-heart.html
+
+
+See: help skills, help <race name>, help classes, help specialization
+-----------------------------------------------------------------------------------------------
+
+CLERIC: ORDER OF THE SWORD
+Type: Class
+Keywords: Cleric: Order of the Sword
+Difficulty: MEDIUM
+Role: Damage, Tank
+Allowed Races: Anthian, Arachnian, Drag-al, Fir Elf, Flerian, Go-blin, Hithual, Human,
+Leuian, Psycian, San Elf, Secian, Usilin
+Specializations: None
+
+Sword Clerics concentrate on battle rites and frontline engagement, serving as tank
+strikers. While trained in healing magic, their main purpose involves combat strength and
+battle-oriented spellwork.
+
+
+To learn more about the Cleric: Order of the Sword please visit the web page:
+http://dragonsgatereborn.com/classes/class-cleric-sword.html
+
+
+See: help class ats.commands.combat.DispatchCommand, help skills, help class
+ats.commands.informative.AttackInfoCommand, help <race name>, help classes, help
+specialization
+-----------------------------------------------------------------------------------------------
+
+CLERIC: ORDER OF THE HAND
+Type: Class
+Keywords: Cleric: Order of the Hand
+Difficulty: MEDIUM
+Role: Utility, Healer, Tank
+Allowed Races: Anthian, Arachnian, Drag-al, Fir Elf, Flerian, Go-blin, Hithual, Human,
+Leuian, Psycian, San Elf, Secian, Usilin
+Specializations: None
+
+Temple monks who eschew traditional weapons, trained in lethal techniques of unarmed
+combat. They begin with no training in magick, although many later choose to study the
+ways of limited rune-magick.
+
+
+To learn more about the Cleric: Order of the Hand please visit the web page:
+http://dragonsgatereborn.com/classes/class-cleric-hand.html
+
+
+See: help skills, help <race name>, help classes, help specialization
+-----------------------------------------------------------------------------------------------
+
+OOG-RA
+Type: Race
+Keywords: Oog-ra
+Genders: Male, Female, Non-Binary
+Allowed Classes: Fighter, Barbarian
+Racial Tensions: Thugian
+Racial Abilities: None
+
+The Oog-ra are extremely large, hairy humanoids with sloping foreheads and protruding
+brows. Their massive frames feature sunken eyes and heavy fur, making them among the most
+physically imposing beings in the lands. According to legend, the Oog-ra originated from
+the icy Northern Isles, specifically a remote mountain range near Crescent Lake, and their
+origins allegedly trace back to the Lords of Chaos.
+
+While possessing incredible strength, the Oog-ra are widely regarded as the least
+intelligent race. They are ruled by instinct rather than intellect, and though they can be
+violent, they lack malicious intent. Their simple nature makes them easily manipulated and
+often exploited by other races. Historical records show the Frontacian Empire once debated
+exterminating them, and later attempted selective breeding to increase their intelligence.
+Oog-ras enjoy destruction, particularly loud activities like smashing things, and are most
+commonly found serving as Fighters and Barbarians.
+
+To learn more about the Oog-ra please visit the web page:
+http://dragonsgatereborn.com/races/race-oogra.html
+
+
+See: help <ability name>, help <class name>, help races
+-----------------------------------------------------------------------------------------------
+
+MATERIALS
+Type: Materials
+Keywords: Materials,Orinsteel,Platinum,Titanium,Karnite,Miltanium,Metal,Iron Works,Forge,Ore,Ingot,Smelt
+
+A Tempest Season there are several types of rare materials used for high leveled weapons,
+armor and shields.
+
+These materials are required to purchase gear upgrades in the Tralisia Merchant District.
+
+1. Acquire a piece of ore: trace or chunk.
+2. Go to the Iron Works and have a smith refine the pieces into ingots by using the BUY command.
+
+
+3. Take the refined ingots to the desired store, weapon or armor, and purchase the item.
+
+Tips for finding ore and ingots is as follows:
+Levels 40-69: Orinsteel - Cave and Lake Walkers
+Levels 70-100: Platinum - Basin Worms and Ragweed Beasts (best drop rate)
+Levels 100: Titanium - Hydras
+Levels 100+: Karnite - Dead Oak
+Levels 100+: Miltanium - Completing the quest Protect Tralisia: Destroy the Dead Oak Terror Knight and fighting frostbit trolls, ice spiders, and frost wyverns
+Levels 100+: Wind-metal and Lightning-metal - Tower of Windis and Lita and the Hall of Elements in the Merchant Distrct
+Levels 100+: Frost-metal - Ice Prison and the Hall of Elements in the Merchant Distrct 
+
+The city of Tralisia is always looking to improve their supply and processing of ore and
+events occur to do just this so stay tuned!
+
+The following materials and their respective tiers are as follows:
+
+ -  wood (tier 1)
+ -  copper (tier 2)
+ -  bone (tier 3)
+ -  bronze (tier 4)
+ -  iron (tier 5)
+ -  steel (tier 6)
+ -  orinsteel (tier 7)
+ -  platinum (tier 8)
+ -  titanium (tier 9)
+ -  moonsteel (tier 9)
+ -  karnite (tier 10)
+ -  obsidian (tier 10)
+ -  miltanium (tier 11)
+ -  frost-metal (tier 11)
+ -  lightning-metal (tier 11)
+ -  wind-metal (tier 11)
+ -  flame-metal (tier 11)
+ -  tritanium (tier 12)
+ -  anima (tier 20)
+
+Higher tiers mean stronger damage and protection.
+
+See: help equipment, help leveling, help elemental gear
