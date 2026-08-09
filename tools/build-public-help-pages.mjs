@@ -75,6 +75,8 @@ function footer() {
 }
 
 const entries = helpData.entries.map((entry) => ({ ...entry, slug: slugify(entry.title), status: status(entry) }));
+const suppressedPageTitles = new Set(["TRAIN"]);
+const pageEntries = entries.filter((entry) => !suppressedPageTitles.has(entry.title));
 const directoryEntries = entries.filter((entry) => entry.flags.length === 0);
 const withheldEntries = entries.filter((entry) => entry.flags.length > 0);
 const duplicateSlugs = entries.filter((entry, index) => entries.findIndex((candidate) => candidate.slug === entry.slug) !== index);
@@ -82,8 +84,8 @@ if (duplicateSlugs.length) throw new Error(`Duplicate help page slugs: ${duplica
 
 await fs.mkdir(outputRoot, { recursive: true });
 
-for (let index = 0; index < entries.length; index += 1) {
-  const entry = entries[index];
+for (let index = 0; index < pageEntries.length; index += 1) {
+  const entry = pageEntries[index];
   const directoryIndex = directoryEntries.findIndex((candidate) => candidate.slug === entry.slug);
   const previous = directoryIndex >= 0 ? directoryEntries[directoryIndex - 1] : null;
   const next = directoryIndex >= 0 ? directoryEntries[directoryIndex + 1] : null;
@@ -175,4 +177,4 @@ const indexPage = `<!doctype html>
 </html>`;
 
 await fs.writeFile(path.join(outputRoot, "index.html"), `${indexPage}\n`, "utf8");
-console.log(`Built ${entries.length} individual pages; listed ${directoryEntries.length}; withheld ${withheldEntries.length}.`);
+console.log(`Built ${pageEntries.length} individual pages; listed ${directoryEntries.length}; withheld ${withheldEntries.length}.`);
