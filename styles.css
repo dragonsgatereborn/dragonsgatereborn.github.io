@@ -864,6 +864,60 @@ code {
   margin: 0.8rem 0 0;
 }
 
+.sidebar-intro p {
+  margin: 0.4rem 0 0;
+}
+
+.live-world-card--compact {
+  padding: 14px;
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(8, 6, 4, 0.32);
+}
+
+.live-world-card--compact .caps {
+  margin-bottom: 0.25rem;
+}
+
+.live-world-card--compact h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.live-world-card--compact .live-world-pulse {
+  width: 0.6rem;
+  height: 0.6rem;
+  margin-top: 0.25rem;
+  box-shadow: 0 0 0 0.22rem rgba(128, 111, 93, 0.15);
+}
+
+.live-world-card--compact .live-world-pulse.is-online {
+  box-shadow: 0 0 0 0.22rem rgba(121, 199, 133, 0.16);
+}
+
+.live-world-card--compact .live-world-stats {
+  grid-template-columns: 1fr;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+}
+
+.live-world-card--compact .live-world-stat {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.4rem 0.55rem;
+}
+
+.live-world-card--compact .live-world-stat strong {
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.live-world-card--compact .live-world-updated {
+  margin-top: 0.55rem;
+  font-size: 0.78rem;
+}
+
 @media (max-width: 520px) {
   .live-world-stats {
     grid-template-columns: 1fr;
