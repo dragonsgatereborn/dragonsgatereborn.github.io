@@ -803,6 +803,73 @@ code {
   }
 }
 
+.live-world-card {
+  overflow: hidden;
+  position: relative;
+  border-color: rgba(208, 171, 92, 0.5);
+  background:
+    radial-gradient(circle at top right, rgba(79, 140, 86, 0.2), transparent 42%),
+    var(--parchment);
+}
+
+.live-world-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.live-world-heading h2 {
+  margin-bottom: 0;
+}
+
+.live-world-pulse {
+  width: 0.8rem;
+  height: 0.8rem;
+  flex: 0 0 auto;
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  background: #806f5d;
+  box-shadow: 0 0 0 0.3rem rgba(128, 111, 93, 0.15);
+}
+
+.live-world-pulse.is-online {
+  background: #79c785;
+  box-shadow: 0 0 0 0.3rem rgba(121, 199, 133, 0.16);
+}
+
+.live-world-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.live-world-stat {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(208, 171, 92, 0.25);
+  border-radius: 0.55rem;
+  background: rgba(21, 16, 12, 0.5);
+}
+
+.live-world-stat strong {
+  color: var(--ink);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.05rem;
+}
+
+.live-world-updated {
+  margin: 0.8rem 0 0;
+}
+
+@media (max-width: 520px) {
+  .live-world-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
 .pill-list a {
   color: var(--ink);
   text-decoration: none;

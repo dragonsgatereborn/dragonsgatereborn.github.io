@@ -1,0 +1,4 @@
+name = "dgr-live-world"
+main = "src/index.js"
+compatibility_date = "2026-08-08"
+workers_dev = true

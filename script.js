@@ -110,6 +110,73 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// Homepage status card backed by the public game menu. Only the aggregate
+// adventurer count is returned; character names never reach the website.
+window.addEventListener("DOMContentLoaded", () => {
+  const card = document.querySelector("[data-live-world]");
+  if (!card) return;
+
+  const endpoint = card.dataset.liveWorldEndpoint;
+  const status = card.querySelector("[data-live-world-status]");
+  const count = card.querySelector("[data-live-world-count]");
+  const updated = card.querySelector("[data-live-world-updated]");
+  const pulse = card.querySelector("[data-live-world-pulse]");
+  let lastUpdatedAt = null;
+
+  const formatAge = () => {
+    if (!lastUpdatedAt) return;
+    const seconds = Math.max(0, Math.floor((Date.now() - lastUpdatedAt.getTime()) / 1000));
+    if (seconds < 60) {
+      updated.textContent = "Updated just now";
+    } else {
+      const minutes = Math.floor(seconds / 60);
+      updated.textContent = `Updated ${minutes} minute${minutes === 1 ? "" : "s"} ago`;
+    }
+  };
+
+  const refresh = async () => {
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 8000);
+
+    try {
+      const response = await fetch(endpoint, {
+        cache: "no-store",
+        signal: controller.signal,
+      });
+      if (!response.ok) throw new Error("Live status request failed");
+      const data = await response.json();
+
+      if (data.online === true && Number.isInteger(data.playerCount)) {
+        status.textContent = "Online";
+        count.textContent = `${data.playerCount} adventurer${data.playerCount === 1 ? "" : "s"} online`;
+        pulse.classList.add("is-online");
+      } else {
+        status.textContent = "Status unavailable";
+        count.textContent = "Player count unavailable";
+        pulse.classList.remove("is-online");
+      }
+
+      lastUpdatedAt = data.updatedAt ? new Date(data.updatedAt) : new Date();
+      if (Number.isNaN(lastUpdatedAt.getTime())) lastUpdatedAt = new Date();
+      formatAge();
+    } catch {
+      status.textContent = "Status unavailable";
+      count.textContent = "Player count unavailable";
+      updated.textContent = "Unable to reach the live world service";
+      pulse.classList.remove("is-online");
+      lastUpdatedAt = null;
+    } finally {
+      window.clearTimeout(timeout);
+    }
+  };
+
+  refresh();
+  window.setInterval(() => {
+    if (!document.hidden) refresh();
+  }, 60000);
+  window.setInterval(formatAge, 30000);
+});
+
 // Privacy-first, site-wide page-view tracking through Cloudflare Web Analytics.
 const analyticsHosts = ["dragonsgatereborn.com", "www.dragonsgatereborn.com"];
 if (
