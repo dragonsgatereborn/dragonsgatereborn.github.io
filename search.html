@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dragon's Gate Reborn | Search</title>
+  <meta name="description" content="Search the Dragon's Gate Reborn manual, lore, races, classes, and community resources.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=20260809">
+</head>
+<body>
+  <div class="page">
+    <header class="hero hero--inner">
+      <div class="hero-inner">
+        <a class="brand brand-link" href="/index.html">
+          <div class="sigil"></div>
+          <div><p class="eyebrow">Explore the archive</p><h1>Search</h1><p class="tagline">Find guidance, lore, races, classes, updates, and community resources.</p></div>
+        </a>
+        <nav class="site-nav">
+          <a href="/index.html">Home</a><a href="/manual.html">Manual</a><a href="/library.html">Library</a><a href="/community.html">Community</a><a href="/events.html">Events</a><a href="/support.html">Support</a><a href="/contact.html">Contact</a><a href="/site-map.html">Site Map</a>
+        </nav>
+      </div>
+    </header>
+    <main class="layout single">
+      <section class="content">
+        <article class="card">
+          <h2>Search the complete website</h2>
+          <form class="search-page-form" data-search-form role="search">
+            <label class="sr-only" for="site-search">Search the website</label>
+            <input id="site-search" name="q" type="search" autocomplete="off" placeholder="Try Muatana-al, magick, combat, or Spur…" required>
+            <button class="btn primary" type="submit">Search</button>
+          </form>
+          <p class="search-status" data-search-status aria-live="polite">Loading the guidebook index…</p>
+        </article>
+        <article class="card" data-search-results-card hidden>
+          <p class="caps">Results</p>
+          <ol class="search-results" data-search-results></ol>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-links"><a href="/index.html">Home</a><a href="/manual.html">Manual</a><a href="/library.html">Library</a><a href="/community.html">Community</a><a href="/events.html">Events</a><a href="/support.html">Support</a><a href="/contact.html">Contact</a><a href="/site-map.html">Site Map</a></div>
+      <p class="small">Search the Dragon's Gate Reborn guidebook and archives.</p>
+    </footer>
+  </div>
+  <script src="/search.js?v=20260809"></script>
+  <script src="/script.js?v=20260809"></script>
+</body>
+</html>

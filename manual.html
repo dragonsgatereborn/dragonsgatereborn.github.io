@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=20260104">
+  <link rel="stylesheet" href="/styles.css?v=20260809">
 </head>
 <body>
   <div class="page">
@@ -39,6 +39,30 @@
         <article class="card">
           <h2>Welcome, traveler</h2>
           <p>Dragon's Gate Reborn is a living world built on role-play, curiosity, and discovery. The manual contains practical guidance for new adventurers along with deeper systems that power the game.</p>
+        </article>
+        <article class="card feature">
+          <p class="caps">New to Dragon's Gate Reborn?</p>
+          <h2>Follow the new player path</h2>
+          <p>These five stops take you from your first connection to your first steps in the world. You can explore the complete manual below whenever you are ready to go deeper.</p>
+          <ol class="journey-steps">
+            <li><a href="/play.html#client"><span>1</span><strong>Choose a client</strong><small>Get the program used to connect.</small></a></li>
+            <li><a href="/play.html#connect"><span>2</span><strong>Connect</strong><small>Use the standard or secure port.</small></a></li>
+            <li><a href="/play.html#commands"><span>3</span><strong>Learn commands</strong><small>Move, speak, look, and get help.</small></a></li>
+            <li><a href="/manual/manual-races.html"><span>4</span><strong>Build a character</strong><small>Explore races, classes, and identity.</small></a></li>
+            <li><a href="/manual/manual-hints.html"><span>5</span><strong>Begin exploring</strong><small>Use the Training Grounds and ask for help.</small></a></li>
+          </ol>
+        </article>
+        <article class="card search-prompt">
+          <div>
+            <p class="caps">Looking for something?</p>
+            <h2>Search the guidebook</h2>
+            <p>Search across the manual, races, classes, lore, policies, and community resources.</p>
+          </div>
+          <form class="site-search-form" action="/search.html" method="get" role="search">
+            <label class="sr-only" for="manual-search">Search the website</label>
+            <input id="manual-search" name="q" type="search" placeholder="Try dragon, magick, combat…" required>
+            <button class="btn primary" type="submit">Search</button>
+          </form>
         </article>
         <article class="card">
           <p class="caps">Manual Index</p>
@@ -91,6 +115,6 @@
       <p class="small">Manual resources are available within the Dragon's Gate Reborn guidebook.</p>
     </footer>
   </div>
-  <script src="/script.js?v=20260731-2"></script>
+  <script src="/script.js?v=20260809"></script>
 </body>
 </html>

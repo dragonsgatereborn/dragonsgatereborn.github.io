@@ -5,6 +5,17 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   const path = window.location.pathname.replace(/\/$/, "");
+
+  document.querySelectorAll(".site-nav, .top-nav").forEach((nav) => {
+    if (nav.querySelector('a[href="/search.html"]')) {
+      return;
+    }
+    const searchLink = document.createElement("a");
+    searchLink.href = "/search.html";
+    searchLink.textContent = "Search";
+    const siteMapLink = nav.querySelector('a[href="/site-map.html"]');
+    nav.insertBefore(searchLink, siteMapLink || null);
+  });
   const sectionMap = [
     { match: (p) => p === "" || p === "/" || p === "/index.html", hide: ["/index.html", "/"] },
     { match: (p) => p === "/manual.html" || p.startsWith("/manual/"), hide: ["/manual.html"] },
@@ -14,21 +25,68 @@ window.addEventListener("DOMContentLoaded", () => {
     { match: (p) => p === "/support.html" || p.startsWith("/support/"), hide: ["/support.html"] },
     { match: (p) => p === "/contact.html", hide: ["/contact.html"] },
     { match: (p) => p === "/site-map.html", hide: ["/site-map.html"] },
+    { match: (p) => p === "/search.html", hide: ["/search.html"] },
     { match: (p) => p === "/forums" || p.startsWith("/forums/"), hide: ["/forums"] },
   ];
 
   const matches = sectionMap.filter((entry) => entry.match(path));
-  if (matches.length === 0) {
-    return;
+  if (matches.length > 0) {
+    const hideHrefs = new Set(matches.flatMap((entry) => entry.hide));
+    const navLinks = document.querySelectorAll(".site-nav a, .top-nav a");
+    navLinks.forEach((link) => {
+      const href = link.getAttribute("href");
+      if (hideHrefs.has(href)) {
+        link.remove();
+      }
+    });
   }
-  const hideHrefs = new Set(matches.flatMap((entry) => entry.hide));
-  const navLinks = document.querySelectorAll(".site-nav a, .top-nav a");
-  navLinks.forEach((link) => {
-    const href = link.getAttribute("href");
-    if (hideHrefs.has(href)) {
-      link.remove();
+
+  const contentPath = path.startsWith("/manual/") || path.startsWith("/classes/") ||
+    path.startsWith("/races/") || path.startsWith("/library/");
+  if (contentPath) {
+    const candidates = Array.from(document.querySelectorAll("main article.card"))
+      .filter((article) => !article.querySelector(".section-grid"))
+      .map((article) => ({
+        article,
+        headings: Array.from(article.querySelectorAll("h2, h3"))
+          .filter((heading) => heading.textContent.trim().length > 0),
+      }))
+      .filter(({ article, headings }) => headings.length >= 3 && article.textContent.length >= 900)
+      .sort((a, b) => b.headings.length - a.headings.length);
+
+    if (candidates.length > 0) {
+      const { article, headings } = candidates[0];
+      const usedIds = new Set(Array.from(document.querySelectorAll("[id]"), (node) => node.id));
+      const contents = document.createElement("nav");
+      contents.className = "page-contents";
+      contents.setAttribute("aria-label", "On this page");
+      contents.innerHTML = '<p class="caps">On this page</p>';
+      const list = document.createElement("ol");
+
+      headings.forEach((heading, index) => {
+        if (!heading.id) {
+          const base = heading.textContent.toLowerCase().trim()
+            .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || `section-${index + 1}`;
+          let id = base;
+          let suffix = 2;
+          while (usedIds.has(id)) {
+            id = `${base}-${suffix++}`;
+          }
+          heading.id = id;
+          usedIds.add(id);
+        }
+        const item = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = `#${heading.id}`;
+        link.textContent = heading.textContent.trim();
+        item.appendChild(link);
+        list.appendChild(item);
+      });
+
+      contents.appendChild(list);
+      article.insertBefore(contents, article.firstElementChild);
     }
-  });
+  }
 });
 
 // Privacy-first, site-wide page-view tracking through Cloudflare Web Analytics.
