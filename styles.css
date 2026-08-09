@@ -954,6 +954,169 @@ code {
   color: var(--gold);
 }
 
+.live-world-history-link {
+  display: block;
+  margin-top: 0.65rem;
+  color: var(--gold);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.live-world-history-link:hover {
+  text-decoration: underline;
+}
+
+.live-dashboard-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.live-dashboard-heading h2 {
+  margin-bottom: 0;
+}
+
+.live-dashboard-pulse {
+  width: 1rem;
+  height: 1rem;
+}
+
+.live-dashboard-current-grid,
+.live-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.live-dashboard-current-stat,
+.live-metric {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(208, 171, 92, 0.25);
+  border-radius: 0.65rem;
+  background: rgba(21, 16, 12, 0.5);
+}
+
+.live-dashboard-current-stat span,
+.live-metric span,
+.live-metric small {
+  color: var(--ink-soft);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.78rem;
+}
+
+.live-dashboard-current-stat strong,
+.live-metric strong {
+  color: var(--ink);
+  font-family: "Cinzel", serif;
+  font-size: 1.35rem;
+}
+
+.live-metric-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.live-dashboard-roster {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(208, 171, 92, 0.22);
+}
+
+.live-dashboard-roster summary {
+  cursor: pointer;
+  color: var(--gold);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+}
+
+.live-dashboard-roster ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.live-dashboard-roster li {
+  padding: 0.4rem 0.65rem;
+  border: 1px solid rgba(208, 171, 92, 0.24);
+  border-radius: 999px;
+  background: rgba(21, 16, 12, 0.45);
+}
+
+.live-history-coverage {
+  margin-top: 1rem;
+}
+
+.live-activity-chart {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(44px, 1fr);
+  align-items: end;
+  gap: 0.55rem;
+  min-height: 220px;
+  margin-top: 1rem;
+  padding: 1rem 0.25rem 0.25rem;
+  overflow-x: auto;
+}
+
+.live-activity-column {
+  display: grid;
+  grid-template-rows: auto 150px auto;
+  align-items: end;
+  gap: 0.35rem;
+  min-width: 44px;
+  text-align: center;
+}
+
+.live-activity-value,
+.live-activity-column time {
+  color: var(--ink-soft);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.7rem;
+}
+
+.live-activity-track {
+  display: flex;
+  align-items: end;
+  width: 100%;
+  height: 150px;
+  padding: 0 0.25rem;
+  border-bottom: 1px solid rgba(208, 171, 92, 0.35);
+}
+
+.live-activity-bar {
+  display: block;
+  width: 100%;
+  min-height: 6px;
+  border-radius: 0.35rem 0.35rem 0 0;
+  background: linear-gradient(180deg, var(--gold), var(--accent));
+}
+
+.live-history-table {
+  min-width: 660px;
+}
+
+@media (max-width: 640px) {
+  .live-dashboard-current-grid,
+  .live-metric-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .live-dashboard-current-grid,
+  .live-metric-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 520px) {
   .live-world-stats {
     grid-template-columns: 1fr;
