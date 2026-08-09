@@ -918,6 +918,42 @@ code {
   font-size: 0.78rem;
 }
 
+.live-world-players {
+  margin-top: 0.55rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(208, 171, 92, 0.2);
+}
+
+.live-world-players summary {
+  cursor: pointer;
+  color: var(--gold);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.live-world-players ul {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0.55rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.live-world-players li {
+  padding-left: 0.75rem;
+  position: relative;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+}
+
+.live-world-players li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+
 @media (max-width: 520px) {
   .live-world-stats {
     grid-template-columns: 1fr;

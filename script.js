@@ -110,8 +110,8 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Homepage status card backed by the public game menu. Only the aggregate
-// adventurer count is returned; character names never reach the website.
+// Homepage status card backed by the public game menu. It displays the
+// aggregate adventurer count and the same character names shown by that menu.
 window.addEventListener("DOMContentLoaded", () => {
   const card = document.querySelector("[data-live-world]");
   if (!card) return;
@@ -121,7 +121,26 @@ window.addEventListener("DOMContentLoaded", () => {
   const count = card.querySelector("[data-live-world-count]");
   const updated = card.querySelector("[data-live-world-updated]");
   const pulse = card.querySelector("[data-live-world-pulse]");
+  const playerList = card.querySelector("[data-live-world-players]");
   let lastUpdatedAt = null;
+
+  const renderPlayerNames = (names, emptyMessage) => {
+    if (!playerList) return;
+    playerList.replaceChildren();
+
+    if (names.length === 0) {
+      const item = document.createElement("li");
+      item.textContent = emptyMessage;
+      playerList.appendChild(item);
+      return;
+    }
+
+    names.forEach((name) => {
+      const item = document.createElement("li");
+      item.textContent = name;
+      playerList.appendChild(item);
+    });
+  };
 
   const formatAge = () => {
     if (!lastUpdatedAt) return;
@@ -150,10 +169,18 @@ window.addEventListener("DOMContentLoaded", () => {
         status.textContent = "Online";
         count.textContent = `${data.playerCount} adventurer${data.playerCount === 1 ? "" : "s"} online`;
         pulse.classList.add("is-online");
+        const names = Array.isArray(data.playerNames)
+          ? data.playerNames.filter((name) => typeof name === "string" && name.trim()).map((name) => name.trim())
+          : [];
+        renderPlayerNames(
+          names,
+          data.playerCount === 0 ? "No adventurers are currently online." : "Character names are temporarily unavailable.",
+        );
       } else {
         status.textContent = "Status unavailable";
         count.textContent = "Player count unavailable";
         pulse.classList.remove("is-online");
+        renderPlayerNames([], "Character names are temporarily unavailable.");
       }
 
       lastUpdatedAt = data.updatedAt ? new Date(data.updatedAt) : new Date();
@@ -164,6 +191,7 @@ window.addEventListener("DOMContentLoaded", () => {
       count.textContent = "Player count unavailable";
       updated.textContent = "Unable to reach the live world service";
       pulse.classList.remove("is-online");
+      renderPlayerNames([], "Character names are temporarily unavailable.");
       lastUpdatedAt = null;
     } finally {
       window.clearTimeout(timeout);
