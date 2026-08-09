@@ -620,6 +620,85 @@ code {
   background: rgba(90, 68, 40, 0.05);
 }
 
+.status-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border: 1px solid rgba(216, 179, 90, 0.35);
+  border-radius: 999px;
+  font: 600 0.78rem "IBM Plex Sans", "Helvetica", sans-serif;
+}
+
+.status-live { background: rgba(58, 122, 99, 0.35); color: #ccebdc; }
+.status-testing { background: rgba(216, 179, 90, 0.18); color: #f3dca4; }
+.status-planned { background: rgba(104, 107, 124, 0.25); color: #d9dbe6; }
+.status-legacy { background: rgba(164, 58, 43, 0.22); color: #efc0b8; }
+
+.verified-note {
+  padding: 12px 14px;
+  border-left: 3px solid var(--accent);
+  background: rgba(58, 122, 99, 0.12);
+  color: var(--ink-soft);
+}
+
+.check-list {
+  list-style: none;
+  padding: 0;
+}
+
+.check-list li {
+  position: relative;
+  padding: 7px 0 7px 28px;
+}
+
+.check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #8fd1b2;
+  font-weight: 700;
+}
+
+.flow-list {
+  counter-reset: guide-step;
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.flow-list li {
+  counter-increment: guide-step;
+  position: relative;
+  padding: 14px 16px 14px 54px;
+  background: var(--parchment-dark);
+  border-radius: 14px;
+}
+
+.flow-list li::before {
+  content: counter(guide-step);
+  position: absolute;
+  left: 15px;
+  top: 13px;
+  display: grid;
+  width: 27px;
+  height: 27px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--gold);
+  color: #2a2015;
+  font: 700 0.82rem "IBM Plex Sans", "Helvetica", sans-serif;
+}
+
 .inline-links {
   display: flex;
   flex-wrap: wrap;
