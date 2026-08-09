@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dragon's Gate Reborn | SHOP Help</title>
+  <meta name="description" content="SHOP in-game help for Dragon's Gate Reborn.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=20260809d">
+</head>
+<body>
+  <div class="page">
+    <header class="hero hero--inner"><div class="hero-inner">
+      <a class="brand brand-link" href="/help/"><div class="sigil"></div><div><p class="eyebrow">In-Game Help · Command</p><h1>SHOP</h1><p class="tagline">Captured help-file reference for Dragon's Gate Reborn.</p></div></a>
+      <nav class="site-nav">
+          <a href="/index.html">Home</a>
+          <a href="/manual.html">Manual</a>
+          <a href="/help/">Game Help</a>
+          <a href="/library.html">Library</a>
+          <a href="/community.html">Community</a>
+          <a href="/support.html">Support</a>
+          <a href="/site-map.html">Site Map</a>
+        </nav>
+    </div></header>
+    <main class="layout single"><section class="content">
+      <article class="card">
+        <div class="inline-links"><a class="btn ghost" href="/help/">← All Help Files</a></div>
+        <div class="status-row"><span class="status-badge status-live">Captured live</span><span class="small">Type: Command</span></div>
+        <h2>SHOP</h2>
+        <p><strong>Keywords:</strong> shop</p>
+        <p>This help file was captured from the live game. Game behavior remains the final authority if implementation changes.</p>
+      </article>
+      <article class="card help-file-card">
+        <h2>In-Game Help Text</h2>
+        <pre>SHOP
+Author: Command Master
+Keywords: shop
+Type: Command
+
+Syntax: shop list|l [mob name] - displays the shop contents. mob name is optional (only if there are more than one shop in the same room)
+Syntax: shop buy [mob name] &lt;slot&gt; - buys an item from the shop. mob name is optional (only if there are more than one shop in the same room (works on all shops in the room at once)
+Syntax: shop buy [mob name] &lt;slot&gt; &lt;amount&gt;
+Syntax: shop appraise &lt;slot&gt;
+Syntax: shop inspect|examine|exam &lt;slot&gt;
+Syntax: shop compare &lt;shop slot&gt; &lt;your item&gt;|&lt;shop slot&gt; - compares an item in the shop to an item in your inventory or equipment (Checks inventory first) or shop slot item
+Syntax: shop sell &lt;item&gt;|&lt;slot&gt;
+Syntax: shop sellstack &lt;item&gt;|&lt;slot&gt;
+
+Rune Vendor Commands:
+Syntax: shop list runes - displays your current rune weaves and renewal cost.
+Syntax: shop renew all - renews all available runes to their maximum weaves.
+Syntax: shop renew &lt;name&gt; - renews a specific rune type.
+
+Note: You may use 'buy', 'sell' and 'list' as commands to buy, sell or list. They are aliases for the shop commands above.
+
+
+The shop command allows you to interact with shopkeeprs to list wares, buy and sell items,
+and inspect items.
+
+To view the items a shop sells, type: list
+
+To buy an item, type: buy &lt;##
+
+To sell an item, type: sell &lt;item name&gt;|&lt;slot&gt;|&lt;sid&gt; To sell an item stack, type: sellstack
+&lt;item name&gt;|&lt;slot&gt;|&lt;sid&gt; To sell all items, type: shop sellall
+
+shop detectmagic will work even if you are not a magic user.
+
+
+If an item is marked KEEP or RETAIN, it will not be sold.
+If a container is marked only RETAIN, the contents inside will be sold but not the container itself (KEPT items are skipped).
+
+
+Shop search supports a special search syntax - please see the associated help file for more
+information.
+
+See: help buy, help sell, help list, help keep, help retain, help shopsearch</pre>
+      </article>
+      <nav class="card help-page-nav" aria-label="Adjacent help files">
+        <a class="btn ghost" href="/help/shield-parry.html">← SHIELD PARRY</a>
+        <a class="btn ghost" href="/help/shopsearch.html">SHOPSEARCH →</a>
+      </nav>
+    </section></main>
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="/index.html">Home</a><a href="/manual.html">Manual</a><a href="/help/">Game Help</a>
+        <a href="/library.html">Library</a><a href="/community.html">Community</a><a href="/support.html">Support</a>
+      </div>
+      <p class="small">Help text captured from the live Dragon's Gate Reborn game on August 9, 2026.</p>
+    </footer>
+  </div>
+  <script src="/script.js?v=20260809b"></script>
+</body>
+</html>

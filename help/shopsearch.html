@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dragon's Gate Reborn | SHOPSEARCH Help</title>
+  <meta name="description" content="SHOPSEARCH in-game help for Dragon's Gate Reborn.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=20260809d">
+</head>
+<body>
+  <div class="page">
+    <header class="hero hero--inner"><div class="hero-inner">
+      <a class="brand brand-link" href="/help/"><div class="sigil"></div><div><p class="eyebrow">In-Game Help · Search</p><h1>SHOPSEARCH</h1><p class="tagline">Captured help-file reference for Dragon's Gate Reborn.</p></div></a>
+      <nav class="site-nav">
+          <a href="/index.html">Home</a>
+          <a href="/manual.html">Manual</a>
+          <a href="/help/">Game Help</a>
+          <a href="/library.html">Library</a>
+          <a href="/community.html">Community</a>
+          <a href="/support.html">Support</a>
+          <a href="/site-map.html">Site Map</a>
+        </nav>
+    </div></header>
+    <main class="layout single"><section class="content">
+      <article class="card">
+        <div class="inline-links"><a class="btn ghost" href="/help/">← All Help Files</a></div>
+        <div class="status-row"><span class="status-badge status-live">Captured live</span><span class="small">Type: Search</span></div>
+        <h2>SHOPSEARCH</h2>
+        <p><strong>Keywords:</strong> ShopSearch</p>
+        <p>This help file was captured from the live game. Game behavior remains the final authority if implementation changes.</p>
+      </article>
+      <article class="card help-file-card">
+        <h2>In-Game Help Text</h2>
+        <pre>SHOPSEARCH
+Author: Command Master
+Type: Search
+Keywords: ShopSearch
+
+The shop search feature in the shop command can be used to search shop items while shopping
+at shops for items.
+
+The syntax is as follows:
+Operator Searches:
+shop search +&lt;field to search&gt; &lt;operator&gt; &lt;data&gt;
+
+Non-Operator Searches:
+shop search +&lt;field to search&gt; &lt;data&gt;
+
+
+Fields:
+affect_&lt;mod type name&gt;
+name
+type
+wear_type
+flag
+cost
+cost_silver
+
+Operators:
+=,==,&lt;=,&gt;=,!=
+
+Examples:
+shop search +affect_stat_hp &gt; 50
+
+
+shop search +name hood
+shop search +type Armor
+
+More than one + search can be used at once. If so, all elements must be true to return a
+found item:
+shop search +affect_stat_dex &gt; 5 +wear_type FINGER
+This would reteurn all items that had dex greater than 5 and could be worn on the finger
+slot. Note: The syntax is not case sensitive.
+
+Common Data:
+ATTACK                             ATTACK_GADGET                      BACKSTAB_DAMAGE
+COMMAND_CHANCE                     CRANK_STEAM_PERCENT                CRITICAL_CHANCE
+CRITICAL_DAMAGE                    DAMAGE                             DAMAGE_VIRTUE
+DEFENSE                            ESSENCE_REGEN                      FAVOR_REGEN_PERCENT
+FLARE_ATTACK                       HEALTH_REGEN                       HEAL_CRITICAL_CHANCE
+HEAL_CRITICAL_DAMAGE               HEAL_SYZYGY_PERCENT_BONUS          HOLY_CRITICAL_CHANCE
+HOLY_CRITICAL_DAMAGE               HOLY_DAMAGE                        KNOCK_DOWN_CHANCE
+MELEE_ATTACK                       MELEE_CRITICAL_CHANCE              MELEE_CRITICAL_DAMAGE
+MELEE_DAMAGE                       MELEE_DEFENSE                      MITIGATE_CRITICAL_DAMAGE_PERCENT
+PARRY_DEFENSE                      POTENCY_EVOCATION                  PRAY_ATTACK
+PREACH_SUCCESS                     PSIONIC_ATTACK                     PSIONIC_CRITICAL_CHANCE
+PSIONIC_CRITICAL_DAMAGE            RANGE_CRITICAL_CHANCE              RANGE_DAMAGE
+RITES_ATTACK                       RITES_DAMAGE                       SPELL_ATTACK
+SPELL_CRITICAL_CHANCE              SPELL_CRITICAL_DAMAGE              SPELL_DAMAGE
+SPELL_DEFENSE                      STALK_SUCCESS                      STAMINA_REGEN
+STAT_AGI                           STAT_CHA                           STAT_CON
+STAT_COSMIC_ENERGY                 STAT_DEX                           STAT_ELDRITCH_POWER
+STAT_ESSENCE                       STAT_FAVOR                         STAT_HP
+STAT_INT                           STAT_LUNAR                         STAT_SOLAR_FURY
+STAT_STAMINA                       STAT_STR                           STAT_WIS
+SURROUNDING_ENVIRON_CHANCE         SYZYGY_ATTACK
+
+
+Type:
+AMMO CONTAINER                     ARMOR                              ARTIFACT
+ARTILLERY                          COIN                               CONTAINER
+DIRTY                              DRINK                              ESSENCE SHARD
+FOOD                               FOUNTAIN                           FURNITURE
+GEM                                GENERAL ITEM                       INGREDIENT
+INGREDIENT POUCH                   KEY                                LIGHT
+LOCKPICK                           MONEY                              MOUNT TAG
+NPCCORPSE                          ORE                                OWNED
+PET TAG                            PILL                               PORTAL
+POTION                             PROJECTILE                         RUNE
+SCROLL                             SHIELD                             SIFT
+
+
+STAFF                              TOME                               TOY
+TRAINING MANUAL                    TRASH                              WARP STONE
+WEAPON
+
+Wear Type:
+ABOUT                              ACC                                ANIMA_BRAND
+ANKLES                             ARMLET                             ARMS
+AURA                               BACK                               BACKSHEATH
+BELT                               BELT_IN                            BUTT
+CAPE                               CHEST                              CLOAK
+COAT                               CREST                              CROTCH
+DRESS                              EARS                               EYES
+FACE                               FACIAL_HAIR                        FEET
+FINGER                             FLOAT                              FOREARMS
+FOREHEAD                           GADGET_PHASING_DEVICE              GADGET_SHIMMERSHIELD
+HAIR                               HANDS                              HAT
+HEAD                               HIP                                HOLD
+LEGS                               LIGHT                              MOUTH
+NECK                               NONE                               NOSE
+OUTERWEAR                          PALMS                              PANT
+POWER                              PRIMARY                            QUIVER
+RUNE_EYES                          RUNE_FACE                          RUNE_HANDS
+RUNE_NECK                          RUNE_PALM                          RUNE_SHOULDERS
+SECONDARY                          SHEATH                             SHIRT
+SHOULDERS                          SKIRT                              SPINNERET
+SUMMONED_WEAPON                    TAIL                               TATTOO
+TEETH                              THROAT                             UNDERGARMENT
+VEST                               WAIST                              WATCH
+WRIST
+
+Flags:
+ACTIVATED_MAGIC                    MAGIC                              MAGIC_UNLOCK_FUEL
+WEAPON_BLUNT                       WEAPON_SHARP                       WEAPON_THRUST
+WEAPON_TWO_HANDS                   WEAPON_ZAP
+
+
+See: help shop, help keep, help retain,</pre>
+      </article>
+      <nav class="card help-page-nav" aria-label="Adjacent help files">
+        <a class="btn ghost" href="/help/shop.html">← SHOP</a>
+        <a class="btn ghost" href="/help/shout.html">SHOUT →</a>
+      </nav>
+    </section></main>
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="/index.html">Home</a><a href="/manual.html">Manual</a><a href="/help/">Game Help</a>
+        <a href="/library.html">Library</a><a href="/community.html">Community</a><a href="/support.html">Support</a>
+      </div>
+      <p class="small">Help text captured from the live Dragon's Gate Reborn game on August 9, 2026.</p>
+    </footer>
+  </div>
+  <script src="/script.js?v=20260809b"></script>
+</body>
+</html>
