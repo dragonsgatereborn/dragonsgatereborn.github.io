@@ -2,13 +2,11 @@ import { connect } from "cloudflare:sockets";
 
 const GAME_HOST = "game.dragonsgatereborn.com";
 const GAME_PORT = 8555;
-const CACHE_SECONDS = 30;
+const CACHE_SECONDS = 60;
 const READ_TIMEOUT_MS = 5000;
 const MAX_RESPONSE_BYTES = 64000;
 const SAMPLE_INTERVAL_SECONDS = 300;
 const RETENTION_SECONDS = 90 * 24 * 60 * 60;
-let memoryCache = null;
-let memoryCachedAt = 0;
 
 function responseHeaders() {
   return {
@@ -109,7 +107,79 @@ function offlineStatus() {
     playerCount: null,
     playerNames: [],
     updatedAt: new Date().toISOString(),
+    checkedAt: new Date().toISOString(),
+    stale: true,
     message: "Live status is temporarily unavailable.",
+  };
+}
+
+async function storeCurrentStatus(db, status) {
+  if (!db) return;
+  const now = new Date().toISOString();
+  await db.prepare(`
+    INSERT INTO live_status
+      (id, online, player_count, player_names, updated_at, checked_at, stale, message)
+    VALUES
+      (1, ?, ?, ?, ?, ?, 0, NULL)
+    ON CONFLICT(id) DO UPDATE SET
+      online = excluded.online,
+      player_count = excluded.player_count,
+      player_names = excluded.player_names,
+      updated_at = excluded.updated_at,
+      checked_at = excluded.checked_at,
+      stale = 0,
+      message = NULL
+  `).bind(
+    status.online ? 1 : 0,
+    Number.isInteger(status.playerCount) ? status.playerCount : null,
+    JSON.stringify(Array.isArray(status.playerNames) ? status.playerNames : []),
+    status.updatedAt || now,
+    now,
+  ).run();
+}
+
+async function markCurrentStatusStale(db) {
+  if (!db) return;
+  const now = new Date().toISOString();
+  const result = await db.prepare(`
+    UPDATE live_status
+    SET checked_at = ?, stale = 1, message = ?
+    WHERE id = 1
+  `).bind(now, "The latest scheduled check could not reach the game.").run();
+
+  if (!result.meta?.changes) {
+    const unavailable = offlineStatus();
+    await db.prepare(`
+      INSERT INTO live_status
+        (id, online, player_count, player_names, updated_at, checked_at, stale, message)
+      VALUES
+        (1, 0, NULL, '[]', ?, ?, 1, ?)
+    `).bind(unavailable.updatedAt, now, unavailable.message).run();
+  }
+}
+
+async function getCurrentStatus(db) {
+  const row = await db.prepare(`
+    SELECT online, player_count, player_names, updated_at, checked_at, stale, message
+    FROM live_status
+    WHERE id = 1
+  `).first();
+  if (!row) return null;
+
+  let playerNames = [];
+  try {
+    const parsed = JSON.parse(row.player_names || "[]");
+    if (Array.isArray(parsed)) playerNames = parsed;
+  } catch {}
+
+  return {
+    online: Boolean(row.online),
+    playerCount: row.player_count === null ? null : Number(row.player_count),
+    playerNames,
+    updatedAt: row.updated_at,
+    checkedAt: row.checked_at,
+    stale: Boolean(row.stale),
+    ...(row.message ? { message: row.message } : {}),
   };
 }
 
@@ -209,7 +279,7 @@ async function getHistory(db) {
 }
 
 export default {
-  async fetch(request, env, ctx) {
+  async fetch(request, env) {
     if (request.method === "OPTIONS") {
       return new Response(null, { status: 204, headers: responseHeaders() });
     }
@@ -228,34 +298,13 @@ export default {
       }
     }
 
-    if (memoryCache && Date.now() - memoryCachedAt < CACHE_SECONDS * 1000) {
-      return json(memoryCache);
-    }
-
-    const cache = globalThis.caches?.default;
-    const cacheKey = new Request(`${url.origin}/status`, { method: "GET" });
-    let cached = null;
+    if (!env.DB) return json(offlineStatus(), 503);
     try {
-      cached = cache ? await cache.match(cacheKey) : null;
-    } catch {}
-    if (cached) return cached;
-
-    let response;
-    try {
-      memoryCache = await getLiveWorldStatus();
-      memoryCachedAt = Date.now();
-      response = json(memoryCache);
-      if (env.DB) ctx.waitUntil(storeSample(env.DB, memoryCache));
+      const current = await getCurrentStatus(env.DB);
+      return current ? json(current) : json(offlineStatus(), 503);
     } catch {
-      const unavailable = offlineStatus();
-      response = json(unavailable);
-      if (env.DB) ctx.waitUntil(storeSample(env.DB, unavailable));
+      return json(offlineStatus(), 503);
     }
-
-    try {
-      if (cache) await cache.put(cacheKey, response.clone());
-    } catch {}
-    return response;
   },
 
   async scheduled(_event, env, ctx) {
@@ -263,10 +312,17 @@ export default {
       let status;
       try {
         status = await getLiveWorldStatus();
+        await Promise.all([
+          storeSample(env.DB, status),
+          storeCurrentStatus(env.DB, status),
+        ]);
       } catch {
         status = offlineStatus();
+        await Promise.all([
+          storeSample(env.DB, status),
+          markCurrentStatusStale(env.DB),
+        ]);
       }
-      await storeSample(env.DB, status);
       const cutoff = Math.floor(Date.now() / 1000) - RETENTION_SECONDS;
       await env.DB.prepare("DELETE FROM live_samples WHERE sampled_at < ?").bind(cutoff).run();
     })());

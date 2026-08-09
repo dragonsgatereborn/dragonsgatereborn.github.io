@@ -30,10 +30,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const renderStatus = (data) => {
     const online = data.online === true && Number.isInteger(data.playerCount);
-    statusText.textContent = online ? "The world is online" : "Signal temporarily unavailable";
+    statusText.textContent = online
+      ? (data.stale ? "Last known world signal" : "The world is online")
+      : "Signal temporarily unavailable";
     countText.textContent = online ? String(data.playerCount) : "Unavailable";
     metric("current").textContent = online ? String(data.playerCount) : "—";
-    pulse.classList.toggle("is-online", online);
+    pulse.classList.toggle("is-online", online && !data.stale);
 
     const updatedAt = data.updatedAt ? new Date(data.updatedAt) : null;
     updatedText.textContent = updatedAt && !Number.isNaN(updatedAt.getTime())

@@ -166,9 +166,9 @@ window.addEventListener("DOMContentLoaded", () => {
       const data = await response.json();
 
       if (data.online === true && Number.isInteger(data.playerCount)) {
-        status.textContent = "Online";
-        count.textContent = `${data.playerCount} adventurer${data.playerCount === 1 ? "" : "s"} online`;
-        pulse.classList.add("is-online");
+        status.textContent = data.stale ? "Last known online" : "Online";
+        count.textContent = `${data.playerCount} adventurer${data.playerCount === 1 ? "" : "s"} ${data.stale ? "at last check" : "online"}`;
+        pulse.classList.toggle("is-online", !data.stale);
         const names = Array.isArray(data.playerNames)
           ? data.playerNames.filter((name) => typeof name === "string" && name.trim()).map((name) => name.trim())
           : [];
