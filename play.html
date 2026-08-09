@@ -8,7 +8,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="/styles.css?v=20260104">
+      <link rel="stylesheet" href="/styles.css?v=20260809">
     </head>
     <body>
       <div class="page">
@@ -36,12 +36,83 @@
         </header>
         <main class="layout single">
           <section class="content">
-            <article class="card">
-              <h2>BETA is Live</h2>
-              <p>You can connect and play now using the current login information below.</p>
-              <p><strong>Server:</strong> game.dragonsgatereborn.com<br><strong>IP:</strong> 107.161.22.78<br><strong>Standard port:</strong> 8555<br><strong>Secure SSL/TLS port:</strong> 9555</p>
-              <p>For an encrypted connection, enable SSL/TLS in your MUD client and connect using the server hostname on port <code>9555</code>. Use port <code>8555</code> for a standard connection.</p>
-              <p>For help getting connected, join us on <a href="https://discord.gg/N8mWDPcbj8" target="_blank" rel="noopener">Discord</a> or review the <a href="/manual.html">Manual</a>.</p>
+            <article class="card feature">
+              <p class="caps">New Player Guide</p>
+              <h2>Your first 15 minutes</h2>
+              <p class="lead">Choose a client, connect to the world, create your character, and learn the commands that will get you moving.</p>
+              <div class="inline-links">
+                <a class="btn primary" href="#connect">Connection details</a>
+                <a class="btn ghost" href="#commands">Starter commands</a>
+              </div>
+            </article>
+
+            <article class="card" id="client">
+              <p class="caps">Step 1</p>
+              <h2>Choose a game client</h2>
+              <p>Dragon's Gate Reborn is a text-based online world. You connect with a MUD client—the program that displays the world and sends your commands.</p>
+              <p><a class="text-link" href="/download.html">View free client options</a>, including Mudlet for Windows, macOS, and Linux. If you already use a MUD client, you can enter the connection information below directly.</p>
+            </article>
+
+            <article class="card" id="connect">
+              <p class="caps">Step 2</p>
+              <h2>Connect to Dragon's Gate Reborn</h2>
+              <div class="connection-grid">
+                <div class="section-card">
+                  <h3>SSL/TLS connection</h3>
+                  <p><strong>Host:</strong> <code>game.dragonsgatereborn.com</code><br><strong>Port:</strong> <code>9555</code><br><strong>SSL/TLS:</strong> Enabled</p>
+                  <p class="small"><strong>Certificate notice:</strong> The server is currently presenting an expired certificate issued for Tempest Season rather than <code>game.dragonsgatereborn.com</code>. Some clients may refuse this connection or display a warning until the game-server certificate is renewed.</p>
+                </div>
+                <div class="section-card">
+                  <h3>Standard connection</h3>
+                  <p><strong>Host:</strong> <code>game.dragonsgatereborn.com</code><br><strong>Port:</strong> <code>8555</code><br><strong>SSL/TLS:</strong> Disabled</p>
+                  <p class="small">Use this option if your client cannot connect through SSL/TLS.</p>
+                </div>
+              </div>
+              <p class="small"><strong>Direct IP:</strong> <code>107.161.22.78</code>. The hostname is preferred. Port 8555 is the dependable option while certificate maintenance for port 9555 is pending.</p>
+            </article>
+
+            <article class="card" id="character">
+              <p class="caps">Step 3</p>
+              <h2>Follow the login prompts</h2>
+              <p>After connecting, follow the instructions shown on the login screen. If you need access or are unsure how to continue, ask in the community Discord rather than sharing account information publicly.</p>
+              <div class="inline-links">
+                <a class="btn primary" href="https://discord.gg/N8mWDPcbj8" target="_blank" rel="noopener">Get help on Discord</a>
+                <a class="btn ghost" href="/contact.html">Contact the team</a>
+              </div>
+            </article>
+
+            <article class="card" id="commands">
+              <p class="caps">Step 4</p>
+              <h2>Try these starter commands</h2>
+              <p>Type a command at the prompt and press Enter. Commands are not case-sensitive.</p>
+              <div class="table-wrap">
+                <table class="compare-table starter-command-table">
+                  <thead><tr><th>Command</th><th>What it does</th></tr></thead>
+                  <tbody>
+                    <tr><td><code>LOOK</code></td><td>Look at your current room.</td></tr>
+                    <tr><td><code>LOOK &lt;thing&gt;</code></td><td>Examine a person, object, or feature.</td></tr>
+                    <tr><td><code>NORTH</code>, <code>SOUTH</code>, <code>EAST</code>, <code>WEST</code></td><td>Move through an available exit. Directions can usually be shortened to one letter.</td></tr>
+                    <tr><td><code>'Hello!</code></td><td>Speak to everyone in the room.</td></tr>
+                    <tr><td><code>SMILE</code></td><td>Perform a social action.</td></tr>
+                    <tr><td><code>GET &lt;item&gt;</code></td><td>Pick up an item.</td></tr>
+                    <tr><td><code>INVENTORY</code></td><td>Review what you are carrying.</td></tr>
+                    <tr><td><code>STATUS</code></td><td>Review important information about your character.</td></tr>
+                    <tr><td><code>HELP</code></td><td>Show help categories.</td></tr>
+                    <tr><td><code>HELP &lt;command&gt;</code></td><td>Read detailed help for a command.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>For command syntax, communication, movement, and the full in-game help system, continue to <a class="text-link" href="/manual/manual-around.html">Getting Around</a>.</p>
+            </article>
+
+            <article class="card" id="next">
+              <p class="caps">Step 5</p>
+              <h2>Choose where to go next</h2>
+              <div class="section-grid">
+                <div class="section-card"><h3>Build your character</h3><p>Compare the available professions and explore the races of Aradath.</p><a href="/manual/manual-classes.html">Compare classes</a><a href="/manual/manual-races.html">Explore races</a></div>
+                <div class="section-card"><h3>Learn the world</h3><p>Read the role-play guide and practical advice for new adventurers.</p><a href="/manual/manual-roleplay.html">Role-play guide</a><a href="/manual/manual-hints.html">Gaming hints</a></div>
+                <div class="section-card"><h3>Ask the community</h3><p>Players and staff can help when the manual does not answer your question.</p><a href="/community.html">Community resources</a><a href="https://discord.gg/N8mWDPcbj8" target="_blank" rel="noopener">Join Discord</a></div>
+              </div>
             </article>
           </section>
         </main>
@@ -59,6 +130,6 @@
           <p class="small disclaimer">Dragon's Gate Reborn is an unofficial fan revival project not affiliated with the original Dragon's Gate or its creators. "Dragon's Gate" and related content are property of their respective owners. This is a non-commercial community project. <a href="/copyright.html">Full legal notice</a></p>
         </footer>
       </div>
-      <script src="/script.js?v=20260731-2"></script>
+      <script src="/script.js?v=20260809"></script>
     </body>
     </html>
