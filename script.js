@@ -87,6 +87,27 @@ window.addEventListener("DOMContentLoaded", () => {
       article.insertBefore(contents, article.firstElementChild);
     }
   }
+
+  const isRacePage = path.startsWith("/races/race-");
+  const isClassPage = path.startsWith("/classes/class-");
+  const isSkillPage = path.startsWith("/skills/skill-");
+  if (isRacePage || isClassPage || isSkillPage) {
+    const firstCard = document.querySelector("main article.card");
+    if (firstCard && !firstCard.querySelector(".content-status-note")) {
+      const note = document.createElement("div");
+      note.className = "status-row content-status-note";
+      if (path === "/races/race-wyvern.html") {
+        note.innerHTML = '<span class="status-badge status-legacy">Legacy reference</span><span class="small">Wyvern is not currently selectable in live character creation. Archive details are retained for reference.</span>';
+      } else if (isRacePage) {
+        note.innerHTML = '<span class="status-badge status-live">Selectable in beta</span><span class="status-badge status-testing">Racial abilities may be incomplete</span><a class="small" href="/race-class-guide.html">Current compatibility</a>';
+      } else if (isClassPage) {
+        note.innerHTML = '<span class="status-badge status-live">Selectable in beta</span><span class="status-badge status-testing">Abilities under active testing</span><a class="small" href="/beta-status.html">Current status</a>';
+      } else {
+        note.innerHTML = '<span class="status-badge status-testing">Availability varies in beta</span><span class="small">This page may combine current behavior with reconstruction notes.</span><a class="small" href="/systems.html">Verified quick guides</a>';
+      }
+      firstCard.insertBefore(note, firstCard.firstElementChild);
+    }
+  }
 });
 
 // Privacy-first, site-wide page-view tracking through Cloudflare Web Analytics.
