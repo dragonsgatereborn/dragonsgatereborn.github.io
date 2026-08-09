@@ -1,10 +1,6 @@
-name = "dgr-live-world"
-main = "src/index.js"
+name = "dgr-live-world-status"
+pages_build_output_dir = "."
 compatibility_date = "2026-08-08"
-workers_dev = true
-
-[triggers]
-crons = ["*/5 * * * *"]
 
 [[d1_databases]]
 binding = "DB"

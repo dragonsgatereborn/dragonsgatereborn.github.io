@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dragon's Gate Reborn | Live World Activity</title>
+  <meta name="description" content="Live Dragon's Gate Reborn server status, current adventurers, uptime, and player activity history.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=20260809e">
+</head>
+<body>
+  <div class="page">
+    <header class="hero hero--inner">
+      <div class="hero-inner">
+        <a class="brand brand-link" href="/index.html">
+          <div class="sigil"></div>
+          <div>
+            <p class="eyebrow">Signals from Aradath</p>
+            <h1>Live World Activity</h1>
+            <p class="tagline">Current adventurers, server reachability, and real activity history collected throughout the day.</p>
+          </div>
+        </a>
+        <nav class="site-nav">
+          <a href="/index.html">Home</a>
+          <a href="/play.html">Play</a>
+          <a href="/beta-status.html">Beta Status</a>
+          <a href="/roadmap-updates.html">Updates</a>
+          <a href="/support.html">Support</a>
+          <a href="/site-map.html">Site Map</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="layout single">
+      <section class="content live-dashboard" data-live-dashboard data-status-endpoint="https://dgr-live-world-status.pages.dev/status" data-history-endpoint="https://dgr-live-world-status.pages.dev/history">
+        <article class="card feature live-dashboard-current" aria-live="polite">
+          <div class="live-dashboard-heading">
+            <div>
+              <p class="caps">Current Signal</p>
+              <h2 data-dashboard-status>Checking the world…</h2>
+            </div>
+            <span class="live-world-pulse live-dashboard-pulse" data-dashboard-pulse aria-hidden="true"></span>
+          </div>
+          <div class="live-dashboard-current-grid">
+            <div class="live-dashboard-current-stat">
+              <span>Adventurers Online</span>
+              <strong data-dashboard-count>Checking…</strong>
+            </div>
+            <div class="live-dashboard-current-stat">
+              <span>Latest Signal</span>
+              <strong data-dashboard-updated>Checking…</strong>
+            </div>
+          </div>
+          <details class="live-dashboard-roster">
+            <summary>See who is in game</summary>
+            <ul data-dashboard-roster><li>Checking…</li></ul>
+          </details>
+        </article>
+
+        <article class="card">
+          <p class="caps">At a Glance</p>
+          <h2>Activity and reliability</h2>
+          <div class="live-metric-grid">
+            <div class="live-metric"><span>Current Players</span><strong data-metric-current>—</strong><small>Adventurers right now</small></div>
+            <div class="live-metric"><span>24-Hour Peak</span><strong data-metric-peak>—</strong><small data-metric-peak-context>Collecting samples</small></div>
+            <div class="live-metric"><span>24-Hour Average</span><strong data-metric-average>—</strong><small data-metric-average-context>Collecting samples</small></div>
+            <div class="live-metric"><span>24-Hour Uptime</span><strong data-metric-uptime24>—</strong><small data-metric-uptime24-context>Collecting samples</small></div>
+            <div class="live-metric"><span>7-Day Uptime</span><strong data-metric-uptime7>—</strong><small data-metric-uptime7-context>Collecting samples</small></div>
+          </div>
+          <p class="verified-note live-history-coverage" data-history-coverage>Preparing the first historical sample…</p>
+        </article>
+
+        <article class="card">
+          <p class="caps">Last 24 Hours</p>
+          <h2>Player activity by hour</h2>
+          <p class="small">Each bar shows the highest adventurer count observed during that hour. Times use your device's local time.</p>
+          <div class="live-activity-chart" data-hourly-chart aria-label="Hourly player activity chart">
+            <p class="small">Collecting hourly activity…</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="caps">Last Seven Days</p>
+          <h2>Daily activity and uptime</h2>
+          <p class="small">Daily rows use UTC dates so monitoring remains consistent across time zones and daylight-saving changes.</p>
+          <div class="table-wrap">
+            <table class="compare-table live-history-table">
+              <thead><tr><th>Date</th><th>Uptime</th><th>Average Players</th><th>Peak Players</th><th>Samples</th></tr></thead>
+              <tbody data-daily-history><tr><td colspan="5">Collecting daily history…</td></tr></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="caps">How This Works</p>
+          <h2>Real observations, not estimates</h2>
+          <ul class="pill-list">
+            <li><strong>Five-minute monitoring:</strong> the status service checks the public game menu every five minutes and records whether the world responded.</li>
+            <li><strong>Adventurer activity:</strong> averages and peaks use the adventurer count reported by the game. Staff roles are not included in those totals.</li>
+            <li><strong>Privacy:</strong> historical records contain only reachability, time, and aggregate player counts. Character names are shown live but are not stored in activity history.</li>
+            <li><strong>Uptime meaning:</strong> uptime represents successful checks from the monitoring service. A network interruption between the monitor and game can also appear as a missed signal.</li>
+            <li><strong>New tracker:</strong> monitoring began in August 2026. The 24-hour and seven-day summaries will become more representative as real samples accumulate.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="/index.html">Home</a><a href="/play.html">Play</a><a href="/beta-status.html">Beta Status</a><a href="/roadmap-updates.html">Updates</a><a href="/support.html">Support</a>
+      </div>
+      <p class="small">Live World history updates automatically as new five-minute samples are collected.</p>
+    </footer>
+  </div>
+  <script src="/script.js?v=20260809d"></script>
+  <script src="/live-world.js?v=20260809a"></script>
+</body>
+</html>
