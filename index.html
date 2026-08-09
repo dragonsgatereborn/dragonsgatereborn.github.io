@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=20260809b">
+  <link rel="stylesheet" href="/styles.css?v=20260809c">
 </head>
 <body>
   <div class="page">
@@ -154,6 +154,26 @@
           <p>Shape your identity through classes, races, and skills while you explore a world full of mystery, politics, and intrigue. Use the manual and library to guide your journey and discover what makes this realm unique.</p>
           <a class="text-link" href="/manual.html">Begin with the Manual</a>
         </article>
+        <article class="card live-world-card" data-live-world data-live-world-endpoint="https://dgr-live-world.wizzydizzy.workers.dev/status" aria-live="polite">
+          <div class="live-world-heading">
+            <div>
+              <p class="caps">Live World</p>
+              <h2>Signals from Aradath</h2>
+            </div>
+            <span class="live-world-pulse" data-live-world-pulse aria-hidden="true"></span>
+          </div>
+          <div class="live-world-stats">
+            <div class="live-world-stat">
+              <span class="small">Server Status</span>
+              <strong data-live-world-status>Checking…</strong>
+            </div>
+            <div class="live-world-stat">
+              <span class="small">Players Online</span>
+              <strong data-live-world-count>Checking…</strong>
+            </div>
+          </div>
+          <p class="small live-world-updated" data-live-world-updated>Connecting to the game server…</p>
+        </article>
         <article class="card latest-update-card">
           <div class="latest-update-heading">
             <div>
@@ -238,6 +258,6 @@
       <p class="small"><a class="text-link" href="http://www.dragons-gate.com/" target="_blank" rel="noopener">Visit the Classic Dragon's Gate website</a></p>
     </footer>
   </div>
-  <script src="/script.js?v=20260809b"></script>
+  <script src="/script.js?v=20260809c"></script>
 </body>
 </html>
