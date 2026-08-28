@@ -12,6 +12,11 @@ window.addEventListener("DOMContentLoaded", () => {
   const coverage = dashboard.querySelector("[data-history-coverage]");
   const hourlyChart = dashboard.querySelector("[data-hourly-chart]");
   const dailyHistory = dashboard.querySelector("[data-daily-history]");
+  const weeklyHistory = dashboard.querySelector("[data-weekly-history]");
+  const monthlyHistory = dashboard.querySelector("[data-monthly-history]");
+  const yearlyHistory = dashboard.querySelector("[data-yearly-history]");
+  const weekTrend = dashboard.querySelector("[data-trend-week]");
+  const monthTrend = dashboard.querySelector("[data-trend-month]");
 
   const metric = (name) => dashboard.querySelector(`[data-metric-${name}]`);
   const metricContext = (name) => dashboard.querySelector(`[data-metric-${name}-context]`);
@@ -82,47 +87,108 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  const renderDaily = (rows) => {
-    dailyHistory.replaceChildren();
+  const renderPeriodRows = (element, rows, labelFor, emptyMessage) => {
+    element.replaceChildren();
     if (!rows.length) {
       const row = document.createElement("tr");
       const cell = document.createElement("td");
-      cell.colSpan = 5;
-      cell.textContent = "The first daily activity sample is still being collected.";
+      cell.colSpan = 6;
+      cell.textContent = emptyMessage;
       row.appendChild(cell);
-      dailyHistory.appendChild(row);
+      element.appendChild(row);
       return;
     }
 
     rows.forEach((entry) => {
       const row = document.createElement("tr");
       const values = [
-        new Date(entry.timestamp).toLocaleDateString([], { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }),
+        labelFor(entry),
         valueOrDash(entry.uptimePercentage, "%"),
         valueOrDash(entry.averagePlayers),
         valueOrDash(entry.peakPlayers),
-        String(entry.samples),
+        valueOrDash(entry.playerHours),
+        valueOrDash(entry.activePercentage, "%"),
       ];
       values.forEach((value) => {
         const cell = document.createElement("td");
         cell.textContent = value;
         row.appendChild(cell);
       });
-      dailyHistory.appendChild(row);
+      element.appendChild(row);
     });
+  };
+
+  const periodChange = (current, previous, periodName) => {
+    if (!current || !previous || current.averagePlayers === null || previous.averagePlayers === null) {
+      return `${periodName} comparison will appear after enough history is collected.`;
+    }
+    const difference = current.averagePlayers - previous.averagePlayers;
+    if (previous.averagePlayers === 0) {
+      return difference > 0
+        ? `${periodName} average is ${current.averagePlayers}; the preceding period had no recorded activity.`
+        : `${periodName} average remains at 0.`;
+    }
+    const percentage = Math.abs(100 * difference / previous.averagePlayers).toFixed(1);
+    const direction = difference > 0 ? "up" : difference < 0 ? "down" : "unchanged";
+    return direction === "unchanged"
+      ? `${periodName} average is unchanged at ${current.averagePlayers}.`
+      : `${periodName} average is ${current.averagePlayers}, ${direction} ${percentage}% from the preceding period.`;
+  };
+
+  const renderRecords = (records = {}) => {
+    const set = (name, value) => {
+      const element = dashboard.querySelector(`[data-record-${name}]`);
+      if (element) element.textContent = value;
+    };
+    set("peak", valueOrDash(records.allTimePeak));
+
+    if (records.busiestDay) {
+      set("day", new Date(records.busiestDay.timestamp).toLocaleDateString([], {
+        month: "short", day: "numeric", year: "numeric", timeZone: "UTC",
+      }));
+      set("day-detail", `${valueOrDash(records.busiestDay.playerHours)} player-hours · peak ${valueOrDash(records.busiestDay.peakPlayers)}`);
+    }
+
+    if (records.busiestHour) {
+      set("hour", new Date(records.busiestHour.timestamp).toLocaleString([], {
+        month: "short", day: "numeric", hour: "numeric", timeZoneName: "short",
+      }));
+      set("hour-detail", `${valueOrDash(records.busiestHour.averagePlayers)} average · peak ${valueOrDash(records.busiestHour.peakPlayers)}`);
+    }
+
+    if (records.popularWeekday) {
+      set("weekday", records.popularWeekday.name);
+      set("weekday-detail", `${valueOrDash(records.popularWeekday.averagePlayers)} average players`);
+    }
+
+    if (records.popularHour && Number.isInteger(records.popularHour.hourUtc)) {
+      const now = new Date();
+      const example = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), records.popularHour.hourUtc));
+      set("time", example.toLocaleTimeString([], { hour: "numeric" }));
+      set("time-detail", `${valueOrDash(records.popularHour.averagePlayers)} average players · converted from UTC`);
+    }
   };
 
   const renderHistory = (data) => {
     const day = data.summary.last24Hours;
     const week = data.summary.last7Days;
-    metric("peak").textContent = valueOrDash(day.peakPlayers);
-    metric("average").textContent = valueOrDash(day.averagePlayers);
-    metric("uptime24").textContent = valueOrDash(day.uptimePercentage, "%");
-    metric("uptime7").textContent = valueOrDash(week.uptimePercentage, "%");
-    metricContext("peak").textContent = sampleLabel(day.samples);
-    metricContext("average").textContent = sampleLabel(day.samples);
-    metricContext("uptime24").textContent = sampleLabel(day.samples);
-    metricContext("uptime7").textContent = sampleLabel(week.samples);
+    const month = data.summary.last30Days;
+    metric("peak24").textContent = valueOrDash(day.peakPlayers);
+    metric("average7").textContent = valueOrDash(week.averagePlayers);
+    metric("average30").textContent = valueOrDash(month.averagePlayers);
+    metric("hours30").textContent = valueOrDash(month.playerHours);
+    metric("active30").textContent = valueOrDash(month.activePercentage, "%");
+    metric("uptime30").textContent = valueOrDash(month.uptimePercentage, "%");
+    metric("peak-all").textContent = valueOrDash(data.records?.allTimePeak);
+    metricContext("peak24").textContent = sampleLabel(day.samples);
+    metricContext("average7").textContent = sampleLabel(week.samples);
+    metricContext("average30").textContent = sampleLabel(month.samples);
+    metricContext("hours30").textContent = `${sampleLabel(month.samples)} represented`;
+    metricContext("active30").textContent = "Samples with players online";
+    metricContext("uptime30").textContent = "Successful world checks";
+
+    weekTrend.textContent = periodChange(week, data.summary.previous7Days, "Seven-day");
+    monthTrend.textContent = periodChange(month, data.summary.previous30Days, "30-day");
 
     if (data.trackingSince) {
       const since = new Date(data.trackingSince);
@@ -131,7 +197,37 @@ window.addEventListener("DOMContentLoaded", () => {
       coverage.textContent = "Preparing the first historical sample…";
     }
     renderHourly(data.hourly || []);
-    renderDaily(data.daily || []);
+    renderPeriodRows(
+      dailyHistory,
+      data.daily || [],
+      (entry) => new Date(entry.timestamp).toLocaleDateString([], { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }),
+      "The first daily activity sample is still being collected.",
+    );
+    renderPeriodRows(
+      weeklyHistory,
+      data.weekly || [],
+      (entry) => {
+        const start = new Date(entry.timestamp);
+        const end = new Date(entry.timestamp + 6 * 86400000);
+        const startLabel = start.toLocaleDateString([], { month: "short", day: "numeric", timeZone: "UTC" });
+        const endLabel = end.toLocaleDateString([], { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+        return `${startLabel}–${endLabel}`;
+      },
+      "The first weekly activity summary is still being collected.",
+    );
+    renderPeriodRows(
+      monthlyHistory,
+      data.monthly || [],
+      (entry) => new Date(entry.timestamp).toLocaleDateString([], { month: "long", year: "numeric", timeZone: "UTC" }),
+      "The first monthly activity summary is still being collected.",
+    );
+    renderPeriodRows(
+      yearlyHistory,
+      data.yearly || [],
+      (entry) => new Date(entry.timestamp).toLocaleDateString([], { year: "numeric", timeZone: "UTC" }),
+      "The first yearly activity summary is still being collected.",
+    );
+    renderRecords(data.records);
   };
 
   const fetchJson = async (url) => {

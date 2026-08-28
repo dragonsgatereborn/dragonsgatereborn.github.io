@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=20260809e">
+  <link rel="stylesheet" href="/styles.css?v=20260828a">
 </head>
 <body>
   <div class="page">
@@ -64,12 +64,25 @@
           <h2>Activity and reliability</h2>
           <div class="live-metric-grid">
             <div class="live-metric"><span>Current Players</span><strong data-metric-current>—</strong><small>Adventurers right now</small></div>
-            <div class="live-metric"><span>24-Hour Peak</span><strong data-metric-peak>—</strong><small data-metric-peak-context>Collecting samples</small></div>
-            <div class="live-metric"><span>24-Hour Average</span><strong data-metric-average>—</strong><small data-metric-average-context>Collecting samples</small></div>
-            <div class="live-metric"><span>24-Hour Uptime</span><strong data-metric-uptime24>—</strong><small data-metric-uptime24-context>Collecting samples</small></div>
-            <div class="live-metric"><span>7-Day Uptime</span><strong data-metric-uptime7>—</strong><small data-metric-uptime7-context>Collecting samples</small></div>
+            <div class="live-metric"><span>24-Hour Peak</span><strong data-metric-peak24>—</strong><small data-metric-peak24-context>Collecting samples</small></div>
+            <div class="live-metric"><span>7-Day Average</span><strong data-metric-average7>—</strong><small data-metric-average7-context>Collecting samples</small></div>
+            <div class="live-metric"><span>30-Day Average</span><strong data-metric-average30>—</strong><small data-metric-average30-context>Collecting samples</small></div>
+            <div class="live-metric"><span>30-Day Player-Hours</span><strong data-metric-hours30>—</strong><small data-metric-hours30-context>Combined time in world</small></div>
+            <div class="live-metric"><span>30-Day Active Time</span><strong data-metric-active30>—</strong><small data-metric-active30-context>Samples with players online</small></div>
+            <div class="live-metric"><span>30-Day Uptime</span><strong data-metric-uptime30>—</strong><small data-metric-uptime30-context>Successful world checks</small></div>
+            <div class="live-metric"><span>All-Time Peak</span><strong data-metric-peak-all>—</strong><small>Since tracking began</small></div>
           </div>
           <p class="verified-note live-history-coverage" data-history-coverage>Preparing the first historical sample…</p>
+        </article>
+
+        <article class="card">
+          <p class="caps">Recent Direction</p>
+          <h2>Activity trends</h2>
+          <div class="live-trend-grid">
+            <div class="live-trend" data-trend-week>Waiting for two full seven-day periods…</div>
+            <div class="live-trend" data-trend-month>Waiting for two full 30-day periods…</div>
+          </div>
+          <p class="small">Trends compare rolling periods of equal length, not partial calendar weeks or months.</p>
         </article>
 
         <article class="card">
@@ -82,14 +95,62 @@
         </article>
 
         <article class="card">
-          <p class="caps">Last Seven Days</p>
-          <h2>Daily activity and uptime</h2>
+          <p class="caps">Recent Days</p>
+          <h2>Daily activity and reliability</h2>
           <p class="small">Daily rows use UTC dates so monitoring remains consistent across time zones and daylight-saving changes.</p>
           <div class="table-wrap">
             <table class="compare-table live-history-table">
-              <thead><tr><th>Date</th><th>Uptime</th><th>Average Players</th><th>Peak Players</th><th>Samples</th></tr></thead>
-              <tbody data-daily-history><tr><td colspan="5">Collecting daily history…</td></tr></tbody>
+              <thead><tr><th>Date</th><th>Uptime</th><th>Average</th><th>Peak</th><th>Player-Hours</th><th>Active Time</th></tr></thead>
+              <tbody data-daily-history><tr><td colspan="6">Collecting daily history…</td></tr></tbody>
             </table>
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="caps">Weekly</p>
+          <h2>Last 13 calendar weeks</h2>
+          <p class="small">Weeks begin Monday at 12:00 a.m. UTC. The current week is partial and updates every five minutes.</p>
+          <div class="table-wrap">
+            <table class="compare-table live-history-table live-period-table">
+              <thead><tr><th>Week</th><th>Uptime</th><th>Average</th><th>Peak</th><th>Player-Hours</th><th>Active Time</th></tr></thead>
+              <tbody data-weekly-history><tr><td colspan="6">Collecting weekly history…</td></tr></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="caps">Monthly</p>
+          <h2>Last 13 calendar months</h2>
+          <p class="small">The first month begins when monitoring started, so it may contain only part of that month.</p>
+          <div class="table-wrap">
+            <table class="compare-table live-history-table live-period-table">
+              <thead><tr><th>Month</th><th>Uptime</th><th>Average</th><th>Peak</th><th>Player-Hours</th><th>Active Time</th></tr></thead>
+              <tbody data-monthly-history><tr><td colspan="6">Collecting monthly history…</td></tr></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="caps">Yearly</p>
+          <h2>Long-term world activity</h2>
+          <p class="small">Yearly totals will become more useful as the tracker builds a permanent history.</p>
+          <div class="table-wrap">
+            <table class="compare-table live-history-table live-period-table">
+              <thead><tr><th>Year</th><th>Uptime</th><th>Average</th><th>Peak</th><th>Player-Hours</th><th>Active Time</th></tr></thead>
+              <tbody data-yearly-history><tr><td colspan="6">Collecting yearly history…</td></tr></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="caps">World Records</p>
+          <h2>Since monitoring began</h2>
+          <div class="live-record-grid">
+            <div class="live-record"><span>Highest Population</span><strong data-record-peak>—</strong><small>Adventurers online at once</small></div>
+            <div class="live-record"><span>Busiest Day</span><strong data-record-day>—</strong><small data-record-day-detail>Collecting history</small></div>
+            <div class="live-record"><span>Busiest Hour</span><strong data-record-hour>—</strong><small data-record-hour-detail>Collecting history</small></div>
+            <div class="live-record"><span>Most Active Weekday</span><strong data-record-weekday>—</strong><small data-record-weekday-detail>Collecting history</small></div>
+            <div class="live-record"><span>Most Active Time</span><strong data-record-time>—</strong><small data-record-time-detail>Shown in your local time</small></div>
           </div>
         </article>
 
@@ -99,9 +160,11 @@
           <ul class="pill-list">
             <li><strong>Five-minute monitoring:</strong> the status service checks the public game menu every five minutes and records whether the world responded.</li>
             <li><strong>Adventurer activity:</strong> averages and peaks use the adventurer count reported by the game. Staff roles are not included in those totals.</li>
+            <li><strong>Player-hours:</strong> each five-minute sample contributes the combined time represented by the players online. Six players observed for ten minutes equal one player-hour.</li>
+            <li><strong>Active time:</strong> the percentage of successful samples where at least one adventurer was online.</li>
             <li><strong>Privacy:</strong> historical records contain only reachability, time, and aggregate player counts. Character names are shown live but are not stored in activity history.</li>
             <li><strong>Uptime meaning:</strong> uptime represents successful checks from the monitoring service. A network interruption between the monitor and game can also appear as a missed signal.</li>
-            <li><strong>New tracker:</strong> monitoring began in August 2026. The 24-hour and seven-day summaries will become more representative as real samples accumulate.</li>
+            <li><strong>Long-term history:</strong> detailed five-minute samples are retained for 90 days. Anonymous hourly and daily summaries are retained so weekly, monthly, yearly, and record statistics can continue growing.</li>
           </ul>
         </article>
       </section>
@@ -115,6 +178,6 @@
     </footer>
   </div>
   <script src="/script.js?v=20260809e"></script>
-  <script src="/live-world.js?v=20260809b"></script>
+  <script src="/live-world.js?v=20260828a"></script>
 </body>
 </html>
