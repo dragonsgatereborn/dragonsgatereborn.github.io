@@ -168,6 +168,29 @@ window.addEventListener("DOMContentLoaded", () => {
       set("time", example.toLocaleTimeString([], { hour: "numeric" }));
       set("time-detail", `${valueOrDash(records.popularHour.averagePlayers)} average players · converted from UTC`);
     }
+
+    if (records.peakDayAverage) {
+      set("peak-day", new Date(records.peakDayAverage.timestamp).toLocaleDateString([], {
+        month: "short", day: "numeric", year: "numeric", timeZone: "UTC",
+      }));
+      set("peak-day-detail", `${valueOrDash(records.peakDayAverage.averagePlayers)} average players · peak ${valueOrDash(records.peakDayAverage.peakPlayers)}`);
+    }
+
+    if (records.peakWeekAverage) {
+      const start = new Date(records.peakWeekAverage.timestamp);
+      const end = new Date(records.peakWeekAverage.timestamp + 6 * 86400000);
+      const startLabel = start.toLocaleDateString([], { month: "short", day: "numeric", timeZone: "UTC" });
+      const endLabel = end.toLocaleDateString([], { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+      set("peak-week", `${startLabel}–${endLabel}`);
+      set("peak-week-detail", `${valueOrDash(records.peakWeekAverage.averagePlayers)} average players · peak ${valueOrDash(records.peakWeekAverage.peakPlayers)}`);
+    }
+
+    if (records.peakYearAverage) {
+      set("peak-year", new Date(records.peakYearAverage.timestamp).toLocaleDateString([], {
+        year: "numeric", timeZone: "UTC",
+      }));
+      set("peak-year-detail", `${valueOrDash(records.peakYearAverage.averagePlayers)} average players · peak ${valueOrDash(records.peakYearAverage.peakPlayers)}`);
+    }
   };
 
   const renderHistory = (data) => {
