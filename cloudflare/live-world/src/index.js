@@ -345,6 +345,37 @@ async function getHistory(db) {
       GROUP BY hour
       ORDER BY average_players DESC
       LIMIT 1`),
+    db.prepare(`
+      SELECT day_at AS bucket, samples,
+        ROUND(1.0 * player_count_sum / NULLIF(player_count_samples, 0), 1) AS average_players,
+        peak_players, ROUND(player_count_sum / 12.0, 1) AS player_hours
+      FROM live_daily_rollups
+      WHERE samples >= 144
+      ORDER BY (1.0 * player_count_sum / NULLIF(player_count_samples, 0)) DESC, peak_players DESC
+      LIMIT 1`),
+    db.prepare(`
+      SELECT
+        day_at - (((CAST(strftime('%w', day_at, 'unixepoch') AS INTEGER) + 6) % 7) * 86400) AS bucket,
+        SUM(samples) AS samples,
+        ROUND(1.0 * SUM(player_count_sum) / NULLIF(SUM(player_count_samples), 0), 1) AS average_players,
+        MAX(peak_players) AS peak_players,
+        ROUND(SUM(player_count_sum) / 12.0, 1) AS player_hours
+      FROM live_daily_rollups
+      GROUP BY bucket
+      HAVING SUM(samples) >= 864
+      ORDER BY (1.0 * SUM(player_count_sum) / NULLIF(SUM(player_count_samples), 0)) DESC, peak_players DESC
+      LIMIT 1`),
+    db.prepare(`
+      SELECT
+        CAST(strftime('%s', strftime('%Y-01-01', day_at, 'unixepoch')) AS INTEGER) AS bucket,
+        SUM(samples) AS samples,
+        ROUND(1.0 * SUM(player_count_sum) / NULLIF(SUM(player_count_samples), 0), 1) AS average_players,
+        MAX(peak_players) AS peak_players,
+        ROUND(SUM(player_count_sum) / 12.0, 1) AS player_hours
+      FROM live_daily_rollups
+      GROUP BY bucket
+      ORDER BY (1.0 * SUM(player_count_sum) / NULLIF(SUM(player_count_samples), 0)) DESC, peak_players DESC
+      LIMIT 1`),
   ]);
 
   const tracking = results[7].results[0] || {};
@@ -362,6 +393,9 @@ async function getHistory(db) {
   const busiestHour = results[15].results[0] || null;
   const popularWeekday = results[16].results[0] || null;
   const popularHour = results[17].results[0] || null;
+  const peakDayAverage = results[18].results[0] || null;
+  const peakWeekAverage = results[19].results[0] || null;
+  const peakYearAverage = results[20].results[0] || null;
 
   return {
     generatedAt: new Date().toISOString(),
@@ -395,6 +429,9 @@ async function getHistory(db) {
         hourUtc: Number(popularHour.hour),
         averagePlayers: numberOrNull(popularHour.average_players),
       } : null,
+      peakDayAverage: peakDayAverage ? normalizeBuckets([peakDayAverage])[0] : null,
+      peakWeekAverage: peakWeekAverage ? normalizeBuckets([peakWeekAverage])[0] : null,
+      peakYearAverage: peakYearAverage ? normalizeBuckets([peakYearAverage])[0] : null,
     },
   };
 }
