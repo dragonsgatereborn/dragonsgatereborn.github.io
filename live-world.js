@@ -15,6 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const weeklyHistory = dashboard.querySelector("[data-weekly-history]");
   const monthlyHistory = dashboard.querySelector("[data-monthly-history]");
   const yearlyHistory = dashboard.querySelector("[data-yearly-history]");
+  const allTimeHistory = dashboard.querySelector("[data-all-time-history]");
   const weekTrend = dashboard.querySelector("[data-trend-week]");
   const monthTrend = dashboard.querySelector("[data-trend-month]");
 
@@ -227,6 +228,26 @@ window.addEventListener("DOMContentLoaded", () => {
       (entry) => new Date(entry.timestamp).toLocaleDateString([], { year: "numeric", timeZone: "UTC" }),
       "The first yearly activity summary is still being collected.",
     );
+    allTimeHistory.replaceChildren();
+    const allTimeRow = document.createElement("tr");
+    const allTime = data.summary.allTime || {};
+    const allTimeValues = [
+      data.trackingSince
+        ? `Since ${new Date(data.trackingSince).toLocaleDateString([], { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" })}`
+        : "All recorded history",
+      valueOrDash(allTime.uptimePercentage, "%"),
+      valueOrDash(allTime.averagePlayers),
+      valueOrDash(allTime.peakPlayers),
+      valueOrDash(allTime.playerHours),
+      valueOrDash(allTime.activePercentage, "%"),
+      String(allTime.samples || 0),
+    ];
+    allTimeValues.forEach((value) => {
+      const cell = document.createElement("td");
+      cell.textContent = value;
+      allTimeRow.appendChild(cell);
+    });
+    allTimeHistory.appendChild(allTimeRow);
     renderRecords(data.records);
   };
 
