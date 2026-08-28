@@ -1054,6 +1054,47 @@ code {
   margin-top: 1rem;
 }
 
+.live-trend-grid,
+.live-record-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.live-trend {
+  padding: 1rem;
+  border: 1px solid rgba(208, 171, 92, 0.25);
+  border-left: 3px solid var(--gold);
+  border-radius: 0.65rem;
+  background: rgba(21, 16, 12, 0.5);
+  color: var(--ink);
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 1.55;
+}
+
+.live-record {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1rem;
+  border: 1px solid rgba(208, 171, 92, 0.25);
+  border-radius: 0.65rem;
+  background: rgba(21, 16, 12, 0.5);
+}
+
+.live-record span,
+.live-record small {
+  color: var(--ink-soft);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.78rem;
+}
+
+.live-record strong {
+  color: var(--ink);
+  font-family: "Cinzel", serif;
+  font-size: 1.08rem;
+}
+
 .live-activity-chart {
   display: grid;
   grid-auto-flow: column;
@@ -1100,7 +1141,12 @@ code {
 }
 
 .live-history-table {
-  min-width: 660px;
+  min-width: 760px;
+}
+
+.live-period-table td:first-child,
+.live-period-table th:first-child {
+  min-width: 150px;
 }
 
 @media (max-width: 640px) {
@@ -1113,6 +1159,11 @@ code {
 @media (max-width: 420px) {
   .live-dashboard-current-grid,
   .live-metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .live-trend-grid,
+  .live-record-grid {
     grid-template-columns: 1fr;
   }
 }
