@@ -4,7 +4,8 @@ compatibility_date = "2026-08-08"
 workers_dev = true
 
 [triggers]
-crons = ["*/5 * * * *"]
+# Temporarily paused while the game server is offline.
+crons = []
 
 [[d1_databases]]
 binding = "DB"
